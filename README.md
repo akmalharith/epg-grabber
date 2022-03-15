@@ -10,7 +10,7 @@ docker run \
 -e CONFIG_NAME=config_name \
 -e CONFIG_URL=https://googa.host/file.txt \
 -e EPG_DAYS=7 \
-akmal/epg-grabber 
+akmal/epg-grabber:latest
 ```
 - `CONFIG_NAME` - name of your configuration
 - `CONFIG_URL` - direct link to your configuration text file
@@ -41,7 +41,7 @@ docker run \
 -e CONFIG_NAME=config_example \
 -e CONFIG_URL=https://gist.githubusercontent.com/akmalharith/ceda6103157c06cab5231c3a0f121cd2/raw/config_march_2022.txt \
 -e EPG_DAYS=7 \
- akmal/epg-grabber
+akmal/epg-grabber:latest
 ```
 
 ## Contributing
