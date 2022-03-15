@@ -9,7 +9,7 @@ astro;AstroCitraHD.My
 astro;GoShopBAARU.My
 astro;AstroRaniaHD.My
 astro;AstroAuraHD.My
-astro;AlHijrah.My
+astro;Al-Hijrah.My
 astro;ABOMoviesTayanganHebatHD.My
 astro;ColorsHindiHD.My
 astro;GoShopRUUMA.My
@@ -17,7 +17,7 @@ astro;GoShopGAAYA.My
 astro;TVS.My
 astro;AwesomeTV.My
 astro;AstroPrima.My
-astro;ArabicRadioTVVariety.My
+astro;ArabicRadio&TVVariety.My
 astro;NJOITV.My
 astro;TVOkey.My
 astro;NTV7.My
@@ -95,7 +95,7 @@ astro;AstroTutorTVSK.My
 astro;AstroTutorTVPT3.My
 astro;AstroTutorTVSPM.My
 astro;AstroCeriaHD.My
-astro;TADAA.My
+astro;TA-DAA.My
 astro;CartoonNetworkHD.My
 astro;NickelodeonHD.My
 astro;NickelodeonJunior.My
@@ -112,7 +112,7 @@ astro;AsianFoodNetworkHD.My
 astro;NatGeoPeopleHD.My
 astro;WarnerTVHD.My
 astro;ParamountNetwork.My
-astro;CrimeInvestigationHD.My
+astro;Crime&InvestigationHD.My
 astro;HGTVHD.My
 astro;DMAXHD.My
 astro;BBCLifestyleHD.My
@@ -168,6 +168,6 @@ astro;BBCFirstHD.My
 astro;AstroWahLaiToiHD.My
 astro;BBCBritHD.My
 astro;ComedyCentralAsiaHD.My
-astro;KPlusHD.My
+astro;K-PlusHD.My
 astro;DWEnglish.My
 astro;France24.My

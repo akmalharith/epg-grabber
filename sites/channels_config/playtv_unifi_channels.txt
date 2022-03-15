@@ -29,7 +29,7 @@ playtv_unifi;CinemaWorldHD.My
 playtv_unifi;WarnerTVHD.My
 playtv_unifi;AXN.My
 playtv_unifi;HITS.My
-playtv_unifi;KPlus.My
+playtv_unifi;K-Plus.My
 playtv_unifi;arirangTV.My
 playtv_unifi;GEM.My
 playtv_unifi;Animax.My
@@ -52,7 +52,7 @@ playtv_unifi;Euronews.My
 playtv_unifi;ParlimenMalaysia.My
 playtv_unifi;ABCAustralia.My
 playtv_unifi;DW.My
-playtv_unifi;NHKWORLDJAPAN.My
+playtv_unifi;NHKWORLD-JAPAN.My
 playtv_unifi;France24.My
 playtv_unifi;unifiSports1.My
 playtv_unifi;unifiSports2.My

@@ -3,16 +3,16 @@ import json
 import os
 import logging
 
-sites_dir = "sites"
-metadata_dir = os.path.join(sites_dir, "channels_metadata")
-config_dir = os.path.join(sites_dir, "channels_config")
+from config.constants import CONFIG_DIR, METADATA_DIR, SITES_DIR, TITLE
 
-log = logging.getLogger("epg_grabber_generate_metadata")
+
+
+log = logging.getLogger(TITLE)
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 
 
 def generate_config(site_name, channel_names):
-    filepath = os.path.join(config_dir, site_name + "_channels.txt")
+    filepath = os.path.join(CONFIG_DIR, site_name + "_channels.txt")
 
     try:
         open(filepath).close()
@@ -27,12 +27,11 @@ def generate_config(site_name, channel_names):
             )
         infile.close()
 
-    log.info(site_name + "_channels.txt succesfully generated. (" +
-          str(len(channel_names)) + " channels)")
+    log.info("%s_channels.txt successfully generated. (%d channels)",site_name, len(channel_names))
 
 
 def generate_metadata(site_name, channel_names):
-    filepath = os.path.join(metadata_dir, site_name + ".json")
+    filepath = os.path.join(METADATA_DIR, site_name + ".json")
     channel_metadata = []
     for channel in channel_names:
         channel_metadata.append(
@@ -72,8 +71,8 @@ def generate_all():
 def get_channels():
     channels = []
 
-    for l in os.listdir(sites_dir):
-        if os.path.isfile(os.path.join(sites_dir, l)):
+    for l in os.listdir(SITES_DIR):
+        if os.path.isfile(os.path.join(SITES_DIR, l)):
             if l.endswith('.py'):
                 if not l == '__init__.py':
                     if not l.endswith('_auth.py'):
