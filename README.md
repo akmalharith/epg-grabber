@@ -36,7 +36,7 @@ Full list of available channels configuration is in `sites/channels_config/` dir
 
 Here is how you would run it
 ```sh
-docker run docker run akmal/epg-grabber \
+docker run akmal/epg-grabber \
 -e CONFIG_NAME=config_example \
 -e CONFIG_URL=https://gist.githubusercontent.com/akmalharith/ceda6103157c06cab5231c3a0f121cd2/raw/config_march_2022.txt \
 -e EPG_DAYS=7
