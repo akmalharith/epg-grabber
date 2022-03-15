@@ -1,6 +1,6 @@
 # epg-grabber
 
-![Docker Pulls](https://img.shields.io/docker/pulls/akmal/epg-grabber) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/akmalharith/epg-grabber/pipeline)
+![Docker Pulls](https://img.shields.io/docker/pulls/akmal/epg-grabber) ![GitHub Workflow Status](https://github.com/akmalharith/epg-grabber/workflows/Pipeline/badge.svg)
 
 Yet another EPG scraper built in Python. This is another Internet-based scraper and it does provide a very rich EPG data set for some supported sites.
 
