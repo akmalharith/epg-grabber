@@ -1,6 +1,8 @@
 import importlib
+from multiprocessing.sharedctypes import Value
 import os
 import re
+import sys
 import requests
 import logging
 from config.env import config_name, config_url, epg_days, tmp_epg_file # Environment variables
@@ -9,7 +11,7 @@ from source.utils import get_channel_by_name
 from config.constants import CONFIG_REGEX, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
 
 
-
+sys.tracebacklimit = 0
 log = logging.getLogger(TITLE)
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 
@@ -63,22 +65,24 @@ def scrape_by_site(site_name, channel_name):
     """
     try:
         site = importlib.import_module("sites." + site_name)
-    except ModuleNotFoundError as error:
-        log.error("Site unsupported: %e", error)
-        return
+    except Exception as e:
+        log.error("Site unsupported! {}: {}".format(type(e).__name__, e))
+        raise e
 
     log.info("Start scrape_by_site for %s", site_name)
 
     try:
         programs_by_channel = site.get_programs_by_channel(
             channel_name, int(epg_days))
-    except Exception as error:
-        log.error("An exception occurred on %s: %e", channel_name, format(error))
+    except Exception as e:
+        log.error("{}: {}".format(type(e).__name__, e))
+        raise e
 
     try:
         channel = get_channel_by_name(channel_name, site_name)
-    except Exception as error:
-        log.error("An exception occurred on %s: %e", channel_name, format(error))
+    except Exception as e:
+        log.error("{}: {}".format(type(e).__name__, e))
+        raise e
 
     log.info("Total programs for %s = %d", channel_name, len(programs_by_channel))
     log.info("Completed for %s", channel_name)
@@ -104,7 +108,7 @@ def scrape():
         try:
             programs_by_channel, channel_info = scrape_by_site(
                 site_name, channel_name)
-        except TypeError:
+        except Exception as error:
             continue
 
         programs.extend(programs_by_channel)

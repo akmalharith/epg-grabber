@@ -72,7 +72,14 @@ def get_programs_by_channel(channel_name, *args):
         output = r.json()
 
         if "data" in output:
-            schedules = output["data"][0]["schedules"][0]["items"]
+            output_inner = output["data"][0]
+        else:
+            return 
+
+        if "schedules" not in output_inner:
+            return 
+        else: 
+            schedules = output_inner["schedules"][0]["items"]
 
         for schedule in schedules:
             program_url = schedule["mpd"]
