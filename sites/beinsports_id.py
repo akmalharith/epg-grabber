@@ -50,7 +50,6 @@ def get_programs_by_channel(channel_name, *args):
         for value in line:
             time_period = str(value.find("p", {"class": "time"}).string)
             time_start, time_end = time_period.split("-")
-            print(time_start)
 
             start_hour, start_minute = time_start.split(":")
             start_time = datetime_today.replace(

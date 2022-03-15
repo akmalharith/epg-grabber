@@ -133,3 +133,5 @@ dmypy.json
 
 # Development files
 dev_*.py
+local.txt
+.pylintrc

@@ -1,4 +1,5 @@
 import json
+from multiprocessing.sharedctypes import Value
 import os
 from source.classes import Channel
 from config.constants import EPG_XMLTV_TIMEFORMAT
@@ -19,7 +20,7 @@ def load_channels_metadata(site_name):
     return data
 
 
-def get_channel_by_name(channel_name, site_name):
+def get_channel_by_name(tvg_id, site_name):
     """Retrieve the whole Channel object given its name and its site. 
     
     If you don't want to hardcode the site_name parameter, use __file__
@@ -38,20 +39,14 @@ def get_channel_by_name(channel_name, site_name):
         Channel: Channel object
     """
     all_channels = load_channels_metadata(site_name)
+
     try:
         chan = next(
-            channel for channel in all_channels if channel["tvg_id"].lower() == channel_name.lower())
-        return Channel(chan["id"], chan["tvg_id"], chan["tvg_name"], chan["tvg_logo"])
-    except KeyError:
-        raise Exception("Channel " + channel_name + " not found!")
+            channel for channel in all_channels if channel["tvg_id"].lower() == tvg_id.lower())
+    except Exception as e:
+        raise ValueError("Channel metadata %s not found.",tvg_id)
+    return Channel(chan["id"], chan["tvg_id"], chan["tvg_name"], chan["tvg_logo"])
 
 
-def get_channelid_by_name(channel_name, site_name):
-
-    all_channels = load_channels_metadata(site_name)
-    try:
-        chan = next(
-            channel for channel in all_channels if channel["tvg_id"].lower() == channel_name.lower())
-        return chan["id"] # Has to be id, not tvg_id
-    except KeyError:
-        raise Exception("Channel " + channel_name + " not found!")
+def get_channelid_by_name(tvg_id, site_name):
+    return get_channel_by_name(tvg_id, site_name).id

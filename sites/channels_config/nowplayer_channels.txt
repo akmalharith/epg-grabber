@@ -19,7 +19,7 @@ nowplayer;tvN.Hk
 nowplayer;KBSWorld.Hk
 nowplayer;ETTVAsiaChannel.Hk
 nowplayer;TVBSAsia.Hk
-nowplayer;MOOVConcert/MV.Hk
+nowplayer;MOOVConcertMV.Hk
 nowplayer;DiscoveryAsia.Hk
 nowplayer;DiscoveryChannel.Hk
 nowplayer;AnimalPlanet.Hk
@@ -37,7 +37,7 @@ nowplayer;BBCWorldNews.Hk
 nowplayer;BloombergTelevision.Hk
 nowplayer;ChannelNewsAsia.Hk
 nowplayer;SkyNews.Hk
-nowplayer;DW(English).Hk
+nowplayer;DWEnglish.Hk
 nowplayer;AlJazeeraEnglish.Hk
 nowplayer;euronews.Hk
 nowplayer;France24.Hk
@@ -120,13 +120,13 @@ nowplayer;NowGolf3.Hk
 nowplayer;NHKWorldPremium.Hk
 nowplayer;TV5MONDEStyle.Hk
 nowplayer;TV5MONDEASIE.Hk
-nowplayer;France24(French).Hk
+nowplayer;France24French.Hk
 nowplayer;GMAPinoyTV.Hk
 nowplayer;GMALifeTV.Hk
 nowplayer;GMANewsTV.Hk
 nowplayer;TFC.Hk
 nowplayer;DWDeutsch.Hk
-nowplayer;SonyTV(India).Hk
+nowplayer;SonyTVIndia.Hk
 nowplayer;SonyMAX.Hk
 nowplayer;SonySAB.Hk
 nowplayer;MTVIndia.Hk

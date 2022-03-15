@@ -85,7 +85,7 @@ visionplus;HitsMovies.Id
 visionplus;AlQuranAlKareem.Id
 visionplus;tvN.Id
 visionplus;tvNMovies.Id
-visionplus;Lifestyle&Fashion.Id
+visionplus;LifestyleFashion.Id
 visionplus;JiangsuTV.Id
 visionplus;HunanTV.Id
 visionplus;ShanghaiDragonTV.Id

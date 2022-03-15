@@ -14,7 +14,7 @@ dens_tv;ONEHD.Id
 dens_tv;tvNHD.Id
 dens_tv;tvNMoviesHD.Id
 dens_tv;CelestialMovies.Id
-dens_tv;CCM(CelestialClassicMV).Id
+dens_tv;CCMCelestialClassicMV.Id
 dens_tv;MyCinemaAsia.Id
 dens_tv;ZeeBioskop.Id
 dens_tv;Thrill.Id
@@ -23,6 +23,6 @@ dens_tv;MyCinemaHD.Id
 dens_tv;MyCinemaEuropeHD.Id
 dens_tv;MyFamilyChannel.Id
 dens_tv;TV5MONDEStyleHD.Id
-dens_tv;QwestTVJazz&amp;Beyond.Id
+dens_tv;QwestTVJazzampBeyond.Id
 dens_tv;FIGHTSPORTSHD.Id
 dens_tv;MotorvisionTVHD.Id

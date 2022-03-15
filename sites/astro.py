@@ -1,6 +1,5 @@
 import re
 import requests
-from pathlib import Path
 from datetime import datetime, timedelta
 from source.classes import Channel, Program
 from source.utils import get_channel_by_name, get_epg_time
@@ -85,7 +84,7 @@ def get_programs_by_channel(channel_name, *args):
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
-    channel = get_channel_by_name(channel_name, Path(__file__).stem)
+    channel = get_channel_by_name(channel_name, "astro")
 
 
     channel_url = PROGRAM_URL.format(

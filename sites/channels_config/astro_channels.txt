@@ -17,7 +17,7 @@ astro;GoShopGAAYA.My
 astro;TVS.My
 astro;AwesomeTV.My
 astro;AstroPrima.My
-astro;ArabicRadio&TVVariety.My
+astro;ArabicRadioTVVariety.My
 astro;NJOITV.My
 astro;TVOkey.My
 astro;NTV7.My
@@ -112,7 +112,7 @@ astro;AsianFoodNetworkHD.My
 astro;NatGeoPeopleHD.My
 astro;WarnerTVHD.My
 astro;ParamountNetwork.My
-astro;Crime&InvestigationHD.My
+astro;CrimeInvestigationHD.My
 astro;HGTVHD.My
 astro;DMAXHD.My
 astro;BBCLifestyleHD.My

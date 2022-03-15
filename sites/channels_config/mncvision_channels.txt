@@ -32,7 +32,7 @@ mncvision;Entertainment.Id
 mncvision;TransTV.Id
 mncvision;MSHOPSignature.Id
 mncvision;SCTV.Id
-mncvision;Lifestyle&Fashion.Id
+mncvision;LifestyleFashion.Id
 mncvision;LIFE.Id
 mncvision;MuslimTV.Id
 mncvision;AlQuranAlKareem.Id

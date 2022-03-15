@@ -6,11 +6,11 @@ import logging
 from config.env import config_name, config_url, epg_days, tmp_epg_file # Environment variables
 from source import xmlutils
 from source.utils import get_channel_by_name
-from config.constants import TITLE, EMPTY_CONFIG_ERROR_MESSAGE
+from config.constants import CONFIG_REGEX, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
 
-config_regex = r"^[-\w\s]+(?:;[-.&\w\s]*)$"
 
-log = logging.getLogger("epg_grabber")
+
+log = logging.getLogger(TITLE)
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 
 
@@ -24,6 +24,7 @@ def load_config():
         list[config_items]
     """
 
+    """
     try:
         r = requests.get(config_url)
         r.raise_for_status()
@@ -33,11 +34,15 @@ def load_config():
         raise Exception(e)
     except Exception as e:
         raise Exception(e)
+    """
+
+    with open("local.txt", "r") as r:
+        text = r.read()
     
 
-    config_items = [config for config in r.text.splitlines() 
+    config_items = [config for config in text.splitlines() 
                     if config
-                    if re.match(config_regex, config)
+                    if re.match(CONFIG_REGEX, config)
                     if not config.startswith("#")]
 
     if not config_items:
@@ -59,35 +64,24 @@ def scrape_by_site(site_name, channel_name):
     try:
         site = importlib.import_module("sites." + site_name)
     except ModuleNotFoundError as error:
-        log.error("Site unsupported! {}".format(error))
+        log.error("Site unsupported: %e", error)
         return
 
-    log.info("Start scrape_by_site for " + channel_name)
+    log.info("Start scrape_by_site for %s", site_name)
 
     try:
         programs_by_channel = site.get_programs_by_channel(
             channel_name, int(epg_days))
-    except BaseException as error:
-        log.error(
-            "An exception occurred on " +
-            channel_name +
-            ": {}".format(error))
-        return
+    except Exception as error:
+        log.error("An exception occurred on %s: %e", channel_name, format(error))
 
     try:
         channel = get_channel_by_name(channel_name, site_name)
-    except BaseException as error:
-        log.error(
-            "An exception occurred on " +
-            channel_name +
-            ": {}".format(error))
-        return
+    except Exception as error:
+        log.error("An exception occurred on %s: %e", channel_name, format(error))
 
-    # channel.name = site_name + ";" + channel.name.replace(" ", "")
-
-    log.info("Total programs for " + channel_name +
-          " = " + str(len(programs_by_channel)))
-    log.info("Completed for " + channel_name)
+    log.info("Total programs for %s = %d", channel_name, len(programs_by_channel))
+    log.info("Completed for %s", channel_name)
 
     return programs_by_channel, channel
 
@@ -105,7 +99,8 @@ def scrape():
         site_name = config_item.split(";")[0]
         channel_name = config_item.split(";")[1].strip()
 
-        log.info("Channel found: " + channel_name + ". Scraping programs...")
+        log.info("Channel found %s. Scraping programs...",channel_name)
+
         try:
             programs_by_channel, channel_info = scrape_by_site(
                 site_name, channel_name)
@@ -133,7 +128,7 @@ def scrape():
 
 
 if __name__ == "__main__":
-    log.info("START: Starting scraping for config " + config_name + "...")
+    log.info("START: Starting scraping for config %s ...", config_name)
 
     if scrape():
         log.info("FINISH: Finished scraping.")

@@ -22,7 +22,7 @@ def generate_config(site_name, channel_names):
         for channel in channel_names:
             infile.write(
                 site_name + ";" +
-                channel.tvg_id.replace("!","").replace("-","") +
+                channel.tvg_id +
                 "\n"
             )
         infile.close()

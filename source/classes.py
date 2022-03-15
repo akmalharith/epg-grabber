@@ -1,3 +1,7 @@
+import string
+
+from config.constants import PERIOD
+
 class Program:
     __slots__ = ['channel_name', 'title',
                  'description', 'start', 'stop', 'episode']
@@ -40,6 +44,12 @@ class Channel:
             tvg_logo (string): Channel logo.
         """
         self.id = id
+        
+        # Sanitize the characters in tvg_id, except a period
+        for char in string.punctuation:
+            if char != PERIOD:
+                tvg_id = tvg_id.replace(char,"")
         self.tvg_id = tvg_id.replace(" ","")
+
         self.tvg_name = tvg_name
         self.tvg_logo = tvg_logo

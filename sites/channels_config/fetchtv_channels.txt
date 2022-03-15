@@ -5,7 +5,7 @@ fetchtv;ABCTVHD.Au
 fetchtv;triplej.Au
 fetchtv;9Life.Au
 fetchtv;NITV.Au
-fetchtv;ABCKids/ABCTVPlus.Au
+fetchtv;ABCKidsABCTVPlus.Au
 fetchtv;7TWO.Au
 fetchtv;SpreeTV.Au
 fetchtv;9Life.Au
@@ -19,7 +19,7 @@ fetchtv;9Rush.Au
 fetchtv;10SHAKE.Au
 fetchtv;10SHAKE.Au
 fetchtv;9Gem.Au
-fetchtv;ABCKids/ABCTVPlus.Au
+fetchtv;ABCKidsABCTVPlus.Au
 fetchtv;SBSFood.Au
 fetchtv;10BOLD.Au
 fetchtv;AboriginalTV.Au
@@ -152,7 +152,7 @@ fetchtv;ABCBrisbane.Au
 fetchtv;7HD.Au
 fetchtv;SkyNewsRegional.Au
 fetchtv;SpreeTV.Au
-fetchtv;ABCKids/ABCTVPlus.Au
+fetchtv;ABCKidsABCTVPlus.Au
 fetchtv;9HD.Au
 fetchtv;TVSN.Au
 fetchtv;9Go.Au
@@ -235,7 +235,7 @@ fetchtv;ABCNEWS.Au
 fetchtv;9.Au
 fetchtv;ABCNEWS.Au
 fetchtv;NowShowing.Au
-fetchtv;ABCKids/ABCTVPlus.Au
+fetchtv;ABCKidsABCTVPlus.Au
 fetchtv;9Gem.Au
 fetchtv;ABCNEWS.Au
 fetchtv;10HD.Au
@@ -429,7 +429,7 @@ fetchtv;ABCJazz.Au
 fetchtv;SBSRadio.Au
 fetchtv;7HD.Au
 fetchtv;PRIME7.Au
-fetchtv;ABCKids/ABCTVPlus.Au
+fetchtv;ABCKidsABCTVPlus.Au
 fetchtv;triplejUnearthed.Au
 fetchtv;ABCCountry.Au
 fetchtv;9LifeWA.Au
@@ -461,10 +461,10 @@ fetchtv;9Life.Au
 fetchtv;10BOLD.Au
 fetchtv;ABCRN.Au
 fetchtv;TVSN.Au
-fetchtv;ABCKids/ABCTVPlus.Au
+fetchtv;ABCKidsABCTVPlus.Au
 fetchtv;9HD.Au
 fetchtv;9.Au
-fetchtv;ABCKids/ABCTVPlus.Au
+fetchtv;ABCKidsABCTVPlus.Au
 fetchtv;TVSN.Au
 fetchtv;9HD.Au
 fetchtv;TVSN.Au
@@ -523,7 +523,7 @@ fetchtv;9.Au
 fetchtv;7mate.Au
 fetchtv;10Peach.Au
 fetchtv;10BOLD.Au
-fetchtv;ABCKids/ABCTVPlus.Au
+fetchtv;ABCKidsABCTVPlus.Au
 fetchtv;9HD.Au
 fetchtv;9HD.Au
 fetchtv;triplej.Au
@@ -625,7 +625,7 @@ fetchtv;beINSPORTS2.Au
 fetchtv;beINSPORTS3.Au
 fetchtv;ACCTV.Au
 fetchtv;Hillsong.Au
-fetchtv;Horse&Country.Au
+fetchtv;HorseCountry.Au
 fetchtv;RaiItalia.Au
 fetchtv;RaiWorldPremium.Au
 fetchtv;RaiNews24.Au
@@ -648,7 +648,7 @@ fetchtv;SonyMax.Au
 fetchtv;News18.Au
 fetchtv;UTVMovies.Au
 fetchtv;Bindass.Au
-fetchtv;&TV.Au
+fetchtv;TV.Au
 fetchtv;TimesNow.Au
 fetchtv;Zoom.Au
 fetchtv;ETNow.Au
