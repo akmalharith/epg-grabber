@@ -8,6 +8,7 @@ from config.env import config_name, config_url, develop, epg_days, tmp_epg_file 
 from source import xmlutils
 from source.utils import get_channel_by_name
 from config.constants import CONFIG_REGEX, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
+from source.xmlutils import program_to_xml, channel_to_xml, xml_header
 
 
 sys.tracebacklimit = 0
@@ -108,27 +109,28 @@ def scrape():
         log.info("[%s] Channel found. Scraping programs...",channel_name)
 
         try:
-            programs_by_channel, channel_info = scrape_by_site(
+            programs_by_channel, channel_inner = scrape_by_site(
                 site_name, channel_name)
         except Exception as error:
             continue
 
+        channels.append(channel_inner)
         programs.extend(programs_by_channel)
-        channels.append(channel_info)
+        
 
     """
     Writing XMLTV format to a temporary file
     """
-    with open(tmp_epg_file, "w+") as f:
-        f.write(xmlutils.xml_header(TITLE))
+    with open(tmp_epg_file, "w+") as file:
+        file.write(xml_header(TITLE))
+
         for channel in channels:
-            f.write(xmlutils.channel_to_xml(channel))
+            file.write(channel_to_xml(channel))
 
-        for p in programs:
+        for program in programs:
+            file.write(program_to_xml(program))
 
-            f.write(xmlutils.program_to_xml(p))
-
-        f.write(xmlutils.xml_close())
+        file.write(xmlutils.xml_close())
 
     return True
 
