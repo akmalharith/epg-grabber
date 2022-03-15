@@ -45,10 +45,10 @@ class Channel:
         """
         self.id = id
         
-        # Sanitize the characters in tvg_id, except a period
-        for char in string.punctuation:
-            if char != PERIOD:
-                tvg_id = tvg_id.replace(char,"")
+        # Sanitize the characters in tvg_id
+        tvg_id = [tvg_id.replace(char,"") 
+                    for char in string.punctuation 
+                    if char != PERIOD]
         self.tvg_id = tvg_id.replace(" ","")
 
         self.tvg_name = tvg_name
