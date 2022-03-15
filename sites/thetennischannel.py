@@ -7,7 +7,7 @@ from sites.auth.thetennischannel_auth import get_api_key
 api_key = get_api_key()
 
 DATETIME_FORMAT = "%Y-%m-%dT%H:%MZ"
-
+PROGRAMS_URL = "http://data.tmsapi.com/v1.1/stations/33395/airings?api_key={apikey}&startDateTime={start}&endDateTime={end}"
 
 def get_all_channels():  # Hardcode since we are only dealing with one channel
     return [Channel(
@@ -25,8 +25,7 @@ def get_programs_by_channel(channel_name, *args):
     date_today = date.today()
     end_date = date_today + timedelta(days=days)
 
-    url = "http://data.tmsapi.com/v1.1/stations/33395/airings?api_key={apikey}&startDateTime={start}&endDateTime={end}".format(
-        start=date_today, end=end_date, apikey=api_key)
+    url = PROGRAMS_URL.format(start=date_today, end=end_date, apikey=api_key)
 
     try:
         r = requests.get(url)
@@ -43,7 +42,7 @@ def get_programs_by_channel(channel_name, *args):
         end_time = datetime.strptime(program["endTime"], DATETIME_FORMAT)
 
         obj = Program(
-            channel_name,
+            get_all_channels()[0].tvg_id,
             program['program']['title'],
             "",
             get_epg_time(start_time),

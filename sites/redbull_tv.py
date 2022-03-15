@@ -40,7 +40,7 @@ def get_programs_by_channel(channel_name, *args):
             program["end_time"][:-10], DATETIME_FORMAT)
 
         obj = Program(
-            channel_name,
+            get_all_channels()[0].tvg_id,
             program["title"] + " - " + program["subheading"],
             program["long_description"],
             get_epg_time(start_time),

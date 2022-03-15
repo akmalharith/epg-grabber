@@ -1,8 +1,9 @@
 import requests
 import datetime
+from pathlib import Path
 from bs4 import BeautifulSoup
 from common.classes import Channel, Program
-from common.utils import get_channelid_by_name, get_epg_time
+from common.utils import get_channel_by_name, get_epg_time
 
 
 WEBSITE_HOST = "https://mncvision.id/"
@@ -118,8 +119,10 @@ def get_programs(program, channel_name, request_date):
     start_time = datetime.datetime.strptime(sample_date, DATETIME_FORMAT)
     end_time = start_time + datetime.timedelta(seconds=seconds)
 
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
+
     obj = Program(
-        channel_name,
+        channel.tvg_id,
         title,
         get_program_details(description_url),
         get_epg_time(start_time, TIMEZONE_OFFSET),
@@ -134,7 +137,7 @@ def get_programs_by_channel(channel_name, *args):
     days = 7 if days > 7 else days
 
     today = datetime.datetime.today()
-    channelId = get_channelid_by_name(channel_name, "mncvision")
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
     programs = []
 
     for day in range(days):
@@ -145,7 +148,7 @@ def get_programs_by_channel(channel_name, *args):
             "search_model": "channel",
             "af0rmelement": "aformelement",
             "fdate": request_date,
-            "fchannel": channelId,
+            "fchannel": channel.id,
             "submit": "Cari"
         }
 

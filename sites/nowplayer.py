@@ -1,9 +1,10 @@
 from datetime import datetime
+from pathlib import Path
 from pytz import timezone
 import requests
 from urllib3 import request
 from common.classes import Channel, Program
-from common.utils import get_channel_by_name, get_channelid_by_name, get_epg_time
+from common.utils import get_channel_by_name, get_epg_time
 from bs4 import BeautifulSoup
 
 ALL_CHANNELS_URL = "https://nowplayer.now.com/channels"
@@ -34,7 +35,7 @@ def get_programs_by_channel(channel_name, *args):
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
-    channel = get_channel_by_name(channel_name, "nowplayer")
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
     
     channel_url = PROGRAMS_URL.format(id=channel.id,days=days)
 

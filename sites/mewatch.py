@@ -1,7 +1,8 @@
 import json
 import requests
+from pathlib import Path
 from datetime import date, datetime, timedelta
-from common.utils import get_channel_by_name, get_channelid_by_name, get_epg_time
+from common.utils import get_channel_by_name, get_epg_time
 from common.classes import Channel, Program
 
 ALL_CHANNELS_URL = "https://www.mewatch.sg/channel-guide"
@@ -42,13 +43,13 @@ def get_programs_by_channel(channel_name, *args):
     days = 7 if days > 7 else days
     
     date_today = date.today() - timedelta(days = 1)
-    channel_metadata = get_channel_by_name(channel_name, "mewatch")
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
     all_programs = []
     for i in range(days):
         date_input = date_today + timedelta(days = i)
         channel_url = PROGRAMS_URL.format(
-            channel_id=channel_metadata.id, date=date_input)
+            channel_id=channel.id, date=date_input)
 
         r = requests.get(channel_url)
 
@@ -66,7 +67,7 @@ def get_programs_by_channel(channel_name, *args):
             end_program = datetime.strptime(schedule["endDate"],DATETIME_FORMAT)
 
             obj = Program(
-                channel_metadata.tvg_id,
+                channel.tvg_id,
                 schedule["item"]["title"],
                 schedule["item"]["description"],
                 get_epg_time(start_program),

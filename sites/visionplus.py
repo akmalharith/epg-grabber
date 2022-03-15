@@ -2,17 +2,19 @@ import json
 import xmltodict
 import requests
 import re
+from pathlib import Path
 from pytz import timezone
 from urllib.parse import urlparse, parse_qs
 from datetime import date, datetime, timedelta
 from common.classes import Channel, Program
-from common.utils import get_channelid_by_name, get_epg_time
+from common.utils import get_channel_by_name, get_epg_time
 from sites.auth.visionplus_auth import get_token
 
 # Get access token
 token = get_token()
 
 ALL_CHANNELS_URL = "https://www.visionplus.id/sitemap-channels.xml"
+PROGRAMS_URL = "https://web-api.visionplus.id/api/v10/epg?start_time_from={date_input}&channel_ids={channel_id}&lang=en"
 
 
 def get_all_channels():
@@ -52,13 +54,13 @@ def get_programs_by_channel(channel_name, *args):
 
     date_today = date.today()
 
-    channel_id = get_channelid_by_name(channel_name, "visionplus")
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
     all_programs = []
 
     for i in range(days):
         date_input = date_today + timedelta(days=i)
-        channel_url = "https://web-api.visionplus.id/api/v10/epg?start_time_from={date_input}&channel_ids={channel_id}&lang=en".format(
-            date_input=date_input, channel_id=channel_id)
+        channel_url = PROGRAMS_URL.format(
+            date_input=date_input, channel_id=channel.id)
 
         r = requests.get(channel_url, headers={"authorization": token})
 
@@ -84,7 +86,7 @@ def get_programs_by_channel(channel_name, *args):
                 end_timestamp, timezone("UTC"))
 
             obj = Program(
-                channel_name,
+                channel.tvg_id,
                 schedule["t"],
                 schedule["synopsis"],
                 get_epg_time(start_program),

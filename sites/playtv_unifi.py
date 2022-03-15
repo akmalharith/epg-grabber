@@ -1,7 +1,8 @@
+from pathlib import Path
 import requests
 from datetime import datetime, timedelta
 from pytz import timezone
-from common.utils import get_channelid_by_name, get_epg_time
+from common.utils import get_channel_by_name, get_epg_time
 from common.classes import Channel, Program
 from sites.auth.playtv_unifi_auth import get_session, device_id
 
@@ -75,15 +76,14 @@ def get_programs_by_channel(channel_name, *args):
     end_temp = start_temp + timedelta(days=days)
     end_time = int(end_temp.timestamp() * 1000)
 
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
+
     programs_url = PROGRAMS_URL
     channel_info = {
         "queryChannel": {
             "subjectID": "-1",
             "contentType": "CHANNEL",
-            "channelIDs": [
-                get_channelid_by_name(
-                    channel_name,
-                    "playtv_unifi")],
+            "channelIDs": [channel.id],
             "isReturnAllMedia": "1",
             "channelFilter": {}},
         "needChannel": "0",
@@ -120,7 +120,7 @@ def get_programs_by_channel(channel_name, *args):
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
 
         obj = Program(
-            channel_name,
+            channel.tvg_id,
             program["name"],
             get_program_details(program["ID"]),
             get_epg_time(start_program),

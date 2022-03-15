@@ -1,10 +1,12 @@
+from pathlib import Path
 import requests
 from datetime import date, datetime, timedelta
 from pytz import timezone
-from common.utils import get_channelid_by_name, get_epg_time
+from common.utils import get_channel_by_name, get_epg_time
 from common.classes import Channel, Program
 
 ALL_CHANNELS_URL = "http://awk.epgsky.com/hawk/linear/services/4101/1"
+PROGRAMS_URL = "https://awk.epgsky.com/hawk/linear/schedule/{date_str}/{channelId}"
 CHANNEL_LOGO_PREFIX_URL = "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/320/skychb"
 DATETIME_FORMAT = "%Y%m%d"
 
@@ -38,15 +40,15 @@ def get_programs_by_channel(channel_name, *args):
     days = 7 if days > 7 else days
 
     date_today = date.today()
-    channel_id = get_channelid_by_name(channel_name, "sky")
+    
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
     all_programs = []
     for i in range(days):
         date_input = date_today + timedelta(days=i)
         date_string = date_input.strftime(DATETIME_FORMAT)
 
-        url = "https://awk.epgsky.com/hawk/linear/schedule/{date_str}/{channelId}".format(
-            date_str=date_string, channelId=channel_id)
+        url = PROGRAMS_URL.format(date_str=date_string, channelId=channel.id)
 
         r = requests.get(url)
 
@@ -60,7 +62,7 @@ def get_programs_by_channel(channel_name, *args):
             end_program = start_program + timedelta(seconds=int(schedule["d"]))
 
             obj = Program(
-                channel_name,
+                channel.tvg_id,
                 schedule["t"],
                 schedule["sy"],
                 get_epg_time(start_program),

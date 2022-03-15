@@ -1,8 +1,9 @@
+from pathlib import Path
 import requests
 import urllib3
 from datetime import date, timedelta, datetime
 from common.classes import Channel, Program
-from common.utils import get_channelid_by_name, get_epg_time
+from common.utils import get_channel_by_name, get_epg_time
 from sites.astro import ALL_CHANNELS_URL
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -43,9 +44,11 @@ def get_programs_by_channel(channel_name, *args):
     date_today = date.today()
     all_programs = []
 
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
+
     for i in range(days):
         date_input = date_today + timedelta(days=i)
-        channel_id = get_channelid_by_name(channel_name, "myklik_rtm")
+        channel_id = channel.id
         channel_url = PROGRAMS_URL.format(
             channel_id=channel_id, date=date_input)
 
@@ -65,7 +68,7 @@ def get_programs_by_channel(channel_name, *args):
             end_time = datetime.strptime(schedule['end'], DATETIME_FORMAT)
 
             obj = Program(
-                channel_name,
+                channel.tvg_id,
                 schedule['title'],
                 schedule['description'],
                 get_epg_time(start_time, TIMEZONE_OFFSET),

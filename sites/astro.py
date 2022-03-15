@@ -1,11 +1,9 @@
-"""
-Source website: https://content.astro.com.my/
-"""
 import re
 import requests
+from pathlib import Path
 from datetime import datetime, timedelta
 from common.classes import Channel, Program
-from common.utils import get_channelid_by_name, get_epg_time
+from common.utils import get_channel_by_name, get_epg_time
 
 TIMEZONE_OFFSET = "+0800"
 ALL_CHANNELS_URL = "https://contenthub-api.eco.astro.com.my/channel/all.json"
@@ -87,8 +85,11 @@ def get_programs_by_channel(channel_name, *args):
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
+
+
     channel_url = PROGRAM_URL.format(
-        channel_id=get_channelid_by_name(channel_name, "astro"))
+        channel_id=channel.id)
     
 
     try:
@@ -122,7 +123,7 @@ def get_programs_by_channel(channel_name, *args):
                 title, short_synopsis = get_program_details(p["siTrafficKey"])
 
                 obj = Program(
-                    channel_name,
+                    channel.tvg_id,
                     title,
                     short_synopsis,
                     get_epg_time(start_time, TIMEZONE_OFFSET),

@@ -1,7 +1,8 @@
 import requests
+from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from common.classes import Channel, Program
-from common.utils import get_epg_time, get_channelid_by_name
+from common.utils import get_epg_time, get_channel_by_name
 
 ALL_CHANNELS_URL = "https://api.cgtn.com/website/api/live/channel/list"
 PROGRAM_URL = "https://api.cgtn.com/website/api/live/channel/epg/list?channelId={channel_id}&startTime={start_time}&endTime={end_time}"
@@ -30,7 +31,7 @@ def get_programs_by_channel(channel_name, *args):
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
-    channel_id = get_channelid_by_name(channel_name, "cgtn")
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
     start_date = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
     start_date_epoch = int(start_date.timestamp() * 1000)
@@ -39,7 +40,7 @@ def get_programs_by_channel(channel_name, *args):
     end_date_epoch = int(end_date.timestamp() * 1000)
 
     url = PROGRAM_URL.format(
-        channel_id=channel_id, start_time=start_date_epoch, end_time=end_date_epoch)
+        channel_id=channel.id, start_time=start_date_epoch, end_time=end_date_epoch)
 
     try:
         r = requests.get(url)
@@ -60,7 +61,7 @@ def get_programs_by_channel(channel_name, *args):
         end_time = datetime.fromtimestamp(end_time_epoch, timezone.utc)
 
         obj = Program(
-            channel_name,
+            channel.tvg_id,
             program["name"],
             "",
             get_epg_time(start_time),

@@ -1,8 +1,9 @@
 import requests
+from pathlib import Path
 from datetime import date, datetime
 from bs4 import BeautifulSoup
 from common.classes import Channel, Program
-from common.utils import get_channelid_by_name, get_channel_by_name, get_epg_time
+from common.utils import get_channel_by_name, get_epg_time
 
 TIMEZONE_OFFSET = "+0800"
 PROGRAM_URL = "https://epg.beinsports.com/utctime_id.php?cdate={date}&offset=+8&mins=00&category=sports&id=123"
@@ -30,7 +31,7 @@ def get_programs_by_channel(channel_name, *args):
     url = PROGRAM_URL.format(
         date=date_input)
 
-    channel_id = get_channelid_by_name(channel_name, "beinsports_id")
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
     try:
         r = requests.get(url)
@@ -41,7 +42,7 @@ def get_programs_by_channel(channel_name, *args):
         raise Exception(r.raise_for_status())
 
     soup = BeautifulSoup(r.text, features="html.parser")
-    divs = soup.find_all("div", {"id": channel_id})
+    divs = soup.find_all("div", {"id": channel.id})
 
     programs = []
     for div in divs:
@@ -60,7 +61,7 @@ def get_programs_by_channel(channel_name, *args):
                 hour=int(end_hour), minute=int(end_minute))
 
             obj = Program(
-                get_channel_by_name(channel_name, "beinsports_id").name,
+                channel.tvg_id,
                 value.find("p", {"class": "title"}).string,
                 value.find("p", {"class": "format"}).string,
                 get_epg_time(start_time, TIMEZONE_OFFSET),

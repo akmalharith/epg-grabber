@@ -43,7 +43,7 @@ def get_programs_by_channel(channel_name, *args):
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
 
         obj = Program(
-            channel_name,
+            get_all_channels()[0].tvg_id,
             program["title"],
             program["description"],
             get_epg_time(start_program),

@@ -1,6 +1,7 @@
 import requests
+from pathlib import Path
 from datetime import datetime, timedelta
-from common.utils import get_channelid_by_name, get_epg_time
+from common.utils import get_channel_by_name, get_epg_time
 from common.classes import Channel, Program
 from sites.auth.fetchtv_auth import get_session
 
@@ -35,7 +36,8 @@ def get_all_channels():
 def get_programs_by_channel(channel_name, *args):
     days = args[0] if args else 1
 
-    ch_id = get_channelid_by_name(channel_name, "fetchtv")
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
+
     today = datetime.utcnow()
     programs = []
 
@@ -43,7 +45,7 @@ def get_programs_by_channel(channel_name, *args):
         diff = timedelta(days=i)
         date = today + diff
         date_seconds = str((date - datetime(1970, 1, 1)).days)
-        url = PROGRAM_URL.format(channel_id=ch_id, date_seconds=date_seconds)
+        url = PROGRAM_URL.format(channel_id=channel.id, date_seconds=date_seconds)
 
         try:
             r = session.get(url)
@@ -68,7 +70,7 @@ def get_programs_by_channel(channel_name, *args):
                         description = syno
 
                 obj = Program(
-                    channel_name,
+                    channel.tvg_id,
                     title,
                     description,
                     get_epg_time(start_time),

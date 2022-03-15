@@ -20,7 +20,15 @@ def load_channels_metadata(site_name):
 
 
 def get_channel_by_name(channel_name, site_name):
-    """Retrieve the whole Channel object given its name and its site.
+    """Retrieve the whole Channel object given its name and its site. 
+    
+    If you don't want to hardcode the site_name parameter, use __file__
+    as the site_name input.
+    
+    Eg:
+        get_channel_by_name(channel_name, Path(__file__).stem)
+
+    TODO: We could retrieve the caller filename and override the call in here.
 
     Args:
         channel_name (string): Channel name
