@@ -4,13 +4,14 @@ from datetime import datetime, timedelta
 from pytz import timezone
 from source.utils import get_channel_by_name, get_epg_time
 from source.classes import Channel, Program
-from sites.auth.playtv_unifi_auth import get_session, device_id
+from sites.auth.playtv_unifi_auth import get_session
+from config.env import playtv_unifi_device_id
 
 session_headers = get_session()
 
 ALL_CHANNEL_URL = "https://playtv.unifi.com.my:7047/VSP/V3/QueryAllChannel"
 PROGRAM_DETAILS_URL = "https://playtv.unifi.com.my:7047/VSP/V3/GetPlaybillDetail?SID=playbilldetail3&DEVICE=PC&DID={device_id}".format(
-    device_id=device_id)
+    device_id=playtv_unifi_device_id)
 PROGRAMS_URL = "https://playtv.unifi.com.my:7047/VSP/V3/QueryPlaybillList"
 
 
