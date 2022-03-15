@@ -3,8 +3,8 @@ from pathlib import Path
 from pytz import timezone
 import requests
 from urllib3 import request
-from common.classes import Channel, Program
-from common.utils import get_channel_by_name, get_epg_time
+from source.classes import Channel, Program
+from source.utils import get_channel_by_name, get_epg_time
 from bs4 import BeautifulSoup
 
 ALL_CHANNELS_URL = "https://nowplayer.now.com/channels"

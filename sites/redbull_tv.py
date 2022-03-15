@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
-from common.classes import Channel, Program
-from common.utils import get_epg_time
+from source.classes import Channel, Program
+from source.utils import get_epg_time
 from sites.auth.redbull_tv_auth import get_session
 
 session_headers = get_session()

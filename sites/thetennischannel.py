@@ -1,10 +1,8 @@
 import requests
 from datetime import date, datetime, timedelta
-from common.classes import Channel, Program
-from common.utils import get_epg_time
-from sites.auth.thetennischannel_auth import get_api_key
-
-api_key = get_api_key()
+from source.classes import Channel, Program
+from source.utils import get_epg_time
+from config.env import thetennischannel_api_key
 
 DATETIME_FORMAT = "%Y-%m-%dT%H:%MZ"
 PROGRAMS_URL = "http://data.tmsapi.com/v1.1/stations/33395/airings?api_key={apikey}&startDateTime={start}&endDateTime={end}"
@@ -25,7 +23,7 @@ def get_programs_by_channel(channel_name, *args):
     date_today = date.today()
     end_date = date_today + timedelta(days=days)
 
-    url = PROGRAMS_URL.format(start=date_today, end=end_date, apikey=api_key)
+    url = PROGRAMS_URL.format(start=date_today, end=end_date, apikey=thetennischannel_api_key)
 
     try:
         r = requests.get(url)

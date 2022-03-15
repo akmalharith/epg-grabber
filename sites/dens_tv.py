@@ -1,8 +1,8 @@
 import requests
 from pathlib import Path
 from datetime import date, timedelta, datetime
-from common.classes import Channel, Program
-from common.utils import get_channel_by_name, get_epg_time
+from source.classes import Channel, Program
+from source.utils import get_channel_by_name, get_epg_time
 
 TIMEZONE_OFFSET = "+0700"
 ALL_CHANNELS_URL = "http://www.dens.tv/tvpage_octo/channelgen/2"

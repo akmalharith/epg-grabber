@@ -2,8 +2,8 @@ from pathlib import Path
 import requests
 import urllib3
 from datetime import date, timedelta, datetime
-from common.classes import Channel, Program
-from common.utils import get_channel_by_name, get_epg_time
+from source.classes import Channel, Program
+from source.utils import get_channel_by_name, get_epg_time
 from sites.astro import ALL_CHANNELS_URL
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)

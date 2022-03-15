@@ -3,25 +3,12 @@ import os
 import re
 import requests
 import logging
-import urllib3
-from urllib3.exceptions import NewConnectionError
-from dotenv import load_dotenv
-from common import xml_parser
-from common.utils import get_channel_by_name
-from common.constants import TITLE, EMPTY_CONFIG_ERROR_MESSAGE
+from config.env import config_name, config_url, epg_days, tmp_epg_file # Environment variables
+from source import xmlutils
+from source.utils import get_channel_by_name
+from config.constants import TITLE, EMPTY_CONFIG_ERROR_MESSAGE
 
-"""
-Variables
-"""
-
-load_dotenv()
-
-epg_days = os.environ["EPG_DAYS"]
-config_name = os.environ["CONFIG_NAME"]
-config_url = os.environ["CONFIG_URL"]
-tmp_epg_file = os.getenv("TMP_EPG_FILE", "tv.xml")
 config_regex = r"^[-\w\s]+(?:;[-.&\w\s]*)$"
-
 
 log = logging.getLogger("epg_grabber")
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
@@ -132,15 +119,15 @@ def scrape():
     Writing XMLTV format to a temporary file
     """
     with open(tmp_epg_file, "w+") as f:
-        f.write(xml_parser.xml_header(TITLE))
+        f.write(xmlutils.xml_header(TITLE))
         for channel in channels:
-            f.write(xml_parser.channel_to_xml(channel))
+            f.write(xmlutils.channel_to_xml(channel))
 
         for p in programs:
 
-            f.write(xml_parser.program_to_xml(p))
+            f.write(xmlutils.program_to_xml(p))
 
-        f.write(xml_parser.xml_close())
+        f.write(xmlutils.xml_close())
 
     return True
 

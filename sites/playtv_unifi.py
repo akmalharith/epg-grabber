@@ -2,8 +2,8 @@ from pathlib import Path
 import requests
 from datetime import datetime, timedelta
 from pytz import timezone
-from common.utils import get_channel_by_name, get_epg_time
-from common.classes import Channel, Program
+from source.utils import get_channel_by_name, get_epg_time
+from source.classes import Channel, Program
 from sites.auth.playtv_unifi_auth import get_session, device_id
 
 session_headers = get_session()

@@ -2,8 +2,8 @@ import json
 import requests
 from pathlib import Path
 from datetime import date, datetime, timedelta
-from common.utils import get_channel_by_name, get_epg_time
-from common.classes import Channel, Program
+from source.utils import get_channel_by_name, get_epg_time
+from source.classes import Channel, Program
 
 ALL_CHANNELS_URL = "https://www.mewatch.sg/channel-guide"
 PROGRAMS_URL = "https://cdn.mewatch.sg/api/schedules?channels={channel_id}&date={date}&duration=24&hour=16&segments=all"

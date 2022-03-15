@@ -2,8 +2,8 @@ import re
 import requests
 from pathlib import Path
 from datetime import datetime, timedelta
-from common.classes import Channel, Program
-from common.utils import get_channel_by_name, get_epg_time
+from source.classes import Channel, Program
+from source.utils import get_channel_by_name, get_epg_time
 
 TIMEZONE_OFFSET = "+0800"
 ALL_CHANNELS_URL = "https://contenthub-api.eco.astro.com.my/channel/all.json"

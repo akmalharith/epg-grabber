@@ -1,8 +1,8 @@
 import requests
 from datetime import datetime, timedelta
 from pytz import timezone
-from common.classes import Channel, Program
-from common.utils import get_epg_time
+from source.classes import Channel, Program
+from source.utils import get_epg_time
 
 PROGRAMS_URL = "https://nwapi.nhk.jp/nhkworld/epg/v7b/world/s{start}-e{end}.json"
 

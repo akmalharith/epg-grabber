@@ -2,8 +2,8 @@ import requests
 from pathlib import Path
 from datetime import date, datetime
 from bs4 import BeautifulSoup
-from common.classes import Channel, Program
-from common.utils import get_channel_by_name, get_epg_time
+from source.classes import Channel, Program
+from source.utils import get_channel_by_name, get_epg_time
 
 TIMEZONE_OFFSET = "+0800"
 PROGRAM_URL = "https://epg.beinsports.com/utctime_id.php?cdate={date}&offset=+8&mins=00&category=sports&id=123"

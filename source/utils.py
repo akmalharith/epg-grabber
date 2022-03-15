@@ -1,7 +1,7 @@
 import json
 import os
-from common.classes import Channel
-from common.constants import EPG_XMLTV_TIMEFORMAT
+from source.classes import Channel
+from config.constants import EPG_XMLTV_TIMEFORMAT
 
 
 def get_epg_time(datetime, offset="+0000"):

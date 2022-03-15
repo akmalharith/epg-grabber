@@ -1,12 +1,6 @@
 import requests
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-user_id = os.environ["PLAYTV_UNIFI_USER_ID"]
-password = os.environ["PLAYTV_UNIFI_PASSWORD"]
-device_id = os.environ["PLAYTV_UNIFI_DEVICE_ID"]
+from config.env import playtv_unifi_user_id, playtv_unifi_password, playtv_unifi_device_id
 
 
 def get_session():
@@ -15,16 +9,16 @@ def get_session():
     try:
         r = requests.post(auth_url, json={
             "authenticateBasic": {
-                "userID": user_id,
+                "userID": playtv_unifi_user_id,
                 "userType": "1",
                 "timeZone": "Asia/Brunei",
                 "isSupportWebpImgFormat": "0",
-                "clientPasswd": password,
+                "clientPasswd": playtv_unifi_password,
                 "lang": "en"
             },
             "authenticateDevice": {
-                "physicalDeviceID": device_id,
-                "terminalID": device_id,
+                "physicalDeviceID": playtv_unifi_device_id,
+                "terminalID": playtv_unifi_device_id,
                 "deviceModel": "PC Web TV"
             },
             "authenticateTolerant": {

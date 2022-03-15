@@ -2,8 +2,8 @@ from pathlib import Path
 import requests
 from datetime import date, datetime, timedelta
 from pytz import timezone
-from common.utils import get_channel_by_name, get_epg_time
-from common.classes import Channel, Program
+from source.utils import get_channel_by_name, get_epg_time
+from source.classes import Channel, Program
 
 ALL_CHANNELS_URL = "http://awk.epgsky.com/hawk/linear/services/4101/1"
 PROGRAMS_URL = "https://awk.epgsky.com/hawk/linear/schedule/{date_str}/{channelId}"
