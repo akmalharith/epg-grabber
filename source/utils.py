@@ -1,11 +1,21 @@
-import json
-from multiprocessing.sharedctypes import Value
 import os
+import json
 from source.classes import Channel
 from config.constants import EPG_XMLTV_TIMEFORMAT
 
 
-def get_epg_time(datetime, offset="+0000"):
+def get_epg_datetime(datetime, offset="+0000"):
+    """Method that returns the XMLTV date time string
+
+    Args:
+        datetime (datetime): Date Time object for a given program
+        offset (str, optional): By default offset is UTC, 
+                                useful if time scraped is in Epoch timestamp.
+                                Defaults to "+0000".
+
+    Returns:
+        epg_datetime (string): Date Time formatted in XMLTV format
+    """
     return datetime.strftime(EPG_XMLTV_TIMEFORMAT)+" "+offset
 
 
@@ -30,6 +40,7 @@ def get_channel_by_name(tvg_id, site_name):
         get_channel_by_name(channel_name, Path(__file__).stem)
 
     TODO: We could retrieve the caller filename and override the call in here.
+        I never got it to work.
 
     Args:
         channel_name (string): Channel name

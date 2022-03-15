@@ -2,7 +2,7 @@ import json
 import requests
 from pathlib import Path
 from datetime import date, datetime, timedelta
-from source.utils import get_channel_by_name, get_epg_time
+from source.utils import get_channel_by_name, get_epg_datetime
 from source.classes import Channel, Program
 
 ALL_CHANNELS_URL = "https://www.mewatch.sg/channel-guide"
@@ -70,8 +70,8 @@ def get_programs_by_channel(channel_name, *args):
                 channel.tvg_id,
                 schedule["item"]["title"],
                 schedule["item"]["description"],
-                get_epg_time(start_program),
-                get_epg_time(end_program),
+                get_epg_datetime(start_program),
+                get_epg_datetime(end_program),
                 ""
             )
             programs.append(obj)

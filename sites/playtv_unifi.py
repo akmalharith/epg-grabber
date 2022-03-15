@@ -1,8 +1,8 @@
-from pathlib import Path
 import requests
+from pathlib import Path
 from datetime import datetime, timedelta
 from pytz import timezone
-from source.utils import get_channel_by_name, get_epg_time
+from source.utils import get_channel_by_name, get_epg_datetime
 from source.classes import Channel, Program
 from sites.auth.playtv_unifi_auth import get_session
 from config.env import playtv_unifi_device_id
@@ -124,8 +124,8 @@ def get_programs_by_channel(channel_name, *args):
             channel.tvg_id,
             program["name"],
             get_program_details(program["ID"]),
-            get_epg_time(start_program),
-            get_epg_time(end_program),
+            get_epg_datetime(start_program),
+            get_epg_datetime(end_program),
             ""
         )
         programs.append(obj)

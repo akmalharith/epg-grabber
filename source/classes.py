@@ -1,5 +1,4 @@
 import string
-
 from config.constants import PERIOD
 
 class Program:

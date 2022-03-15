@@ -3,7 +3,7 @@ import requests
 import urllib3
 from datetime import date, timedelta, datetime
 from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_time
+from source.utils import get_channel_by_name, get_epg_datetime
 from sites.astro import ALL_CHANNELS_URL
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -71,8 +71,8 @@ def get_programs_by_channel(channel_name, *args):
                 channel.tvg_id,
                 schedule['title'],
                 schedule['description'],
-                get_epg_time(start_time, TIMEZONE_OFFSET),
-                get_epg_time(end_time, TIMEZONE_OFFSET),
+                get_epg_datetime(start_time, TIMEZONE_OFFSET),
+                get_epg_datetime(end_time, TIMEZONE_OFFSET),
                 ""
             )
             programs.append(obj)

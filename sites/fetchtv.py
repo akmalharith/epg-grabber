@@ -1,7 +1,7 @@
 import requests
 from pathlib import Path
 from datetime import datetime, timedelta
-from source.utils import get_channel_by_name, get_epg_time
+from source.utils import get_channel_by_name, get_epg_datetime
 from source.classes import Channel, Program
 from sites.auth.fetchtv_auth import get_session
 
@@ -73,8 +73,8 @@ def get_programs_by_channel(channel_name, *args):
                     channel.tvg_id,
                     title,
                     description,
-                    get_epg_time(start_time),
-                    get_epg_time(end_time),
+                    get_epg_datetime(start_time),
+                    get_epg_datetime(end_time),
                     ""
                 )
                 programs.append(obj)

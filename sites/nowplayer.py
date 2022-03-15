@@ -1,10 +1,10 @@
+import requests
 from datetime import datetime
 from pathlib import Path
 from pytz import timezone
-import requests
 from urllib3 import request
 from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_time
+from source.utils import get_channel_by_name, get_epg_datetime
 from bs4 import BeautifulSoup
 
 ALL_CHANNELS_URL = "https://nowplayer.now.com/channels"
@@ -70,8 +70,8 @@ def get_programs_by_channel(channel_name, *args):
             channel.tvg_id,
             title, 
             description,
-            get_epg_time(start_program),
-            get_epg_time(end_program),
+            get_epg_datetime(start_program),
+            get_epg_datetime(end_program),
             "" # TODO: episode
         )
         programs.append(obj)

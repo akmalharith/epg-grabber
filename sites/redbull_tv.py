@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 from source.classes import Channel, Program
-from source.utils import get_epg_time
+from source.utils import get_epg_datetime
 from sites.auth.redbull_tv_auth import get_session
 
 session_headers = get_session()
@@ -43,8 +43,8 @@ def get_programs_by_channel(channel_name, *args):
             get_all_channels()[0].tvg_id,
             program["title"] + " - " + program["subheading"],
             program["long_description"],
-            get_epg_time(start_time),
-            get_epg_time(end_time),
+            get_epg_datetime(start_time),
+            get_epg_datetime(end_time),
             ""
         )
         programs.append(obj)

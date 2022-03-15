@@ -1,8 +1,8 @@
-from pathlib import Path
 import requests
+from pathlib import Path
 from datetime import date, datetime, timedelta
 from pytz import timezone
-from source.utils import get_channel_by_name, get_epg_time
+from source.utils import get_channel_by_name, get_epg_datetime
 from source.classes import Channel, Program
 
 ALL_CHANNELS_URL = "http://awk.epgsky.com/hawk/linear/services/4101/1"
@@ -65,8 +65,8 @@ def get_programs_by_channel(channel_name, *args):
                 channel.tvg_id,
                 schedule["t"],
                 schedule["sy"],
-                get_epg_time(start_program),
-                get_epg_time(end_program),
+                get_epg_datetime(start_program),
+                get_epg_datetime(end_program),
                 schedule["eid"].upper()
             )
             programs.append(obj)

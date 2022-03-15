@@ -2,7 +2,7 @@ import requests
 from datetime import datetime, timedelta
 from pytz import timezone
 from source.classes import Channel, Program
-from source.utils import get_epg_time
+from source.utils import get_epg_datetime
 
 PROGRAMS_URL = "https://nwapi.nhk.jp/nhkworld/epg/v7b/world/s{start}-e{end}.json"
 
@@ -46,8 +46,8 @@ def get_programs_by_channel(channel_name, *args):
             get_all_channels()[0].tvg_id,
             program["title"],
             program["description"],
-            get_epg_time(start_program),
-            get_epg_time(end_program),
+            get_epg_datetime(start_program),
+            get_epg_datetime(end_program),
             ""
         )
         programs.append(obj)

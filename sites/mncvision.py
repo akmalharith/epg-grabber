@@ -3,7 +3,7 @@ import datetime
 from pathlib import Path
 from bs4 import BeautifulSoup
 from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_time
+from source.utils import get_channel_by_name, get_epg_datetime
 
 
 WEBSITE_HOST = "https://mncvision.id/"
@@ -125,8 +125,8 @@ def get_programs(program, channel_name, request_date):
         channel.tvg_id,
         title,
         get_program_details(description_url),
-        get_epg_time(start_time, TIMEZONE_OFFSET),
-        get_epg_time(end_time, TIMEZONE_OFFSET),
+        get_epg_datetime(start_time, TIMEZONE_OFFSET),
+        get_epg_datetime(end_time, TIMEZONE_OFFSET),
         "")
 
     return obj

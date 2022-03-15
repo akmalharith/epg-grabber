@@ -7,7 +7,7 @@ from pytz import timezone
 from urllib.parse import urlparse, parse_qs
 from datetime import date, datetime, timedelta
 from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_time
+from source.utils import get_channel_by_name, get_epg_datetime
 from sites.auth.visionplus_auth import get_token
 
 # Get access token
@@ -96,8 +96,8 @@ def get_programs_by_channel(channel_name, *args):
                 channel.tvg_id,
                 schedule["t"],
                 schedule["synopsis"],
-                get_epg_time(start_program),
-                get_epg_time(end_program),
+                get_epg_datetime(start_program),
+                get_epg_datetime(end_program),
                 ""
             )
             programs.append(obj)

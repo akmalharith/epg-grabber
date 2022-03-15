@@ -1,7 +1,7 @@
 import requests
 from datetime import date, datetime, timedelta
 from source.classes import Channel, Program
-from source.utils import get_epg_time
+from source.utils import get_epg_datetime
 from config.env import thetennischannel_api_key
 
 DATETIME_FORMAT = "%Y-%m-%dT%H:%MZ"
@@ -43,8 +43,8 @@ def get_programs_by_channel(channel_name, *args):
             get_all_channels()[0].tvg_id,
             program['program']['title'],
             "",
-            get_epg_time(start_time),
-            get_epg_time(end_time),
+            get_epg_datetime(start_time),
+            get_epg_datetime(end_time),
             ""
         )
         programs.append(obj)

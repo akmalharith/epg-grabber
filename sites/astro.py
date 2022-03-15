@@ -2,7 +2,7 @@ import re
 import requests
 from datetime import datetime, timedelta
 from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_time
+from source.utils import get_channel_by_name, get_epg_datetime
 from pathlib import Path
 
 TIMEZONE_OFFSET = "+0800"
@@ -126,8 +126,8 @@ def get_programs_by_channel(channel_name, *args):
                     channel.tvg_id,
                     title,
                     short_synopsis,
-                    get_epg_time(start_time, TIMEZONE_OFFSET),
-                    get_epg_time(end_time, TIMEZONE_OFFSET),
+                    get_epg_datetime(start_time, TIMEZONE_OFFSET),
+                    get_epg_datetime(end_time, TIMEZONE_OFFSET),
                     get_episode_onscreen(title)
                 )
             except KeyError:

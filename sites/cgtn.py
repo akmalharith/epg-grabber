@@ -2,7 +2,7 @@ import requests
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from source.classes import Channel, Program
-from source.utils import get_epg_time, get_channel_by_name
+from source.utils import get_epg_datetime, get_channel_by_name
 
 ALL_CHANNELS_URL = "https://api.cgtn.com/website/api/live/channel/list"
 PROGRAM_URL = "https://api.cgtn.com/website/api/live/channel/epg/list?channelId={channel_id}&startTime={start_time}&endTime={end_time}"
@@ -64,8 +64,8 @@ def get_programs_by_channel(channel_name, *args):
             channel.tvg_id,
             program["name"],
             "",
-            get_epg_time(start_time),
-            get_epg_time(end_time),
+            get_epg_datetime(start_time),
+            get_epg_datetime(end_time),
             ""
         )
         programs.append(obj)
