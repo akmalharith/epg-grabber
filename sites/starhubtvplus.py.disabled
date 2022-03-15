@@ -1,0 +1,153 @@
+import datetime
+import requests
+import json
+import time
+from common.classes import Channel, Program
+from common.utils import get_channelid_by_name
+
+
+'''
+Variables
+'''
+sessionKey = '01FWPSRVRZ9HXE6KQTAX36TK7N1C6B4AA8B8'
+appKey = '5ee2ef931de1c4001b2e7fa3_5ee2ec25a0e845001c1783dc'
+userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'
+'''
+Wait seconds
+'''
+waitforapi = 0
+
+logo_url_prefix = 'https://poster.starhubgo.com/Linear_channels2/'
+logo_file_suffix = '_1920x1080_HTV.png'
+date_format = '%Y-%m-%d'
+
+url = 'https://api.starhubtvplus.com/'
+headers = {
+    'x-application-session': sessionKey,
+    'x-application-key': appKey,
+    'content-type': 'application/json',
+    'User-Agent': userAgent
+}
+
+
+def _get_raw_epg(days):
+    '''
+    Special method to get all channels EPG
+    since it is not possible to filter the API calls by channel ID
+    '''
+    today = datetime.datetime.today()
+    endday = today + datetime.timedelta(days=days)
+
+    first_date = today.strftime(date_format)
+    last_date = endday.strftime(date_format)
+
+    raw_epg_all = '{"operationName":"webFilteredEpg","variables":{"category":"","dateFrom":"' + first_date + '","dateTo":"' + last_date + \
+        '"},"query":"query webFilteredEpg($category: String, $dateFrom: DateWithoutTime, $dateTo: DateWithoutTime\u0021) {\\n nagraEpg(category: $category) {\\n items {\\n channelId: tvChannel\\n id\\n image\\n  title: description\\n programs: programsByDate(dateFrom: $dateFrom, dateTo: $dateTo) {\\n channel {\\n __typename\\n }\\n endTime\\n id\\n startOverSupport\\n startTime\\n title\\n __typename\\n }\\n __typename\\n }\\n __typename\\n }\\n}\\n"}'
+
+    try:
+        r = requests.post(url, data=raw_epg_all,
+                          headers=headers, allow_redirects=True)
+    except requests.exceptions.RequestException as e:
+        raise SystemExit(e)
+    if r.status_code != 200:
+        raise Exception(r.raise_for_status())
+
+    y = json.loads(r.text)
+    epg_data = y['data']['nagraEpg']['items']
+
+    return epg_data
+
+
+def _program_details(progId):
+    '''
+    Get EPG details
+    '''
+    raw_program = '{"operationName":"webEpgDetails","variables":{"id":"' + progId + \
+        '"},"query":"query webEpgDetails($id: String\u0021) {\\n  details(id: $id) {\\n description\\n duration\\n genres\\n id\\n image\\n rating\\n title\\n ... on LinearInterface {\\n endTime\\n isCatchUpSupported\\n      startOverSupport\\n startTime\\n __typename\\n }\\n ... on NagraProgram {\\n channel {\\n image\\n __typename\\n }\\n channel {\\n id\\n        tvChannel\\n catchUpSupport\\n __typename\\n }\\n __typename\\n }\\n ... on NagraChannel {\\n tvChannel\\n nowPlaying {\\n id\\n next {\\n duration\\n id\\n rating\\n title\\n __typename\\n }\\n __typename\\n }\\n __typename\\n }\\n __typename\\n  }\\n}\\n"}'
+
+    try:
+        r = requests.post(url, data=raw_program,
+                          headers=headers, allow_redirects=True)
+    except requests.exceptions.RequestException as e:
+        raise SystemExit(e)
+    if r.status_code != 200:
+        raise Exception(r.raise_for_status())
+
+    y = json.loads(r.text)
+    details = y['data']['details']['description']
+
+    return details
+
+
+def _get_all_channels():
+    '''
+    Get all channel names, ID and their logos
+    '''
+    """url = 'https://www.starhub.com/personal/tvplus/passes/channel-listing.html'
+
+    try:
+        r = requests.get(url)
+    except requests.exceptions.RequestException as e:
+        raise SystemExit(e)
+    soup = BeautifulSoup(r.text,features="html.parser")
+    if r.status_code != 200:
+        raise Exception(r.raise_for_status())
+
+    ch_ids = soup.find_all("td", { "style": "text-align: center;", "width":"71"})
+    ch_names = soup.find_all("td", { "height":"21", "style": "text-align: center;", "width":"223"})
+
+    channels = []
+
+    for ch in ch_ids:
+        i = ch_ids.index(ch)
+        ch_id = ch.text.replace("Ch","").strip()
+
+        obj = Channel(
+            ch_id,
+            ch_names[i].text.replace(" ",""),
+            logo_url_prefix+ch_id+logo_file_suffix
+        )
+        channels.append(obj)"""
+    channels = []
+    obj = Channel(
+        "415",
+        "SmithsonianChannelHD",
+        "")
+    channels.append(obj)
+
+    return channels
+
+
+def get_programs_by_channel(channelName, *args):
+    days = args[0] if args else 1
+    days = 7 if days > 7 else days
+
+    all_epg = _get_raw_epg(days)
+
+    ch_id = int(get_channelid_by_name(channelName, "starhubtvplus"))
+
+    for ch in all_epg:
+        if ch['channelId'] == ch_id:
+            program_epg = ch['programs']
+
+    if not program_epg:
+        raise Exception('No EPG for channel ' + channelName)
+
+    programs = []
+
+    for p in program_epg:
+        try:
+            obj = Program(
+                channelName,
+                p['title'],
+                _program_details(p['id']),
+                get_epg_datetime_unifi(p['startTime']),
+                get_epg_datetime_unifi(p['endTime']),
+                '')
+        except KeyError:
+            continue
+
+        time.sleep(waitforapi)  # Avoid API limit
+        programs.append(obj)
+
+    return programs

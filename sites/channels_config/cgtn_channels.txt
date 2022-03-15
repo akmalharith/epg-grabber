@@ -1,0 +1,6 @@
+cgtn;CGTNEnglish.Cn
+cgtn;CGTNEspañol.Cn
+cgtn;CGTNFrançais.Cn
+cgtn;CGTNالعربية.Cn
+cgtn;CGTNPусский.Cn
+cgtn;CGTNDocumentary.Cn

@@ -1,0 +1,8 @@
+myklik_rtm;TV1.My
+myklik_rtm;TV2.My
+myklik_rtm;TVOkey.My
+myklik_rtm;BERITARTM.My
+myklik_rtm;SUKANRTM.My
+myklik_rtm;TV6.My
+myklik_rtm;DEWANRAKYAT.My
+myklik_rtm;DEWANNEGARA.My
