@@ -1,18 +1,20 @@
 ## Structure
 The structure of the project is as below
 ```sh
-epg-grabber/
-├── common/
-└── sites/
-    ├── auth/
-    ├── channels_config/
-    └── channels_metadata/
-    └── {site}.py
+.
+├── config/
+│   └── env.py 
+├── sites/
+│   ├── auth/
+│   ├── channels_config/
+│   └── channels_metadata/
+│   └── {site}.py
+└── source/
 ```
 
 ### `auth/`
 
-This is a directory that contains helper for authentication or session related methods. If the site needs authentication, pass the necessary credentials via environment variables. Use `os.environ["VARIABLE]` to raise `KeyError` as a practice for mandatory inputs when the site is called.
+This is a directory that contains helper for authentication or session related methods. If the site needs authentication, pass the necessary credentials via environment variables. Use `os.environ["VARIABLE]` to raise `KeyError` as a practice for mandatory inputs when the site is called. Environment variables can be added in `config/env.py`.
 
 ### `channels_config/`
 
