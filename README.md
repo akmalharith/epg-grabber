@@ -17,7 +17,7 @@ akmal/epg-grabber:latest
 - `EPG_DAYS` - no of days you want to scrape, maximum is 7 days
 - `TMP_EPG_FILE` - file name of your XMLTV EPG file, `tv.xml` is the default
 
-Some sites supported in this image have mandatory environment variables. See here.
+Some sites supported in this image have environment variables for authentication purposes. See `/config/env.py` for environment variables that needs to be supplied for those sites.
 
 2. The XMLTV file is saved in the container and you will need to copy it out once you are done.
 ```
@@ -46,4 +46,4 @@ akmal/epg-grabber:latest
 
 ## Contributing
 
-If you have a suggestion that would make this better like adding support for a new site, please fork the repo and create a pull request. Be sure to read the guides in CONTRIBUTING.md to understand the project structure.
+If you have a suggestion that would make this better like adding support for a new site or enriching the data, please fork the repo and create a pull request. Be sure to read the guides in CONTRIBUTING.md to understand the project structure.
