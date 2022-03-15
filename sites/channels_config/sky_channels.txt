@@ -124,7 +124,7 @@ sky;Disc.Sci+1.Uk
 sky;DMAX+1.Uk
 sky;Disc.History+1.Uk
 sky;SkyPremiere.Uk
-sky;WomenInFilmHD.Uk
+sky;SkyOscarsHD.Uk
 sky;SkyHitsHD.Uk
 sky;SkyGreats.Uk
 sky;SkyAnimationHD.Uk
@@ -171,7 +171,7 @@ sky;SkySpMainEv.Uk
 sky;SkySpPL.Uk
 sky;SkySpF'ball.Uk
 sky;SkyWorldCup.Uk
-sky;SkyPlayers.Uk
+sky;SkySpGolf.Uk
 sky;SkySpF1.Uk
 sky;SkySpAction.Uk
 sky;SkySpArena.Uk
@@ -195,7 +195,6 @@ sky;BoxNation.Uk
 sky;GINXeSportsTV.Uk
 sky;SportyStuffHD.Uk
 sky;SkySpBoxOff.Uk
-sky;SkySpBoxOffHD.Uk
 sky;BTSBoxOff2HD.Uk
 sky;SkyNewsHD.Uk
 sky;BloombergHD.Uk
@@ -393,14 +392,14 @@ sky;SkyComedyHD.Uk
 sky;SkyThrillerHD.Uk
 sky;SkyDramaHD.Uk
 sky;Film4.Uk
-sky;SkyWomenInFilm.Uk
+sky;SkyOscars.Uk
 sky;SkyHits.Uk
 sky;SkyScFi/Horror.Uk
 sky;SkySpMainEvHD.Uk
 sky;SkySpPLHD.Uk
 sky;SkySpF'ballHD.Uk
 sky;SkyWorldCupHD.Uk
-sky;SkyPlayersHD.Uk
+sky;SkySpGolfHD.Uk
 sky;SkySpF1HD.Uk
 sky;SkySpActionHD.Uk
 sky;SkySpArenaHD.Uk

@@ -108,7 +108,6 @@ visionplus;BandungTV.Id
 visionplus;SEAToday.Id
 visionplus;MNCSports3.Id
 visionplus;MotoGP2022.Id
-visionplus;LigaFutsalProfesionalIndonesia.Id
 visionplus;SPOTV.Id
 visionplus;SPOTV2.Id
 visionplus;iNews.Id
@@ -124,5 +123,5 @@ visionplus;Infotainment.Id
 visionplus;GalaxyPremium.Id
 visionplus;Galaxy.Id
 visionplus;IMC.Id
-visionplus;J.League.Id
-visionplus;K.League.Id
+visionplus;BWFWorldChampionship2022.Id
+visionplus;BWFAllEnglandOpen2022.Id

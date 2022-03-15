@@ -118,7 +118,7 @@ def scrape():
         site_name = config_item.split(";")[0]
         channel_name = config_item.split(";")[1].strip()
 
-        log.info("Channel found: " + channel_name + ". Grubbing programs...")
+        log.info("Channel found: " + channel_name + ". Scraping programs...")
         try:
             programs_by_channel, channel_info = scrape_by_site(
                 site_name, channel_name)
