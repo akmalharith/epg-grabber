@@ -38,7 +38,7 @@ Here is how you would run it
 ```sh
 docker run docker run [docker_image] \
 -e CONFIG_NAME=config_example \
--e CONFIG_URL=hhttps://gist.githubusercontent.com/akmalharith/ceda6103157c06cab5231c3a0f121cd2/raw/config_march_2022.txt \
+-e CONFIG_URL=https://gist.githubusercontent.com/akmalharith/ceda6103157c06cab5231c3a0f121cd2/raw/config_march_2022.txt \
 -e EPG_DAYS=7
 ```
 

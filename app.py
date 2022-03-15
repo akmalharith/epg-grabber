@@ -3,10 +3,12 @@ import os
 import re
 import requests
 import logging
+import urllib3
+from urllib3.exceptions import NewConnectionError
 from dotenv import load_dotenv
 from common import xml_parser
 from common.utils import get_channel_by_name
-from common.constants import TITLE
+from common.constants import TITLE, EMPTY_CONFIG_ERROR_MESSAGE
 
 """
 Variables
@@ -37,16 +39,22 @@ def load_config():
 
     try:
         r = requests.get(config_url)
+        r.raise_for_status()
+    except requests.exceptions.ConnectionError as e:
+        raise Exception(e)
     except requests.exceptions.RequestException as e:
-        raise SystemExit(e)
-    if r.status_code != 200:
-        raise Exception("Error downloading from " +
-                        config_url + ". Check your URL.")
+        raise Exception(e)
+    except Exception as e:
+        raise Exception(e)
+    
 
     config_items = [config for config in r.text.splitlines() 
                     if config
                     if re.match(config_regex, config)
                     if not config.startswith("#")]
+
+    if not config_items:
+        raise Exception(EMPTY_CONFIG_ERROR_MESSAGE.format(config_url=config_url))
 
     return config_items
 
