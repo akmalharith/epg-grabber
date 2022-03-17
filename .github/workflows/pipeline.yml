@@ -41,7 +41,9 @@ jobs:
           pip install -r requirements.txt ;
           python generate.py 
         env:
-          EPG_DAYS: 7
+          PLAYTV_UNIFI_USER_ID: ${{ secrets.PLAYTV_UNIFI_USER_ID }}
+          PLAYTV_UNIFI_PASSWORD: ${{ secrets.PLAYTV_UNIFI_PASSWORD }}
+          PLAYTV_UNIFI_DEVICE_ID: ${{ secrets.PLAYTV_UNIFI_DEVICE_ID }}
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
