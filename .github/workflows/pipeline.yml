@@ -29,7 +29,7 @@ jobs:
       - name: Linting
         uses: py-actions/flake8@v2
         with:
-          ignore: "E501,E741,W605,E265,E226,W504,W291,E261,W293,E303,E231,E203,E302,E251,E127,E124,E211"
+          ignore: "E501,E741,W605,E265,E226,W504,W291,E261,W293,E303,E231,E203,E302,E251,E127,E124,E211,E305"
 
       - name: autopep8
         uses: peter-evans/autopep8@v1
