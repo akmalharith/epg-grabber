@@ -25,7 +25,8 @@ def get_all_channels():
             channel["title"],
             "http://www.dens.tv/images/channel-logo/" +
             channel["seq"] +
-            ".jpg") for channel in channels]
+            ".jpg",
+            True) for channel in channels]
 
     return channels
 

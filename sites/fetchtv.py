@@ -27,7 +27,8 @@ def get_all_channels():
         channel["channel_id"],
         channel["name"] + ".Au",
         channel["name"],
-        CHANNEL_IMAGE_URL.format(channel_id=channel["channel_id"])
+        CHANNEL_IMAGE_URL.format(channel_id=channel["channel_id"],
+        True)
     ) for channel in channels_data]
 
     return channels

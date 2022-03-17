@@ -27,7 +27,8 @@ def get_all_channels():
             channel["title"] +
             ".Cn",
             channel["title"],
-            channel["shareBody"]["iconUrl"]) for channel in output]
+            channel["shareBody"]["iconUrl"],
+            True) for channel in output]
 
     return channels
 

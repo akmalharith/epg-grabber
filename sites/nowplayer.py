@@ -38,7 +38,8 @@ def get_all_channels():
                 div.find("p", {"class": "channel"}).text.replace("CH", ""),
                 div.find("p", {"class": "img-name"}).text.strip() + ".Hk",
                 div.find("p", {"class": "img-name"}).text.strip(),
-                div.find("img")['src']
+                div.find("img")['src'],
+                True
                 ) for div in divs]
 
     return channels

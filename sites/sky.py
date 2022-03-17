@@ -30,7 +30,8 @@ def get_all_channels():
         channel["t"],
         CHANNEL_LOGO_PREFIX_URL +
         channel["sid"] +
-        ".png"
+        ".png",
+        True
     ) for channel in channel_json]
 
     return channels

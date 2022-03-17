@@ -40,7 +40,8 @@ def get_all_channels():
             channel_id,
             channel_display_name + ".Id",
             channel_display_name,
-            channel_logo
+            channel_logo,
+            True
         )
 
         channels.append(obj)

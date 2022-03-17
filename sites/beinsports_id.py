@@ -14,12 +14,14 @@ def get_all_channels():
         "channels_1",
         "beInSPORTS1.Id",
         "beIN SPORTS 1",
-        ""),
+        "",
+        True),
         Channel(
         "channels_2",
         "beInSPORTS2.Id",
             "beIN SPORTS 2",
-            "")]
+            "",
+            True)]
 
 
 def get_programs_by_channel(channel_name, *args):
