@@ -6,6 +6,16 @@ from urllib3 import request
 from source.classes import Channel, Program
 from source.utils import get_channel_by_name, get_epg_datetime
 from bs4 import BeautifulSoup
+import urllib3
+
+requests.packages.urllib3.disable_warnings()
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
+
+try:
+    requests.packages.urllib3.contrib.pyopenssl.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
+except AttributeError:
+    # no pyopenssl support used / needed / available
+    pass
 
 ALL_CHANNELS_URL = "https://nowplayer.now.com/channels"
 PROGRAMS_URL = "https://nowplayer.now.com/tvguide/epglist?channelIdList={id}&day={days}"
@@ -42,7 +52,7 @@ def get_programs_by_channel(channel_name, *args):
     try:
         r = requests.get(channel_url)
 
-    except requests.exceptions.RequestException as e:
+    except Exception as e:
         raise SystemExit(e)
 
     output = r.json()
