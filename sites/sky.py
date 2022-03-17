@@ -10,6 +10,7 @@ PROGRAMS_URL = "https://awk.epgsky.com/hawk/linear/schedule/{date_str}/{channelI
 CHANNEL_LOGO_PREFIX_URL = "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/320/skychb"
 DATETIME_FORMAT = "%Y%m%d"
 
+
 def get_all_channels():
     query_url = ALL_CHANNELS_URL
 
@@ -25,7 +26,7 @@ def get_all_channels():
 
     channels = [Channel(
         channel["sid"],
-        channel["t"]+".Uk",
+        channel["t"] + ".Uk",
         channel["t"],
         CHANNEL_LOGO_PREFIX_URL +
         channel["sid"] +
@@ -40,7 +41,7 @@ def get_programs_by_channel(channel_name, *args):
     days = 7 if days > 7 else days
 
     date_today = date.today()
-    
+
     channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
     all_programs = []
@@ -58,7 +59,8 @@ def get_programs_by_channel(channel_name, *args):
 
         schedules = r.json()["schedule"][0]["events"]
         for schedule in schedules:
-            start_program = datetime.fromtimestamp(int(schedule["st"]), timezone("UTC"))
+            start_program = datetime.fromtimestamp(
+                int(schedule["st"]), timezone("UTC"))
             end_program = start_program + timedelta(seconds=int(schedule["d"]))
 
             obj = Program(

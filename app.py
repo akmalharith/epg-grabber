@@ -4,7 +4,8 @@ import re
 import sys
 import requests
 import logging
-from config.env import config_name, config_url, develop, epg_days, tmp_epg_file # Environment variables
+# Environment variables
+from config.env import config_name, config_url, develop, epg_days, tmp_epg_file
 from source import xmlutils
 from source.utils import get_channel_by_name
 from config.constants import CONFIG_REGEX, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
@@ -26,7 +27,6 @@ def load_config():
         list[config_items]
     """
 
-    
     if develop():
         with open("local.txt", "r") as r:
             text_buffer = r.read()
@@ -42,16 +42,16 @@ def load_config():
         except Exception as e:
             raise Exception(e)
         text_buffer = r.text
-        
-    
 
-    config_items = [config for config in text_buffer.splitlines() 
+    config_items = [config for config in text_buffer.splitlines()
                     if config
                     if re.match(CONFIG_REGEX, config)
                     if not config.startswith("#")]
 
     if not config_items:
-        raise Exception(EMPTY_CONFIG_ERROR_MESSAGE.format(config_url=config_url))
+        raise Exception(
+            EMPTY_CONFIG_ERROR_MESSAGE.format(
+                config_url=config_url))
 
     return config_items
 
@@ -72,7 +72,7 @@ def scrape_by_site(site_name, channel_name):
         log.error("Site unsupported! {}: {}".format(type(e).__name__, e))
         raise e
 
-    log.info("[%s] Start scrape_by_site from %s",channel_name , site_name)
+    log.info("[%s] Start scrape_by_site from %s", channel_name, site_name)
 
     try:
         programs_by_channel = site.get_programs_by_channel(
@@ -87,7 +87,10 @@ def scrape_by_site(site_name, channel_name):
         log.error("{}: {}".format(type(e).__name__, e))
         raise e
 
-    log.info("[%s] Total programs = %d", channel_name, len(programs_by_channel))
+    log.info(
+        "[%s] Total programs = %d",
+        channel_name,
+        len(programs_by_channel))
     log.info("[%s] Scraping completed.", channel_name)
 
     return programs_by_channel, channel
@@ -106,17 +109,16 @@ def scrape():
         site_name = config_item.split(";")[0]
         channel_name = config_item.split(";")[1].strip()
 
-        log.info("[%s] Channel found. Scraping programs...",channel_name)
+        log.info("[%s] Channel found. Scraping programs...", channel_name)
 
         try:
             programs_by_channel, channel_inner = scrape_by_site(
                 site_name, channel_name)
-        except Exception as error:
+        except Exception:
             continue
 
         channels.append(channel_inner)
         programs.extend(programs_by_channel)
-        
 
     """
     Writing XMLTV format to a temporary file

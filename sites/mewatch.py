@@ -9,6 +9,7 @@ ALL_CHANNELS_URL = "https://www.mewatch.sg/channel-guide"
 PROGRAMS_URL = "https://cdn.mewatch.sg/api/schedules?channels={channel_id}&date={date}&duration=24&hour=16&segments=all"
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 
+
 def get_all_channels():
     try:
         response = requests.get(ALL_CHANNELS_URL)
@@ -30,7 +31,7 @@ def get_all_channels():
 
     channels = [Channel(
         channel["id"],
-        channel["title"]+".Sg",
+        channel["title"] + ".Sg",
         channel["title"],
         channel["images"]["square"]
     ) for channel in channels_raw]
@@ -41,13 +42,13 @@ def get_all_channels():
 def get_programs_by_channel(channel_name, *args):
     days = args[0] if args else 1
     days = 7 if days > 7 else days
-    
-    date_today = date.today() - timedelta(days = 1)
+
+    date_today = date.today() - timedelta(days=1)
     channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
     all_programs = []
     for i in range(days):
-        date_input = date_today + timedelta(days = i)
+        date_input = date_today + timedelta(days=i)
         channel_url = PROGRAMS_URL.format(
             channel_id=channel.id, date=date_input)
 
@@ -63,8 +64,10 @@ def get_programs_by_channel(channel_name, *args):
 
         for schedule in schedules:
 
-            start_program = datetime.strptime(schedule["startDate"],DATETIME_FORMAT)
-            end_program = datetime.strptime(schedule["endDate"],DATETIME_FORMAT)
+            start_program = datetime.strptime(
+                schedule["startDate"], DATETIME_FORMAT)
+            end_program = datetime.strptime(
+                schedule["endDate"], DATETIME_FORMAT)
 
             obj = Program(
                 channel.tvg_id,

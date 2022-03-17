@@ -4,6 +4,7 @@ mewatch;ChannelU.Sg
 mewatch;Suria.Sg
 mewatch;Vasantham.Sg
 mewatch;CNA.Sg
+mewatch;oktolidays.Sg
 mewatch;eGGnetwork.Sg
 mewatch;SPL01.Sg
 mewatch;SPL02.Sg

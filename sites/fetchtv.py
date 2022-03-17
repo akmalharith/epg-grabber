@@ -25,7 +25,7 @@ def get_all_channels():
 
     channels = [Channel(
         channel["channel_id"],
-        channel["name"]+".Au",
+        channel["name"] + ".Au",
         channel["name"],
         CHANNEL_IMAGE_URL.format(channel_id=channel["channel_id"])
     ) for channel in channels_data]
@@ -45,7 +45,9 @@ def get_programs_by_channel(channel_name, *args):
         diff = timedelta(days=i)
         date = today + diff
         date_seconds = str((date - datetime(1970, 1, 1)).days)
-        url = PROGRAM_URL.format(channel_id=channel.id, date_seconds=date_seconds)
+        url = PROGRAM_URL.format(
+            channel_id=channel.id,
+            date_seconds=date_seconds)
 
         try:
             r = session.get(url)

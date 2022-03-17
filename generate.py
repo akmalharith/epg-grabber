@@ -6,7 +6,6 @@ import logging
 from config.constants import CONFIG_DIR, METADATA_DIR, SITES_DIR, TITLE
 
 
-
 log = logging.getLogger(TITLE)
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 
@@ -27,16 +26,20 @@ def generate_config(site_name, channel_names):
             )
         infile.close()
 
-    log.info("%s_channels.txt successfully generated. (%d channels)",site_name, len(channel_names))
+    log.info(
+        "%s_channels.txt successfully generated. (%d channels)",
+        site_name,
+        len(channel_names))
 
 
 def generate_metadata(site_name, channel_names):
     filepath = os.path.join(METADATA_DIR, site_name + ".json")
     channel_metadata = []
     for channel in channel_names:
-        channel_metadata.append(
-            {'id': channel.id, 'tvg_id': channel.tvg_id, 'tvg_name': channel.tvg_name, 'tvg_logo': channel.tvg_logo}
-        )
+        channel_metadata.append({'id': channel.id,
+                                 'tvg_id': channel.tvg_id,
+                                 'tvg_name': channel.tvg_name,
+                                 'tvg_logo': channel.tvg_logo})
 
     try:
         open(filepath).close()

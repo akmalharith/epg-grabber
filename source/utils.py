@@ -9,14 +9,14 @@ def get_epg_datetime(datetime, offset="+0000"):
 
     Args:
         datetime (datetime): Date Time object for a given program
-        offset (str, optional): By default offset is UTC, 
+        offset (str, optional): By default offset is UTC,
                                 useful if time scraped is in Epoch timestamp.
                                 Defaults to "+0000".
 
     Returns:
         epg_datetime (string): Date Time formatted in XMLTV format
     """
-    return datetime.strftime(EPG_XMLTV_TIMEFORMAT)+" "+offset
+    return datetime.strftime(EPG_XMLTV_TIMEFORMAT) + " " + offset
 
 
 def load_channels_metadata(site_name):
@@ -31,11 +31,11 @@ def load_channels_metadata(site_name):
 
 
 def get_channel_by_name(tvg_id, site_name):
-    """Retrieve the whole Channel object given its name and its site. 
-    
+    """Retrieve the whole Channel object given its name and its site.
+
     If you don't want to hardcode the site_name parameter, use __file__
     as the site_name input.
-    
+
     Eg:
         get_channel_by_name(channel_name, Path(__file__).stem)
 
@@ -54,9 +54,13 @@ def get_channel_by_name(tvg_id, site_name):
     try:
         chan = next(
             channel for channel in all_channels if channel["tvg_id"].lower() == tvg_id.lower())
-    except Exception as e:
-        raise ValueError("Channel metadata %s not found.",tvg_id)
-    return Channel(chan["id"], chan["tvg_id"], chan["tvg_name"], chan["tvg_logo"])
+    except Exception:
+        raise ValueError("Channel metadata %s not found.", tvg_id)
+    return Channel(
+        chan["id"],
+        chan["tvg_id"],
+        chan["tvg_name"],
+        chan["tvg_logo"])
 
 
 def get_channelid_by_name(tvg_id, site_name):

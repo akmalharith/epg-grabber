@@ -4,7 +4,6 @@ import urllib3
 from datetime import date, timedelta, datetime
 from source.classes import Channel, Program
 from source.utils import get_channel_by_name, get_epg_datetime
-from sites.astro import ALL_CHANNELS_URL
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -29,7 +28,7 @@ def get_all_channels():
 
     channels = [Channel(
         channel['id'],
-        channel['title']+".My",
+        channel['title'] + ".My",
         channel['title'],
         channel['imageUrls'][0]
     ) for channel in output]

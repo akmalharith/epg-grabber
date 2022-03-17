@@ -125,3 +125,6 @@ visionplus;Galaxy.Id
 visionplus;IMC.Id
 visionplus;BWFWorldChampionship2022.Id
 visionplus;BWFAllEnglandOpen2022.Id
+visionplus;iNews.Id
+visionplus;MNCTV.Id
+visionplus;YonexAllEnglandOpen2022-Roundof16(10matches).Id
