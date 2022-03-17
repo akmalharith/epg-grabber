@@ -14,7 +14,7 @@ The structure of the project is as below
 
 ### `auth/`
 
-This is a directory that contains helper for authentication or session related methods. If the site needs authentication, pass the necessary credentials via environment variables. Use `os.environ["VARIABLE]` to raise `KeyError` as a practice for mandatory inputs when the site is called. Environment variables can be added in `config/env.py`.
+This is a directory that contains helper for authentication or session related methods. If the site needs authentication, pass the necessary credentials via environment variables. Environment variables can be added in `config/env.py`.
 
 ### `channels_config/`
 
