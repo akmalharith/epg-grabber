@@ -46,7 +46,8 @@ def get_all_channels():
             ch_id,
             ch_name + ".Id",
             ch_name,
-            ch_icon_url
+            ch_icon_url,
+            True
         )
 
         channels.append(obj)

@@ -34,7 +34,8 @@ def get_all_channels():
         channel["ID"],
         channel["name"] + ".My",
         channel["name"],
-        channel["logo"]["url"]) for channel in channel_jsons]
+        channel["logo"]["url"],
+        True) for channel in channel_jsons]
 
     return channels
 
