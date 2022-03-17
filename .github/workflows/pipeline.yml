@@ -21,7 +21,7 @@ jobs:
           python-version: '3.x' 
           architecture: 'x64'
 
-      - name: autoflake recursive
+      - name: Run recursive autoflake
         run: >
           pip install autoflake ;
           autoflake --in-place --remove-all-unused-imports --remove-unused-variables --ignore-init-module-imports --recursive .
@@ -31,7 +31,7 @@ jobs:
         with:
           ignore: "E501,E741,W605,E265,E226,W504,W291,E261,W293,E303,E231,E203,E302,E251,E127,E124,E211,E305"
 
-      - name: autopep8
+      - name: Run autopep8
         uses: peter-evans/autopep8@v1
         with:
           args: --recursive --in-place --aggressive --aggressive .
