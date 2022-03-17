@@ -10,9 +10,9 @@ def develop():
     return develop_mode.lower() == "true"
 
 # EPG configurations
-epg_days = os.environ("EPG_DAYS")
-config_name = os.environ("CONFIG_NAME")
-config_url = os.environ("CONFIG_URL")
+epg_days = os.getenv("EPG_DAYS")
+config_name = os.getenv("CONFIG_NAME")
+config_url = os.getenv("CONFIG_URL")
 tmp_epg_file = os.getenv("TMP_EPG_FILE", "tv.xml")
 
 # sites/playtv_unifi_auth.py
