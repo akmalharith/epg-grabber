@@ -120,6 +120,7 @@ visionplus;Arirang.Id
 visionplus;Lifetime.Id
 visionplus;WarnerTV.Id
 visionplus;Infotainment.Id
+visionplus;FormulaE.Id
 visionplus;GalaxyPremium.Id
 visionplus;Galaxy.Id
 visionplus;IMC.Id
