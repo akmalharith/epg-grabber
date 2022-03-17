@@ -21,8 +21,13 @@ def get_all_channels():
 
     output = r.json()["data"]
 
-    channels = [Channel(channel["id"], channel["title"]+".Cn", channel["title"],
-                        channel["shareBody"]["iconUrl"]) for channel in output]
+    channels = [
+        Channel(
+            channel["id"],
+            channel["title"] +
+            ".Cn",
+            channel["title"],
+            channel["shareBody"]["iconUrl"]) for channel in output]
 
     return channels
 
@@ -40,7 +45,9 @@ def get_programs_by_channel(channel_name, *args):
     end_date_epoch = int(end_date.timestamp() * 1000)
 
     url = PROGRAM_URL.format(
-        channel_id=channel.id, start_time=start_date_epoch, end_time=end_date_epoch)
+        channel_id=channel.id,
+        start_time=start_date_epoch,
+        end_time=end_date_epoch)
 
     try:
         r = requests.get(url)

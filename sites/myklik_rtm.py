@@ -28,7 +28,7 @@ def get_all_channels():
 
     channels = [Channel(
         channel['id'],
-        channel['title']+".My",
+        channel['title'] + ".My",
         channel['title'],
         channel['imageUrls'][0]
     ) for channel in output]

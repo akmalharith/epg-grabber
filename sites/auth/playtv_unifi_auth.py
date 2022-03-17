@@ -1,5 +1,4 @@
 import requests
-import os
 from config.env import playtv_unifi_user_id, playtv_unifi_password, playtv_unifi_device_id
 
 

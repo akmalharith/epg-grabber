@@ -38,7 +38,7 @@ def get_all_channels():
 
         obj = Channel(
             channel_id,
-            channel_display_name+".Id",
+            channel_display_name + ".Id",
             channel_display_name,
             channel_logo
         )
@@ -74,11 +74,11 @@ def get_programs_by_channel(channel_name, *args):
         if "data" in output:
             output_inner = output["data"][0]
         else:
-            return 
+            return
 
         if "schedules" not in output_inner:
-            return 
-        else: 
+            return
+        else:
             schedules = output_inner["schedules"][0]["items"]
 
         for schedule in schedules:

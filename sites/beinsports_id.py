@@ -23,7 +23,8 @@ def get_all_channels():
 
 
 def get_programs_by_channel(channel_name, *args):
-    # TODO: Accept days as input and increment the date_input in an outer for loop
+    # TODO: Accept days as input and increment the date_input in an outer for
+    # loop
     date_input = date.today()
     datetime_today = datetime.now().replace(
         hour=0, minute=0, second=0, microsecond=0)

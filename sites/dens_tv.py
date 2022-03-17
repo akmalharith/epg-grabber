@@ -17,11 +17,15 @@ def get_all_channels():
 
     channels = response.json()["data"]
 
-    channels = [Channel(
-        channel["seq"],
-        channel["title"]+".Id",
-        channel["title"],
-        "http://www.dens.tv/images/channel-logo/"+channel["seq"]+".jpg") for channel in channels]
+    channels = [
+        Channel(
+            channel["seq"],
+            channel["title"] +
+            ".Id",
+            channel["title"],
+            "http://www.dens.tv/images/channel-logo/" +
+            channel["seq"] +
+            ".jpg") for channel in channels]
 
     return channels
 

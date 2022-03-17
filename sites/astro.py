@@ -33,8 +33,13 @@ def get_all_channels():
 
     channel_jsons = output["response"]
 
-    channels = [Channel(channel["id"], channel["title"]+".My", channel["title"],
-                        channel["imageUrl"]) for channel in channel_jsons]
+    channels = [
+        Channel(
+            channel["id"],
+            channel["title"] +
+            ".My",
+            channel["title"],
+            channel["imageUrl"]) for channel in channel_jsons]
 
     return channels
 
@@ -87,10 +92,8 @@ def get_programs_by_channel(channel_name, *args):
 
     channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
-
     channel_url = PROGRAM_URL.format(
         channel_id=channel.id)
-    
 
     try:
         r = requests.get(channel_url)

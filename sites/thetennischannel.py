@@ -7,6 +7,7 @@ from config.env import thetennischannel_api_key
 DATETIME_FORMAT = "%Y-%m-%dT%H:%MZ"
 PROGRAMS_URL = "http://data.tmsapi.com/v1.1/stations/33395/airings?api_key={apikey}&startDateTime={start}&endDateTime={end}"
 
+
 def get_all_channels():  # Hardcode since we are only dealing with one channel
     return [Channel(
         "tennischannel",
@@ -23,7 +24,10 @@ def get_programs_by_channel(channel_name, *args):
     date_today = date.today()
     end_date = date_today + timedelta(days=days)
 
-    url = PROGRAMS_URL.format(start=date_today, end=end_date, apikey=thetennischannel_api_key)
+    url = PROGRAMS_URL.format(
+        start=date_today,
+        end=end_date,
+        apikey=thetennischannel_api_key)
 
     try:
         r = requests.get(url)
