@@ -29,7 +29,7 @@ def program_to_xml(program):
 def channel_to_xml(channel):
     line_channel = f"<channel id=\"{escape(channel.tvg_id)}\">"
     line_display_name = f"<display-name lang=\"en\">{escape(channel.tvg_name)}</display-name>"
-    line_icon = f"<icon src=\"{channel.tvg_logo}\"/>"
+    line_icon = f"<icon src=\"{escape(channel.tvg_logo)}\"/>"
     line_channel_end = "</channel>"
 
     channel_xml = "\n".join(
