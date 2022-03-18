@@ -12,13 +12,15 @@ app_session = "01FYFAFG9ERQJNDKQJGRMKNP54101F7A4435"
 app_key = "5ee2ef931de1c4001b2e7fa3_5ee2ec25a0e845001c1783dc" 
 
 def get_all_channels():
-    programs = _get_programs()
+    date_from = date.today()
+    date_to = date_from + timedelta(days = 1)
+    programs = _get_programs(str(date_from), str(date_to))
     # Unfortunately it's not possible to get the channel names
     # We have a web page in https://www.starhub.com/personal/tvplus/passes/channel-listing.html
     # It's not worth it that we need to scrape a whole page for this
     channels = [ Channel(
         program["id"],
-        program["channelId"]+ ".Sg", 
+        str(program["channelId"])+ ".Sg", 
         program["channelId"],
         program["image"]
     ) for program in programs]
