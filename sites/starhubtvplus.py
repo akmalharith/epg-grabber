@@ -1,9 +1,11 @@
+from pathlib import Path
 import requests
 import json
 import os
 from datetime import date, timedelta, datetime
 from pytz import timezone
 from source.classes import Program, Channel
+from source.utils import get_channel_by_name, get_epg_datetime
 
 temp_file = "starhubtvplus_all_programs_temp.json"
 api_url = "https://api.starhubtvplus.com/"
@@ -19,9 +21,9 @@ def get_all_channels():
     # We have a web page in https://www.starhub.com/personal/tvplus/passes/channel-listing.html
     # It's not worth it that we need to scrape a whole page for this
     channels = [ Channel(
-        program["id"],
+        str(program["id"]),
         str(program["channelId"])+ ".Sg", 
-        program["channelId"],
+        str(program["channelId"]),
         program["image"]
     ) for program in programs]
 
@@ -209,8 +211,10 @@ def get_programs_by_channel(channel_name, *args):
 
     programs = _get_programs(str(date_from), str(date_to))
 
+    channel = get_channel_by_name(channel_name, Path(__file__).stem)
+
     programs_channel = [program["programs"] for program in programs
-                        if program["channelId"] == int(channel_name)][0]
+                        if program["id"] == channel.id][0]
 
     programs = []
 
@@ -227,8 +231,8 @@ def get_programs_by_channel(channel_name, *args):
             channel_name=channel_name,
             title=programs_inner["title"],
             description=description,
-            start=get_epg_time(start_program),
-            stop=get_epg_time(end_program),
+            start=get_epg_datetime(start_program),
+            stop=get_epg_datetime(end_program),
             category=category,
             rating=rating
         )
