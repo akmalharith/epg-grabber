@@ -1,17 +1,15 @@
-from pathlib import Path
 import requests
 import json
 import os
+from pathlib import Path
 from datetime import date, timedelta, datetime
 from pytz import timezone
 from source.classes import Program, Channel
 from source.utils import get_channel_by_name, get_epg_datetime
+from config.env import starhubtvplus_app_session, starhubtvplus_app_key
 
 temp_file = "starhubtvplus_all_programs_temp.json"
 api_url = "https://api.starhubtvplus.com/"
-
-app_session = "01FYFAFG9ERQJNDKQJGRMKNP54101F7A4435"
-app_key = "5ee2ef931de1c4001b2e7fa3_5ee2ec25a0e845001c1783dc" 
 
 def get_all_channels():
     date_from = date.today()
@@ -64,8 +62,8 @@ nagraEpg(category: $category) {
 }
 """
     headers = {
-        "x-application-session": app_session,
-        "x-application-key": app_key
+        "x-application-session": starhubtvplus_app_session,
+        "x-application-key": starhubtvplus_app_key
     }
 
     programs_payload = {
@@ -174,8 +172,8 @@ def _get_program_details(program_id):
     }
 
     headers = {
-        "x-application-session": app_session,
-        "x-application-key": app_key
+        "x-application-session": starhubtvplus_app_session,
+        "x-application-key": starhubtvplus_app_key
     }
     try:
         response = requests.post(api_url, headers=headers, json=program_details_payload)
