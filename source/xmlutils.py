@@ -19,12 +19,16 @@ def program_to_xml(program):
     tag_desc = f"<desc lang=\"en\">{escape(program.description)}</desc>"
     tag_episode = f"<episode-num system=\"onscreen\">{program.episode}</episode-num>"
     tag_category = f"<category lang=\"en\">{escape(program.category)}</desc>"
-    #TODO:
+    # TODO:
     # Eg: <rating system="VCHIP"><value>TV-G</value></rating>"""
     tag_program_end = "</programme>"
 
-    program = "\n".join(
-        [tag_programme, tag_title, tag_desc, tag_episode, tag_category, tag_program_end])
+    program = "\n".join([tag_programme,
+                         tag_title,
+                         tag_desc,
+                         tag_episode,
+                         tag_category,
+                         tag_program_end])
 
     return program
 

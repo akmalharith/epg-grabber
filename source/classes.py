@@ -1,9 +1,17 @@
 import string
 from config.constants import PERIOD
 
+
 class Program:
-    __slots__ = ['channel_name', 'title',
-                 'description', 'start', 'stop', 'episode', 'category', 'rating']
+    __slots__ = [
+        'channel_name',
+        'title',
+        'description',
+        'start',
+        'stop',
+        'episode',
+        'category',
+        'rating']
 
     def __init__(
             self,
@@ -44,7 +52,13 @@ class Program:
 class Channel:
     __slots__ = ["id", "tvg_id", "tvg_name", "tvg_logo"]
 
-    def __init__(self, id="", tvg_id="", tvg_name="", tvg_logo="", sanitize=False) -> None:
+    def __init__(
+            self,
+            id="",
+            tvg_id="",
+            tvg_name="",
+            tvg_logo="",
+            sanitize=False) -> None:
         """Channel records, store information about channels.
 
         Args:

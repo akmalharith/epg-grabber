@@ -55,8 +55,8 @@ def generate_metadata(site_name, channel_names):
 def generate(site_name):
     try:
         site = importlib.import_module('sites.' + site_name)
-    except Exception as e:
-        return # Don't stop generate() if any of the modules failed
+    except Exception:
+        return  # Don't stop generate() if any of the modules failed
     log.info('Generating a new channel list for ' + site_name)
 
     channel_names = site.get_all_channels()
