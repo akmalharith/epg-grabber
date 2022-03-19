@@ -64,4 +64,3 @@ class Channel:
 
         self.tvg_name = tvg_name
         self.tvg_logo = tvg_logo
-        

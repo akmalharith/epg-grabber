@@ -18,8 +18,6 @@ normalize_format = "NFKD"
 on_demand_suffix = "On Demand"
 
 def get_all_channels():
-    date_from = date.today()
-    date_to = date_from + timedelta(days = 1)
 
     url = 'https://www.starhub.com/personal/tvplus/passes/channel-listing.html'
 
