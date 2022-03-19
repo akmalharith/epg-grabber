@@ -126,7 +126,7 @@ sky;Disc.History+1.Uk
 sky;SkyPremiere.Uk
 sky;SkyOscarsHD.Uk
 sky;SkyHitsHD.Uk
-sky;SkyGreats.Uk
+sky;SkyGodfather.Uk
 sky;SkyAnimationHD.Uk
 sky;SkyFamily.Uk
 sky;SkyAction.Uk
@@ -385,7 +385,7 @@ sky;SmithsonianHD.Uk
 sky;BBCScotlandHD.Uk
 sky;BBCThreeHD.Uk
 sky;SkyPremiereHD.Uk
-sky;SkyGreatsHD.Uk
+sky;SkyGodfatherHD.Uk
 sky;SkyFamilyHD.Uk
 sky;SkyActionHD.Uk
 sky;SkyComedyHD.Uk
