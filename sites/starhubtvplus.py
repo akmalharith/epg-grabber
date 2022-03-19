@@ -20,7 +20,6 @@ on_demand_suffix = "On Demand"
 def get_all_channels():
     date_from = date.today()
     date_to = date_from + timedelta(days = 1)
-    programs = _get_programs(str(date_from), str(date_to))
 
     url = 'https://www.starhub.com/personal/tvplus/passes/channel-listing.html'
 
