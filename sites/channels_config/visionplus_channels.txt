@@ -130,11 +130,9 @@ visionplus;BWFAllEnglandOpen2022.Id
 visionplus;iNews.Id
 visionplus;MNCTV.Id
 visionplus;BWFAllEnglandOpen2022-2.Id
-visionplus;MotoGPGrandPrixofIndonesia(FreePractice3).Id
 visionplus;MotoGPGrandPrixofIndonesia(QfyingMoto3&Moto2).Id
 visionplus;MotoGPGrandPrixofIndonesia(FreePractice4).Id
 visionplus;MotoGPGrandPrixofIndonesia(QualifyingMotoGP).Id
-visionplus;YonexAllEnglandOpen2022-Quarterfinal2.Id
 visionplus;YonexAllEnglandOpen2022-Semifinal1.Id
 visionplus;YonexAllEnglandOpen2022-Semifinal2.Id
 visionplus;MotoGPGrandPrixofIndonesia(WarmUp).Id

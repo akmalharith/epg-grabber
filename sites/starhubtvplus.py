@@ -4,28 +4,73 @@ import os
 from pathlib import Path
 from datetime import date, timedelta, datetime
 from pytz import timezone
+from unicodedata import normalize
+from bs4 import BeautifulSoup
 from source.classes import Program, Channel
 from source.utils import get_channel_by_name, get_epg_datetime
 from config.env import starhubtvplus_app_session, starhubtvplus_app_key
 
 temp_file = "starhubtvplus_all_programs_temp.json"
 api_url = "https://api.starhubtvplus.com/"
+image_url = "https://poster.starhubgo.com/Linear_channels2/{ch_id}_1920x1080_HTV.png"
+
+normalize_format = "NFKD"
+on_demand_suffix = "On Demand"
 
 def get_all_channels():
     date_from = date.today()
     date_to = date_from + timedelta(days = 1)
     programs = _get_programs(str(date_from), str(date_to))
-    # Unfortunately it's not possible to get the channel names
-    # We have a web page in https://www.starhub.com/personal/tvplus/passes/channel-listing.html
-    # It's not worth it that we need to scrape a whole page for this
-    channels = [ Channel(
-        str(program["id"]),
-        str(program["channelId"])+ ".Sg", 
-        str(program["channelId"]),
-        program["image"]
-    ) for program in programs]
 
-    return  channels
+    url = 'https://www.starhub.com/personal/tvplus/passes/channel-listing.html'
+
+    try:
+        r = requests.get(url)
+    except requests.exceptions.RequestException as e:
+        raise SystemExit(e)
+    soup = BeautifulSoup(r.text,features="html.parser")
+    if r.status_code != 200:
+        raise Exception(r.raise_for_status())
+
+    channel_tables = soup.find_all("div", {"class": "free-form-table_v1 section"})
+
+    channel_table_tags = []
+
+    for table in channel_tables:
+        channel_table_tags_inner = table.find_all("td")
+
+        for tag in channel_table_tags_inner:
+            if tag.has_attr("colspan"):
+                channel_table_tags_inner.remove(tag)
+        
+        channel_table_tags.extend(channel_table_tags_inner)
+
+    channel_tags_pair = [[normalize(normalize_format, channel_table_tags[i].text).
+                            replace("\n","").strip(), 
+                        normalize(normalize_format, channel_table_tags[i + 1].text).
+                            replace("\n","").
+                            replace(on_demand_suffix,"").strip()]
+                            for i in range(len(channel_table_tags) - 1)
+                                if not i % 2
+                                if channel_table_tags[i + 1].text.lower() != "app"]
+                            
+    channels = []
+
+    for tags_pair in channel_tags_pair:
+        tup_id = tags_pair[1].lower().replace("ch ","").replace("via","").strip(),
+        str_id = ''.join(tup_id)
+
+        ch_obj = Channel(
+            id = str_id,
+            tvg_id = tags_pair[0]+".Sg",
+            tvg_name = tags_pair[0],
+            tvg_logo = image_url.format(ch_id=str_id),
+            sanitize=True
+        )
+
+        channels.append(ch_obj)
+
+    return channels
 
 def _get_programs(date_from, date_to):
     if os.path.isfile(temp_file):
@@ -81,8 +126,11 @@ nagraEpg(category: $category) {
         response = requests.post(api_url, headers=headers, json=programs_payload)
     except Exception as e:
         raise (e)
+    if response.status_code != 200:
+        raise Exception
 
     output = response.json()
+    
 
     all_channels_program = output["data"]["nagraEpg"]["items"]
     
@@ -179,6 +227,8 @@ def _get_program_details(program_id):
         response = requests.post(api_url, headers=headers, json=program_details_payload)
     except Exception as e:
         raise (e)
+    if response.status_code != 200:
+        raise Exception
 
     output = response.json()
 
@@ -206,23 +256,26 @@ def get_programs_by_channel(channel_name, *args):
 
     date_from = date.today()
     date_to = date_from + timedelta(days = days)
-
+    
     programs = _get_programs(str(date_from), str(date_to))
-
+    
     channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
-    programs_channel = [program["programs"] for program in programs
-                        if program["id"] == channel.id][0]
+    programs_channel = [programs_per_channel["programs"] for programs_per_channel in programs
+                        if programs_per_channel["channelId"] == int(channel.id)][0]
 
-    programs = []
+    all_programs = []
 
     for programs_inner in programs_channel:
-        description, category, rating = _get_program_details(programs_inner["id"])
+        try:
+            description, category, rating = _get_program_details(programs_inner["id"])
+        except Exception as e:
+            return [Program()]
 
         start_timestamp = programs_inner["startTime"] / 1000
         start_program = datetime.fromtimestamp(start_timestamp, timezone("UTC"))
 
-        end_timestamp = programs_inner["startTime"] / 1000
+        end_timestamp = programs_inner["endTime"] / 1000
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
 
         program_object = Program(
@@ -235,6 +288,6 @@ def get_programs_by_channel(channel_name, *args):
             rating=rating
         )
 
-        programs.append(program_object)
+        all_programs.append(program_object)
 
-    return programs
+    return all_programs
