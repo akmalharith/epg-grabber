@@ -135,4 +135,4 @@ dmypy.json
 dev_*.py
 local.txt
 .pylintrc
-_temp.json
+*_temp.json
