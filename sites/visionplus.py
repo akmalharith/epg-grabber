@@ -89,7 +89,7 @@ def get_programs_by_channel(channel_name, *args):
             start_timestamp = int(parse_qs(parsed_url.query)["begin"][0])
             start_program = datetime.fromtimestamp(
                 start_timestamp, timezone("UTC"))
-            end_timestamp = int(parse_qs(parsed_url.query)["begin"][0])
+            end_timestamp = int(parse_qs(parsed_url.query)["end"][0])
             end_program = datetime.fromtimestamp(
                 end_timestamp, timezone("UTC"))
 
