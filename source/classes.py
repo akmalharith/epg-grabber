@@ -1,10 +1,9 @@
 import string
 from config.constants import PERIOD
 
-
 class Program:
     __slots__ = ['channel_name', 'title',
-                 'description', 'start', 'stop', 'episode']
+                 'description', 'start', 'stop', 'episode', 'category', 'rating']
 
     def __init__(
             self,
@@ -13,7 +12,9 @@ class Program:
             description="",
             start="",
             stop="",
-            episode="") -> None:
+            episode="",
+            category="",
+            rating="") -> None:
         """
         Details of a single programme transmission. If no attributes are set we are returning empty program, useful if API calls are not returning success, because we do not want to break the scraping job.
 
@@ -36,12 +37,14 @@ class Program:
         self.start = start
         self.stop = stop
         self.episode = episode
+        self.category = category
+        self.rating = rating
 
 
 class Channel:
     __slots__ = ["id", "tvg_id", "tvg_name", "tvg_logo"]
 
-    def __init__(self, id, tvg_id, tvg_name, tvg_logo, sanitize=False) -> None:
+    def __init__(self, id="", tvg_id="", tvg_name="", tvg_logo="", sanitize=False) -> None:
         """Channel records, store information about channels.
 
         Args:
@@ -61,3 +64,4 @@ class Channel:
 
         self.tvg_name = tvg_name
         self.tvg_logo = tvg_logo
+        
