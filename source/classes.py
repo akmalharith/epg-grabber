@@ -44,7 +44,7 @@ class Program:
 class Channel:
     __slots__ = ["id", "tvg_id", "tvg_name", "tvg_logo"]
 
-    def __init__(self, id, tvg_id, tvg_name, tvg_logo, sanitize=False) -> None:
+    def __init__(self, id="", tvg_id="", tvg_name="", tvg_logo="", sanitize=False) -> None:
         """Channel records, store information about channels.
 
         Args:
