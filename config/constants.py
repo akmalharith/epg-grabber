@@ -15,3 +15,6 @@ The file should contain a list of site configuration as below:
 mewatch;Channel5.Sg
 mewatch;Channel8.Sg
 mewatch;ChannelU.Sg"""
+
+TESTS_FILE = "tests.txt"
+DEVELOP_FILE = "local.txt"
