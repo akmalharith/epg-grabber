@@ -7,10 +7,13 @@ load_dotenv()
 # without having to upload a text file on the internet
 develop_mode = os.getenv("DEVELOP", "false")
 
+tests_mode = os.getenv("TESTS", "false")
 
 def develop():
     return develop_mode.lower() == "true"
 
+def tests():
+    return tests_mode.lower() == "true"
 
 # EPG configurations
 epg_days = os.getenv("EPG_DAYS")
