@@ -279,7 +279,7 @@ def get_programs_by_channel(channel_name, *args):
             description, category, rating = _get_program_details(
                 programs_inner["id"])
         except Exception:
-            return [Program()]
+            return ""
 
         start_timestamp = programs_inner["startTime"] / 1000
         start_program = datetime.fromtimestamp(
