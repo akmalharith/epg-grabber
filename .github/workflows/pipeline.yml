@@ -67,7 +67,8 @@ jobs:
         - name: Run tests
           run: >
             pip install -r requirements.txt &&
-            python tests.py &&
+            python tests.py && 
+            apt -y install libxml2-utils &&
             xmllint --debug tv.xml
 
   build:
