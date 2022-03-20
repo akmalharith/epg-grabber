@@ -5,10 +5,10 @@ import sys
 import requests
 import logging
 # Environment variables
-from config.env import config_name, config_url, develop, epg_days, tmp_epg_file
+from config.env import config_name, config_url, develop, epg_days, tests, tmp_epg_file
 from source import xmlutils
 from source.utils import get_channel_by_name
-from config.constants import CONFIG_REGEX, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
+from config.constants import CONFIG_REGEX, DEVELOP_FILE, TESTS_FILE, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
 from source.xmlutils import program_to_xml, channel_to_xml, xml_header
 
 
@@ -27,10 +27,12 @@ def load_config():
         list[config_items]
     """
 
-    if develop():
-        with open("local.txt", "r") as r:
+    if tests():
+        with open(TESTS_FILE, "r") as r:
             text_buffer = r.read()
-
+    elif develop():
+        with open(DEVELOP_FILE, "r") as r:
+            text_buffer = r.read()
     else:
         try:
             r = requests.get(config_url)

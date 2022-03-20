@@ -7,9 +7,15 @@ on:
       - 'main'
     tags:
       - 'v*'
+
+env:
+  PLAYTV_UNIFI_USER_ID: ${{ secrets.PLAYTV_UNIFI_USER_ID }}
+  PLAYTV_UNIFI_PASSWORD: ${{ secrets.PLAYTV_UNIFI_PASSWORD }}
+  PLAYTV_UNIFI_DEVICE_ID: ${{ secrets.PLAYTV_UNIFI_DEVICE_ID }}
+  TESTS: True
       
 jobs:
-  test:
+  linting:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -40,17 +46,34 @@ jobs:
         run: >
           pip install -r requirements.txt ;
           python generate.py 
-        env:
-          PLAYTV_UNIFI_USER_ID: ${{ secrets.PLAYTV_UNIFI_USER_ID }}
-          PLAYTV_UNIFI_PASSWORD: ${{ secrets.PLAYTV_UNIFI_PASSWORD }}
-          PLAYTV_UNIFI_DEVICE_ID: ${{ secrets.PLAYTV_UNIFI_DEVICE_ID }}
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automated change
-          
+
+  tests:
+      needs: linting
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+          with:
+            ref: ${{ github.head_ref }}
+
+        - uses: actions/setup-python@v2
+          with:
+            python-version: '3.8' 
+            architecture: 'x64'
+            
+        - name: Run tests
+          run: >
+            pip install -r requirements.txt &&
+            python tests.py && 
+            sudo apt-get update --fix-missing -y && 
+            sudo apt-get install libxml2-utils &&
+            xmllint --debug tv.xml
+
   build:
-    needs: test
+    needs: tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

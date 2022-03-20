@@ -7,13 +7,19 @@ load_dotenv()
 # without having to upload a text file on the internet
 develop_mode = os.getenv("DEVELOP", "false")
 
+tests_mode = os.getenv("TESTS", "false")
+
 
 def develop():
     return develop_mode.lower() == "true"
 
 
+def tests():
+    return tests_mode.lower() == "true"
+
+
 # EPG configurations
-epg_days = os.getenv("EPG_DAYS")
+epg_days = os.getenv("EPG_DAYS", "1")
 config_name = os.getenv("CONFIG_NAME")
 config_url = os.getenv("CONFIG_URL")
 tmp_epg_file = os.getenv("TMP_EPG_FILE", "tv.xml")
