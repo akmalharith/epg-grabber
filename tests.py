@@ -4,7 +4,8 @@ from config.constants import CONFIG_DIR, TESTS_FILE
 
 
 def load_config_for_tests():
-    os.remove(TESTS_FILE)
+    if os.path.exists(TESTS_FILE):
+        os.remove(TESTS_FILE)
 
     config_items = []
 
