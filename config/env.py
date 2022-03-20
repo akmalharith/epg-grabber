@@ -19,7 +19,7 @@ def tests():
 
 
 # EPG configurations
-epg_days = os.getenv("EPG_DAYS")
+epg_days = os.getenv("EPG_DAYS", "1")
 config_name = os.getenv("CONFIG_NAME")
 config_url = os.getenv("CONFIG_URL")
 tmp_epg_file = os.getenv("TMP_EPG_FILE", "tv.xml")
