@@ -124,16 +124,11 @@ visionplus;FormulaE.Id
 visionplus;GalaxyPremium.Id
 visionplus;Galaxy.Id
 visionplus;IMC.Id
-visionplus;J.League.Id
 visionplus;BWFWorldChampionship2022.Id
 visionplus;BWFAllEnglandOpen2022.Id
 visionplus;iNews.Id
 visionplus;MNCTV.Id
 visionplus;BWFAllEnglandOpen2022-2.Id
-visionplus;MotoGPGrandPrixofIndonesia(QfyingMoto3&Moto2).Id
-visionplus;MotoGPGrandPrixofIndonesia(FreePractice4).Id
-visionplus;MotoGPGrandPrixofIndonesia(QualifyingMotoGP).Id
-visionplus;YonexAllEnglandOpen2022-Semifinal1.Id
 visionplus;YonexAllEnglandOpen2022-Semifinal2.Id
 visionplus;MotoGPGrandPrixofIndonesia(WarmUp).Id
 visionplus;MotoGPGrandPrixofIndonesia(Race-Moto3).Id
