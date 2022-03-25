@@ -107,7 +107,6 @@ visionplus;CGTNDocumentary.Id
 visionplus;BandungTV.Id
 visionplus;SEAToday.Id
 visionplus;MNCSports3.Id
-visionplus;MotoGP2022.Id
 visionplus;SPOTV.Id
 visionplus;SPOTV2.Id
 visionplus;iNews.Id
@@ -120,18 +119,6 @@ visionplus;Arirang.Id
 visionplus;Lifetime.Id
 visionplus;WarnerTV.Id
 visionplus;Infotainment.Id
-visionplus;FormulaE.Id
 visionplus;GalaxyPremium.Id
 visionplus;Galaxy.Id
 visionplus;IMC.Id
-visionplus;BWFWorldChampionship2022.Id
-visionplus;BWFAllEnglandOpen2022.Id
-visionplus;iNews.Id
-visionplus;MNCTV.Id
-visionplus;BWFAllEnglandOpen2022-2.Id
-visionplus;YonexAllEnglandOpen2022-Semifinal2.Id
-visionplus;MotoGPGrandPrixofIndonesia(WarmUp).Id
-visionplus;MotoGPGrandPrixofIndonesia(Race-Moto3).Id
-visionplus;MotoGPGrandPrixofIndonesia(Race-Moto2).Id
-visionplus;YonexAllEnglandOpen2022-Finals.Id
-visionplus;MotoGPGrandPrixofIndonesia(Race-MotoGP).Id
