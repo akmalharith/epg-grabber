@@ -7,7 +7,10 @@ from config.constants import CONFIG_DIR, METADATA_DIR, SITES_DIR, TITLE
 
 
 log = logging.getLogger(TITLE)
-logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
+logging.basicConfig(
+    format='%(asctime)s %(levelname)-8s %(message)s',
+    level=os.environ.get("LOGLEVEL", "INFO"),
+    datefmt='%Y-%m-%d %H:%M:%S')
 
 
 def generate_config(site_name, channel_names):
