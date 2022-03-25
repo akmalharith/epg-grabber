@@ -14,7 +14,10 @@ from source.xmlutils import program_to_xml, channel_to_xml, xml_header
 
 sys.tracebacklimit = 0
 log = logging.getLogger(TITLE)
-logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
+logging.basicConfig(
+    format='%(asctime)s %(levelname)-8s %(message)s',
+    level=os.environ.get("LOGLEVEL", "INFO"),
+    datefmt='%Y-%m-%d %H:%M:%S')
 
 
 def load_config():
