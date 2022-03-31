@@ -75,10 +75,10 @@ def get_programs_by_channel(channel_name, *args):
         if "data" in output:
             output_inner = output["data"][0]
         else:
-            return
+            break
 
         if "schedules" not in output_inner:
-            return
+            break
         else:
             schedules = output_inner["schedules"][0]["items"]
 
