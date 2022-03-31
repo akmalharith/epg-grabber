@@ -653,3 +653,4 @@ fetchtv;TimesNow.Au
 fetchtv;Zoom.Au
 fetchtv;ETNow.Au
 fetchtv;Rishtey.Au
+fetchtv;UFC.Au

@@ -17,4 +17,3 @@ mewatch;HBOSignature.Sg
 mewatch;Cinemax.Sg
 mewatch;LIVE1.Sg
 mewatch;LIVE2.Sg
-mewatch;LIVE5.Sg

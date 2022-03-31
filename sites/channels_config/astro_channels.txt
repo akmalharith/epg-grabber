@@ -19,7 +19,7 @@ astro;AwesomeTV.My
 astro;AstroPrima.My
 astro;ArabicRadio&TVVariety.My
 astro;NJOITV.My
-astro;TVOkey.My
+astro;TVOkeyHD.My
 astro;NTV7.My
 astro;8TV.My
 astro;TV9.My
@@ -91,9 +91,8 @@ astro;DiscoveryAsiaHD.My
 astro;BBCEarth.My
 astro;HistoryHD.My
 astro;AnimalPlanetHD.My
-astro;AstroTutorTVSK.My
-astro;AstroTutorTVPT3.My
-astro;AstroTutorTVSPM.My
+astro;AstroTutorTVSKHD.My
+astro;AstroTutorTVSMKHD.My
 astro;AstroCeriaHD.My
 astro;TA-DAA.My
 astro;CartoonNetworkHD.My

@@ -6,7 +6,7 @@ sky;Channel5.Uk
 sky;SkyShowcaseHD.Uk
 sky;SkyWitnessHD.Uk
 sky;SkyAtlanticHD.Uk
-sky;WHD.Uk
+sky;alibiHD.Uk
 sky;GOLDHD.Uk
 sky;DaveHD.Uk
 sky;ComedyCentHD.Uk
@@ -29,7 +29,7 @@ sky;5STAR.Uk
 sky;NatGeoHD.Uk
 sky;SkyArtsHD.Uk
 sky;ITVBe.Uk
-sky;alibiHD.Uk
+sky;WHD.Uk
 sky;TLCHD.Uk
 sky;S4C.Uk
 sky;E4HD.Uk
@@ -88,7 +88,7 @@ sky;Channel5+1.Uk
 sky;SkyShowcase+1.Uk
 sky;SkyWitness+1.Uk
 sky;SkyAtlantic+1.Uk
-sky;W+1.Uk
+sky;alibi+1.Uk
 sky;GOLD+1.Uk
 sky;Davejavu.Uk
 sky;ComedyCent+1.Uk
@@ -100,7 +100,7 @@ sky;SkyHistory+1.Uk
 sky;Discovery+1.Uk
 sky;5STAR+1.Uk
 sky;NatGeo+1.Uk
-sky;alibi+1.Uk
+sky;W+1.Uk
 sky;TLC+1.Uk
 sky;E4+1.Uk
 sky;More4+1.Uk
@@ -110,13 +110,11 @@ sky;Drama+1.Uk
 sky;QUEST+1.Uk
 sky;CBSReality+1.Uk
 sky;QuestRed+1.Uk
-sky;SYFY+1.Uk
 sky;ID+1.Uk
 sky;YESTERDAY+1.Uk
 sky;Crime+Inv+1.Uk
 sky;GREATtv+1.Uk
 sky;HGTV+1.Uk
-sky;Pick+1.Uk
 sky;Disc.Turbo+1.Uk
 sky;AnimalPlnt+1.Uk
 sky;Eden+1.Uk
@@ -130,9 +128,9 @@ sky;SkyGreats.Uk
 sky;SkyAnimationHD.Uk
 sky;SkyFamily.Uk
 sky;SkyAction.Uk
-sky;SkyComedyCinema.Uk
-sky;SkyThriller.Uk
-sky;SkyDrama.Uk
+sky;SkyComedyHD.Uk
+sky;SkyThrillerHD.Uk
+sky;SkyDramaHD.Uk
 sky;SkyScFi/HorHD.Uk
 sky;SkyPremiere+1.Uk
 sky;Film4HD.Uk
@@ -153,8 +151,8 @@ sky;TalkingPictures.Uk
 sky;ROK.Uk
 sky;MTVMUSIC.Uk
 sky;MTVHITS.Uk
-sky;MTVBASE.Uk
-sky;MTVClassic.Uk
+sky;MTV90s.Uk
+sky;MTV80s.Uk
 sky;BoxHits.Uk
 sky;TheBox.Uk
 sky;KISS.Uk
@@ -294,7 +292,7 @@ sky;Foodxp.Uk
 sky;ColorsRishtey.Uk
 sky;ColorsCineplex.Uk
 sky;SONYMAXHD.Uk
-sky;VenusTV.Uk
+sky;SirajTV.Uk
 sky;UtsavGoldHD.Uk
 sky;SONYSAB.Uk
 sky;SONYMAX2.Uk
@@ -342,6 +340,7 @@ sky;iONTV.Uk
 sky;DeenTV.Uk
 sky;AhlulbaytTV.Uk
 sky;SkyNewsArabia.Uk
+sky;ImamHussein3.Uk
 sky;PCNEChinese.Uk
 sky;IranInt'lHD.Uk
 sky;ColorsGujarati.Uk
@@ -352,7 +351,7 @@ sky;Channel5HD.Uk
 sky;SkyShowcase.Uk
 sky;SkyWitness.Uk
 sky;SkyAtlantic.Uk
-sky;W.Uk
+sky;alibi.Uk
 sky;GOLD.Uk
 sky;Dave.Uk
 sky;ComedyCentral.Uk
@@ -370,7 +369,7 @@ sky;Discovery.Uk
 sky;MTV.Uk
 sky;NatGeo.Uk
 sky;SkyArts.Uk
-sky;alibi.Uk
+sky;W.Uk
 sky;TLC.Uk
 sky;S4CHD.Uk
 sky;E4.Uk
@@ -388,13 +387,7 @@ sky;SkyPremiereHD.Uk
 sky;SkyGreatsHD.Uk
 sky;SkyFamilyHD.Uk
 sky;SkyActionHD.Uk
-sky;SkyComedyHD.Uk
-sky;SkyThrillerHD.Uk
-sky;SkyDramaHD.Uk
 sky;Film4.Uk
-sky;SkyOscars.Uk
-sky;SkyHits.Uk
-sky;SkyScFi/Horror.Uk
 sky;SkySpMainEvHD.Uk
 sky;SkySpPLHD.Uk
 sky;SkySpF'ballHD.Uk

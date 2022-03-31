@@ -63,7 +63,6 @@ starhubtvplus;TVBXingHeHD.Sg
 starhubtvplus;TVBSAsia.Sg
 starhubtvplus;TVBS-NEWS.Sg
 starhubtvplus;tvNHD.Sg
-starhubtvplus;WakuWakuJapanHD.Sg
 starhubtvplus;CCMOnDemand.Sg
 starhubtvplus;CelestialMoviesOnDemand.Sg
 starhubtvplus;HubDramaFirstHD.Sg
@@ -89,7 +88,6 @@ starhubtvplus;tvNMoviesVODHD.Sg
 starhubtvplus;ADITHYATV.Sg
 starhubtvplus;COLORS.Sg
 starhubtvplus;COLORSTamilHD.Sg
-starhubtvplus;HubVODIndianEntertainment.Sg
 starhubtvplus;KalaignarTV.Sg
 starhubtvplus;KTVHD.Sg
 starhubtvplus;NDTV24x7.Sg
@@ -131,14 +129,12 @@ starhubtvplus;DWEnglish.Sg
 starhubtvplus;HubECityHD.Sg
 starhubtvplus;LoveNatureHD.Sg
 starhubtvplus;NHKWORLD-JAPANHD.Sg
-starhubtvplus;RussiaToday.Sg
 starhubtvplus;HBO(HD).Sg
 starhubtvplus;HBOOnDemandHD1.Sg
 starhubtvplus;HBOSignature(HD).Sg
 starhubtvplus;HBOFamily(HD).Sg
 starhubtvplus;HBOHits(HD).Sg
 starhubtvplus;CINEMAX(HD).Sg
-starhubtvplus;SimplySouth.Sg
 starhubtvplus;PremierSports.Sg
 starhubtvplus;TV5MONDEAsieHD.Sg
 starhubtvplus;TVBJade(HD).Sg
