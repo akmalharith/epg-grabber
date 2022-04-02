@@ -3,10 +3,8 @@ import os
 from unittest import TestCase
 from xmlunittest import XmlTestMixin
 
-import epg_grabber
 from epg_grabber import app, generate
 from epg_grabber.source import classes, utils
-
 
 
 class TestVisionPlus(TestCase, XmlTestMixin):
