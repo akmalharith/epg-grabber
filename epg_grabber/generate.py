@@ -78,10 +78,13 @@ def generate_all():
 
 
 def get_sites():
+    src_dir = os.path.abspath(os.path.join(os.path.dirname( __file__ )))
+    sites_dir_path = src_dir + "/" + SITES_DIR
+
     sites = []
 
-    for l in os.listdir(SITES_DIR):
-        if os.path.isfile(os.path.join(SITES_DIR, l)):
+    for l in os.listdir(sites_dir_path):
+        if os.path.isfile(os.path.join(sites_dir_path, l)):
             if l.endswith('.py'):
                 if not l == '__init__.py':
                     if not l.endswith('_auth.py'):

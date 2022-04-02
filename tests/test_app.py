@@ -10,14 +10,16 @@ from epg_grabber.source import classes, utils
 class TestVisionPlus(TestCase, XmlTestMixin):
     def test_vision(self):
 
-        channel = ChannelMetadata.load("visionplus")
+        sites = SiteHelper.load_all_sites()
+
+        channel = SiteHelper.load("visionplus")
         programs, channel = app.scrape_by_site("visionplus", channel["tvg_id"])
 
         xml_data = classes.EpgWriter.generate(channels=[channel], programs=programs)
 
         self.assertXmlDocument(xml_data)
 
-class ChannelMetadata:
+class SiteHelper:
     @staticmethod
     def load(site):
         """Load first channel
