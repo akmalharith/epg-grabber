@@ -4,7 +4,6 @@ mewatch;ChannelU.Sg
 mewatch;Suria.Sg
 mewatch;Vasantham.Sg
 mewatch;CNA.Sg
-mewatch;oktolidays.Sg
 mewatch;eGGnetwork.Sg
 mewatch;SPL01.Sg
 mewatch;SPL02.Sg
@@ -17,3 +16,4 @@ mewatch;HBOSignature.Sg
 mewatch;Cinemax.Sg
 mewatch;LIVE1.Sg
 mewatch;LIVE2.Sg
+mewatch;LIVE5.Sg

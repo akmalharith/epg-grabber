@@ -107,6 +107,7 @@ visionplus;CGTNDocumentary.Id
 visionplus;BandungTV.Id
 visionplus;SEAToday.Id
 visionplus;MNCSports3.Id
+visionplus;MotoGP2022.Id
 visionplus;SPOTV.Id
 visionplus;SPOTV2.Id
 visionplus;iNews.Id
@@ -122,8 +123,9 @@ visionplus;Infotainment.Id
 visionplus;GalaxyPremium.Id
 visionplus;Galaxy.Id
 visionplus;IMC.Id
-visionplus;MotoGPMichelindeLaRepArgentina(FP2).Id
-visionplus;MotoGPMichelindeLaRepArgentina(FP3).Id
 visionplus;MotoGPMichelindeLaRepArgentina(Qualifying).Id
 visionplus;MotoGPMichelindeLaRepArgentina(WarmUp).Id
-visionplus;2022MotoGPMichelindeLaRepArgentina(Race).Id
+visionplus;MotoGPMichelindeLaRepArgentina(RaceMoto2).Id
+visionplus;MotoGPMichelindeLaRepArgentina(RaceMoto3).Id
+visionplus;MotoGPMichelindeLaRepArgentina(Race).Id
+visionplus;AFFFutsalChampionshipThailand2022.Id
