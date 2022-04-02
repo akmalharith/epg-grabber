@@ -50,10 +50,14 @@ jobs:
     needs: linting
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
       - name: Update latest channels 
         run: |
           pip install -r requirements.txt
-          python generate.py 
+          python epg_grabber/generate.py 
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
