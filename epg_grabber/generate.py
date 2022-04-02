@@ -3,7 +3,7 @@ import json
 import os
 import logging
 
-from epg_grabber.config.constants import CONFIG_DIR, METADATA_DIR, SITES_DIR, TITLE
+from config.constants import CONFIG_DIR, METADATA_DIR, SITES_DIR, TITLE
 
 
 log = logging.getLogger(TITLE)
