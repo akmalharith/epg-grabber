@@ -5,7 +5,6 @@ from config.constants import EPG_XMLTV_TIMEFORMAT
 from source.classes import Channel
 
 
-
 def get_epg_datetime(datetime, offset="+0000"):
     """Method that returns the XMLTV date time string
 
@@ -50,7 +49,11 @@ def get_channel_by_name(tvg_id, site_name):
     Returns:
         Channel: Channel object
     """
-    metadata_dir = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'sites/channels_metadata'))
+    metadata_dir = os.path.abspath(
+        os.path.join(
+            os.path.dirname(__file__),
+            '..',
+            'sites/channels_metadata'))
     metadata_path = metadata_dir + "/" + site_name + ".json"
     all_channels = load_channels_metadata(metadata_path)
 
