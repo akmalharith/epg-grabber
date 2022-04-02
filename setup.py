@@ -1,3 +1,5 @@
+# Not implemented in the Docker image
+
 from setuptools import setup, find_packages
 
 setup(
