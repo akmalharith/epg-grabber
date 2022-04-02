@@ -78,7 +78,7 @@ def generate_all():
 
 
 def get_sites():
-    src_dir = os.path.abspath(os.path.join(os.path.dirname( __file__ )))
+    src_dir = os.path.abspath(os.path.join(os.path.dirname(__file__)))
     sites_dir_path = src_dir + "/" + SITES_DIR
 
     sites = []
@@ -91,6 +91,7 @@ def get_sites():
                         sites.append(l[:-3])
 
     return sites
+
 
 if __name__ == '__main__':
     generate_all()

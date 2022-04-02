@@ -13,15 +13,17 @@ class TestSite(TestCase, XmlTestMixin):
         sites = SiteHelper.load_all_sites()
 
         for site in sites:
-            with self.subTest(site_name = site):
+            with self.subTest(site_name=site):
                 channel = SiteHelper.get_first_channel(site)
                 programs, channel = app.scrape_by_site(
-                                        site_name = site, 
-                                        channel_name = channel["tvg_id"])
+                    site_name=site,
+                    channel_name=channel["tvg_id"])
 
-                xml_data = classes.EpgWriter.generate(channels=[channel], programs=programs)
+                xml_data = classes.EpgWriter.generate(
+                    channels=[channel], programs=programs)
 
                 self.assertXmlDocument(xml_data)
+
 
 class SiteHelper:
     @staticmethod
@@ -30,7 +32,11 @@ class SiteHelper:
         """
         os.path.abspath(os.curdir)
         project_root = os.path.abspath(os.curdir)
-        metadata_path = os.path.join(project_root, "epg_grabber/sites/channels_metadata/"+site+".json")
+        metadata_path = os.path.join(
+            project_root,
+            "epg_grabber/sites/channels_metadata/" +
+            site +
+            ".json")
 
         data = utils.load_channels_metadata(metadata_path)
         return data[0]
