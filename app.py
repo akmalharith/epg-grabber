@@ -5,11 +5,11 @@ import sys
 import requests
 import logging
 # Environment variables
-from config.env import config_name, config_url, develop, epg_days, tests, tmp_epg_file
-from source import xmlutils
-from source.utils import get_channel_by_name
-from config.constants import CONFIG_REGEX, DEVELOP_FILE, TESTS_FILE, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
-from source.xmlutils import program_to_xml, channel_to_xml, xml_header
+from epg_grabber.config.env import config_name, config_url, develop, epg_days, tests, tmp_epg_file
+from epg_grabber.source import xmlutils
+from epg_grabber.source.utils import get_channel_by_name
+from epg_grabber.config.constants import CONFIG_REGEX, DEVELOP_FILE, TESTS_FILE, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
+from epg_grabber.source.xmlutils import program_to_xml, channel_to_xml, xml_header
 
 
 sys.tracebacklimit = 0
