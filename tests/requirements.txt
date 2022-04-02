@@ -1,0 +1,2 @@
+unittest
+xmlunittest==0.5.0

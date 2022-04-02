@@ -9,7 +9,6 @@ setup(
         "pytz==2021.1",
         "beautifulsoup4==4.9.3",
         "xmltodict==0.12.0",
-        "python-dotenv==0.19.2",
-        "xmlunittest==0.5.0"
+        "python-dotenv==0.19.2"
     ]
 )
