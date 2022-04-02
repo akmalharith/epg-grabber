@@ -104,4 +104,7 @@ def get_program_details(program_id):
     if r.status_code != 200:
         raise Exception(r.raise_for_status())
 
-    return output['engSeriesName'], output['engSynopsis']
+    if "engSynopsis" in output:
+        return output['engSeriesName'], output['engSynopsis']
+    else:
+        return output['engSeriesName'], ""
