@@ -5,12 +5,11 @@ import sys
 import requests
 import logging
 # Environment variables
-from epg_grabber.config.env import config_name, config_url, develop, epg_days, tests, tmp_epg_file
-from epg_grabber.source import xmlutils
-from epg_grabber.source.utils import get_channel_by_name
-from epg_grabber.config.constants import CONFIG_REGEX, DEVELOP_FILE, TESTS_FILE, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
-from epg_grabber.source.xmlutils import program_to_xml, channel_to_xml, xml_header
 
+from config.constants import CONFIG_REGEX, DEVELOP_FILE, TESTS_FILE, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
+from config.env import config_name, config_url, develop, epg_days, tests, tmp_epg_file
+from source.classes import EpgWriter
+from source.utils import get_channel_by_name
 
 sys.tracebacklimit = 0
 log = logging.getLogger(TITLE)
@@ -128,16 +127,11 @@ def scrape():
     """
     Writing XMLTV format to a temporary file
     """
-    with open(tmp_epg_file, "w+") as file:
-        file.write(xml_header(TITLE))
-
-        for channel in channels:
-            file.write(channel_to_xml(channel))
-
-        for program in programs:
-            file.write(program_to_xml(program))
-
-        file.write(xmlutils.xml_close())
+    EpgWriter.save(
+        file=tmp_epg_file,
+        channels=channels,
+        programs=programs
+    )
 
     return True
 

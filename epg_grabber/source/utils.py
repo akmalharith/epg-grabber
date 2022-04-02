@@ -1,7 +1,9 @@
 import os
 import json
-from source.classes import Channel
+
 from config.constants import EPG_XMLTV_TIMEFORMAT
+from source.classes import Channel
+
 
 
 def get_epg_datetime(datetime, offset="+0000"):
@@ -19,13 +21,12 @@ def get_epg_datetime(datetime, offset="+0000"):
     return datetime.strftime(EPG_XMLTV_TIMEFORMAT) + " " + offset
 
 
-def load_channels_metadata(site_name):
-    working_dir = os.getcwd()
-    target_dir = os.path.join(working_dir, "sites/channels_metadata")
-
-    f = open(os.path.join(target_dir, site_name + ".json"), "r")
+def load_channels_metadata(metadata_path):
+    f = open(metadata_path, "r")
 
     data = json.load(f)
+
+    f.close()
 
     return data
 
@@ -49,7 +50,8 @@ def get_channel_by_name(tvg_id, site_name):
     Returns:
         Channel: Channel object
     """
-    all_channels = load_channels_metadata(site_name)
+    metadata_path = os.path.join(os.path.abspath(os.curdir), "sites/channels_metadata/"+site_name+".json")
+    all_channels = load_channels_metadata(metadata_path)
 
     try:
         chan = next(

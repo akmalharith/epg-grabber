@@ -3,7 +3,7 @@ import json
 import os
 import logging
 
-from config.constants import CONFIG_DIR, METADATA_DIR, SITES_DIR, TITLE
+from epg_grabber.config.constants import CONFIG_DIR, METADATA_DIR, SITES_DIR, TITLE
 
 
 log = logging.getLogger(TITLE)
@@ -57,7 +57,7 @@ def generate_metadata(site_name, channel_names):
 
 def generate(site_name):
     try:
-        site = importlib.import_module('sites.' + site_name)
+        site = importlib.import_module('epg_grabber.sites.' + site_name)
     except Exception:
         return  # Don't stop generate() if any of the modules failed
     log.info('Generating a new channel list for ' + site_name)
@@ -71,23 +71,20 @@ def generate(site_name):
 def generate_all():
     log.info('Generating all channels lists')
 
-    for channel in get_channels():
+    for channel in get_sites():
         generate(channel)
 
     log.info('Done!')
 
 
-def get_channels():
-    channels = []
+def get_sites():
+    sites = []
 
     for l in os.listdir(SITES_DIR):
         if os.path.isfile(os.path.join(SITES_DIR, l)):
             if l.endswith('.py'):
                 if not l == '__init__.py':
                     if not l.endswith('_auth.py'):
-                        channels.append(l[:-3])
+                        sites.append(l[:-3])
 
-    return channels
-
-
-generate_all()
+    return sites

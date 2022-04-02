@@ -6,9 +6,11 @@ from pathlib import Path
 from pytz import timezone
 from urllib.parse import urlparse, parse_qs
 from datetime import date, datetime, timedelta
+
+from sites.auth.visionplus_auth import get_token
 from source.classes import Channel, Program
 from source.utils import get_channel_by_name, get_epg_datetime
-from sites.auth.visionplus_auth import get_token
+
 
 # Get access token
 token = get_token()
@@ -66,7 +68,7 @@ def get_programs_by_channel(channel_name, *args):
         r = requests.get(channel_url, headers={"authorization": token})
 
         if r.status_code != 200:
-            return [Program()]
+            break
 
         programs = []
 

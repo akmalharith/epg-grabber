@@ -1,5 +1,7 @@
 import string
-from config.constants import PERIOD
+
+from epg_grabber.config.constants import PERIOD, TITLE
+from epg_grabber.source.xmlutils import channel_to_xml, program_to_xml, xml_header, xml_close
 
 
 class Program:
@@ -78,3 +80,35 @@ class Channel:
 
         self.tvg_name = tvg_name
         self.tvg_logo = tvg_logo
+
+class EpgWriter:
+    @staticmethod
+    def generate(
+        channels = None,
+        programs = None):
+        """Generate an XML data from channels and programs."""
+
+        channel_xml = [channel_to_xml(channel) for channel in channels][0]
+        programs_xml = [program_to_xml(program) for program in programs][0]
+
+        xmlstring = xml_header(TITLE)+channel_xml+programs_xml+xml_close()
+        xmlbytes = bytes(xmlstring, "utf-8")
+
+        return xmlbytes
+
+    @staticmethod
+    def save(
+        file="",
+        channels = None, 
+        programs = None):
+        
+        with open(file, "w+") as file:
+            file.write(xml_header(TITLE))
+
+            for channel in channels:
+                file.write(channel_to_xml(channel))
+
+            for program in programs:
+                file.write(program_to_xml(program))
+
+            file.write(xml_close())
