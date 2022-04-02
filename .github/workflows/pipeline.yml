@@ -48,18 +48,18 @@ jobs:
   
   generate:
     needs: linting
-    runs-on: ubuntu-latest
-    - name: Update latest channels 
-      run: |
-        pip install -r requirements.txt
-        python generate.py 
+      runs-on: ubuntu-latest
+      - name: Update latest channels 
+        run: |
+          pip install -r requirements.txt
+          python generate.py 
 
-    - uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: "chore: Update latest channels"
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: Update latest channels"
 
   tests:
-      needs: generate
+    needs: generate
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
