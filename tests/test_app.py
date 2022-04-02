@@ -7,21 +7,25 @@ from epg_grabber import app, generate
 from epg_grabber.source import classes, utils
 
 
-class TestVisionPlus(TestCase, XmlTestMixin):
-    def test_vision(self):
+class TestSite(TestCase, XmlTestMixin):
+    def test_site(self):
 
         sites = SiteHelper.load_all_sites()
 
-        channel = SiteHelper.load("visionplus")
-        programs, channel = app.scrape_by_site("visionplus", channel["tvg_id"])
+        for site in sites:
+            with self.subTest(site_name = site):
+                channel = SiteHelper.get_first_channel(site)
+                programs, channel = app.scrape_by_site(
+                                        site_name = site, 
+                                        channel_name = channel["tvg_id"])
 
-        xml_data = classes.EpgWriter.generate(channels=[channel], programs=programs)
+                xml_data = classes.EpgWriter.generate(channels=[channel], programs=programs)
 
-        self.assertXmlDocument(xml_data)
+                self.assertXmlDocument(xml_data)
 
 class SiteHelper:
     @staticmethod
-    def load(site):
+    def get_first_channel(site):
         """Load first channel
         """
         os.path.abspath(os.curdir)
