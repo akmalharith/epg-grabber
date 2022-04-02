@@ -1,7 +1,7 @@
 ## Structure
 The structure of the project is as below
 ```sh
-.
+epg_grabber
 ├── config/
 │   └── env.py 
 ├── sites/
