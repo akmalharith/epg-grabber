@@ -50,7 +50,8 @@ def get_channel_by_name(tvg_id, site_name):
     Returns:
         Channel: Channel object
     """
-    metadata_path = os.path.join(os.path.abspath(os.curdir), "sites/channels_metadata/"+site_name+".json")
+    metadata_dir = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'sites/channels_metadata'))
+    metadata_path = metadata_dir + "/" + site_name + ".json"
     all_channels = load_channels_metadata(metadata_path)
 
     try:
