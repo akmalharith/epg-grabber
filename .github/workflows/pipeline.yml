@@ -57,7 +57,8 @@ jobs:
       - name: Update latest channels 
         run: |
           pip install -r requirements.txt
-          python epg_grabber/generate.py 
+          cd epg_grabber 
+          python generate.py 
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
