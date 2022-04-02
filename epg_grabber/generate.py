@@ -88,3 +88,6 @@ def get_sites():
                         sites.append(l[:-3])
 
     return sites
+
+if __name__ == '__main__':
+    generate_all()

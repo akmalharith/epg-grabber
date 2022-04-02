@@ -4,7 +4,7 @@ TITLE = "epg-grabber"
 EPG_XMLTV_TIMEFORMAT = "%Y%m%d%H%M%S"
 CONFIG_REGEX = r"^[-\w\s]+(?:;[-.&\w\s]*)$"
 PERIOD = "."
-SITES_DIR = "epg_grabber/sites"
+SITES_DIR = "sites"
 METADATA_DIR = os.path.join(SITES_DIR, "channels_metadata")
 CONFIG_DIR = os.path.join(SITES_DIR, "channels_config")
 

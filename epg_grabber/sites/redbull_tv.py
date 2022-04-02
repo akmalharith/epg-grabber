@@ -22,6 +22,8 @@ def get_all_channels():  # Hardcode since we are only dealing with one channel
 def get_programs_by_channel(channel_name, *args):
     url = PROGRAMS_URL
 
+    requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS = 'DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+HIGH:DH+HIGH:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+HIGH:RSA+3DES:!aNULL:!eNULL:!MD5'
+
     try:
         r = requests.get(url, headers=session_headers)
     except requests.exceptions.RequestException as e:

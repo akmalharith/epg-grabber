@@ -122,11 +122,11 @@ sky;Disc.Sci+1.Uk
 sky;DMAX+1.Uk
 sky;Disc.History+1.Uk
 sky;SkyPremiere.Uk
-sky;SkyOscarsHD.Uk
+sky;SkyGangstersHD.Uk
 sky;SkyHitsHD.Uk
 sky;SkyGreats.Uk
 sky;SkyAnimationHD.Uk
-sky;SkyFamily.Uk
+sky;WizardingWorld.Uk
 sky;SkyAction.Uk
 sky;SkyComedyHD.Uk
 sky;SkyThrillerHD.Uk
@@ -192,6 +192,7 @@ sky;LaLigaTVHD.Uk
 sky;BoxNation.Uk
 sky;GINXeSportsTV.Uk
 sky;SportyStuffHD.Uk
+sky;BTSptBoxOffHD.Uk
 sky;SkySpBoxOff.Uk
 sky;BTSBoxOff2HD.Uk
 sky;SkyNewsHD.Uk
@@ -240,7 +241,7 @@ sky;BabyTV.Uk
 sky;Cartoonito.Uk
 sky;Boomerang+1.Uk
 sky;CITV.Uk
-sky;NickJr.Peppa.Uk
+sky;NickJr.Too.Uk
 sky;POP.Uk
 sky;TinyPop.Uk
 sky;Nickelodeon+1.Uk
@@ -327,7 +328,6 @@ sky;BritAsiaTV.Uk
 sky;SikhChannel.Uk
 sky;Sangat.Uk
 sky;AkaalChannel.Uk
-sky;KTV.Uk
 sky;KanshiTV.Uk
 sky;Pitaara.Uk
 sky;POLITICSPUNJAB.Uk
@@ -385,7 +385,7 @@ sky;BBCScotlandHD.Uk
 sky;BBCThreeHD.Uk
 sky;SkyPremiereHD.Uk
 sky;SkyGreatsHD.Uk
-sky;SkyFamilyHD.Uk
+sky;WizardingWldHD.Uk
 sky;SkyActionHD.Uk
 sky;Film4.Uk
 sky;SkySpMainEvHD.Uk
