@@ -48,7 +48,8 @@ jobs:
   
   generate:
     needs: linting
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
+    steps:
       - name: Update latest channels 
         run: |
           pip install -r requirements.txt
@@ -60,8 +61,8 @@ jobs:
 
   tests:
     needs: generate
-      runs-on: ubuntu-latest
-      steps:
+    runs-on: ubuntu-latest
+    steps:
         - uses: actions/checkout@v2
           with:
             ref: ${{ github.head_ref }}
