@@ -6,9 +6,10 @@ from datetime import date, timedelta, datetime
 from pytz import timezone
 from unicodedata import normalize
 from bs4 import BeautifulSoup
+from epg_grabber.sites.auth.fetchtv_auth import get_session
 from source.classes import Program, Channel
 from source.utils import get_channel_by_name, get_epg_datetime
-from config.env import starhubtvplus_app_session, starhubtvplus_app_key
+from sites.auth.starhubtvplus_auth import get_session
 
 temp_file = "starhubtvplus_all_programs_temp.json"
 api_url = "https://api.starhubtvplus.com/"
@@ -17,6 +18,7 @@ image_url = "https://poster.starhubgo.com/Linear_channels2/{ch_id}_1920x1080_HTV
 normalize_format = "NFKD"
 on_demand_suffix = "On Demand"
 
+headers = get_session()
 
 def get_all_channels():
 
@@ -108,11 +110,6 @@ nagraEpg(category: $category) {
 }
 }
 """
-    headers = {
-        "x-application-session": starhubtvplus_app_session,
-        "x-application-key": starhubtvplus_app_key
-    }
-
     programs_payload = {
         "operationName": "webFilteredEpg",
         "variables": {
@@ -223,10 +220,6 @@ def _get_program_details(program_id):
         "query": get_programs_details_query
     }
 
-    headers = {
-        "x-application-session": starhubtvplus_app_session,
-        "x-application-key": starhubtvplus_app_key
-    }
     try:
         response = requests.post(
             api_url,
