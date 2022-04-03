@@ -71,7 +71,7 @@ def scrape_by_site(site_name, channel_name):
         tuple (list, Channel): Tuple of programs list and channel object
     """
     log.info("[%s] Start scrape_by_site from %s", channel_name, site_name)
-    
+
     try:
         site = importlib.import_module("sites." + site_name)
     except Exception as e:
