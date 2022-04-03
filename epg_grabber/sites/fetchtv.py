@@ -72,11 +72,11 @@ def get_programs_by_channel(channel_name, *args):
                         description = syno
 
                 obj = Program(
-                    channel_name = channel.tvg_id,
-                    title = title,
-                    description = description,
-                    start = get_epg_datetime(start_time),
-                    stop = get_epg_datetime(end_time)
+                    channel_name=channel.tvg_id,
+                    title=title,
+                    description=description,
+                    start=get_epg_datetime(start_time),
+                    stop=get_epg_datetime(end_time)
                 )
                 programs.append(obj)
 
