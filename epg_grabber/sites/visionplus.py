@@ -9,8 +9,8 @@ from urllib.parse import urlparse, parse_qs
 from datetime import date, datetime, timedelta
 
 from sites.auth.visionplus_auth import get_token
-from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Channel, Program
+from helper.utils import get_channel_by_name, get_epg_datetime
 
 
 # Get access token

@@ -7,8 +7,8 @@ from datetime import date, timedelta, datetime
 from pytz import timezone
 from unicodedata import normalize
 from bs4 import BeautifulSoup
-from source.classes import Program, Channel
-from source.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Program, Channel
+from helper.utils import get_channel_by_name, get_epg_datetime
 from sites.auth.starhubtvplus_auth import get_session
 
 temp_file = "starhubtvplus_all_programs_temp.json"

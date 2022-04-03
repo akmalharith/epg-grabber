@@ -1,7 +1,7 @@
 import string
 
 from config.constants import PERIOD, TITLE
-from source.xmlutils import channel_to_xml, program_to_xml, xml_header, xml_close
+from helper.xmlutils import channel_to_xml, program_to_xml, xml_header, xml_close
 
 
 class Program:

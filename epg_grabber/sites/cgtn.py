@@ -2,8 +2,8 @@ import requests
 from typing import List
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
-from source.classes import Channel, Program
-from source.utils import get_epg_datetime, get_channel_by_name
+from helper.classes import Channel, Program
+from helper.utils import get_epg_datetime, get_channel_by_name
 
 ALL_CHANNELS_URL = "https://api.cgtn.com/website/api/live/channel/list"
 PROGRAM_URL = "https://api.cgtn.com/website/api/live/channel/epg/list?channelId={channel_id}&startTime={start_time}&endTime={end_time}"

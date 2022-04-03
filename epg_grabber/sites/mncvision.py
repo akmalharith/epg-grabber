@@ -3,8 +3,8 @@ import requests
 import datetime
 from pathlib import Path
 from bs4 import BeautifulSoup
-from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Channel, Program
+from helper.utils import get_channel_by_name, get_epg_datetime
 
 
 WEBSITE_HOST = "https://mncvision.id/"

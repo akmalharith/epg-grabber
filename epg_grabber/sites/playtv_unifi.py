@@ -3,8 +3,8 @@ from typing import List
 from pathlib import Path
 from datetime import datetime, timedelta
 from pytz import timezone
-from source.utils import get_channel_by_name, get_epg_datetime
-from source.classes import Channel, Program
+from helper.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Channel, Program
 from sites.auth.playtv_unifi_auth import get_session
 from config.env import playtv_unifi_device_id
 

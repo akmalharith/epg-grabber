@@ -1,8 +1,8 @@
 from typing import List
 import requests
 from datetime import datetime
-from source.classes import Channel, Program
-from source.utils import get_epg_datetime
+from helper.classes import Channel, Program
+from helper.utils import get_epg_datetime
 from sites.auth.redbull_tv_auth import get_session
 
 session_headers = get_session()

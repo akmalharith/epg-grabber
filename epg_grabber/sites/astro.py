@@ -2,8 +2,8 @@ import re
 from typing import List
 import requests
 from datetime import datetime, timedelta
-from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Channel, Program
+from helper.utils import get_channel_by_name, get_epg_datetime
 from pathlib import Path
 
 TIMEZONE_OFFSET = "+0800"

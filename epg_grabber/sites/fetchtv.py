@@ -2,8 +2,8 @@ from typing import List
 import requests
 from pathlib import Path
 from datetime import datetime, timedelta
-from source.utils import get_channel_by_name, get_epg_datetime
-from source.classes import Channel, Program
+from helper.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Channel, Program
 from sites.auth.fetchtv_auth import get_session
 
 ALL_CHANNELS_URL = "https://www.fetchtv.com.au/v4/epg/channels"

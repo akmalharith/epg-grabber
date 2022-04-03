@@ -3,8 +3,8 @@ from typing import List
 import requests
 import urllib3
 from datetime import date, timedelta, datetime
-from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Channel, Program
+from helper.utils import get_channel_by_name, get_epg_datetime
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 

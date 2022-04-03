@@ -4,8 +4,8 @@ from datetime import datetime
 from pathlib import Path
 from pytz import timezone
 from urllib3 import request
-from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Channel, Program
+from helper.utils import get_channel_by_name, get_epg_datetime
 from bs4 import BeautifulSoup
 
 requests.packages.urllib3.disable_warnings()
