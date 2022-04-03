@@ -26,13 +26,13 @@ def get_all_channels() -> List[Channel]:
     channel_json = output["services"]
 
     channels = [Channel(
-        id = channel["sid"],
-        tvg_id = channel["t"] + ".Uk",
-        tvg_name = channel["t"],
-        tvg_logo = CHANNEL_LOGO_PREFIX_URL +
+        id=channel["sid"],
+        tvg_id=channel["t"] + ".Uk",
+        tvg_name=channel["t"],
+        tvg_logo=CHANNEL_LOGO_PREFIX_URL +
         channel["sid"] +
         ".png",
-        sanitize = True
+        sanitize=True
     ) for channel in channel_json]
 
     return channels
@@ -66,12 +66,12 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             end_program = start_program + timedelta(seconds=int(schedule["d"]))
 
             obj = Program(
-                channel_name = channel.tvg_id,
-                title = schedule["t"],
-                description = schedule["sy"],
-                start = get_epg_datetime(start_program),
-                stop = get_epg_datetime(end_program),
-                episode = schedule["eid"].upper()
+                channel_name=channel.tvg_id,
+                title=schedule["t"],
+                description=schedule["sy"],
+                start=get_epg_datetime(start_program),
+                stop=get_epg_datetime(end_program),
+                episode=schedule["eid"].upper()
             )
             programs.append(obj)
         all_programs.extend(programs)

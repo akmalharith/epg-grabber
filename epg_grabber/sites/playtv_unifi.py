@@ -123,11 +123,11 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
 
         obj = Program(
-            channel_name = channel.tvg_id,
-            title = program["name"],
-            description = get_program_details(program["ID"]),
-            start = get_epg_datetime(start_program),
-            stop = get_epg_datetime(end_program)
+            channel_name=channel.tvg_id,
+            title=program["name"],
+            description=get_program_details(program["ID"]),
+            start=get_epg_datetime(start_program),
+            stop=get_epg_datetime(end_program)
         )
         programs.append(obj)
 

@@ -40,11 +40,11 @@ def get_all_channels() -> List[Channel]:
         channel_logo = channel["video:video"]["video:thumbnail_loc"]
 
         obj = Channel(
-            id = channel_id,
-            tvg_id = channel_display_name + ".Id",
-            tvg_name = channel_display_name,
-            tvg_logo = channel_logo,
-            sanitize = True
+            id=channel_id,
+            tvg_id=channel_display_name + ".Id",
+            tvg_name=channel_display_name,
+            tvg_logo=channel_logo,
+            sanitize=True
         )
 
         channels.append(obj)
@@ -97,11 +97,11 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
                 end_timestamp, timezone("UTC"))
 
             obj = Program(
-                channel_name = channel.tvg_id,
-                title = schedule["t"],
-                description = schedule["synopsis"],
-                start = get_epg_datetime(start_program),
-                stop = get_epg_datetime(end_program)
+                channel_name=channel.tvg_id,
+                title=schedule["t"],
+                description=schedule["synopsis"],
+                start=get_epg_datetime(start_program),
+                stop=get_epg_datetime(end_program)
             )
             programs.append(obj)
         all_programs.extend(programs)

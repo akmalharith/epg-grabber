@@ -28,11 +28,11 @@ def get_all_channels() -> List[Channel]:
         raise Exception(r.raise_for_status())
 
     channels = [Channel(
-        id = channel['id'],
-        tvg_id = channel['title'] + ".My",
-        tvg_name = channel['title'],
-        tvg_logo = channel['imageUrls'][0],
-        sanitize = True
+        id=channel['id'],
+        tvg_id=channel['title'] + ".My",
+        tvg_name=channel['title'],
+        tvg_logo=channel['imageUrls'][0],
+        sanitize=True
     ) for channel in output]
 
     return channels
@@ -69,11 +69,11 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             end_time = datetime.strptime(schedule['end'], DATETIME_FORMAT)
 
             obj = Program(
-                channel_name = channel.tvg_id,
-                title = schedule['title'],
-                description = schedule['description'],
-                start = get_epg_datetime(start_time, TIMEZONE_OFFSET),
-                stop = get_epg_datetime(end_time, TIMEZONE_OFFSET)
+                channel_name=channel.tvg_id,
+                title=schedule['title'],
+                description=schedule['description'],
+                start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
+                stop=get_epg_datetime(end_time, TIMEZONE_OFFSET)
             )
             programs.append(obj)
         all_programs.extend(programs)

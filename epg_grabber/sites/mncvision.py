@@ -44,11 +44,11 @@ def get_all_channels() -> List[Channel]:
         ch_icon_url = WEBSITE_HOST + channel.find("img")["src"]
 
         obj = Channel(
-            id = ch_id,
-            tvg_id = ch_name + ".Id",
-            tvg_name = ch_name,
-            tvg_logo = ch_icon_url,
-            sanitize = True
+            id=ch_id,
+            tvg_id=ch_name + ".Id",
+            tvg_name=ch_name,
+            tvg_logo=ch_icon_url,
+            sanitize=True
         )
 
         channels.append(obj)
@@ -103,7 +103,10 @@ def get_next_page(url: str) -> BeautifulSoup:
     return soup
 
 
-def get_programs(program: str, channel_name: str, request_date: str) -> Program:
+def get_programs(
+        program: str,
+        channel_name: str,
+        request_date: str) -> Program:
     time = program.find_all("td", {"class": "text-center"})
     start = time[0].text
     duration = time[1].text
@@ -124,12 +127,12 @@ def get_programs(program: str, channel_name: str, request_date: str) -> Program:
     channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
     obj = Program(
-        channel_name = channel.tvg_id,
-        title = title,
-        description = get_program_details(description_url),
-        start = get_epg_datetime(start_time, TIMEZONE_OFFSET),
-        stop = get_epg_datetime(end_time, TIMEZONE_OFFSET)
-        )
+        channel_name=channel.tvg_id,
+        title=title,
+        description=get_program_details(description_url),
+        start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
+        stop=get_epg_datetime(end_time, TIMEZONE_OFFSET)
+    )
 
     return obj
 

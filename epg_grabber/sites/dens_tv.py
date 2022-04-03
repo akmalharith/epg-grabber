@@ -20,14 +20,14 @@ def get_all_channels() -> List[Channel]:
 
     channels = [
         Channel(
-            id = channel["seq"],
-            tvg_id = channel["title"] +
+            id=channel["seq"],
+            tvg_id=channel["title"] +
             ".Id",
-            tvg_name = channel["title"],
-            tvg_logo = "http://www.dens.tv/images/channel-logo/" +
+            tvg_name=channel["title"],
+            tvg_logo="http://www.dens.tv/images/channel-logo/" +
             channel["seq"] +
             ".jpg",
-            sanitize = True) for channel in channels]
+            sanitize=True) for channel in channels]
 
     return channels
 
@@ -62,10 +62,10 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             end_time = datetime.strptime(
                 program["endtime"], "%Y-%m-%d %H:%M:%S")
             obj = Program(
-                channel_name = channel_name,
-                title = program["title"],
-                start = get_epg_datetime(start_time, TIMEZONE_OFFSET),
-                stop = get_epg_datetime(end_time, TIMEZONE_OFFSET)
+                channel_name=channel_name,
+                title=program["title"],
+                start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
+                stop=get_epg_datetime(end_time, TIMEZONE_OFFSET)
             )
             programs.append(obj)
 

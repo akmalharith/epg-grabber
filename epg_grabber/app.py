@@ -60,7 +60,9 @@ def load_config() -> List[str]:
 
     return config_items
 
-def scrape_by_site(site_name: str, channel_name: str) -> Tuple[List[str], Channel]:
+
+def scrape_by_site(
+        site_name: str, channel_name: str) -> Tuple[List[str], Channel]:
     """
     _summary_
 
@@ -71,7 +73,7 @@ def scrape_by_site(site_name: str, channel_name: str) -> Tuple[List[str], Channe
     Returns:
         Tuple[List[str], Channel]: _description_
     """
-    
+
     log.info("[%s] Start scrape_by_site from %s", channel_name, site_name)
 
     try:
@@ -129,7 +131,7 @@ def scrape() -> Tuple[List[Program], List[Channel]]:
         channels.append(channel_inner)
         programs.extend(programs_by_channel)
 
-    return programs, channels 
+    return programs, channels
 
 
 if __name__ == "__main__":

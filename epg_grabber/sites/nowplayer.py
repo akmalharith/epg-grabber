@@ -36,11 +36,11 @@ def get_all_channels() -> List[Channel]:
             "class": "col-md-2 col-sm-3 product-item tv-guide-all"})
 
     channels = [Channel(
-                id = div.find("p", {"class": "channel"}).text.replace("CH", ""),
-                tvg_id = div.find("p", {"class": "img-name"}).text.strip() + ".Hk",
-                tvg_name = div.find("p", {"class": "img-name"}).text.strip(),
-                tvg_logo = div.find("img")['src'],
-                sanitize = True
+                id=div.find("p", {"class": "channel"}).text.replace("CH", ""),
+                tvg_id=div.find("p", {"class": "img-name"}).text.strip() + ".Hk",
+                tvg_name=div.find("p", {"class": "img-name"}).text.strip(),
+                tvg_logo=div.find("img")['src'],
+                sanitize=True
                 ) for div in divs]
 
     return channels
@@ -81,11 +81,11 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
 
         obj = Program(
-            channel_name = channel.tvg_id,
-            title = title,
-            description = description,
-            start = get_epg_datetime(start_program),
-            stop = get_epg_datetime(end_program)
+            channel_name=channel.tvg_id,
+            title=title,
+            description=description,
+            start=get_epg_datetime(start_program),
+            stop=get_epg_datetime(end_program)
         )
         programs.append(obj)
 

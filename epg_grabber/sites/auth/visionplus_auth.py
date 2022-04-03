@@ -7,5 +7,3 @@ def get_token() -> Dict[str, str]:
         "https://web-api.visionplus.id/api/v1/visitor").json()["data"]["access_token"]
 
     return {"authorization": token}
-
-

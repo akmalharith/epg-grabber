@@ -64,11 +64,11 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
                 hour=int(end_hour), minute=int(end_minute))
 
             obj = Program(
-                channel_name = channel.tvg_id,
-                title = value.find("p", {"class": "title"}).string,
-                description = value.find("p", {"class": "format"}).string,
-                start = get_epg_datetime(start_time, TIMEZONE_OFFSET),
-                stop = get_epg_datetime(end_time, TIMEZONE_OFFSET)
+                channel_name=channel.tvg_id,
+                title=value.find("p", {"class": "title"}).string,
+                description=value.find("p", {"class": "format"}).string,
+                start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
+                stop=get_epg_datetime(end_time, TIMEZONE_OFFSET)
             )
             programs.append(obj)
     return programs

@@ -31,11 +31,11 @@ def get_all_channels() -> List[Channel]:
     channels_raw = output["cache"]["list"]["137962|page_size=24"]["list"]["items"]
 
     channels = [Channel(
-        id = channel["id"],
-        tvg_id = channel["title"] + ".Sg",
-        tvg_name = channel["title"],
-        tvg_logo = channel["images"]["square"],
-        sanitize = True
+        id=channel["id"],
+        tvg_id=channel["title"] + ".Sg",
+        tvg_name=channel["title"],
+        tvg_logo=channel["images"]["square"],
+        sanitize=True
     ) for channel in channels_raw]
 
     return channels

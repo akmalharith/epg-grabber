@@ -8,7 +8,8 @@ from helper.utils import get_epg_datetime
 PROGRAMS_URL = "https://nwapi.nhk.jp/nhkworld/epg/v7b/world/s{start}-e{end}.json"
 
 
-def get_all_channels() -> List[Channel]:  # Hardcode since we are only dealing with one channel
+# Hardcode since we are only dealing with one channel
+def get_all_channels() -> List[Channel]:
     return [Channel("nhk", "nhk.Jp", "NHK World Japan", "")]
 
 
@@ -44,11 +45,11 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
 
         obj = Program(
-            channel_name = get_all_channels()[0].tvg_id,
-            title = program["title"],
-            description = program["description"],
-            start = get_epg_datetime(start_program),
-            stop = get_epg_datetime(end_program)
+            channel_name=get_all_channels()[0].tvg_id,
+            title=program["title"],
+            description=program["description"],
+            start=get_epg_datetime(start_program),
+            stop=get_epg_datetime(end_program)
         )
         programs.append(obj)
 

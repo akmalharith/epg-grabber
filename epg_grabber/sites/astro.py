@@ -31,12 +31,12 @@ def get_all_channels() -> List[Channel]:
 
     channels = [
         Channel(
-            id = channel["id"],
-            tvg_id = channel["title"] +
+            id=channel["id"],
+            tvg_id=channel["title"] +
             ".My",
-            tvg_name = channel["title"],
-            tvg_logo = channel["imageUrl"],
-            sanitize = True) for channel in channel_jsons]
+            tvg_name=channel["title"],
+            tvg_logo=channel["imageUrl"],
+            sanitize=True) for channel in channel_jsons]
 
     return channels
 
@@ -115,12 +115,12 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
                 title, short_synopsis = get_program_details(p["siTrafficKey"])
 
                 obj = Program(
-                    channel_name = channel.tvg_id,
-                    title = title,
-                    description = short_synopsis,
-                    start = get_epg_datetime(start_time, TIMEZONE_OFFSET),
-                    stop = get_epg_datetime(end_time, TIMEZONE_OFFSET),
-                    episode = get_episode_onscreen(title)
+                    channel_name=channel.tvg_id,
+                    title=title,
+                    description=short_synopsis,
+                    start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
+                    stop=get_epg_datetime(end_time, TIMEZONE_OFFSET),
+                    episode=get_episode_onscreen(title)
                 )
             except KeyError:
                 continue

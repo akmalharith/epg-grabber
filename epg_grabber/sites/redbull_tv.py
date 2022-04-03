@@ -11,7 +11,8 @@ PROGRAMS_URL = "https://api.redbull.tv/v3/epg?complete=true"
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S"
 
 
-def get_all_channels() -> List[Channel]:  # Hardcode since we are only dealing with one channel
+# Hardcode since we are only dealing with one channel
+def get_all_channels() -> List[Channel]:
     return [Channel(
         "redbulltv",
         "redbulltv.Us",
@@ -43,11 +44,11 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             program["end_time"][:-10], DATETIME_FORMAT)
 
         obj = Program(
-            channel_name = get_all_channels()[0].tvg_id,
-            title = program["title"] + " - " + program["subheading"],
-            description = program["long_description"],
-            start = get_epg_datetime(start_time),
-            stop = get_epg_datetime(end_time)
+            channel_name=get_all_channels()[0].tvg_id,
+            title=program["title"] + " - " + program["subheading"],
+            description=program["long_description"],
+            start=get_epg_datetime(start_time),
+            stop=get_epg_datetime(end_time)
         )
         programs.append(obj)
 
