@@ -1,8 +1,9 @@
+from typing import Dict
 import requests
 from config.env import playtv_unifi_user_id, playtv_unifi_password, playtv_unifi_device_id
 
 
-def get_session():
+def get_session() -> Dict[str, str]:
     auth_url = "https://playtv.unifi.com.my:7047/VSP/V3/Authenticate"
 
     try:

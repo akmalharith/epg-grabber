@@ -2,7 +2,7 @@ import importlib
 import json
 import os
 import logging
-
+from typing import List
 from config.constants import CONFIG_DIR, METADATA_DIR, SITES_DIR, TITLE
 
 
@@ -13,7 +13,14 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S')
 
 
-def generate_config(site_name, channel_names):
+def generate_config(site_name: str, channel_names: List[str]):
+    """
+    _summary_
+
+    Args:
+        site_name (str): _description_
+        channel_names (List[str]): _description_
+    """
     filepath = os.path.join(CONFIG_DIR, site_name + "_channels.txt")
 
     try:
@@ -35,7 +42,14 @@ def generate_config(site_name, channel_names):
         len(channel_names))
 
 
-def generate_metadata(site_name, channel_names):
+def generate_metadata(site_name: str, channel_names: List[str]):
+    """
+    _summary_
+
+    Args:
+        site_name (str): _description_
+        channel_names (List[str]): _description_
+    """
     filepath = os.path.join(METADATA_DIR, site_name + ".json")
     channel_metadata = []
     for channel in channel_names:
@@ -55,7 +69,13 @@ def generate_metadata(site_name, channel_names):
     log.info(site_name + ".json metadata generated.")
 
 
-def generate(site_name):
+def generate(site_name: str) -> None:
+    """
+    _summary_
+
+    Args:
+        site_name (str): _description_
+    """
     try:
         site = importlib.import_module('epg_grabber.sites.' + site_name)
     except Exception:
@@ -69,6 +89,9 @@ def generate(site_name):
 
 
 def generate_all():
+    """
+    _summary_
+    """
     log.info('Generating all channels lists')
 
     for channel in get_sites():
@@ -77,7 +100,13 @@ def generate_all():
     log.info('Done!')
 
 
-def get_sites():
+def get_sites() -> List[str]:
+    """
+    _summary_
+
+    Returns:
+        List[str]: _description_
+    """
     src_dir = os.path.abspath(os.path.join(os.path.dirname(__file__)))
     sites_dir_path = src_dir + "/" + SITES_DIR
 

@@ -2,14 +2,13 @@
 The structure of the project is as below
 ```sh
 epg_grabber
-├── config/
-│   └── env.py 
-├── sites/
-│   ├── auth/
-│   ├── channels_config/
-│   └── channels_metadata/
-│   └── {site}.py
-└── source/
+├── config
+├── helper
+└── sites
+    ├── auth
+    ├── channels_config
+    ├── channels_metadata
+    └── {site}.py
 ```
 
 ### `auth/`
@@ -48,7 +47,7 @@ The following are the mandatory methods, declared as the convention of a `site.p
 This is where we retrieve all channel information for a given site. A single channel is parsed into the Channel class and all channels are appended into a list
 ```py
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
     """Retrieves all available channels for scraping
 
     Returns:
@@ -60,7 +59,7 @@ def get_all_channels():
 
 Where all the programs for that channel in that `site.py` is scraped. A single program is parsed into Program class and all programs are appended into a list.
 ```py
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     """The main function that does the scraping given the channel_name
 
     Args:

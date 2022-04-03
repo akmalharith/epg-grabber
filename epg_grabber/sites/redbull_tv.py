@@ -1,7 +1,8 @@
+from typing import List
 import requests
 from datetime import datetime
-from source.classes import Channel, Program
-from source.utils import get_epg_datetime
+from helper.classes import Channel, Program
+from helper.utils import get_epg_datetime
 from sites.auth.redbull_tv_auth import get_session
 
 session_headers = get_session()
@@ -10,7 +11,7 @@ PROGRAMS_URL = "https://api.redbull.tv/v3/epg?complete=true"
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S"
 
 
-def get_all_channels():  # Hardcode since we are only dealing with one channel
+def get_all_channels() -> List[Channel]:  # Hardcode since we are only dealing with one channel
     return [Channel(
         "redbulltv",
         "redbulltv.Us",
@@ -19,7 +20,7 @@ def get_all_channels():  # Hardcode since we are only dealing with one channel
     )]
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     url = PROGRAMS_URL
 
     requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS = 'DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+HIGH:DH+HIGH:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+HIGH:RSA+3DES:!aNULL:!eNULL:!MD5'
@@ -42,12 +43,11 @@ def get_programs_by_channel(channel_name, *args):
             program["end_time"][:-10], DATETIME_FORMAT)
 
         obj = Program(
-            get_all_channels()[0].tvg_id,
-            program["title"] + " - " + program["subheading"],
-            program["long_description"],
-            get_epg_datetime(start_time),
-            get_epg_datetime(end_time),
-            ""
+            channel_name = get_all_channels()[0].tvg_id,
+            title = program["title"] + " - " + program["subheading"],
+            description = program["long_description"],
+            start = get_epg_datetime(start_time),
+            stop = get_epg_datetime(end_time)
         )
         programs.append(obj)
 

@@ -1,8 +1,9 @@
 import re
+from typing import List
 import requests
 from datetime import datetime, timedelta
-from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Channel, Program
+from helper.utils import get_channel_by_name, get_epg_datetime
 from pathlib import Path
 
 TIMEZONE_OFFSET = "+0800"
@@ -11,12 +12,7 @@ PROGRAM_URL = "https://contenthub-api.eco.astro.com.my/channel/{channel_id}.json
 PROGRAM_DETAIL_URL = "https://contenthub-api.eco.astro.com.my/api/v1/linear-detail?siTrafficKey={si_traffic_key}"
 
 
-def get_all_channels():
-    """Retrieves all available channels for scraping
-
-    Returns:
-        list[Channel]: List of channels that was scraped
-    """
+def get_all_channels() -> List[Channel]:
     query_url = ALL_CHANNELS_URL
 
     try:
@@ -35,17 +31,17 @@ def get_all_channels():
 
     channels = [
         Channel(
-            channel["id"],
-            channel["title"] +
+            id = channel["id"],
+            tvg_id = channel["title"] +
             ".My",
-            channel["title"],
-            channel["imageUrl"],
-            True) for channel in channel_jsons]
+            tvg_name = channel["title"],
+            tvg_logo = channel["imageUrl"],
+            sanitize = True) for channel in channel_jsons]
 
     return channels
 
 
-def get_program_details(traffic_key):
+def get_program_details(traffic_key: str) -> str:
     program_detail_url = PROGRAM_DETAIL_URL.format(si_traffic_key=traffic_key)
 
     try:
@@ -61,7 +57,7 @@ def get_program_details(traffic_key):
     return get_clean_title(str(output["title"])), str(output["shortSynopsis"])
 
 
-def get_episode_onscreen(title):
+def get_episode_onscreen(title: str) -> str:
     try:
         season = re.search(r"[s]\d", title, re.IGNORECASE).group().upper()
         episode = re.search(r"Ep\d{2,5}", title, re.IGNORECASE).group().upper()
@@ -72,22 +68,14 @@ def get_episode_onscreen(title):
         return ""  # We need to leave <episode> tag blank
 
 
-def get_clean_title(title):
+def get_clean_title(title: str) -> str:
     cleanup_ = re.sub(r"S\d{1,3}", "", title, re.IGNORECASE)
     cleanup = re.sub(r"Ep\d{2,5}", "", cleanup_, re.IGNORECASE)
 
     return cleanup.strip()
 
 
-def get_programs_by_channel(channel_name, *args):
-    """The main function that does the scraping given the channel_name
-
-    Args:
-        channel_name (String): Channel name
-
-    Returns:
-        list[Programs]: List of programs that was scraped
-    """
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
@@ -127,12 +115,12 @@ def get_programs_by_channel(channel_name, *args):
                 title, short_synopsis = get_program_details(p["siTrafficKey"])
 
                 obj = Program(
-                    channel.tvg_id,
-                    title,
-                    short_synopsis,
-                    get_epg_datetime(start_time, TIMEZONE_OFFSET),
-                    get_epg_datetime(end_time, TIMEZONE_OFFSET),
-                    get_episode_onscreen(title)
+                    channel_name = channel.tvg_id,
+                    title = title,
+                    description = short_synopsis,
+                    start = get_epg_datetime(start_time, TIMEZONE_OFFSET),
+                    stop = get_epg_datetime(end_time, TIMEZONE_OFFSET),
+                    episode = get_episode_onscreen(title)
                 )
             except KeyError:
                 continue

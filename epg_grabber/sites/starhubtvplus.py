@@ -1,3 +1,4 @@
+from typing import List, Mapping, Tuple
 import requests
 import json
 import os
@@ -6,8 +7,8 @@ from datetime import date, timedelta, datetime
 from pytz import timezone
 from unicodedata import normalize
 from bs4 import BeautifulSoup
-from source.classes import Program, Channel
-from source.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Program, Channel
+from helper.utils import get_channel_by_name, get_epg_datetime
 from sites.auth.starhubtvplus_auth import get_session
 
 temp_file = "starhubtvplus_all_programs_temp.json"
@@ -20,7 +21,7 @@ on_demand_suffix = "On Demand"
 headers = get_session()
 
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
 
     url = 'https://www.starhub.com/personal/tvplus/passes/channel-listing.html'
 
@@ -76,10 +77,11 @@ def get_all_channels():
     return channels
 
 
-def _get_programs(date_from, date_to):
+def _get_programs(date_from: str, date_to: str) -> Mapping[str, str]:
     if os.path.isfile(temp_file):
         file_data = open(temp_file, "r")
         temp_data = json.load(file_data)
+        file_data.close()
         return temp_data
 
     get_programs_query = """query webFilteredEpg($category: String, $dateFrom: DateWithoutTime, $dateTo: DateWithoutTime!) {
@@ -142,7 +144,7 @@ nagraEpg(category: $category) {
     return all_channels_program
 
 
-def _get_program_details(program_id):
+def _get_program_details(program_id: str) -> Tuple[str, str, str]:
     get_programs_details_query = """query webEpgDetails($id: String!) {
   details(id: $id) {
     description
@@ -246,7 +248,7 @@ def _get_program_details(program_id):
     return description, category, rating
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     """_summary_
 
     Args:

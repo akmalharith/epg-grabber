@@ -1,15 +1,16 @@
+from typing import List
 import requests
 from pathlib import Path
 from datetime import date, timedelta, datetime
-from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Channel, Program
+from helper.utils import get_channel_by_name, get_epg_datetime
 
 TIMEZONE_OFFSET = "+0700"
 ALL_CHANNELS_URL = "http://www.dens.tv/tvpage_octo/channelgen/2"
 PROGRAM_URL = "http://www.dens.tv/tvpage_octo/epgchannel2/{date}/{channel_id}"
 
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
     try:
         response = requests.post(ALL_CHANNELS_URL)
     except requests.RequestException as e:
@@ -19,19 +20,19 @@ def get_all_channels():
 
     channels = [
         Channel(
-            channel["seq"],
-            channel["title"] +
+            id = channel["seq"],
+            tvg_id = channel["title"] +
             ".Id",
-            channel["title"],
-            "http://www.dens.tv/images/channel-logo/" +
+            tvg_name = channel["title"],
+            tvg_logo = "http://www.dens.tv/images/channel-logo/" +
             channel["seq"] +
             ".jpg",
-            True) for channel in channels]
+            sanitize = True) for channel in channels]
 
     return channels
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     days = args[0] if args else 1
 
     date_today = date.today()
@@ -61,12 +62,10 @@ def get_programs_by_channel(channel_name, *args):
             end_time = datetime.strptime(
                 program["endtime"], "%Y-%m-%d %H:%M:%S")
             obj = Program(
-                channel_name,
-                program["title"],
-                "",
-                get_epg_datetime(start_time, TIMEZONE_OFFSET),
-                get_epg_datetime(end_time, TIMEZONE_OFFSET),
-                ""
+                channel_name = channel_name,
+                title = program["title"],
+                start = get_epg_datetime(start_time, TIMEZONE_OFFSET),
+                stop = get_epg_datetime(end_time, TIMEZONE_OFFSET)
             )
             programs.append(obj)
 

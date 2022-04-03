@@ -1,9 +1,10 @@
+from typing import List
 import requests
 from pathlib import Path
 from datetime import date, datetime
 from bs4 import BeautifulSoup
-from source.classes import Channel, Program
-from source.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Channel, Program
+from helper.utils import get_channel_by_name, get_epg_datetime
 
 TIMEZONE_OFFSET = "+0800"
 PROGRAM_URL = "https://epg.beinsports.com/utctime_id.php?cdate={date}&offset=+8&mins=00&category=sports&id=123"
@@ -24,7 +25,7 @@ def get_all_channels():
             True)]
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     # TODO: Accept days as input and increment the date_input in an outer for
     # loop
     date_input = date.today()
@@ -63,12 +64,11 @@ def get_programs_by_channel(channel_name, *args):
                 hour=int(end_hour), minute=int(end_minute))
 
             obj = Program(
-                channel.tvg_id,
-                value.find("p", {"class": "title"}).string,
-                value.find("p", {"class": "format"}).string,
-                get_epg_datetime(start_time, TIMEZONE_OFFSET),
-                get_epg_datetime(end_time, TIMEZONE_OFFSET),
-                ""
+                channel_name = channel.tvg_id,
+                title = value.find("p", {"class": "title"}).string,
+                description = value.find("p", {"class": "format"}).string,
+                start = get_epg_datetime(start_time, TIMEZONE_OFFSET),
+                stop = get_epg_datetime(end_time, TIMEZONE_OFFSET)
             )
             programs.append(obj)
     return programs

@@ -1,16 +1,16 @@
 from xml.sax.saxutils import escape
 
 
-def xml_header(title):
+def xml_header(title) -> str:
     return """<?xml version="1.0" encoding="UTF-8"?>
 <tv generator-info-name="{title}">""".format(title=title)
 
 
-def xml_close():
+def xml_close() -> str:
     return "</tv>"
 
 
-def program_to_xml(program):
+def program_to_xml(program) -> str:
     if not program.title:   # Don't parse if empty title
         return ""
 
@@ -33,7 +33,7 @@ def program_to_xml(program):
     return program
 
 
-def channel_to_xml(channel):
+def channel_to_xml(channel) -> str:
     line_channel = f"<channel id=\"{escape(channel.tvg_id)}\">"
     line_display_name = f"<display-name lang=\"en\">{escape(channel.tvg_name)}</display-name>"
     line_icon = f"<icon src=\"{escape(channel.tvg_logo)}\"/>"

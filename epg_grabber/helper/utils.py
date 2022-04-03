@@ -1,26 +1,35 @@
+from datetime import datetime
 import os
 import json
-
+from typing import Any, Mapping
 from config.constants import EPG_XMLTV_TIMEFORMAT
-from source.classes import Channel
+from helper.classes import Channel
 
 
-def get_epg_datetime(datetime, offset="+0000"):
-    """Method that returns the XMLTV date time string
+def get_epg_datetime(datetime: datetime, offset="+0000") -> str:
+    """
+    _summary_
 
     Args:
-        datetime (datetime): Date Time object for a given program
-        offset (str, optional): By default offset is UTC,
-                                useful if time scraped is in Epoch timestamp.
-                                Defaults to "+0000".
+        datetime (datetime): _description_
+        offset (str, optional): _description_. Defaults to "+0000".
 
     Returns:
-        epg_datetime (string): Date Time formatted in XMLTV format
+        str: _description_
     """
     return datetime.strftime(EPG_XMLTV_TIMEFORMAT) + " " + offset
 
 
-def load_channels_metadata(metadata_path):
+def load_channels_metadata(metadata_path: str) -> Mapping[str, Any]:
+    """
+    _summary_
+
+    Args:
+        metadata_path (str): _description_
+
+    Returns:
+        Mapping[str, Any]: _description_
+    """
     f = open(metadata_path, "r")
 
     data = json.load(f)
@@ -30,8 +39,9 @@ def load_channels_metadata(metadata_path):
     return data
 
 
-def get_channel_by_name(tvg_id, site_name):
-    """Retrieve the whole Channel object given its name and its site.
+def get_channel_by_name(tvg_id: str, site_name: str) -> Channel:
+    """
+    Retrieve the whole Channel object given its name and its site.
 
     If you don't want to hardcode the site_name parameter, use __file__
     as the site_name input.
@@ -43,11 +53,11 @@ def get_channel_by_name(tvg_id, site_name):
         I never got it to work.
 
     Args:
-        channel_name (string): Channel name
-        site_name (string): Website/module name
+        tvg_id (str): _description_
+        site_name (str): _description_
 
     Returns:
-        Channel: Channel object
+        Channel: _description_
     """
     metadata_dir = os.path.abspath(
         os.path.join(
@@ -69,5 +79,5 @@ def get_channel_by_name(tvg_id, site_name):
         chan["tvg_logo"])
 
 
-def get_channelid_by_name(tvg_id, site_name):
+def get_channelid_by_name(tvg_id: str, site_name: str) -> str:
     return get_channel_by_name(tvg_id, site_name).id

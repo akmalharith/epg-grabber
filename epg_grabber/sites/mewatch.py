@@ -1,16 +1,17 @@
 import json
+from typing import List
 import requests
 from pathlib import Path
 from datetime import date, datetime, timedelta
-from source.utils import get_channel_by_name, get_epg_datetime
-from source.classes import Channel, Program
+from helper.utils import get_channel_by_name, get_epg_datetime
+from helper.classes import Channel, Program
 
 ALL_CHANNELS_URL = "https://www.mewatch.sg/channel-guide"
 PROGRAMS_URL = "https://cdn.mewatch.sg/api/schedules?channels={channel_id}&date={date}&duration=24&hour=16&segments=all"
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
     try:
         response = requests.get(ALL_CHANNELS_URL)
     except requests.RequestException as e:
@@ -30,17 +31,17 @@ def get_all_channels():
     channels_raw = output["cache"]["list"]["137962|page_size=24"]["list"]["items"]
 
     channels = [Channel(
-        channel["id"],
-        channel["title"] + ".Sg",
-        channel["title"],
-        channel["images"]["square"],
-        True
+        id = channel["id"],
+        tvg_id = channel["title"] + ".Sg",
+        tvg_name = channel["title"],
+        tvg_logo = channel["images"]["square"],
+        sanitize = True
     ) for channel in channels_raw]
 
     return channels
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
