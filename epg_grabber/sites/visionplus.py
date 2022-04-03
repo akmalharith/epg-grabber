@@ -1,4 +1,5 @@
 import json
+from typing import List
 import xmltodict
 import requests
 import re
@@ -13,13 +14,13 @@ from source.utils import get_channel_by_name, get_epg_datetime
 
 
 # Get access token
-token = get_token()
+headers = get_token()
 
 ALL_CHANNELS_URL = "https://www.visionplus.id/sitemap-channels.xml"
 PROGRAMS_URL = "https://web-api.visionplus.id/api/v10/epg?start_time_from={date_input}&channel_ids={channel_id}&lang=en"
 
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
     response = requests.get(ALL_CHANNELS_URL)
 
     data_dict = xmltodict.parse(response.text)
@@ -39,11 +40,11 @@ def get_all_channels():
         channel_logo = channel["video:video"]["video:thumbnail_loc"]
 
         obj = Channel(
-            channel_id,
-            channel_display_name + ".Id",
-            channel_display_name,
-            channel_logo,
-            True
+            id = channel_id,
+            tvg_id = channel_display_name + ".Id",
+            tvg_name = channel_display_name,
+            tvg_logo = channel_logo,
+            sanitize = True
         )
 
         channels.append(obj)
@@ -51,7 +52,7 @@ def get_all_channels():
     return channels
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
@@ -65,7 +66,7 @@ def get_programs_by_channel(channel_name, *args):
         channel_url = PROGRAMS_URL.format(
             date_input=date_input, channel_id=channel.id)
 
-        r = requests.get(channel_url, headers={"authorization": token})
+        r = requests.get(channel_url, headers=headers)
 
         if r.status_code != 200:
             break
@@ -96,12 +97,11 @@ def get_programs_by_channel(channel_name, *args):
                 end_timestamp, timezone("UTC"))
 
             obj = Program(
-                channel.tvg_id,
-                schedule["t"],
-                schedule["synopsis"],
-                get_epg_datetime(start_program),
-                get_epg_datetime(end_program),
-                ""
+                channel_name = channel.tvg_id,
+                title = schedule["t"],
+                description = schedule["synopsis"],
+                start = get_epg_datetime(start_program),
+                stop = get_epg_datetime(end_program)
             )
             programs.append(obj)
         all_programs.extend(programs)

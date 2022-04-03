@@ -2,13 +2,16 @@ import importlib
 import os
 import re
 import sys
+import time
 import requests
 import logging
-# Environment variables
 
+from typing import List, Tuple
+
+# Environment variables
 from config.constants import CONFIG_REGEX, DEVELOP_FILE, TESTS_FILE, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
 from config.env import config_name, config_url, develop, epg_days, tests, tmp_epg_file
-from source.classes import EpgWriter
+from source.classes import Channel, Program, EpgWriter
 from source.utils import get_channel_by_name
 
 sys.tracebacklimit = 0
@@ -19,14 +22,12 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S')
 
 
-def load_config():
-    """This is where the config file is read and parsed as a list.
-
-    The config file should be in raw text with the following content:
-    site_name;channel_name
+def load_config() -> List[str]:
+    """
+    _summary_
 
     Returns:
-        list[config_items]
+        List[str]: _description_
     """
 
     if tests():
@@ -59,17 +60,18 @@ def load_config():
 
     return config_items
 
-
-def scrape_by_site(site_name, channel_name):
-    """Scrape the program and channel information for the given site
+def scrape_by_site(site_name: str, channel_name: str) -> Tuple[List[str], Channel]:
+    """
+    _summary_
 
     Args:
-        site_name (string): Site module
-        channel_name (string): Channel from the site moudle
+        site_name (str): _description_
+        channel_name (str): _description_
 
     Returns:
-        tuple (list, Channel): Tuple of programs list and channel object
+        Tuple[List[str], Channel]: _description_
     """
+    
     log.info("[%s] Start scrape_by_site from %s", channel_name, site_name)
 
     try:
@@ -100,9 +102,12 @@ def scrape_by_site(site_name, channel_name):
     return programs_by_channel, channel
 
 
-def scrape():
+def scrape() -> Tuple[List[Program], List[Channel]]:
     """
-    Main scraping method for the configurations loaded
+    _summary_
+
+    Returns:
+        Tuple[List[Program], List[Channel]]: _description_
     """
     channels = []
     programs = []
@@ -124,24 +129,23 @@ def scrape():
         channels.append(channel_inner)
         programs.extend(programs_by_channel)
 
-    """
-    Writing XMLTV format to a temporary file
-    """
+    return programs, channels 
+
+
+if __name__ == "__main__":
+
+    start_time = time.time()
+    log.info("START: Starting scraping for config %s ...", config_name)
+
+    programs, channels = scrape()
+
+    # Writing XMLTV format to a temporary file
     EpgWriter.save(
         file=tmp_epg_file,
         channels=channels,
         programs=programs
     )
 
-    return True
-
-
-if __name__ == "__main__":
-    import time
-    start_time = time.time()
-    log.info("START: Starting scraping for config %s ...", config_name)
-
-    if scrape():
-        log.info("FINISH: Finished scraping.")
-        print("--- %s seconds ---" % (time.time() - start_time))
-        exit()
+    log.info("FINISH: Finished scraping.")
+    print("--- %s seconds ---" % (time.time() - start_time))
+    exit()

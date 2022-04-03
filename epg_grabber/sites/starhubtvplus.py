@@ -1,3 +1,4 @@
+from typing import List, Mapping, Tuple
 import requests
 import json
 import os
@@ -20,7 +21,7 @@ on_demand_suffix = "On Demand"
 headers = get_session()
 
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
 
     url = 'https://www.starhub.com/personal/tvplus/passes/channel-listing.html'
 
@@ -76,7 +77,7 @@ def get_all_channels():
     return channels
 
 
-def _get_programs(date_from, date_to):
+def _get_programs(date_from: str, date_to: str) -> Mapping[str, str]:
     if os.path.isfile(temp_file):
         file_data = open(temp_file, "r")
         temp_data = json.load(file_data)
@@ -142,7 +143,7 @@ nagraEpg(category: $category) {
     return all_channels_program
 
 
-def _get_program_details(program_id):
+def _get_program_details(program_id: str) -> Tuple[str, str, str]:
     get_programs_details_query = """query webEpgDetails($id: String!) {
   details(id: $id) {
     description
@@ -246,7 +247,7 @@ def _get_program_details(program_id):
     return description, category, rating
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     """_summary_
 
     Args:

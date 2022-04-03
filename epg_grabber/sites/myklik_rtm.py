@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import List
 import requests
 import urllib3
 from datetime import date, timedelta, datetime
@@ -13,7 +14,7 @@ TIMEZONE_OFFSET = "+0800"
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S"
 
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
     query_url = ALL_CHANNELS_URL
 
     try:
@@ -27,17 +28,17 @@ def get_all_channels():
         raise Exception(r.raise_for_status())
 
     channels = [Channel(
-        channel['id'],
-        channel['title'] + ".My",
-        channel['title'],
-        channel['imageUrls'][0],
-        True
+        id = channel['id'],
+        tvg_id = channel['title'] + ".My",
+        tvg_name = channel['title'],
+        tvg_logo = channel['imageUrls'][0],
+        sanitize = True
     ) for channel in output]
 
     return channels
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
@@ -68,12 +69,11 @@ def get_programs_by_channel(channel_name, *args):
             end_time = datetime.strptime(schedule['end'], DATETIME_FORMAT)
 
             obj = Program(
-                channel.tvg_id,
-                schedule['title'],
-                schedule['description'],
-                get_epg_datetime(start_time, TIMEZONE_OFFSET),
-                get_epg_datetime(end_time, TIMEZONE_OFFSET),
-                ""
+                channel_name = channel.tvg_id,
+                title = schedule['title'],
+                description = schedule['description'],
+                start = get_epg_datetime(start_time, TIMEZONE_OFFSET),
+                stop = get_epg_datetime(end_time, TIMEZONE_OFFSET)
             )
             programs.append(obj)
         all_programs.extend(programs)

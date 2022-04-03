@@ -8,7 +8,7 @@ ALL_CHANNELS_URL = "https://api.cgtn.com/website/api/live/channel/list"
 PROGRAM_URL = "https://api.cgtn.com/website/api/live/channel/epg/list?channelId={channel_id}&startTime={start_time}&endTime={end_time}"
 
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
     query_url = ALL_CHANNELS_URL
 
     try:
@@ -23,17 +23,17 @@ def get_all_channels():
 
     channels = [
         Channel(
-            channel["id"],
-            channel["title"] +
+            id = channel["id"],
+            tvg_id = channel["title"] +
             ".Cn",
-            channel["title"],
-            channel["shareBody"]["iconUrl"],
-            True) for channel in output]
+            tvg_name = channel["title"],
+            tvg_logo = channel["shareBody"]["iconUrl"],
+            sanitize = True) for channel in output]
 
     return channels
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
@@ -69,12 +69,10 @@ def get_programs_by_channel(channel_name, *args):
         end_time = datetime.fromtimestamp(end_time_epoch, timezone.utc)
 
         obj = Program(
-            channel.tvg_id,
-            program["name"],
-            "",
-            get_epg_datetime(start_time),
-            get_epg_datetime(end_time),
-            ""
+            channel_name = channel.tvg_id,
+            title = program["name"],
+            start = get_epg_datetime(start_time),
+            stop = get_epg_datetime(end_time)
         )
         programs.append(obj)
 

@@ -1,3 +1,4 @@
+from typing import List
 import requests
 from datetime import datetime, timedelta
 from pytz import timezone
@@ -7,11 +8,11 @@ from source.utils import get_epg_datetime
 PROGRAMS_URL = "https://nwapi.nhk.jp/nhkworld/epg/v7b/world/s{start}-e{end}.json"
 
 
-def get_all_channels():  # Hardcode since we are only dealing with one channel
+def get_all_channels() -> List[Channel]:  # Hardcode since we are only dealing with one channel
     return [Channel("nhk", "nhk.Jp", "NHK World Japan", "")]
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
@@ -43,12 +44,11 @@ def get_programs_by_channel(channel_name, *args):
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
 
         obj = Program(
-            get_all_channels()[0].tvg_id,
-            program["title"],
-            program["description"],
-            get_epg_datetime(start_program),
-            get_epg_datetime(end_program),
-            ""
+            channel_name = get_all_channels()[0].tvg_id,
+            title = program["title"],
+            description = program["description"],
+            start = get_epg_datetime(start_program),
+            stop = get_epg_datetime(end_program)
         )
         programs.append(obj)
 

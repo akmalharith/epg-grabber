@@ -4,7 +4,7 @@ from urllib.parse import quote
 form_data = "activation_code=wwdwnkxev2"
 
 
-def get_session():
+def get_session() -> requests.Session:
     try:
         response = requests.post(
             "https://www.fetchtv.com.au/v3/authenticate",

@@ -61,13 +61,15 @@ class Channel:
             tvg_name="",
             tvg_logo="",
             sanitize=False) -> None:
-        """Channel records, store information about channels.
+        """
+        _summary_
 
         Args:
-            id (string): Channel identifier that is unique to the source that we are scraping from.
-            tvg_id (string): Channel ID in EPG XML file
-            tvg_name (string): A user-friendly name for the channel - maybe even a channel number.
-            tvg_logo (string): Channel logo.
+            id (str, optional): _description_. Defaults to "".
+            tvg_id (str, optional): _description_. Defaults to "".
+            tvg_name (str, optional): _description_. Defaults to "".
+            tvg_logo (str, optional): _description_. Defaults to "".
+            sanitize (bool, optional): _description_. Defaults to False.
         """
         self.id = id
 
@@ -86,7 +88,7 @@ class EpgWriter:
     @staticmethod
     def generate(
             channels=None,
-            programs=None):
+            programs=None) -> bytes:
         """Generate an XML data from channels and programs."""
 
         channel_xml = [channel_to_xml(channel) for channel in channels][0]

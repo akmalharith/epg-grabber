@@ -1,3 +1,4 @@
+from typing import List
 import requests
 from datetime import datetime
 from pathlib import Path
@@ -21,7 +22,7 @@ PROGRAMS_URL = "https://nowplayer.now.com/tvguide/epglist?channelIdList={id}&day
 PROGRAMS_DETAIL_URL = "https://nowplayer.now.com/tvguide/epgprogramdetail?programId={program_id}"
 
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
     try:
         r = requests.get(ALL_CHANNELS_URL)
     except request.exceptions.RequestException as e:
@@ -35,17 +36,17 @@ def get_all_channels():
             "class": "col-md-2 col-sm-3 product-item tv-guide-all"})
 
     channels = [Channel(
-                div.find("p", {"class": "channel"}).text.replace("CH", ""),
-                div.find("p", {"class": "img-name"}).text.strip() + ".Hk",
-                div.find("p", {"class": "img-name"}).text.strip(),
-                div.find("img")['src'],
-                True
+                id = div.find("p", {"class": "channel"}).text.replace("CH", ""),
+                tvg_id = div.find("p", {"class": "img-name"}).text.strip() + ".Hk",
+                tvg_name = div.find("p", {"class": "img-name"}).text.strip(),
+                tvg_logo = div.find("img")['src'],
+                sanitize = True
                 ) for div in divs]
 
     return channels
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
@@ -80,19 +81,18 @@ def get_programs_by_channel(channel_name, *args):
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
 
         obj = Program(
-            channel.tvg_id,
-            title,
-            description,
-            get_epg_datetime(start_program),
-            get_epg_datetime(end_program),
-            ""  # TODO: episode
+            channel_name = channel.tvg_id,
+            title = title,
+            description = description,
+            start = get_epg_datetime(start_program),
+            stop = get_epg_datetime(end_program)
         )
         programs.append(obj)
 
     return programs
 
 
-def get_program_details(program_id):
+def get_program_details(program_id: str) -> str:
     programs_detail_url = PROGRAMS_DETAIL_URL.format(program_id=program_id)
 
     try:

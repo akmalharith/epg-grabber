@@ -1,3 +1,4 @@
+from typing import List
 import requests
 from pathlib import Path
 from datetime import datetime, timedelta
@@ -13,7 +14,7 @@ PROGRAM_URL = "https://www.fetchtv.com.au/v2/epg/programslist?channel_ids={chann
 session = get_session()
 
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
     try:
         response = session.get(ALL_CHANNELS_URL)
     except requests.exceptions.RequestException as e:
@@ -33,7 +34,7 @@ def get_all_channels():
     return channels
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     days = args[0] if args else 1
 
     channel = get_channel_by_name(channel_name, Path(__file__).stem)

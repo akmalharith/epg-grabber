@@ -15,7 +15,7 @@ PROGRAM_DETAILS_URL = "https://playtv.unifi.com.my:7047/VSP/V3/GetPlaybillDetail
 PROGRAMS_URL = "https://playtv.unifi.com.my:7047/VSP/V3/QueryPlaybillList"
 
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
     query_url = ALL_CHANNEL_URL
 
     try:
@@ -40,7 +40,7 @@ def get_all_channels():
     return channels
 
 
-def get_program_details(program_id):
+def get_program_details(program_id: str) -> str:
     program_details_url = PROGRAM_DETAILS_URL
     program_info = {
         "playbillID": str(program_id),
@@ -69,7 +69,7 @@ def get_program_details(program_id):
     return output["playbillDetail"]["introduce"]
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     days = args[0] if args else 1
 
     start_temp = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
@@ -122,12 +122,11 @@ def get_programs_by_channel(channel_name, *args):
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
 
         obj = Program(
-            channel.tvg_id,
-            program["name"],
-            get_program_details(program["ID"]),
-            get_epg_datetime(start_program),
-            get_epg_datetime(end_program),
-            ""
+            channel_name = channel.tvg_id,
+            title = program["name"],
+            description = get_program_details(program["ID"]),
+            start = get_epg_datetime(start_program),
+            stop = get_epg_datetime(end_program)
         )
         programs.append(obj)
 

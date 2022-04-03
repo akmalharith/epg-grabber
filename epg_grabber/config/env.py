@@ -10,11 +10,11 @@ develop_mode = os.getenv("DEVELOP", "false")
 tests_mode = os.getenv("TESTS", "false")
 
 
-def develop():
+def develop() -> bool:
     return develop_mode.lower() == "true"
 
 
-def tests():
+def tests() -> bool:
     return tests_mode.lower() == "true"
 
 

@@ -10,7 +10,7 @@ PROGRAMS_URL = "https://cdn.mewatch.sg/api/schedules?channels={channel_id}&date=
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 
 
-def get_all_channels():
+def get_all_channels() -> List[Channel]:
     try:
         response = requests.get(ALL_CHANNELS_URL)
     except requests.RequestException as e:
@@ -40,7 +40,7 @@ def get_all_channels():
     return channels
 
 
-def get_programs_by_channel(channel_name, *args):
+def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 

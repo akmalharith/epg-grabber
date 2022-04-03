@@ -1,8 +1,9 @@
+from typing import Dict
 import requests
 from config.env import starhubtvplus_app_key, starhubtvplus_client_uuid
 
 
-def get_session():
+def get_session() -> Dict[str, str]:
     try:
         response = requests.get(
             "https://api.one.accedo.tv/session?appKey={application_key}&uuid={uuid}".format(
