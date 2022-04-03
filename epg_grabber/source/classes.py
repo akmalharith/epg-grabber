@@ -1,7 +1,7 @@
 import string
 
-from epg_grabber.config.constants import PERIOD, TITLE
-from epg_grabber.source.xmlutils import channel_to_xml, program_to_xml, xml_header, xml_close
+from config.constants import PERIOD, TITLE
+from source.xmlutils import channel_to_xml, program_to_xml, xml_header, xml_close
 
 
 class Program:

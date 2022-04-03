@@ -70,13 +70,13 @@ def scrape_by_site(site_name, channel_name):
     Returns:
         tuple (list, Channel): Tuple of programs list and channel object
     """
+    log.info("[%s] Start scrape_by_site from %s", channel_name, site_name)
+    
     try:
         site = importlib.import_module("sites." + site_name)
     except Exception as e:
         log.error("Site unsupported! {}: {}".format(type(e).__name__, e))
         raise e
-
-    log.info("[%s] Start scrape_by_site from %s", channel_name, site_name)
 
     try:
         programs_by_channel = site.get_programs_by_channel(
@@ -112,6 +112,7 @@ def scrape():
     for config_item in config_items:
         site_name = config_item.split(";")[0]
         channel_name = config_item.split(";")[1].strip()
+        print(os.curdir)
 
         log.info("[%s] Channel found. Scraping programs...", channel_name)
 
