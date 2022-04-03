@@ -4,7 +4,7 @@ from unittest import TestCase
 from xmlunittest import XmlTestMixin
 
 from epg_grabber import app, generate
-from epg_grabber.source import classes, utils
+from epg_grabber.helper import classes, utils
 
 
 class TestSite(TestCase, XmlTestMixin):
