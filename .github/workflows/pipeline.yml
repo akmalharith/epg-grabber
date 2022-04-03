@@ -16,7 +16,6 @@ env:
       
 jobs:
   linting:
-    if: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -48,7 +47,6 @@ jobs:
           commit_message: "chore: Autopep8"
   
   generate:
-    if: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -84,7 +82,6 @@ jobs:
             python -m unittest
 
   build:
-    if: false
     needs: tests
     runs-on: ubuntu-latest
     steps:
