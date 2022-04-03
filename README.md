@@ -23,7 +23,7 @@ Some sites supported in this image have environment variables for authentication
 
 2. The XMLTV file is saved in the container and you will need to copy it out once you are done.
 ```
-docker cp {container_id}:/app/tv.xml tv.xml
+docker cp $container_id:/app/tv.xml tv.xml
 ```
 
 ## Examples
