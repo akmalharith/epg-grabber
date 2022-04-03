@@ -81,6 +81,7 @@ def _get_programs(date_from: str, date_to: str) -> Mapping[str, str]:
     if os.path.isfile(temp_file):
         file_data = open(temp_file, "r")
         temp_data = json.load(file_data)
+        file_data.close()
         return temp_data
 
     get_programs_query = """query webFilteredEpg($category: String, $dateFrom: DateWithoutTime, $dateTo: DateWithoutTime!) {
