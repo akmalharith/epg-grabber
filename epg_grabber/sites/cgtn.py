@@ -1,4 +1,5 @@
 import requests
+from typing import List
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from source.classes import Channel, Program

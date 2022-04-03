@@ -1,4 +1,5 @@
 import requests
+from typing import List
 from pathlib import Path
 from datetime import datetime, timedelta
 from pytz import timezone
