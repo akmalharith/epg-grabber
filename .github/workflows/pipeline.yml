@@ -49,6 +49,7 @@ jobs:
           commit_message: "chore: Autopep8"
   
   generate:
+    needs: linting
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -66,6 +67,7 @@ jobs:
           commit_message: "chore: Update latest channels"
 
   tests:
+    needs: generate
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v2
