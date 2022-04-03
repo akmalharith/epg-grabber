@@ -11,8 +11,8 @@ from typing import List, Tuple
 # Environment variables
 from config.constants import CONFIG_REGEX, DEVELOP_FILE, TESTS_FILE, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
 from config.env import config_name, config_url, develop, epg_days, tests, tmp_epg_file
-from source.classes import Channel, Program, EpgWriter
-from source.utils import get_channel_by_name
+from helper.classes import Channel, Program, EpgWriter
+from helper.utils import get_channel_by_name
 
 sys.tracebacklimit = 0
 log = logging.getLogger(TITLE)

@@ -3,7 +3,7 @@ import os
 import json
 from typing import Any, Mapping
 from config.constants import EPG_XMLTV_TIMEFORMAT
-from source.classes import Channel
+from helper.classes import Channel
 
 
 def get_epg_datetime(datetime: datetime, offset="+0000") -> str:
