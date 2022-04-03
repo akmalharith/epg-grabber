@@ -112,7 +112,6 @@ def scrape():
     for config_item in config_items:
         site_name = config_item.split(";")[0]
         channel_name = config_item.split(";")[1].strip()
-        print(os.curdir)
 
         log.info("[%s] Channel found. Scraping programs...", channel_name)
 
