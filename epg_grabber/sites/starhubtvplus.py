@@ -127,7 +127,6 @@ nagraEpg(category: $category) {
             api_url,
             headers=headers,
             json=programs_payload)
-        print(response)
     except Exception as e:
         raise (e)
     if response.status_code != 200:
