@@ -20,7 +20,6 @@ on_demand_suffix = "On Demand"
 
 headers = get_session()
 
-
 def get_all_channels() -> List[Channel]:
 
     url = 'https://www.starhub.com/personal/tvplus/passes/channel-listing.html'
@@ -128,6 +127,7 @@ nagraEpg(category: $category) {
             api_url,
             headers=headers,
             json=programs_payload)
+        print(response)
     except Exception as e:
         raise (e)
     if response.status_code != 200:

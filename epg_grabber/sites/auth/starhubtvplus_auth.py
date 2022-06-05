@@ -1,6 +1,7 @@
 from typing import Dict
 import requests
 from config.env import starhubtvplus_app_key, starhubtvplus_client_uuid
+from epg_grabber.config.constants import DEFAULT_USER_AGENT
 
 
 def get_session() -> Dict[str, str]:
@@ -17,4 +18,5 @@ def get_session() -> Dict[str, str]:
         "x-application-session": output["sessionKey"],
         "x-application-key": starhubtvplus_app_key +
         "_" +
-        starhubtvplus_client_uuid}
+        starhubtvplus_client_uuid,
+        "User-Agent": DEFAULT_USER_AGENT}
