@@ -1,7 +1,7 @@
 from typing import Dict
 import requests
 from config.env import starhubtvplus_app_key, starhubtvplus_client_uuid
-from epg_grabber.config.constants import DEFAULT_USER_AGENT
+from config.constants import DEFAULT_USER_AGENT
 
 
 def get_session() -> Dict[str, str]:
