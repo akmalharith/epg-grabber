@@ -20,7 +20,6 @@ on_demand_suffix = "On Demand"
 
 headers = get_session()
 
-
 def get_all_channels() -> List[Channel]:
 
     url = 'https://www.starhub.com/personal/tvplus/passes/channel-listing.html'
