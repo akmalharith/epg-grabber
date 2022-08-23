@@ -249,7 +249,6 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     Args:
         channel_name (_type_): _description_
     """
-    days = args[0] if args else 1
     days = 7 if days > 7 else days
 
     date_from = date.today()
