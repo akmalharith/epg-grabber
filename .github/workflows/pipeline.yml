@@ -40,7 +40,7 @@ jobs:
       - name: Run flake8
         uses: py-actions/flake8@v2
         with:
-          ignore: "E501,E741,W605,E265,E226,W504,W291,E261,W293,E303,E231,E203,E302,E251,E127,E124,E211,E305,E128,E275"
+          ignore: "E501,E741,W605,E265,E226,W504,W291,E261,W293,E303,E231,E203,E302,E251,E127,E124,E211,E305,E128,E275,W503"
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
