@@ -3,7 +3,7 @@ from typing import List
 import requests
 import urllib3
 from datetime import date, timedelta, datetime
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 from helper.utils import get_channel_by_name, get_epg_datetime
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -31,8 +31,7 @@ def get_all_channels() -> List[Channel]:
             id=channel["id"],
             tvg_id=channel["title"] + ".My",
             tvg_name=channel["title"],
-            tvg_logo="",  # TODO: Fix this
-            sanitize=True,
+            tvg_logo=""  # TODO: Fix this
         )
         for channel in output
     ]
