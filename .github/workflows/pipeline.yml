@@ -27,45 +27,13 @@ jobs:
           python-version: '3.9' 
           architecture: 'x64'
 
-      - name: Run recursive autoflake
-        run: >
-          pip install autoflake ;
-          autoflake --in-place --remove-all-unused-imports --remove-unused-variables --ignore-init-module-imports --recursive .
-
-      - name: Run autopep8
-        uses: peter-evans/autopep8@v1
-        with:
-          args: --recursive --in-place --aggressive --aggressive .
-
       - name: Run flake8
         uses: py-actions/flake8@v2
         with:
           ignore: "E501,E741,W605,E265,E226,W504,W291,E261,W293,E303,E231,E203,E302,E251,E127,E124,E211,E305,E128,E275,W503"
-
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "chore: Autopep8"
   
-  generate:
-    needs: linting
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }}
-
-      - name: Update latest channels 
-        run: |
-          pip install -r requirements.txt
-          cd epg_grabber 
-          python generate.py 
-
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "chore: Update latest channels"
-
   tests:
-    needs: generate
+    needs: linting
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v2
