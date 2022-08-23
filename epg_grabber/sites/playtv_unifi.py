@@ -4,7 +4,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from pytz import timezone
 from helper.utils import get_channel_by_name, get_epg_datetime
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 from sites.auth.playtv_unifi_auth import get_session
 from config.env import playtv_unifi_device_id
 
@@ -34,11 +34,10 @@ def get_all_channels() -> List[Channel]:
 
     channels = [
         Channel(
-            channel["ID"],
-            channel["name"] + ".My",
-            channel["name"],
-            channel["logo"]["url"],
-            True,
+            id=channel["ID"],
+            tvg_id=channel["name"] + ".My",
+            tvg_name=channel["name"],
+            tvg_logo=channel["logo"]["url"],
         )
         for channel in channel_jsons
     ]

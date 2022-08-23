@@ -2,7 +2,7 @@ from typing import List
 import requests
 from pathlib import Path
 from datetime import date, timedelta, datetime
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 from helper.utils import get_channel_by_name, get_epg_datetime
 
 TIMEZONE_OFFSET = "+0700"
@@ -26,7 +26,6 @@ def get_all_channels() -> List[Channel]:
             tvg_logo="http://www.dens.tv/images/channel-logo/"
             + channel["seq"]
             + ".jpg",
-            sanitize=True,
         )
         for channel in channels
     ]
@@ -63,6 +62,7 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
             obj = Program(
                 channel_name=channel_name,
                 title=program["title"],
+                description="",
                 start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
                 stop=get_epg_datetime(end_time, TIMEZONE_OFFSET),
             )

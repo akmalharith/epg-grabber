@@ -23,11 +23,11 @@ starhubtvplus;HITSHD.Sg
 starhubtvplus;HITSMOVIESHD.Sg
 starhubtvplus;LifetimeHD.Sg
 starhubtvplus;MakefulHD.Sg
-starhubtvplus;MTVAsiaHD.Sg
 starhubtvplus;NationalGeographic(HD).Sg
 starhubtvplus;NatGeoWild(HD).Sg
 starhubtvplus;NickJr.HD.Sg
 starhubtvplus;NickelodeonHD.Sg
+starhubtvplus;ParamountNetwork.Sg
 starhubtvplus;SkyNews(HD).Sg
 starhubtvplus;SmithsonianChannelHD.Sg
 starhubtvplus;TravelxpHD2.Sg
@@ -47,11 +47,9 @@ starhubtvplus;CTITVHD.Sg
 starhubtvplus;DragonTV.Sg
 starhubtvplus;GEMHD.Sg
 starhubtvplus;HubECityHD.Sg
+starhubtvplus;HubRuyiPlaylist.Sg
 starhubtvplus;HubVVDramaHD.Sg
-starhubtvplus;iQiyiPlaylist.Sg
 starhubtvplus;KBSWorldHD.Sg
-starhubtvplus;NowBaoguMoviesOnDemand.Sg
-starhubtvplus;NowBaoguMoviesPlaylist.Sg
 starhubtvplus;NowJelli.Sg
 starhubtvplus;OhKHD.Sg
 starhubtvplus;ONEHD.Sg
@@ -75,7 +73,7 @@ starhubtvplus;CitraEntertainment.Sg
 starhubtvplus;GEMHD.Sg
 starhubtvplus;HITSHD.Sg
 starhubtvplus;HITSMOVIESHD.Sg
-starhubtvplus;HubSensasiHD.Sg
+starhubtvplus;AstroSensasiHD.Sg
 starhubtvplus;Karisma.Sg
 starhubtvplus;KBSWorldHD.Sg
 starhubtvplus;OhKHD.Sg
@@ -107,7 +105,6 @@ starhubtvplus;GMALifeTV.Sg
 starhubtvplus;GMAPinoyTV.Sg
 starhubtvplus;HITSHD.Sg
 starhubtvplus;HITSMOVIESHD.Sg
-starhubtvplus;MTVAsiaHD.Sg
 starhubtvplus;TheFilipinoChannelHD.Sg
 starhubtvplus;beINSPORTSHD.Sg
 starhubtvplus;beINSPORTS2HD.Sg
@@ -129,6 +126,7 @@ starhubtvplus;DWEnglish.Sg
 starhubtvplus;HubECityHD.Sg
 starhubtvplus;LoveNatureHD.Sg
 starhubtvplus;NHKWORLD-JAPANHD.Sg
+starhubtvplus;SEAToday.Sg
 starhubtvplus;HBO(HD).Sg
 starhubtvplus;HBOOnDemandHD1.Sg
 starhubtvplus;HBOSignature(HD).Sg

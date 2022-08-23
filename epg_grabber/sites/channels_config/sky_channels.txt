@@ -207,7 +207,6 @@ sky;AlJazeeraHD.Uk
 sky;GBNewsHD.Uk
 sky;TRTWorld.Uk
 sky;Channels24.Uk
-sky;AriseNews.Uk
 sky;ArirangTVHD.Uk
 sky;WIONHD.Uk
 sky;TVCNews.Uk
@@ -317,7 +316,6 @@ sky;HUMEUROPE.Uk
 sky;BritishMuslim.Uk
 sky;DunyaNews.Uk
 sky;IslamChUrdu.Uk
-sky;Channel44.Uk
 sky;EmanChannel.Uk
 sky;ARYDigital.Uk
 sky;54227.Uk

@@ -1,10 +1,10 @@
-import re
 from typing import List
-import requests
 from datetime import datetime, timedelta
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 from helper.utils import get_channel_by_name, get_epg_datetime
 from pathlib import Path
+import re
+import requests
 
 TIMEZONE_OFFSET = "+0800"
 ALL_CHANNELS_URL = "https://contenthub-api.eco.astro.com.my/channel/all.json"
@@ -13,10 +13,8 @@ PROGRAM_DETAIL_URL = "https://contenthub-api.eco.astro.com.my/api/v1/linear-deta
 
 
 def get_all_channels() -> List[Channel]:
-    query_url = ALL_CHANNELS_URL
-
     try:
-        r = requests.get(query_url)
+        r = requests.get(ALL_CHANNELS_URL)
     except requests.exceptions.RequestException as e:
         raise SystemExit(e)
 
@@ -35,7 +33,6 @@ def get_all_channels() -> List[Channel]:
             tvg_id=channel["title"] + ".My",
             tvg_name=channel["title"],
             tvg_logo=channel["imageUrl"],
-            sanitize=True,
         )
         for channel in channel_jsons
     ]
@@ -90,7 +87,7 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
         raise SystemExit(e)
 
     if r.status_code != 200:
-        return [Program()]
+        return
 
     output = r.json()
 
@@ -113,7 +110,7 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
                 end_time = start_time + timedelta(seconds=dur)
                 title, short_synopsis = get_program_details(p["siTrafficKey"])
 
-                obj = Program(
+                program_inner = Program(
                     channel_name=channel.tvg_id,
                     title=title,
                     description=short_synopsis,
@@ -123,6 +120,6 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
                 )
             except KeyError:
                 continue
-            programs.append(obj)
+            programs.append(program_inner)
 
     return programs

@@ -2,7 +2,7 @@ import requests
 from typing import List
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 from helper.utils import get_epg_datetime, get_channel_by_name
 
 ALL_CHANNELS_URL = "https://api.cgtn.com/website/api/live/channel/list"
@@ -28,7 +28,6 @@ def get_all_channels() -> List[Channel]:
             tvg_id=channel["title"] + ".Cn",
             tvg_name=channel["title"],
             tvg_logo=channel["shareBody"]["iconUrl"],
-            sanitize=True,
         )
         for channel in output
     ]
@@ -69,12 +68,13 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
         end_time_epoch = int(int(program["endTime"]) / 1000)
         end_time = datetime.fromtimestamp(end_time_epoch, timezone.utc)
 
-        obj = Program(
+        program_inner = Program(
             channel_name=channel.tvg_id,
             title=program["name"],
+            description="",
             start=get_epg_datetime(start_time),
             stop=get_epg_datetime(end_time),
         )
-        programs.append(obj)
+        programs.append(program_inner)
 
     return programs

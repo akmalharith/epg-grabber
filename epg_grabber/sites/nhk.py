@@ -2,7 +2,7 @@ from typing import List
 import requests
 from datetime import datetime, timedelta
 from pytz import timezone
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 from helper.utils import get_epg_datetime
 
 PROGRAMS_URL = "https://nwapi.nhk.jp/nhkworld/epg/v7b/world/s{start}-e{end}.json"
@@ -10,7 +10,7 @@ PROGRAMS_URL = "https://nwapi.nhk.jp/nhkworld/epg/v7b/world/s{start}-e{end}.json
 
 # Hardcode since we are only dealing with one channel
 def get_all_channels() -> List[Channel]:
-    return [Channel("nhk", "nhk.Jp", "NHK World Japan", "")]
+    return [Channel(id="nhk", tvg_id="nhk.Jp", tvg_name="NHK World Japan", tvg_logo="")]
 
 
 def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:

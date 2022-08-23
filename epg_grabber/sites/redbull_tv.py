@@ -1,7 +1,7 @@
 from typing import List
 import requests
 from datetime import datetime
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 from helper.utils import get_epg_datetime
 from sites.auth.redbull_tv_auth import get_session
 
@@ -15,10 +15,10 @@ DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S"
 def get_all_channels() -> List[Channel]:
     return [
         Channel(
-            "redbulltv",
-            "redbulltv.Us",
-            "RedBull TV",
-            "https://img.redbull.com/images/e_trim:10:transparent/w_260/q_auto,f_png/redbullcom/2020/9/28/thlczntgyjpczxckt3ii/redbulllogo",
+            id="redbulltv",
+            tvg_id="redbulltv.Us",
+            tvg_name="RedBull TV",
+            tvg_logo="https://img.redbull.com/images/e_trim:10:transparent/w_260/q_auto,f_png/redbullcom/2020/9/28/thlczntgyjpczxckt3ii/redbulllogo",
         )
     ]
 

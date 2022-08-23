@@ -79,7 +79,7 @@ def generate(site_name: str) -> None:
         site_name (str): _description_
     """
     try:
-        site = importlib.import_module("epg_grabber.sites." + site_name)    
+        site = importlib.import_module("sites." + site_name)
     except Exception:
         return  # Don't stop generate() if any of the modules failed
     log.info("Generating a new channel list for " + site_name)

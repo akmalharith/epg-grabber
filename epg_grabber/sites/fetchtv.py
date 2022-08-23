@@ -3,7 +3,7 @@ import requests
 from pathlib import Path
 from datetime import datetime, timedelta
 from helper.utils import get_channel_by_name, get_epg_datetime
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 from sites.auth.fetchtv_auth import get_session
 
 ALL_CHANNELS_URL = "https://www.fetchtv.com.au/v4/epg/channels"
@@ -26,11 +26,10 @@ def get_all_channels() -> List[Channel]:
 
     channels = [
         Channel(
-            channel["channel_id"],
-            channel["name"] + ".Au",
-            channel["name"],
-            CHANNEL_IMAGE_URL.format(channel_id=channel["channel_id"]),
-            True,
+            id=channel["channel_id"],
+            tvg_id=channel["name"] + ".Au",
+            tvg_name=channel["name"],
+            tvg_logo=CHANNEL_IMAGE_URL.format(channel_id=channel["channel_id"]),
         )
         for channel in channels_data
     ]

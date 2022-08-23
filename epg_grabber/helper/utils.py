@@ -1,9 +1,9 @@
 from datetime import datetime
-import os
-import json
 from typing import Any, Mapping
 from config.constants import EPG_XMLTV_TIMEFORMAT
-from helper.classes import Channel
+from models.tvg import Channel
+import os
+import json
 
 
 def get_epg_datetime(datetime: datetime, offset="+0000") -> str:
@@ -73,7 +73,12 @@ def get_channel_by_name(tvg_id: str, site_name: str) -> Channel:
         )
     except Exception:
         raise ValueError("Channel metadata %s not found.", tvg_id)
-    return Channel(chan["id"], chan["tvg_id"], chan["tvg_name"], chan["tvg_logo"])
+    return Channel(
+        id=chan["id"],
+        tvg_id=chan["tvg_id"],
+        tvg_name=chan["tvg_name"],
+        tvg_logo=chan["tvg_logo"],
+    )
 
 
 def get_channelid_by_name(tvg_id: str, site_name: str) -> str:

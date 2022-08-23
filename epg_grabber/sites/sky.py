@@ -4,7 +4,7 @@ from pathlib import Path
 from datetime import date, datetime, timedelta
 from pytz import timezone
 from helper.utils import get_channel_by_name, get_epg_datetime
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 
 ALL_CHANNELS_URL = "http://awk.epgsky.com/hawk/linear/services/4101/1"
 PROGRAMS_URL = "https://awk.epgsky.com/hawk/linear/schedule/{date_str}/{channelId}"
@@ -33,7 +33,6 @@ def get_all_channels() -> List[Channel]:
             tvg_id=channel["t"] + ".Uk",
             tvg_name=channel["t"],
             tvg_logo=CHANNEL_LOGO_PREFIX_URL + channel["sid"] + ".png",
-            sanitize=True,
         )
         for channel in channel_json
     ]

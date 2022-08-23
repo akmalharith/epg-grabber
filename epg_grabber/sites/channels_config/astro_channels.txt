@@ -112,6 +112,7 @@ astro;eGGNetworkHD.My
 astro;AstroArenaHD.My
 astro;AstroArena2HD.My
 astro;AstroSuperSportUHD1.My
+astro;SPOTV2.My
 astro;AstroSuperSportHD.My
 astro;AstroSuperSport2HD.My
 astro;AstroSuperSport3HD.My

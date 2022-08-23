@@ -7,7 +7,7 @@ from datetime import date, timedelta, datetime
 from pytz import timezone
 from unicodedata import normalize
 from bs4 import BeautifulSoup
-from helper.classes import Program, Channel
+from models.tvg import Program, Channel
 from helper.utils import get_channel_by_name, get_epg_datetime
 from sites.auth.starhubtvplus_auth import get_session
 
@@ -72,7 +72,6 @@ def get_all_channels() -> List[Channel]:
             tvg_id=tags_pair[0] + ".Sg",
             tvg_name=tags_pair[0],
             tvg_logo=image_url.format(ch_id=str_id),
-            sanitize=True,
         )
 
         channels.append(ch_obj)

@@ -17,8 +17,9 @@ from config.constants import (
     EMPTY_CONFIG_ERROR_MESSAGE,
 )
 from config.env import config_name, config_url, develop, epg_days, tests, tmp_epg_file
-from helper.classes import Channel, Program, EpgWriter
+from helper.epgwriter import EpgWriter
 from helper.utils import get_channel_by_name
+from models.tvg import Channel, Program
 
 sys.tracebacklimit = 0
 log = logging.getLogger(TITLE)
@@ -90,7 +91,9 @@ def scrape_by_site(site_name: str, channel_name: str) -> Tuple[List[str], Channe
         raise e
 
     try:
-        programs_by_channel = site.get_programs_by_channel(channel_name=channel_name, days = int(epg_days))
+        programs_by_channel = site.get_programs_by_channel(
+            channel_name=channel_name, days=int(epg_days)
+        )
     except Exception as e:
         log.error("{}: {}".format(type(e).__name__, e))
         raise e

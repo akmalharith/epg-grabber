@@ -3,7 +3,7 @@ import requests
 import datetime
 from pathlib import Path
 from bs4 import BeautifulSoup
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 from helper.utils import get_channel_by_name, get_epg_datetime
 
 
@@ -45,11 +45,7 @@ def get_all_channels() -> List[Channel]:
         ch_icon_url = WEBSITE_HOST + channel.find("img")["src"]
 
         obj = Channel(
-            id=ch_id,
-            tvg_id=ch_name + ".Id",
-            tvg_name=ch_name,
-            tvg_logo=ch_icon_url,
-            sanitize=True,
+            id=ch_id, tvg_id=ch_name + ".Id", tvg_name=ch_name, tvg_logo=ch_icon_url
         )
 
         channels.append(obj)

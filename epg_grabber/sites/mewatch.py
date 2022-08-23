@@ -4,7 +4,7 @@ import requests
 from pathlib import Path
 from datetime import date, datetime, timedelta
 from helper.utils import get_channel_by_name, get_epg_datetime
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 
 ALL_CHANNELS_URL = "https://www.mewatch.sg/channel-guide"
 PROGRAMS_URL = "https://cdn.mewatch.sg/api/schedules?channels={channel_id}&date={date}&duration=24&hour=16&segments=all"
@@ -70,12 +70,11 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
             end_program = datetime.strptime(schedule["endDate"], DATETIME_FORMAT)
 
             obj = Program(
-                channel.tvg_id,
-                schedule["item"]["title"],
-                schedule["item"]["description"],
-                get_epg_datetime(start_program),
-                get_epg_datetime(end_program),
-                "",
+                channel_name=channel.tvg_id,
+                title=schedule["item"]["title"],
+                description=schedule["item"]["description"],
+                start=get_epg_datetime(start_program),
+                stop=get_epg_datetime(end_program),
             )
             programs.append(obj)
 

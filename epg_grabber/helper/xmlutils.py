@@ -1,4 +1,5 @@
 from xml.sax.saxutils import escape
+from models.tvg import Channel, Program
 
 
 def xml_header(title) -> str:
@@ -12,7 +13,7 @@ def xml_close() -> str:
     return "</tv>"
 
 
-def program_to_xml(program) -> str:
+def program_to_xml(program: Program) -> str:
     if not program.title:  # Don't parse if empty title
         return ""
 
@@ -32,7 +33,7 @@ def program_to_xml(program) -> str:
     return program
 
 
-def channel_to_xml(channel) -> str:
+def channel_to_xml(channel: Channel) -> str:
     line_channel = f'<channel id="{escape(channel.tvg_id)}">'
     line_display_name = (
         f'<display-name lang="en">{escape(channel.tvg_name)}</display-name>'

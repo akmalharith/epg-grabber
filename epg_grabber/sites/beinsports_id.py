@@ -3,7 +3,7 @@ import requests
 from pathlib import Path
 from datetime import date, datetime
 from bs4 import BeautifulSoup
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 from helper.utils import get_channel_by_name, get_epg_datetime
 
 TIMEZONE_OFFSET = "+0800"
@@ -12,8 +12,18 @@ PROGRAM_URL = "https://epg.beinsports.com/utctime_id.php?cdate={date}&offset=+8&
 
 def get_all_channels():
     return [
-        Channel("channels_1", "beInSPORTS1.Id", "beIN SPORTS 1", "", True),
-        Channel("channels_2", "beInSPORTS2.Id", "beIN SPORTS 2", "", True),
+        Channel(
+            id="channels_1",
+            tvg_id="beInSPORTS1.Id",
+            tvg_name="beIN SPORTS 1",
+            tvg_logo="",
+        ),
+        Channel(
+            id="channels_2",
+            tvg_id="beInSPORTS2.Id",
+            tvg_name="beIN SPORTS 2",
+            tvg_logo="",
+        ),
     ]
 
 

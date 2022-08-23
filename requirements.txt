@@ -1,3 +1,4 @@
+pydantic==1.9.2
 requests==2.25.1
 pytz==2021.1
 beautifulsoup4==4.9.3

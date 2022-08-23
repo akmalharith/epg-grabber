@@ -60,7 +60,7 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
 
     if r.status_code != 200:
         raise Exception(r.raise_for_status())
-    
+
     output = r.json()
 
     schedules = output["schedule"]

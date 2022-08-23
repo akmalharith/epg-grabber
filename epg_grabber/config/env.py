@@ -29,9 +29,6 @@ playtv_unifi_user_id = os.getenv("PLAYTV_UNIFI_USER_ID")
 playtv_unifi_password = os.getenv("PLAYTV_UNIFI_PASSWORD")
 playtv_unifi_device_id = os.getenv("PLAYTV_UNIFI_DEVICE_ID")
 
-# sites/thetennischannel.py
-thetennischannel_api_key = os.getenv("THETENNISCHANNEL_API_KEY")
-
 # sites/starhubtvplus.py
 starhubtvplus_client_uuid = os.getenv("STARHUBTVPLUS_CLIENT_UUID")
 starhubtvplus_app_key = os.getenv("STARHUBTVPLUS_APP_KEY")

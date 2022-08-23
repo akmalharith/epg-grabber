@@ -7,9 +7,8 @@ from pathlib import Path
 from pytz import timezone
 from urllib.parse import urlparse, parse_qs
 from datetime import date, datetime, timedelta
-
 from sites.auth.visionplus_auth import get_token
-from helper.classes import Channel, Program
+from models.tvg import Channel, Program
 from helper.utils import get_channel_by_name, get_epg_datetime
 
 
@@ -46,7 +45,6 @@ def get_all_channels() -> List[Channel]:
             tvg_id=channel_display_name + ".Id",
             tvg_name=channel_display_name,
             tvg_logo=channel_logo,
-            sanitize=True,
         )
 
         channels.append(obj)
