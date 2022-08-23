@@ -108,4 +108,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/epg-grabber:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/epg-grabber:${{ github.ref_name }} , ${{ secrets.DOCKER_HUB_USERNAME }}/epg-grabber:latest
+           
