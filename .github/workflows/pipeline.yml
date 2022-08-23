@@ -24,7 +24,7 @@ jobs:
 
       - uses: actions/setup-python@v2
         with:
-          python-version: '3.x' 
+          python-version: '3.9' 
           architecture: 'x64'
 
       - name: Run recursive autoflake
@@ -40,7 +40,7 @@ jobs:
       - name: Run flake8
         uses: py-actions/flake8@v2
         with:
-          ignore: "E501,E741,W605,E265,E226,W504,W291,E261,W293,E303,E231,E203,E302,E251,E127,E124,E211,E305,E128"
+          ignore: "E501,E741,W605,E265,E226,W504,W291,E261,W293,E303,E231,E203,E302,E251,E127,E124,E211,E305,E128,E275"
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
