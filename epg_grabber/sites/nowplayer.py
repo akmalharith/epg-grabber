@@ -9,17 +9,21 @@ from helper.utils import get_channel_by_name, get_epg_datetime
 from bs4 import BeautifulSoup
 
 requests.packages.urllib3.disable_warnings()
-requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += ":HIGH:!DH:!aNULL"
 
 try:
-    requests.packages.urllib3.contrib.pyopenssl.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
+    requests.packages.urllib3.contrib.pyopenssl.util.ssl_.DEFAULT_CIPHERS += (
+        ":HIGH:!DH:!aNULL"
+    )
 except AttributeError:
     # no pyopenssl support used / needed / available
     pass
 
 ALL_CHANNELS_URL = "https://nowplayer.now.com/channels"
 PROGRAMS_URL = "https://nowplayer.now.com/tvguide/epglist?channelIdList={id}&day={days}"
-PROGRAMS_DETAIL_URL = "https://nowplayer.now.com/tvguide/epgprogramdetail?programId={program_id}"
+PROGRAMS_DETAIL_URL = (
+    "https://nowplayer.now.com/tvguide/epgprogramdetail?programId={program_id}"
+)
 
 
 def get_all_channels() -> List[Channel]:
@@ -32,22 +36,24 @@ def get_all_channels() -> List[Channel]:
 
     soup = BeautifulSoup(r.text, features="html.parser")
     divs = soup.find_all(
-        "div", {
-            "class": "col-md-2 col-sm-3 product-item tv-guide-all"})
+        "div", {"class": "col-md-2 col-sm-3 product-item tv-guide-all"}
+    )
 
-    channels = [Channel(
-                id=div.find("p", {"class": "channel"}).text.replace("CH", ""),
-                tvg_id=div.find("p", {"class": "img-name"}).text.strip() + ".Hk",
-                tvg_name=div.find("p", {"class": "img-name"}).text.strip(),
-                tvg_logo=div.find("img")['src'],
-                sanitize=True
-                ) for div in divs]
+    channels = [
+        Channel(
+            id=div.find("p", {"class": "channel"}).text.replace("CH", ""),
+            tvg_id=div.find("p", {"class": "img-name"}).text.strip() + ".Hk",
+            tvg_name=div.find("p", {"class": "img-name"}).text.strip(),
+            tvg_logo=div.find("img")["src"],
+            sanitize=True,
+        )
+        for div in divs
+    ]
 
     return channels
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
-    days = args[0] if args else 1
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     days = 7 if days > 7 else days
 
     channel = get_channel_by_name(channel_name, Path(__file__).stem)
@@ -71,11 +77,10 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
 
     for program in program_json:
 
-        title, description = get_program_details(program['vimProgramId'])
+        title, description = get_program_details(program["vimProgramId"])
 
         start_timestamp = int(int(program["start"]) / 1000)
-        start_program = datetime.fromtimestamp(
-            start_timestamp, timezone("UTC"))
+        start_program = datetime.fromtimestamp(start_timestamp, timezone("UTC"))
 
         end_timestamp = int(int(program["end"]) / 1000)
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
@@ -85,7 +90,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             title=title,
             description=description,
             start=get_epg_datetime(start_program),
-            stop=get_epg_datetime(end_program)
+            stop=get_epg_datetime(end_program),
         )
         programs.append(obj)
 
@@ -105,6 +110,6 @@ def get_program_details(program_id: str) -> str:
         raise Exception(r.raise_for_status())
 
     if "engSynopsis" in output:
-        return output['engSeriesName'], output['engSynopsis']
+        return output["engSeriesName"], output["engSynopsis"]
     else:
-        return output['engSeriesName'], ""
+        return output["engSeriesName"], ""

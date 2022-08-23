@@ -12,7 +12,8 @@ session_headers = get_session()
 
 ALL_CHANNEL_URL = "https://playtv.unifi.com.my:7047/VSP/V3/QueryAllChannel"
 PROGRAM_DETAILS_URL = "https://playtv.unifi.com.my:7047/VSP/V3/GetPlaybillDetail?SID=playbilldetail3&DEVICE=PC&DID={device_id}".format(
-    device_id=playtv_unifi_device_id)
+    device_id=playtv_unifi_device_id
+)
 PROGRAMS_URL = "https://playtv.unifi.com.my:7047/VSP/V3/QueryPlaybillList"
 
 
@@ -31,12 +32,16 @@ def get_all_channels() -> List[Channel]:
 
     channel_jsons = output["channelDetails"]
 
-    channels = [Channel(
-        channel["ID"],
-        channel["name"] + ".My",
-        channel["name"],
-        channel["logo"]["url"],
-        True) for channel in channel_jsons]
+    channels = [
+        Channel(
+            channel["ID"],
+            channel["name"] + ".My",
+            channel["name"],
+            channel["logo"]["url"],
+            True,
+        )
+        for channel in channel_jsons
+    ]
 
     return channels
 
@@ -54,10 +59,13 @@ def get_program_details(program_id: str) -> str:
                     "contentType": "PROGRAM",
                     "contentID": program_id,
                     "entrance": "CatchupTV_Similar_Recommendations",
-                    "businessType": "CUTV"}]}}
+                    "businessType": "CUTV",
+                }
+            ]
+        },
+    }
 
-    r = requests.post(program_details_url,
-                      cookies=session_headers, json=program_info)
+    r = requests.post(program_details_url, cookies=session_headers, json=program_info)
 
     output = r.json()
 
@@ -70,8 +78,7 @@ def get_program_details(program_id: str) -> str:
     return output["playbillDetail"]["introduce"]
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
-    days = args[0] if args else 1
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
 
     start_temp = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
     start_time = int(start_temp.timestamp() * 1000)
@@ -88,7 +95,8 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             "contentType": "CHANNEL",
             "channelIDs": [channel.id],
             "isReturnAllMedia": "1",
-            "channelFilter": {}},
+            "channelFilter": {},
+        },
         "needChannel": "0",
         "queryPlaybill": {
             "startTime": start_time,
@@ -96,7 +104,9 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             "count": "100",
             "offset": "0",
             "type": "0",
-            "isFillProgram": "1"}}
+            "isFillProgram": "1",
+        },
+    }
 
     r = requests.post(programs_url, cookies=session_headers, json=channel_info)
 
@@ -116,8 +126,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     for program in program_json:
 
         start_timestamp = int(int(program["startTime"]) / 1000)
-        start_program = datetime.fromtimestamp(
-            start_timestamp, timezone("UTC"))
+        start_program = datetime.fromtimestamp(start_timestamp, timezone("UTC"))
 
         end_timestamp = int(int(program["endTime"]) / 1000)
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
@@ -127,7 +136,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             title=program["name"],
             description=get_program_details(program["ID"]),
             start=get_epg_datetime(start_program),
-            stop=get_epg_datetime(end_program)
+            stop=get_epg_datetime(end_program),
         )
         programs.append(obj)
 

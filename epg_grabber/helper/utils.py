@@ -60,23 +60,20 @@ def get_channel_by_name(tvg_id: str, site_name: str) -> Channel:
         Channel: _description_
     """
     metadata_dir = os.path.abspath(
-        os.path.join(
-            os.path.dirname(__file__),
-            '..',
-            'sites/channels_metadata'))
+        os.path.join(os.path.dirname(__file__), "..", "sites/channels_metadata")
+    )
     metadata_path = metadata_dir + "/" + site_name + ".json"
     all_channels = load_channels_metadata(metadata_path)
 
     try:
         chan = next(
-            channel for channel in all_channels if channel["tvg_id"].lower() == tvg_id.lower())
+            channel
+            for channel in all_channels
+            if channel["tvg_id"].lower() == tvg_id.lower()
+        )
     except Exception:
         raise ValueError("Channel metadata %s not found.", tvg_id)
-    return Channel(
-        chan["id"],
-        chan["tvg_id"],
-        chan["tvg_name"],
-        chan["tvg_logo"])
+    return Channel(chan["id"], chan["tvg_id"], chan["tvg_name"], chan["tvg_logo"])
 
 
 def get_channelid_by_name(tvg_id: str, site_name: str) -> str:

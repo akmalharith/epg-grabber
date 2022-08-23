@@ -21,19 +21,20 @@ def get_all_channels() -> List[Channel]:
     channels = [
         Channel(
             id=channel["seq"],
-            tvg_id=channel["title"] +
-            ".Id",
+            tvg_id=channel["title"] + ".Id",
             tvg_name=channel["title"],
-            tvg_logo="http://www.dens.tv/images/channel-logo/" +
-            channel["seq"] +
-            ".jpg",
-            sanitize=True) for channel in channels]
+            tvg_logo="http://www.dens.tv/images/channel-logo/"
+            + channel["seq"]
+            + ".jpg",
+            sanitize=True,
+        )
+        for channel in channels
+    ]
 
     return channels
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
-    days = args[0] if args else 1
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
 
     date_today = date.today()
     all_programs = []
@@ -57,15 +58,13 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
         programs = []
 
         for program in output:
-            start_time = datetime.strptime(
-                program["starttime"], "%Y-%m-%d %H:%M:%S")
-            end_time = datetime.strptime(
-                program["endtime"], "%Y-%m-%d %H:%M:%S")
+            start_time = datetime.strptime(program["starttime"], "%Y-%m-%d %H:%M:%S")
+            end_time = datetime.strptime(program["endtime"], "%Y-%m-%d %H:%M:%S")
             obj = Program(
                 channel_name=channel_name,
                 title=program["title"],
                 start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
-                stop=get_epg_datetime(end_time, TIMEZONE_OFFSET)
+                stop=get_epg_datetime(end_time, TIMEZONE_OFFSET),
             )
             programs.append(obj)
 

@@ -20,8 +20,7 @@ def get_all_channels() -> List[Channel]:
     web_page = response.text
     start_tag = "window.__data"
 
-    matched_line = [line for line in web_page.split(
-        "\n") if start_tag in line][0]
+    matched_line = [line for line in web_page.split("\n") if start_tag in line][0]
     matched_line_inner = matched_line.split("</script>")[1]
 
     to_remove = """<!-- '"´ --><script nonce="_">window.__data = """
@@ -30,19 +29,21 @@ def get_all_channels() -> List[Channel]:
 
     channels_raw = output["cache"]["list"]["137962|page_size=24"]["list"]["items"]
 
-    channels = [Channel(
-        id=channel["id"],
-        tvg_id=channel["title"] + ".Sg",
-        tvg_name=channel["title"],
-        tvg_logo=channel["images"]["square"],
-        sanitize=True
-    ) for channel in channels_raw]
+    channels = [
+        Channel(
+            id=channel["id"],
+            tvg_id=channel["title"] + ".Sg",
+            tvg_name=channel["title"],
+            tvg_logo=channel["images"]["square"],
+            sanitize=True,
+        )
+        for channel in channels_raw
+    ]
 
     return channels
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
-    days = args[0] if args else 1
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     days = 7 if days > 7 else days
 
     date_today = date.today() - timedelta(days=1)
@@ -51,8 +52,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     all_programs = []
     for i in range(days):
         date_input = date_today + timedelta(days=i)
-        channel_url = PROGRAMS_URL.format(
-            channel_id=channel.id, date=date_input)
+        channel_url = PROGRAMS_URL.format(channel_id=channel.id, date=date_input)
 
         r = requests.get(channel_url)
 
@@ -66,10 +66,8 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
 
         for schedule in schedules:
 
-            start_program = datetime.strptime(
-                schedule["startDate"], DATETIME_FORMAT)
-            end_program = datetime.strptime(
-                schedule["endDate"], DATETIME_FORMAT)
+            start_program = datetime.strptime(schedule["startDate"], DATETIME_FORMAT)
+            end_program = datetime.strptime(schedule["endDate"], DATETIME_FORMAT)
 
             obj = Program(
                 channel.tvg_id,
@@ -77,7 +75,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
                 schedule["item"]["description"],
                 get_epg_datetime(start_program),
                 get_epg_datetime(end_program),
-                ""
+                "",
             )
             programs.append(obj)
 

@@ -32,11 +32,13 @@ def get_all_channels() -> List[Channel]:
     channels = [
         Channel(
             id=channel["id"],
-            tvg_id=channel["title"] +
-            ".My",
+            tvg_id=channel["title"] + ".My",
             tvg_name=channel["title"],
             tvg_logo=channel["imageUrl"],
-            sanitize=True) for channel in channel_jsons]
+            sanitize=True,
+        )
+        for channel in channel_jsons
+    ]
 
     return channels
 
@@ -75,14 +77,12 @@ def get_clean_title(title: str) -> str:
     return cleanup.strip()
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
-    days = args[0] if args else 1
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     days = 7 if days > 7 else days
 
     channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
-    channel_url = PROGRAM_URL.format(
-        channel_id=channel.id)
+    channel_url = PROGRAM_URL.format(channel_id=channel.id)
 
     try:
         r = requests.get(channel_url)
@@ -107,8 +107,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
         program = program_json[schedules[i]]
         for p in program:
             try:
-                start_time = datetime.strptime(
-                    p["datetime"], "%Y-%m-%d %H:%M:%S.%f")
+                start_time = datetime.strptime(p["datetime"], "%Y-%m-%d %H:%M:%S.%f")
                 hour, min, sec = p["duration"].split(":")
                 dur = int(sec) + (int(min) * 60) + (int(hour) * 3600)
                 end_time = start_time + timedelta(seconds=dur)
@@ -120,7 +119,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
                     description=short_synopsis,
                     start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
                     stop=get_epg_datetime(end_time, TIMEZONE_OFFSET),
-                    episode=get_episode_onscreen(title)
+                    episode=get_episode_onscreen(title),
                 )
             except KeyError:
                 continue

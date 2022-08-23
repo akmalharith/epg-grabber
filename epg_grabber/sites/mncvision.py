@@ -35,7 +35,8 @@ def get_all_channels() -> List[Channel]:
     soup = BeautifulSoup(r.text, features="html.parser")
 
     channel_lineup = soup.find_all(
-        "div", {"class": "col-xs-6 col-sm-4 col-md-3 col-lg-2 tm-col"})
+        "div", {"class": "col-xs-6 col-sm-4 col-md-3 col-lg-2 tm-col"}
+    )
 
     for channel in channel_lineup:
         ch_id = channel.find("span", {"class": "tm-channel-no"}).text
@@ -48,7 +49,7 @@ def get_all_channels() -> List[Channel]:
             tvg_id=ch_name + ".Id",
             tvg_name=ch_name,
             tvg_logo=ch_icon_url,
-            sanitize=True
+            sanitize=True,
         )
 
         channels.append(obj)
@@ -103,10 +104,7 @@ def get_next_page(url: str) -> BeautifulSoup:
     return soup
 
 
-def get_programs(
-        program: str,
-        channel_name: str,
-        request_date: str) -> Program:
+def get_programs(program: str, channel_name: str, request_date: str) -> Program:
     time = program.find_all("td", {"class": "text-center"})
     start = time[0].text
     duration = time[1].text
@@ -131,14 +129,13 @@ def get_programs(
         title=title,
         description=get_program_details(description_url),
         start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
-        stop=get_epg_datetime(end_time, TIMEZONE_OFFSET)
+        stop=get_epg_datetime(end_time, TIMEZONE_OFFSET),
     )
 
     return obj
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
-    days = args[0] if args else 1
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     days = 7 if days > 7 else days
 
     today = datetime.datetime.today()
@@ -154,7 +151,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             "af0rmelement": "aformelement",
             "fdate": request_date,
             "fchannel": channel.id,
-            "submit": "Cari"
+            "submit": "Cari",
         }
 
         page_url = []

@@ -9,7 +9,13 @@ import logging
 from typing import List, Tuple
 
 # Environment variables
-from config.constants import CONFIG_REGEX, DEVELOP_FILE, TESTS_FILE, TITLE, EMPTY_CONFIG_ERROR_MESSAGE
+from config.constants import (
+    CONFIG_REGEX,
+    DEVELOP_FILE,
+    TESTS_FILE,
+    TITLE,
+    EMPTY_CONFIG_ERROR_MESSAGE,
+)
 from config.env import config_name, config_url, develop, epg_days, tests, tmp_epg_file
 from helper.classes import Channel, Program, EpgWriter
 from helper.utils import get_channel_by_name
@@ -17,9 +23,10 @@ from helper.utils import get_channel_by_name
 sys.tracebacklimit = 0
 log = logging.getLogger(TITLE)
 logging.basicConfig(
-    format='%(asctime)s %(levelname)-8s %(message)s',
+    format="%(asctime)s %(levelname)-8s %(message)s",
     level=os.environ.get("LOGLEVEL", "INFO"),
-    datefmt='%Y-%m-%d %H:%M:%S')
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
 
 
 def load_config() -> List[str]:
@@ -48,21 +55,21 @@ def load_config() -> List[str]:
             raise Exception(e)
         text_buffer = r.text
 
-    config_items = [config for config in text_buffer.splitlines()
-                    if config
-                    if re.match(CONFIG_REGEX, config)
-                    if not config.startswith("#")]
+    config_items = [
+        config
+        for config in text_buffer.splitlines()
+        if config
+        if re.match(CONFIG_REGEX, config)
+        if not config.startswith("#")
+    ]
 
     if not config_items:
-        raise Exception(
-            EMPTY_CONFIG_ERROR_MESSAGE.format(
-                config_url=config_url))
+        raise Exception(EMPTY_CONFIG_ERROR_MESSAGE.format(config_url=config_url))
 
     return config_items
 
 
-def scrape_by_site(
-        site_name: str, channel_name: str) -> Tuple[List[str], Channel]:
+def scrape_by_site(site_name: str, channel_name: str) -> Tuple[List[str], Channel]:
     """
     _summary_
 
@@ -83,8 +90,7 @@ def scrape_by_site(
         raise e
 
     try:
-        programs_by_channel = site.get_programs_by_channel(
-            channel_name, int(epg_days))
+        programs_by_channel = site.get_programs_by_channel(channel_name=channel_name, days = int(epg_days))
     except Exception as e:
         log.error("{}: {}".format(type(e).__name__, e))
         raise e
@@ -95,10 +101,7 @@ def scrape_by_site(
         log.error("{}: {}".format(type(e).__name__, e))
         raise e
 
-    log.info(
-        "[%s] Total programs = %d",
-        channel_name,
-        len(programs_by_channel))
+    log.info("[%s] Total programs = %d", channel_name, len(programs_by_channel))
     log.info("[%s] Scraping completed.", channel_name)
 
     return programs_by_channel, channel
@@ -123,8 +126,7 @@ def scrape() -> Tuple[List[Program], List[Channel]]:
         log.info("[%s] Channel found. Scraping programs...", channel_name)
 
         try:
-            programs_by_channel, channel_inner = scrape_by_site(
-                site_name, channel_name)
+            programs_by_channel, channel_inner = scrape_by_site(site_name, channel_name)
         except Exception:
             continue
 
@@ -142,11 +144,7 @@ if __name__ == "__main__":
     programs, channels = scrape()
 
     # Writing XMLTV format to a temporary file
-    EpgWriter.save(
-        file=tmp_epg_file,
-        channels=channels,
-        programs=programs
-    )
+    EpgWriter.save(file=tmp_epg_file, channels=channels, programs=programs)
 
     log.info("FINISH: Finished scraping.")
     print("--- %s seconds ---" % (time.time() - start_time))

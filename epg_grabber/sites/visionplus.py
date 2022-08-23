@@ -31,9 +31,11 @@ def get_all_channels() -> List[Channel]:
     channels = []
 
     for channel in channels_raw:
-        metadata = re.match(
-            "https://www.visionplus.id/channel/(.*)",
-            channel["loc"]).group(1).split("/")
+        metadata = (
+            re.match("https://www.visionplus.id/channel/(.*)", channel["loc"])
+            .group(1)
+            .split("/")
+        )
         channel_id = metadata[0]
         metadata[1]
         channel_display_name = channel["video:video"]["video:title"]
@@ -44,7 +46,7 @@ def get_all_channels() -> List[Channel]:
             tvg_id=channel_display_name + ".Id",
             tvg_name=channel_display_name,
             tvg_logo=channel_logo,
-            sanitize=True
+            sanitize=True,
         )
 
         channels.append(obj)
@@ -52,8 +54,7 @@ def get_all_channels() -> List[Channel]:
     return channels
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
-    days = args[0] if args else 1
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     days = 7 if days > 7 else days
 
     date_today = date.today()
@@ -63,8 +64,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
 
     for i in range(days):
         date_input = date_today + timedelta(days=i)
-        channel_url = PROGRAMS_URL.format(
-            date_input=date_input, channel_id=channel.id)
+        channel_url = PROGRAMS_URL.format(date_input=date_input, channel_id=channel.id)
 
         r = requests.get(channel_url, headers=headers)
 
@@ -90,18 +90,16 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             parsed_url = urlparse(program_url)
 
             start_timestamp = int(parse_qs(parsed_url.query)["begin"][0])
-            start_program = datetime.fromtimestamp(
-                start_timestamp, timezone("UTC"))
+            start_program = datetime.fromtimestamp(start_timestamp, timezone("UTC"))
             end_timestamp = int(parse_qs(parsed_url.query)["end"][0])
-            end_program = datetime.fromtimestamp(
-                end_timestamp, timezone("UTC"))
+            end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
 
             obj = Program(
                 channel_name=channel.tvg_id,
                 title=schedule["t"],
                 description=schedule["synopsis"],
                 start=get_epg_datetime(start_program),
-                stop=get_epg_datetime(end_program)
+                stop=get_epg_datetime(end_program),
             )
             programs.append(obj)
         all_programs.extend(programs)

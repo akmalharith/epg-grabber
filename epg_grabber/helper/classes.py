@@ -6,25 +6,27 @@ from helper.xmlutils import channel_to_xml, program_to_xml, xml_header, xml_clos
 
 class Program:
     __slots__ = [
-        'channel_name',
-        'title',
-        'description',
-        'start',
-        'stop',
-        'episode',
-        'category',
-        'rating']
+        "channel_name",
+        "title",
+        "description",
+        "start",
+        "stop",
+        "episode",
+        "category",
+        "rating",
+    ]
 
     def __init__(
-            self,
-            channel_name="",
-            title="",
-            description="",
-            start="",
-            stop="",
-            episode="",
-            category="",
-            rating="") -> None:
+        self,
+        channel_name="",
+        title="",
+        description="",
+        start="",
+        stop="",
+        episode="",
+        category="",
+        rating="",
+    ) -> None:
         """
         Details of a single programme transmission. If no attributes are set we are returning empty program, useful if API calls are not returning success, because we do not want to break the scraping job.
 
@@ -55,12 +57,8 @@ class Channel:
     __slots__ = ["id", "tvg_id", "tvg_name", "tvg_logo"]
 
     def __init__(
-            self,
-            id="",
-            tvg_id="",
-            tvg_name="",
-            tvg_logo="",
-            sanitize=False) -> None:
+        self, id="", tvg_id="", tvg_name="", tvg_logo="", sanitize=False
+    ) -> None:
         """
         _summary_
 
@@ -75,9 +73,11 @@ class Channel:
 
         if sanitize:
             # Sanitize the characters in tvg_id, except a period
-            tvg_id = [tvg_id.replace(char, "")
-                      for char in string.punctuation
-                      if char != PERIOD][0].replace(" ", "")
+            tvg_id = [
+                tvg_id.replace(char, "")
+                for char in string.punctuation
+                if char != PERIOD
+            ][0].replace(" ", "")
         self.tvg_id = tvg_id
 
         self.tvg_name = tvg_name
@@ -86,25 +86,19 @@ class Channel:
 
 class EpgWriter:
     @staticmethod
-    def generate(
-            channels=None,
-            programs=None) -> bytes:
+    def generate(channels=None, programs=None) -> bytes:
         """Generate an XML data from channels and programs."""
 
         channel_xml = [channel_to_xml(channel) for channel in channels][0]
         programs_xml = [program_to_xml(program) for program in programs][0]
 
-        xmlstring = xml_header(TITLE) + channel_xml + \
-            programs_xml + xml_close()
+        xmlstring = xml_header(TITLE) + channel_xml + programs_xml + xml_close()
         xmlbytes = bytes(xmlstring, "utf-8")
 
         return xmlbytes
 
     @staticmethod
-    def save(
-            file="",
-            channels=None,
-            programs=None):
+    def save(file="", channels=None, programs=None):
 
         with open(file, "w+") as file:
             file.write(xml_header(TITLE))

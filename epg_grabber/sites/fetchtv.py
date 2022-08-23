@@ -24,18 +24,21 @@ def get_all_channels() -> List[Channel]:
 
     channels_data = [channel[1] for channel in output["channels"].items()]
 
-    channels = [Channel(
-        channel["channel_id"],
-        channel["name"] + ".Au",
-        channel["name"],
-        CHANNEL_IMAGE_URL.format(channel_id=channel["channel_id"]),
-        True) for channel in channels_data]
+    channels = [
+        Channel(
+            channel["channel_id"],
+            channel["name"] + ".Au",
+            channel["name"],
+            CHANNEL_IMAGE_URL.format(channel_id=channel["channel_id"]),
+            True,
+        )
+        for channel in channels_data
+    ]
 
     return channels
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
-    days = args[0] if args else 1
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
 
     channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
@@ -46,9 +49,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
         diff = timedelta(days=i)
         date = today + diff
         date_seconds = str((date - datetime(1970, 1, 1)).days)
-        url = PROGRAM_URL.format(
-            channel_id=channel.id,
-            date_seconds=date_seconds)
+        url = PROGRAM_URL.format(channel_id=channel.id, date_seconds=date_seconds)
 
         try:
             r = session.get(url)
@@ -77,7 +78,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
                     title=title,
                     description=description,
                     start=get_epg_datetime(start_time),
-                    stop=get_epg_datetime(end_time)
+                    stop=get_epg_datetime(end_time),
                 )
                 programs.append(obj)
 

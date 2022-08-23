@@ -25,17 +25,18 @@ def get_all_channels() -> List[Channel]:
     channels = [
         Channel(
             id=channel["id"],
-            tvg_id=channel["title"] +
-            ".Cn",
+            tvg_id=channel["title"] + ".Cn",
             tvg_name=channel["title"],
             tvg_logo=channel["shareBody"]["iconUrl"],
-            sanitize=True) for channel in output]
+            sanitize=True,
+        )
+        for channel in output
+    ]
 
     return channels
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
-    days = args[0] if args else 1
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     days = 7 if days > 7 else days
 
     channel = get_channel_by_name(channel_name, Path(__file__).stem)
@@ -47,9 +48,8 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
     end_date_epoch = int(end_date.timestamp() * 1000)
 
     url = PROGRAM_URL.format(
-        channel_id=channel.id,
-        start_time=start_date_epoch,
-        end_time=end_date_epoch)
+        channel_id=channel.id, start_time=start_date_epoch, end_time=end_date_epoch
+    )
 
     try:
         r = requests.get(url)
@@ -73,7 +73,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             channel_name=channel.tvg_id,
             title=program["name"],
             start=get_epg_datetime(start_time),
-            stop=get_epg_datetime(end_time)
+            stop=get_epg_datetime(end_time),
         )
         programs.append(obj)
 

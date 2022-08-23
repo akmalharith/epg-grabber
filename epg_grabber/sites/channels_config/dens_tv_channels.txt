@@ -13,7 +13,7 @@ dens_tv;K-PLUSHD.Id
 dens_tv;ONEHD.Id
 dens_tv;tvNHD.Id
 dens_tv;tvNMoviesHD.Id
-dens_tv;CelestialMovies.Id
+dens_tv;CelestialMoviesHD.Id
 dens_tv;CCM(CelestialClassicMV).Id
 dens_tv;MyCinemaAsia.Id
 dens_tv;ZeeBioskop.Id

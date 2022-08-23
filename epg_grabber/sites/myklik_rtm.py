@@ -8,74 +8,75 @@ from helper.utils import get_channel_by_name, get_epg_datetime
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-ALL_CHANNELS_URL = "https://rtmklik.rtm.gov.my/bs-api/RTM(epg)/channels"
-PROGRAMS_URL = "https://rtmklik.rtm.gov.my/bs-api/RTM(epg)/channels/{channel_id}/epg?date={date}"
 TIMEZONE_OFFSET = "+0800"
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S"
 
 
 def get_all_channels() -> List[Channel]:
-    query_url = ALL_CHANNELS_URL
+    query_url = "https://rtm.glueapi.io/v3/content?idSchemas=2001"
 
     try:
         r = requests.get(query_url, verify=False)
     except requests.exceptions.RequestException as e:
         raise SystemExit(e)
 
-    output = r.json()
-
     if r.status_code != 200:
         raise Exception(r.raise_for_status())
 
-    channels = [Channel(
-        id=channel['id'],
-        tvg_id=channel['title'] + ".My",
-        tvg_name=channel['title'],
-        tvg_logo=channel['imageUrls'][0],
-        sanitize=True
-    ) for channel in output]
+    output = r.json()
+    output = output["data"]
+
+    channels = [
+        Channel(
+            id=channel["id"],
+            tvg_id=channel["title"] + ".My",
+            tvg_name=channel["title"],
+            tvg_logo="",  # TODO: Fix this
+            sanitize=True,
+        )
+        for channel in output
+    ]
 
     return channels
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
-    days = args[0] if args else 1
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     days = 7 if days > 7 else days
 
     date_today = date.today()
-    all_programs = []
+
+    date_start = date_today
+    date_end = date_today + timedelta(days=days - 1)
 
     channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
-    for i in range(days):
-        date_input = date_today + timedelta(days=i)
-        channel_id = channel.id
-        channel_url = PROGRAMS_URL.format(
-            channel_id=channel_id, date=date_input)
+    programs = []
+    channel_url = f"https://rtm.glueapi.io/v3/epg/{channel.id}/ChannelSchedule?dateStart={date_start}&dateEnd={date_end}&timezone=+08:00&embed=author,program"
 
-        try:
-            r = requests.get(channel_url, verify=False)
-        except requests.exceptions.RequestException as e:
-            raise SystemExit(e)
+    try:
+        r = requests.get(channel_url, verify=False)
+    except requests.exceptions.RequestException as e:
+        raise SystemExit(e)
 
-        if r.status_code != 200:
-            raise Exception(r.raise_for_status())
+    if r.status_code != 200:
+        raise Exception(r.raise_for_status())
+    
+    output = r.json()
 
-        schedules = r.json()
-        programs = []
+    schedules = output["schedule"]
 
-        for schedule in schedules:
-            start_time = datetime.strptime(schedule['start'], DATETIME_FORMAT)
-            end_time = datetime.strptime(schedule['end'], DATETIME_FORMAT)
+    for schedule in schedules:
+        start_time = datetime.strptime(schedule["dateTimeStart"], DATETIME_FORMAT)
+        end_time = datetime.strptime(schedule["dateTimeEnd"], DATETIME_FORMAT)
 
-            obj = Program(
-                channel_name=channel.tvg_id,
-                title=schedule['title'],
-                description=schedule['description'],
-                start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
-                stop=get_epg_datetime(end_time, TIMEZONE_OFFSET)
-            )
-            programs.append(obj)
-        all_programs.extend(programs)
+        object = Program(
+            channel_name="",
+            title=schedule["scheduleProgramTitle"],
+            description=schedule["scheduleProgramDescription"],
+            start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
+            stop=get_epg_datetime(end_time, TIMEZONE_OFFSET),
+        )
 
-    return all_programs
+        programs.append(object)
+
+    return programs

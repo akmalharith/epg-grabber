@@ -13,8 +13,7 @@ def get_all_channels() -> List[Channel]:
     return [Channel("nhk", "nhk.Jp", "NHK World Japan", "")]
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
-    days = args[0] if args else 1
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     days = 7 if days > 7 else days
 
     start_temp = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
@@ -38,8 +37,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
 
     for program in output:
         start_timestamp = int(int(program["pubDate"]) / 1000)
-        start_program = datetime.fromtimestamp(
-            start_timestamp, timezone("UTC"))
+        start_program = datetime.fromtimestamp(start_timestamp, timezone("UTC"))
 
         end_timestamp = int(int(program["endDate"]) / 1000)
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
@@ -49,7 +47,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             title=program["title"],
             description=program["description"],
             start=get_epg_datetime(start_program),
-            stop=get_epg_datetime(end_program)
+            stop=get_epg_datetime(end_program),
         )
         programs.append(obj)
 

@@ -23,7 +23,7 @@ headers = get_session()
 
 def get_all_channels() -> List[Channel]:
 
-    url = 'https://www.starhub.com/personal/tvplus/passes/channel-listing.html'
+    url = "https://www.starhub.com/personal/tvplus/passes/channel-listing.html"
 
     try:
         r = requests.get(url)
@@ -33,8 +33,7 @@ def get_all_channels() -> List[Channel]:
     if r.status_code != 200:
         raise Exception(r.raise_for_status())
 
-    channel_tables = soup.find_all(
-        "div", {"class": "free-form-table_v1 section"})
+    channel_tables = soup.find_all("div", {"class": "free-form-table_v1 section"})
 
     channel_table_tags = []
 
@@ -47,29 +46,33 @@ def get_all_channels() -> List[Channel]:
 
         channel_table_tags.extend(channel_table_tags_inner)
 
-    channel_tags_pair = [[normalize(normalize_format, channel_table_tags[i].text).
-                          replace("\n", "").strip(),
-                          normalize(normalize_format, channel_table_tags[i + 1].text).
-                          replace("\n", "").
-                          replace(on_demand_suffix, "").strip()]
-                         for i in range(len(channel_table_tags) - 1)
-                         if not i % 2
-                         if channel_table_tags[i + 1].text.lower() != "app"]
+    channel_tags_pair = [
+        [
+            normalize(normalize_format, channel_table_tags[i].text)
+            .replace("\n", "")
+            .strip(),
+            normalize(normalize_format, channel_table_tags[i + 1].text)
+            .replace("\n", "")
+            .replace(on_demand_suffix, "")
+            .strip(),
+        ]
+        for i in range(len(channel_table_tags) - 1)
+        if not i % 2
+        if channel_table_tags[i + 1].text.lower() != "app"
+    ]
 
     channels = []
 
     for tags_pair in channel_tags_pair:
-        tup_id = tags_pair[1].lower().replace(
-            "ch ", "").replace(
-            "via", "").strip(),
-        str_id = ''.join(tup_id)
+        tup_id = (tags_pair[1].lower().replace("ch ", "").replace("via", "").strip(),)
+        str_id = "".join(tup_id)
 
         ch_obj = Channel(
             id=str_id,
             tvg_id=tags_pair[0] + ".Sg",
             tvg_name=tags_pair[0],
             tvg_logo=image_url.format(ch_id=str_id),
-            sanitize=True
+            sanitize=True,
         )
 
         channels.append(ch_obj)
@@ -118,16 +121,13 @@ nagraEpg(category: $category) {
             "id": "GLOBAL_58",
             "category": "",
             "dateFrom": date_from,
-            "dateTo": date_to
+            "dateTo": date_to,
         },
-        "query": get_programs_query
+        "query": get_programs_query,
     }
 
     try:
-        response = requests.post(
-            api_url,
-            headers=headers,
-            json=programs_payload)
+        response = requests.post(api_url, headers=headers, json=programs_payload)
     except Exception as e:
         raise (e)
     if response.status_code != 200:
@@ -216,17 +216,12 @@ def _get_program_details(program_id: str) -> Tuple[str, str, str]:
 
     program_details_payload = {
         "operationName": "webEpgDetails",
-        "variables": {
-            "id": program_id
-        },
-        "query": get_programs_details_query
+        "variables": {"id": program_id},
+        "query": get_programs_details_query,
     }
 
     try:
-        response = requests.post(
-            api_url,
-            headers=headers,
-            json=program_details_payload)
+        response = requests.post(api_url, headers=headers, json=program_details_payload)
     except Exception as e:
         raise (e)
     if response.status_code != 200:
@@ -248,7 +243,7 @@ def _get_program_details(program_id: str) -> Tuple[str, str, str]:
     return description, category, rating
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     """_summary_
 
     Args:
@@ -264,21 +259,22 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
 
     channel = get_channel_by_name(channel_name, Path(__file__).stem)
 
-    programs_channel = [programs_per_channel["programs"] for programs_per_channel in programs
-                        if programs_per_channel["channelId"] == int(channel.id)][0]
+    programs_channel = [
+        programs_per_channel["programs"]
+        for programs_per_channel in programs
+        if programs_per_channel["channelId"] == int(channel.id)
+    ][0]
 
     all_programs = []
 
     for programs_inner in programs_channel:
         try:
-            description, category, rating = _get_program_details(
-                programs_inner["id"])
+            description, category, rating = _get_program_details(programs_inner["id"])
         except Exception:
             return ""
 
         start_timestamp = programs_inner["startTime"] / 1000
-        start_program = datetime.fromtimestamp(
-            start_timestamp, timezone("UTC"))
+        start_program = datetime.fromtimestamp(start_timestamp, timezone("UTC"))
 
         end_timestamp = programs_inner["endTime"] / 1000
         end_program = datetime.fromtimestamp(end_timestamp, timezone("UTC"))
@@ -290,7 +286,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
             start=get_epg_datetime(start_program),
             stop=get_epg_datetime(end_program),
             category=category,
-            rating=rating
+            rating=rating,
         )
 
         all_programs.append(program_object)

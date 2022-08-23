@@ -8,7 +8,9 @@ from helper.classes import Channel, Program
 
 ALL_CHANNELS_URL = "http://awk.epgsky.com/hawk/linear/services/4101/1"
 PROGRAMS_URL = "https://awk.epgsky.com/hawk/linear/schedule/{date_str}/{channelId}"
-CHANNEL_LOGO_PREFIX_URL = "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/320/skychb"
+CHANNEL_LOGO_PREFIX_URL = (
+    "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/320/skychb"
+)
 DATETIME_FORMAT = "%Y%m%d"
 
 
@@ -25,20 +27,21 @@ def get_all_channels() -> List[Channel]:
     output = r.json()
     channel_json = output["services"]
 
-    channels = [Channel(
-        id=channel["sid"],
-        tvg_id=channel["t"] + ".Uk",
-        tvg_name=channel["t"],
-        tvg_logo=CHANNEL_LOGO_PREFIX_URL +
-        channel["sid"] +
-        ".png",
-        sanitize=True
-    ) for channel in channel_json]
+    channels = [
+        Channel(
+            id=channel["sid"],
+            tvg_id=channel["t"] + ".Uk",
+            tvg_name=channel["t"],
+            tvg_logo=CHANNEL_LOGO_PREFIX_URL + channel["sid"] + ".png",
+            sanitize=True,
+        )
+        for channel in channel_json
+    ]
 
     return channels
 
 
-def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
+def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     days = args[0] if args else 1
     days = 7 if days > 7 else days
 
@@ -61,8 +64,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
 
         schedules = r.json()["schedule"][0]["events"]
         for schedule in schedules:
-            start_program = datetime.fromtimestamp(
-                int(schedule["st"]), timezone("UTC"))
+            start_program = datetime.fromtimestamp(int(schedule["st"]), timezone("UTC"))
             end_program = start_program + timedelta(seconds=int(schedule["d"]))
 
             obj = Program(
@@ -71,7 +73,7 @@ def get_programs_by_channel(channel_name: str, *args) -> List[Program]:
                 description=schedule["sy"],
                 start=get_epg_datetime(start_program),
                 stop=get_epg_datetime(end_program),
-                episode=schedule["eid"].upper()
+                episode=schedule["eid"].upper(),
             )
             programs.append(obj)
         all_programs.extend(programs)
