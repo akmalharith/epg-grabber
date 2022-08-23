@@ -69,7 +69,7 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
         end_time = datetime.strptime(schedule["dateTimeEnd"], DATETIME_FORMAT)
 
         object = Program(
-            channel_name="",
+            channel_name=channel.tvg_id,
             title=schedule["scheduleProgramTitle"],
             description=schedule["scheduleProgramDescription"],
             start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
