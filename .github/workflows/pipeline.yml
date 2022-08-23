@@ -15,8 +15,12 @@ env:
   TESTS: True
       
 jobs:
-  linting:
+  tests:
     runs-on: ubuntu-latest
+        strategy:
+      matrix:
+        python-version: [3.9]
+
     steps:
       - uses: actions/checkout@v2
         with:
@@ -24,32 +28,18 @@ jobs:
 
       - uses: actions/setup-python@v2
         with:
-          python-version: '3.9' 
-          architecture: 'x64'
+          python-version: ${{ matrix.python-version }}
 
       - name: Run flake8
         uses: py-actions/flake8@v2
         with:
           ignore: "E501,E741,W605,E265,E226,W504,W291,E261,W293,E303,E231,E203,E302,E251,E127,E124,E211,E305,E128,E275,W503"
-  
-  tests:
-    needs: linting
-    runs-on: ubuntu-latest
-    steps:
-        - uses: actions/checkout@v2
-          with:
-            ref: ${{ github.head_ref }}
-
-        - uses: actions/setup-python@v2
-          with:
-            python-version: '3.8' 
-            architecture: 'x64'
-            
-        - name: Run tests
-          run: |
-            pip install -r tests/requirements.txt
-            pip install -r requirements.txt
-            python -m unittest
+ 
+      - name: Run tests
+        run: |
+          pip install -r tests/requirements.txt
+          pip install -r requirements.txt
+          python -m unittest
 
   build:
     needs: tests
