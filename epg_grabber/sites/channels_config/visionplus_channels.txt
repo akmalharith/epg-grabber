@@ -121,3 +121,5 @@ visionplus;Infotainment.Id
 visionplus;GalaxyPremium.Id
 visionplus;Galaxy.Id
 visionplus;IMC.Id
+visionplus;USOpen:Qualifying2.Id
+visionplus;USOpen:Qualifying1.Id

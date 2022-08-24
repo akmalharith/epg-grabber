@@ -316,6 +316,7 @@ sky;HUMEUROPE.Uk
 sky;BritishMuslim.Uk
 sky;DunyaNews.Uk
 sky;IslamChUrdu.Uk
+sky;Channel44.Uk
 sky;EmanChannel.Uk
 sky;ARYDigital.Uk
 sky;54227.Uk

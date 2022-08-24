@@ -32,8 +32,4 @@ class Channel(BaseModel):
             )
 
         return v
-
-
-# c = Channel(id="123", tvg_id="x x x", tvg_name="name", tvg_logo="")
-
-# print(c.tvg_id)
+        

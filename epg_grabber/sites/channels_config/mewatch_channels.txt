@@ -4,8 +4,8 @@ mewatch;ChannelU.Sg
 mewatch;Suria.Sg
 mewatch;Vasantham.Sg
 mewatch;CNA.Sg
-mewatch;LIVE+1.Sg
 mewatch;eGGNetwork.Sg
+mewatch;SPL01.Sg
 mewatch;Animax.Sg
 mewatch;GEM.Sg
 mewatch;HBO.Sg
