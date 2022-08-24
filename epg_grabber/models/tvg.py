@@ -32,4 +32,3 @@ class Channel(BaseModel):
             )
 
         return v
-
