@@ -88,7 +88,7 @@ fetchtv;7.Au
 fetchtv;ABCME.Au
 fetchtv;SBSRadio.Au
 fetchtv;PRIME7HD.Au
-fetchtv;SpreeTV.Au
+fetchtv;NewChannelComingSoon.Au
 fetchtv;9HD.Au
 fetchtv;ABCAdelaide.Au
 fetchtv;SBS.Au
@@ -242,7 +242,7 @@ fetchtv;7flixPrime.Au
 fetchtv;10.Au
 fetchtv;SBS.Au
 fetchtv;9LifeVIC.Au
-fetchtv;SpreeTV.Au
+fetchtv;NewChannelComingSoon.Au
 fetchtv;7mateHD.Au
 fetchtv;WTV.Au
 fetchtv;triplej.Au
@@ -303,7 +303,7 @@ fetchtv;ABCBrisbane.Au
 fetchtv;10SHAKE.Au
 fetchtv;triplej.Au
 fetchtv;SBSRadio.Au
-fetchtv;SpreeTV.Au
+fetchtv;NewChannelComingSoon.Au
 fetchtv;SBSVICELANDHD.Au
 fetchtv;9GemHD.Au
 fetchtv;7flix.Au
@@ -493,7 +493,7 @@ fetchtv;9Go.Au
 fetchtv;10.Au
 fetchtv;9Go.Au
 fetchtv;10SHAKE.Au
-fetchtv;SpreeTV.Au
+fetchtv;NewChannelComingSoon.Au
 fetchtv;9HD.Au
 fetchtv;ABCKidsListen.Au
 fetchtv;10Peach.Au
@@ -580,7 +580,7 @@ fetchtv;DoubleJ.Au
 fetchtv;7flix.Au
 fetchtv;SBSRadio.Au
 fetchtv;9Go.Au
-fetchtv;SpreeTV.Au
+fetchtv;NewChannelComingSoon.Au
 fetchtv;ABCRN.Au
 fetchtv;NationalGeographic.Au
 fetchtv;CNBC.Au
@@ -638,3 +638,4 @@ fetchtv;MediasetItalia.Au
 fetchtv;MovieBox.Au
 fetchtv;GOOD.Au
 fetchtv;TBNInspire.Au
+fetchtv;UFC.Au
