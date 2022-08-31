@@ -120,7 +120,7 @@ sky;Disc.Sci+1.Uk
 sky;DMAX+1.Uk
 sky;Disc.History+1.Uk
 sky;SkyPremiere.Uk
-sky;SuperheroHD.Uk
+sky;BacktoSchoolHD.Uk
 sky;SkyHitsHD.Uk
 sky;SkyGreats.Uk
 sky;SkyAnimationHD.Uk
@@ -162,7 +162,6 @@ sky;NOW70s.Uk
 sky;NOW80s.Uk
 sky;NOW90s.Uk
 sky;ClublandTV.Uk
-sky;SpotlightTV.Uk
 sky;SkySpMainEv.Uk
 sky;SkySpPL.Uk
 sky;SkySpF'ball.Uk
@@ -291,7 +290,6 @@ sky;Foodxp.Uk
 sky;ColorsRishtey.Uk
 sky;ColorsCineplex.Uk
 sky;SONYMAXHD.Uk
-sky;SirajTV.Uk
 sky;UtsavGoldHD.Uk
 sky;SONYSAB.Uk
 sky;SONYMAX2.Uk
@@ -320,6 +318,7 @@ sky;Channel44.Uk
 sky;EmanChannel.Uk
 sky;ARYDigital.Uk
 sky;54227.Uk
+sky;SirajTV.Uk
 sky;PTCPUNJABI.Uk
 sky;BritAsiaTV.Uk
 sky;SikhChannel.Uk

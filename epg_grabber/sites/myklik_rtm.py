@@ -14,7 +14,6 @@ DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S"
 
 def get_all_channels() -> List[Channel]:
     query_url = "https://rtm.glueapi.io/v3/epg?limit=100"
-    
 
     try:
         r = requests.get(query_url, verify=False)
@@ -32,7 +31,7 @@ def get_all_channels() -> List[Channel]:
             id=channel["id"],
             tvg_id=channel["channel"] + ".My",
             tvg_name=channel["channel"],
-            tvg_logo=""  # TODO: Fix this
+            tvg_logo="",  # TODO: Fix this
         )
         for channel in output
     ]
