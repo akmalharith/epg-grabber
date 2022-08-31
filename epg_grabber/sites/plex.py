@@ -62,7 +62,7 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
                 Program(
                     channel_name=channel_name,
                     title=program["title"],
-                    description=program["summary"],
+                    description=program.get("summary",""),
                     start=get_epg_datetime(
                         datetime.utcfromtimestamp(program["Media"][0]["beginsAt"])
                     ),
