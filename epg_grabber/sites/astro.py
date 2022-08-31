@@ -86,7 +86,6 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
         try:
             start_time = datetime.strptime(schedule["datetime"], "%Y-%m-%d %H:%M:%S.%f")
             hour, min, sec = schedule["duration"].split(":")
-            dur = int(sec) + (int(min) * 60) + (int(hour) * 3600)
             end_time = start_time + timedelta(
                 hours=int(hour), minutes=int(min), seconds=int(sec)
             )
