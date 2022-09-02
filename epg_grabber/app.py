@@ -6,6 +6,7 @@ import time
 import requests
 import logging
 
+from concurrent.futures import ThreadPoolExecutor
 from typing import List, Tuple
 
 # Environment variables
@@ -110,6 +111,18 @@ def scrape_by_site(site_name: str, channel_name: str) -> Tuple[List[str], Channe
     return programs_by_channel, channel
 
 
+def scrape_single(config_item) -> Tuple[List[Program], List[Channel]]:
+    site_name = config_item.split(";")[0]
+    channel_name = config_item.split(";")[1].strip()
+
+    try:
+        programs_by_channel, channel = scrape_by_site(site_name, channel_name)
+    except Exception:
+        pass
+
+    return programs_by_channel, channel
+
+
 def scrape() -> Tuple[List[Program], List[Channel]]:
     """
     _summary_
@@ -122,16 +135,9 @@ def scrape() -> Tuple[List[Program], List[Channel]]:
 
     config_items = load_config()
 
-    for config_item in config_items:
-        site_name = config_item.split(";")[0]
-        channel_name = config_item.split(";")[1].strip()
+    executor = ThreadPoolExecutor(max_workers=4)
 
-        log.info("[%s] Channel found. Scraping programs...", channel_name)
-
-        try:
-            programs_by_channel, channel_inner = scrape_by_site(site_name, channel_name)
-        except Exception:
-            continue
+    for programs_by_channel, channel_inner in executor.map(scrape_single, config_items):
 
         channels.append(channel_inner)
         programs.extend(programs_by_channel)

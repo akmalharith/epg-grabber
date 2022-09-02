@@ -11,10 +11,11 @@ ALL_CHANNELS_URL = "https://contenthub-api.eco.astro.com.my/channel/all.json"
 PROGRAM_URL = "https://contenthub-api.eco.astro.com.my/channel/{channel_id}.json"
 PROGRAM_DETAIL_URL = "https://contenthub-api.eco.astro.com.my/api/v1/linear-detail?siTrafficKey={si_traffic_key}"
 
+request_session = requests.Session()
 
 def get_all_channels() -> List[Channel]:
     try:
-        r = requests.get(ALL_CHANNELS_URL)
+        r = request_session.get(ALL_CHANNELS_URL)
     except requests.exceptions.RequestException as e:
         raise SystemExit(e)
 
@@ -42,10 +43,9 @@ def get_all_channels() -> List[Channel]:
 
 def get_program_details(traffic_key: str) -> str:
     program_detail_url = f"https://contenthub-api.eco.astro.com.my/api/v1/linear-detail?siTrafficKey={traffic_key}"
-    print(program_detail_url)
 
     try:
-        response = requests.get(program_detail_url)
+        response = request_session.get(program_detail_url)
     except Exception as e:
         raise e
 
@@ -61,7 +61,7 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
     channel_url = PROGRAM_URL.format(channel_id=channel.id)
 
     try:
-        r = requests.get(channel_url)
+        r = request_session.get(channel_url)
     except requests.exceptions.RequestException as e:
         raise SystemExit(e)
 
@@ -91,15 +91,14 @@ def get_programs_by_channel(channel_name: str, days: int = 1) -> List[Program]:
             )
             title = schedule["title"]
             # get_program_details API is massively slow
-            # disable it for now
-            # short_synopsis = get_program_details(schedule["siTrafficKey"])
+            short_synopsis = get_program_details(schedule["siTrafficKey"])
         except KeyError:
             continue
 
         program_inner = Program(
             channel_name=channel.tvg_id,
             title=title,
-            description="",
+            description=short_synopsis,
             start=get_epg_datetime(start_time, TIMEZONE_OFFSET),
             stop=get_epg_datetime(end_time, TIMEZONE_OFFSET),
         )
