@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-epg-grabber"
+version = "0.4.0"
+authors = [
+  { name="Akmal Harith" },
+]
+description = "Built in Python, this is another Internet-based scraper and it provides a very rich EPG data set for some supported sites."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests==2.28.1",
+    "loguru==0.6.0",
+    "pydantic==1.10.2",
+    "xmltodict==0.13.0",
+    "pytz==2022.7"
+]
+
+[project.scripts]
+py-epg-cli = "epg_grabber.cli:main"
+
+[tool.setuptools]
+# By default, include-package-data is true in pyproject.toml, so you do
+# NOT have to specify this line.
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["epg_grabber","epg_grabber.*","sites","sites.*"]
+namespaces = false  
+
+[tool.setuptools.package-data]
+epg_grabber = ["*.json","sites/channels_metadata/*.json"]

@@ -1,0 +1,72 @@
+name: Pipeline
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  CONFIG_NAME: "develop"
+  TEST_MODE: True
+  PLAYTV_UNIFI_USER_ID: ${{ secrets.PLAYTV_UNIFI_USER_ID }}
+  PLAYTV_UNIFI_PASSWORD: ${{ secrets.PLAYTV_UNIFI_PASSWORD }}
+  PLAYTV_UNIFI_DEVICE_ID: ${{ secrets.PLAYTV_UNIFI_DEVICE_ID }}
+  STARHUBTVPLUS_APP_KEY: ${{ secrets.STARHUBTVPLUS_APP_KEY }}
+  STARHUBTVPLUS_CLIENT_UUID: ${{ secrets.STARHUBTVPLUS_CLIENT_UUID }}
+  X_PLEX_TOKEN: ${{ secrets.X_PLEX_TOKEN }}
+  
+jobs:
+  tests:
+    if: false
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run flake8
+        if: false
+        uses: py-actions/flake8@v2
+        with:
+          ignore: "E501,E741,W605,E265,E226,W504,W291,E261,W293,E303,E231,E203,E302,E251,E127,E124,E211,E305,E128,E275,W503"
+ 
+      - name: Run tests
+        run: |
+          pip install -r tests/requirements.txt
+          pip install -r requirements.txt
+          python -m unittest
+
+  build:
+    needs: tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/epg-grabber:${{ github.ref_name }} , ${{ secrets.DOCKER_HUB_USERNAME }}/epg-grabber:latest
+           
