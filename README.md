@@ -1,4 +1,4 @@
-| This is the v0.4.0 release and it is not backwards compatible. v0.3.0 can still be accessed from Docker hub via `akmal/epg-grabber:v0.3.0`. Docker image will no longer be supported for now.|
+| This is the `v0.4.0` release. If you are using the previous version, please update your workflow to use `v0.3.0` tag. Docker image will no longer be updated or supported.|
 |---|
 
 # epg-grabber
