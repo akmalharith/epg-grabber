@@ -13,7 +13,7 @@ def generate() -> ChannelMetadata:
         Channel(
             id='cinemaworld',
             display_name='CinemaWorld',
-            icon=''
+            icon='https://www.voilah.sg/wp-content/uploads/2020/04/cinema-world-2.png'
         )
     ])
 
