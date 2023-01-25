@@ -26,6 +26,7 @@ sites
 ``` python
 # new_site.py 
 from epg_grabber.models import Programme, Channel, ChannelMetadata
+from typing import List
 
 def generate() -> ChannelMetadata:
     ...
@@ -35,7 +36,7 @@ def generate() -> ChannelMetadata:
 def get_programs(channel_id: str, days: int = 1, channel_xml_id: str = None) -> List[Programme]:
     ...
     programmes: List[Programme] = ...
-    return programs
+    return programmes
 ```
 3. Generate channel metadata. 
 ``` bash
