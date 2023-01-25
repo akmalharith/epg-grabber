@@ -6,6 +6,8 @@ import requests
 EPG_SKY_URL = "https://awk.epgsky.com/hawk/linear/schedule"
 ALL_CHANNELS_URL = "http://awk.epgsky.com/hawk/linear/services/4101/1"
 DATETIME_FORMAT = "%Y%m%d"
+LOGO_PREFIX_URL = "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/320/skychb"
+
 
 session = requests.Session()
 
@@ -19,7 +21,7 @@ def generate() -> ChannelMetadata:
     raw_channels = response.json()["services"]
 
     channels = [
-        Channel(id=ch["sid"], display_name=ch["t"], icon="http://")
+        Channel(id=ch["sid"], display_name=ch["t"], icon=f"{LOGO_PREFIX_URL}{ch['sid']}")
         for ch in raw_channels
     ]
 
