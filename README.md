@@ -1,7 +1,7 @@
+# epg-grabber
+
 | This is the `v0.4.0` release. If you are using the previous version, please update your workflow to use `v0.3.0` tag. Docker image will no longer be updated or supported.|
 |---|
-
-# epg-grabber
 
 Yet another EPG scraper built in Python. This is another Internet-based scraper and it does provide a very rich EPG data set for some supported sites.
 
