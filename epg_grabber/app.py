@@ -91,27 +91,6 @@ def run(input_config: InputConfig) -> Tuple[List[Programme], List[Channel]]:
     return programmes, channels
 
 
-def generate(input_config: InputConfig):
-    """
-    Generate channels metadata for all sites.
-    """
-    raise Exception("NOT_IMPLEMENTED")
-    for config in input_config.configs:
-        try:
-            site = import_module(f"{SITES_MODULE_IMPORT_PATH}.{config.site}")
-        except ModuleNotFoundError as e:
-            logger.error(f"Site {config.site} doesn't exist. Skipping.")
-            continue
-
-        logger.info(f"Generating channels_metadata in {config.site}.json...")
-        channels_metadata = site.generate()
-
-        with open(f"{CHANNELS_METADATA_DIR}/{config.site}.json", "w") as json_file:
-            json_file.write(channels_metadata.json())
-            json_file.close()
-            logger.info(f"Saved channels_metadata in {config.site}.json.")
-
-
 def save_to_file(tv_data: TvData, filename: str):
     """
     Saves TV data to an XML file.
