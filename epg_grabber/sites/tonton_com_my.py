@@ -7,6 +7,8 @@ EPG_API_URL = "https://headend-api.tonton.com.my/v100/api/epg.class.api.php/getC
 ALL_CHANNELS_API_URL = 'https://headend-api.tonton.com.my/v100/api/categoryTree.class.api.php/GOgetLiveChannels/378'
 FILTER_FIELDS = "Duration,EventTitle,EpisodeTitle,ParentalRating,ShortSynopsis,ParentalAdvice,Genre,MainGenre,SubGenre,StartTimeUTC,ProgramID,EndTimeUTC,RawStartTimeUTC,RawEndTimeUTC,YearOfProduction,Keywords,ReportingGenre,ReportingSubGenre,ClosedCaption,HighDefinition,SeriesNumber,EpisodeNumber"
 APP_ID = "TONTON"
+IMAGE_PREFIX_URL = "https://headend-api.tonton.com.my/v100/imageHelper.php?id="
+IMAGE_SUFFIX_URL = ".:378:CHANNEL:IMAGE:png"
 
 DEFAULT_HEADERS = {
     "authority": "headend-api.tonton.com.my",
@@ -30,13 +32,16 @@ def generate() -> ChannelMetadata:
         raise e
 
     raw_channels = response.json()['liveChannel']
-
+    
+    # https://headend-api.tonton.com.my/v100/imageHelper.php?id=6420323:378:CHANNEL:IMAGE:png 
     channels = []
     for ch in raw_channels:
+        ch_image_id = f"{ch['image'].split('_')[-1]}{IMAGE_SUFFIX_URL}"
+
         ch_obj = Channel(
             id=ch['channelCode'],
             display_name=ch['title'],
-            icon=ch['image']
+            icon=f"{IMAGE_PREFIX_URL}{ch_image_id}"
         )
         channels.append(ch_obj)
 
