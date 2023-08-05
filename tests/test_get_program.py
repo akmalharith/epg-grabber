@@ -39,6 +39,10 @@ site_test_config = {
         {
             "site": "sooka_my",
             "channels": ["2443"]
+        },
+        {
+            "site": "mana2_my",
+            "channels": ["1"]
         }
     ]
 }
