@@ -35,6 +35,10 @@ site_test_config = {
         {
             "site": "visionplus_id",
             "channels": ["2"]
+        },
+        {
+            "site": "mana2_my",
+            "channels": ["1"]
         }
     ]
 }
