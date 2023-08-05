@@ -1,91 +1,132 @@
 from epg_grabber.models import Programme, Channel, ChannelMetadata
 from datetime import date, datetime, timedelta
 from typing import List 
+from uuid import uuid4
+
 import requests
 
-CHANNELS_API = 'https://api.mana2.my/api/channels'
-ORGANIZATION_ID = '196288014'
-DEFAULT_HEADERS = {
-    "Origin": "https://www.mana2.my",
-    "Referer": "https://www.mana2.my",
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
-}
-DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
+IMAGE_PREFIX_URL = "https://d229kpbsb5jevy.cloudfront.net/mytv/content"
 
-session = requests.Session()
+def get_session() -> dict:
+    box_id = str(uuid4())
+
+    try:
+        response = requests.get('https://mytv-api.revlet.net/service/api/v1/get/token', params={
+            'tenant_code': 'mytv',
+            'box_id': box_id,
+            'product': 'mytv',
+            'device_id': 61,
+            'display_lang_code': 'ENG',
+            'device_sub_type': 'Chrome,115.0.0.0,MacOS',
+            'timezone': 'Asia/Kuala_Lumpur'
+        })
+    except Exception as e:
+        raise(e)
+
+    output = response.json()
+
+    if not output['status']:
+        raise Exception('Unable to get session.')
+
+    session_id = output['response']['sessionId']
+
+    return {
+        'authority': 'mytv-api.revlet.net',
+        'box-id': box_id,
+        'session-id': session_id,
+        'tenant-code': 'mytv',
+        'origin': 'https://mana2.my',
+        'referer': 'https://mana2.my/',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
+    }
+
+session_headers = get_session()
 
 def generate() -> ChannelMetadata:
     try:
-        response = requests.get(
-            url=CHANNELS_API,
+        response = requests.get('https://mytv-api.revlet.net/service/api/v1/page/content',
             params={
-                'action':'getChannels',
-                'version':'04',
-                'orderBy':'logicalChannelNumber',
-                'organizationId': ORGANIZATION_ID
+                'path': 'section/live-on-tv'
             },
-            headers=DEFAULT_HEADERS
+            headers=session_headers
         )
     except Exception as e:
         raise e
-
+    
     output = response.json()
-    raw_channels = output['channels']
+    datas = output['response']['data'][0]['section']['sectionData']['data']
 
-    channels = [
-        Channel(
-            id=str(channel["serviceId"]),
-            display_name=channel["title"],
-            icon=channel["imageSmall"],
+    channels = []
+
+    for data in datas:
+        channel_id = data['metadata']['channelId']['value']
+        display_name = data['display']['parentName']
+        image_url = data['display']['imageUrl']
+
+        image_url = image_url.replace(",","/")
+        image_url = f"{IMAGE_PREFIX_URL}/{image_url}"
+
+        channel_obj = Channel(
+            id=channel_id,
+            display_name=display_name,
+            icon=image_url,
         )
-        for channel in raw_channels
-    ]
+
+        channels.append(channel_obj)
 
     channel_metadata = ChannelMetadata(channels=channels)
 
     return channel_metadata
 
 def get_programs(
-    channel_id: str, days: int = 1, channel_xml_id: str = None
+    channel_id: str = 1, days: int = 1, channel_xml_id: str = None
 ) -> List[Programme]:
     
     programmes: List[Programme] = []
     channel_name = channel_xml_id if channel_xml_id else channel_id
 
-    start_dt = date.today()
+    # for day in range(days):
+    start_dt = date.today()   
     start_date = datetime.combine(start_dt, datetime.min.time())
     start_timestamp_in_miliseconds = int(start_date.timestamp() * 1000)
 
-    end_dt = start_dt + timedelta(days=(days)-1)
+    end_dt = start_dt + timedelta(days=days)
     end_date = datetime.combine(end_dt, datetime.max.time())
     end_timestamp_in_miliseconds = int(end_date.timestamp() * 1000)
 
+
     try:
-        response = requests.get(url=CHANNELS_API,params={
-            'action':'getEvents',
-            'version':'04',
-            'organizationId': ORGANIZATION_ID,
-            'lcId': channel_id, 
-            'from':start_timestamp_in_miliseconds,
-            'to':end_timestamp_in_miliseconds
-        })
+        response = requests.get('https://mytv-api.revlet.net/service/api/v1/static/tvguide',
+            params={
+                'channel_ids': channel_id,
+                'start_time': start_timestamp_in_miliseconds,
+                'end_time': end_timestamp_in_miliseconds,
+                'page': 0,
+            },
+            headers=session_headers
+        )
     except Exception as e:
         raise e
     
     output = response.json()
-    events = output['events']
-    for e in events:
-        # Time in UTC
-        start_time = datetime.strptime(e['info']['startTime'], DATETIME_FORMAT)
-        duration_in_seconds = (e['info']['duration'])
-        end_time = start_time + timedelta(seconds=int(duration_in_seconds))
+    [data] = (output['response']['data'])
+    programs = data['programs']
+
+    for program in programs:
+        title = (program['display']['title'])
+        description = (program['display']['subtitle2'])
+        start_time_mili = int(program['display']['markers']['startTime']['value']) / 1000
+        end_time_mili = int(program['display']['markers']['endTime']['value']) / 1000
+
+        start_time = datetime.fromtimestamp(start_time_mili)
+        end_time = datetime.fromtimestamp(end_time_mili)
 
         programme_obj = Programme(
             start=start_time,
             stop=end_time,
             channel=channel_name,
-            title=e['description']['en_US']['name'],
-            desc=e['description']['en_US']['shortDescription']
+            title=title,
+            desc=description,
         )
 
         programmes.append(programme_obj)
