@@ -35,6 +35,10 @@ site_test_config = {
         {
             "site": "visionplus_id",
             "channels": ["2"]
+        },
+        {
+            "site": "sooka_my",
+            "channels": ["2443"]
         }
     ]
 }
