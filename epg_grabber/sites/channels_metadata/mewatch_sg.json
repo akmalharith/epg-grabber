@@ -1,1 +1,234 @@
-{"channels": [{"id": "97098", "display_name": {"@lang": "en", "#text": "Channel 5"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956277'&EntityType='Item'&EntityId='97098'&Width=1024&Height=1024"}}, {"id": "97104", "display_name": {"@lang": "en", "#text": "Channel 8"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956273'&EntityType='Item'&EntityId='97104'&Width=1024&Height=1024"}}, {"id": "97129", "display_name": {"@lang": "en", "#text": "Channel U"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='2261554'&EntityType='Item'&EntityId='97129'&Width=1024&Height=1024"}}, {"id": "97084", "display_name": {"@lang": "en", "#text": "Suria"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956267'&EntityType='Item'&EntityId='97084'&Width=1024&Height=1024"}}, {"id": "97096", "display_name": {"@lang": "en", "#text": "Vasantham"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956271'&EntityType='Item'&EntityId='97096'&Width=1024&Height=1024"}}, {"id": "97072", "display_name": {"@lang": "en", "#text": "CNA"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956283'&EntityType='Item'&EntityId='97072'&Width=1024&Height=1024"}}, {"id": "186574", "display_name": {"@lang": "en", "#text": "oktolidays"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5411655'&EntityType='Item'&EntityId='186574'&Width=1024&Height=1024"}}, {"id": "98200", "display_name": {"@lang": "en", "#text": "AFF Ch01"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5483951'&EntityType='Item'&EntityId='98200'&Width=2160&Height=2160"}}, {"id": "98201", "display_name": {"@lang": "en", "#text": "AFF Ch02"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5483957'&EntityType='Item'&EntityId='98201'&Width=2160&Height=2160"}}, {"id": "267994", "display_name": {"@lang": "en", "#text": "LIVE+ 1"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='4959151'&EntityType='Item'&EntityId='267994'&Width=1024&Height=1024"}}, {"id": "206958", "display_name": {"@lang": "en", "#text": "eGG Network"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='2864436'&EntityType='Item'&EntityId='206958'&Width=1024&Height=1024"}}, {"id": "227348", "display_name": {"@lang": "en", "#text": "ROCK Entertainment"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5428904'&EntityType='Item'&EntityId='227348'&Width=1024&Height=1024"}}, {"id": "227349", "display_name": {"@lang": "en", "#text": "ROCK Action"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5458970'&EntityType='Item'&EntityId='227349'&Width=1024&Height=1024"}}, {"id": "158961", "display_name": {"@lang": "en", "#text": "Global Trekker"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5458972'&EntityType='Item'&EntityId='158961'&Width=1024&Height=1024"}}, {"id": "242030", "display_name": {"@lang": "en", "#text": "Animax"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='3628585'&EntityType='Item'&EntityId='242030'&Width=80&Height=80"}}, {"id": "242036", "display_name": {"@lang": "en", "#text": "GEM"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='3629005'&EntityType='Item'&EntityId='242036'&Width=80&Height=80"}}, {"id": "97137", "display_name": {"@lang": "en", "#text": "HBO"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956292'&EntityType='Item'&EntityId='97137'&Width=1024&Height=1024"}}, {"id": "97140", "display_name": {"@lang": "en", "#text": "HBO Hits"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956294'&EntityType='Item'&EntityId='97140'&Width=1024&Height=1024"}}, {"id": "97147", "display_name": {"@lang": "en", "#text": "HBO Family"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956296'&EntityType='Item'&EntityId='97147'&Width=1024&Height=1024"}}, {"id": "97146", "display_name": {"@lang": "en", "#text": "HBO Signature"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956298'&EntityType='Item'&EntityId='97146'&Width=1024&Height=1024"}}, {"id": "97155", "display_name": {"@lang": "en", "#text": "Cinemax"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956300'&EntityType='Item'&EntityId='97155'&Width=1024&Height=1024"}}, {"id": "97073", "display_name": {"@lang": "en", "#text": "LIVE 1"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956312'&EntityType='Item'&EntityId='97073'&Width=1024&Height=1024"}}, {"id": "97078", "display_name": {"@lang": "en", "#text": "LIVE 2"}, "icon": {"@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956310'&EntityType='Item'&EntityId='97078'&Width=1024&Height=1024"}}]}
+{
+    "channels": [
+        {
+            "id": "97098",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Channel 5"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956277'&EntityType='Item'&EntityId='97098'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "97104",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Channel 8"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956273'&EntityType='Item'&EntityId='97104'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "97129",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Channel U"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='2261554'&EntityType='Item'&EntityId='97129'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "97084",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Suria"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956267'&EntityType='Item'&EntityId='97084'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "97096",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Vasantham"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956271'&EntityType='Item'&EntityId='97096'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "97072",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CNA"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956283'&EntityType='Item'&EntityId='97072'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "186574",
+            "display_name": {
+                "@lang": "en",
+                "#text": "oktolidays"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5411655'&EntityType='Item'&EntityId='186574'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "98200",
+            "display_name": {
+                "@lang": "en",
+                "#text": "AFF Ch01"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5483951'&EntityType='Item'&EntityId='98200'&Width=2160&Height=2160"
+            }
+        },
+        {
+            "id": "98201",
+            "display_name": {
+                "@lang": "en",
+                "#text": "AFF Ch02"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5483957'&EntityType='Item'&EntityId='98201'&Width=2160&Height=2160"
+            }
+        },
+        {
+            "id": "267994",
+            "display_name": {
+                "@lang": "en",
+                "#text": "LIVE+ 1"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='4959151'&EntityType='Item'&EntityId='267994'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "206958",
+            "display_name": {
+                "@lang": "en",
+                "#text": "eGG Network"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='2864436'&EntityType='Item'&EntityId='206958'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "227348",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ROCK Entertainment"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5428904'&EntityType='Item'&EntityId='227348'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "227349",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ROCK Action"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5458970'&EntityType='Item'&EntityId='227349'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "158961",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Global Trekker"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='5458972'&EntityType='Item'&EntityId='158961'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "242030",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Animax"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='3628585'&EntityType='Item'&EntityId='242030'&Width=80&Height=80"
+            }
+        },
+        {
+            "id": "242036",
+            "display_name": {
+                "@lang": "en",
+                "#text": "GEM"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='3629005'&EntityType='Item'&EntityId='242036'&Width=80&Height=80"
+            }
+        },
+        {
+            "id": "97137",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HBO"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956292'&EntityType='Item'&EntityId='97137'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "97140",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HBO Hits"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956294'&EntityType='Item'&EntityId='97140'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "97147",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HBO Family"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956296'&EntityType='Item'&EntityId='97147'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "97146",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HBO Signature"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956298'&EntityType='Item'&EntityId='97146'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "97155",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Cinemax"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956300'&EntityType='Item'&EntityId='97155'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "97073",
+            "display_name": {
+                "@lang": "en",
+                "#text": "LIVE 1"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956312'&EntityType='Item'&EntityId='97073'&Width=1024&Height=1024"
+            }
+        },
+        {
+            "id": "97078",
+            "display_name": {
+                "@lang": "en",
+                "#text": "LIVE 2"
+            },
+            "icon": {
+                "@src": "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='956310'&EntityType='Item'&EntityId='97078'&Width=1024&Height=1024"
+            }
+        }
+    ]
+}
