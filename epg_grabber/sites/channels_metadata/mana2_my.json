@@ -1,1 +1,174 @@
-{"channels": [{"id": "1", "display_name": {"@lang": "en", "#text": "TV1"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/lebkcx.png"}}, {"id": "2", "display_name": {"@lang": "en", "#text": "TV2"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/phkbzb.png"}}, {"id": "3", "display_name": {"@lang": "en", "#text": "SUKAN RTM"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/fbzuqy.png"}}, {"id": "4", "display_name": {"@lang": "en", "#text": "BERITA RTM"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/vijmvl.png"}}, {"id": "36", "display_name": {"@lang": "en", "#text": "TV5"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/tv5.png"}}, {"id": "25", "display_name": {"@lang": "en", "#text": "TV6"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/zhwumf.png"}}, {"id": "46", "display_name": {"@lang": "en", "#text": "MY CINEMA EUROPE"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/lpwhrf.png"}}, {"id": "41", "display_name": {"@lang": "en", "#text": "HORIZON SPORTS"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/iyjltw.png"}}, {"id": "43", "display_name": {"@lang": "en", "#text": "MOTOR RACING TV"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/jhuobv.png"}}, {"id": "5", "display_name": {"@lang": "en", "#text": "TV OKEY"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/ctzcgj.png"}}, {"id": "26", "display_name": {"@lang": "en", "#text": "TV ALHIJRAH"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/lvonbc.png"}}, {"id": "27", "display_name": {"@lang": "en", "#text": "BERNAMA"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/jpwqvz.png"}}, {"id": "28", "display_name": {"@lang": "en", "#text": "SUKE TV"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/odyahn.png"}}, {"id": "45", "display_name": {"@lang": "en", "#text": "SELANGOR TV"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/tpmrov.png"}}, {"id": "20", "display_name": {"@lang": "en", "#text": "TV IKIM"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/jnkfvh.png"}}, {"id": "30", "display_name": {"@lang": "en", "#text": "TVRI NASIONAL"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/nrxtut.png"}}, {"id": "31", "display_name": {"@lang": "en", "#text": "TVRI WORLD"}, "icon": {"@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/eqlxgh.png"}}]}
+{
+    "channels": [
+        {
+            "id": "1",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TV1"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/lebkcx.png"
+            }
+        },
+        {
+            "id": "2",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TV2"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/phkbzb.png"
+            }
+        },
+        {
+            "id": "3",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SUKAN RTM"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/fbzuqy.png"
+            }
+        },
+        {
+            "id": "4",
+            "display_name": {
+                "@lang": "en",
+                "#text": "BERITA RTM"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/vijmvl.png"
+            }
+        },
+        {
+            "id": "36",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TV5"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/tv5.png"
+            }
+        },
+        {
+            "id": "25",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TV6"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/zhwumf.png"
+            }
+        },
+        {
+            "id": "46",
+            "display_name": {
+                "@lang": "en",
+                "#text": "MY CINEMA EUROPE"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/lpwhrf.png"
+            }
+        },
+        {
+            "id": "41",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HORIZON SPORTS"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/iyjltw.png"
+            }
+        },
+        {
+            "id": "43",
+            "display_name": {
+                "@lang": "en",
+                "#text": "MOTOR RACING TV"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/jhuobv.png"
+            }
+        },
+        {
+            "id": "5",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TV OKEY"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/ctzcgj.png"
+            }
+        },
+        {
+            "id": "26",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TV ALHIJRAH"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/lvonbc.png"
+            }
+        },
+        {
+            "id": "27",
+            "display_name": {
+                "@lang": "en",
+                "#text": "BERNAMA"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/jpwqvz.png"
+            }
+        },
+        {
+            "id": "28",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SUKE TV"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/odyahn.png"
+            }
+        },
+        {
+            "id": "45",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SELANGOR TV"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/tpmrov.png"
+            }
+        },
+        {
+            "id": "20",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TV IKIM"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/jnkfvh.png"
+            }
+        },
+        {
+            "id": "30",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVRI NASIONAL"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/nrxtut.png"
+            }
+        },
+        {
+            "id": "31",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVRI WORLD"
+            },
+            "icon": {
+                "@src": "https://d229kpbsb5jevy.cloudfront.net/mytv/content/common/channel/logos/eqlxgh.png"
+            }
+        }
+    ]
+}
