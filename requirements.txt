@@ -1,3 +1,4 @@
+-e .
 requests==2.31.0
 loguru==0.6.0
 pydantic==1.10.2
