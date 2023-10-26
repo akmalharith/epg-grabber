@@ -16,10 +16,10 @@ site_test_config = {
             "site": "cinemaworld_asia",
             "channels": ["cinemaworld"]
         },
-        {
-            "site": "epgsky_com",
-            "channels": ["2002"]
-        },
+        # {
+        #     "site": "epgsky_com",
+        #     "channels": ["2002"]
+        # },
         {
             "site": "mewatch_sg",
             "channels": ["97098"]
@@ -43,6 +43,10 @@ site_test_config = {
         {
             "site": "mana2_my",
             "channels": ["1"]
+        },
+        {
+            "site": "starhubtvplus_com",
+            "channels": ["519"]
         }
     ]
 }
