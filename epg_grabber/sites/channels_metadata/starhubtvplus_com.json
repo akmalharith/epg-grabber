@@ -1,1 +1,1344 @@
-{"channels": [{"id": "101", "display_name": {"@lang": "en", "#text": "Preview Channel"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/101_1920x1080_HTV.png"}}, {"id": "102", "display_name": {"@lang": "en", "#text": "Channel 5 HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/102_1920x1080_HTV.png"}}, {"id": "103", "display_name": {"@lang": "en", "#text": "Channel 8 HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/103_1920x1080_HTV.png"}}, {"id": "104", "display_name": {"@lang": "en", "#text": "Suria HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/104_1920x1080_HTV.png"}}, {"id": "105", "display_name": {"@lang": "en", "#text": "Vasantham HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/105_1920x1080_HTV.png"}}, {"id": "106", "display_name": {"@lang": "en", "#text": "Channel NewsAsia HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/106_1920x1080_HTV.png"}}, {"id": "107", "display_name": {"@lang": "en", "#text": "Channel U HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/107_1920x1080_HTV.png"}}, {"id": "111", "display_name": {"@lang": "en", "#text": "Hub E City HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/111_1920x1080_HTV.png"}}, {"id": "115", "display_name": {"@lang": "en", "#text": "Citra Entertainment"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/115_1920x1080_HTV.png"}}, {"id": "116", "display_name": {"@lang": "en", "#text": "Karisma"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/116_1920x1080_HTV.png"}}, {"id": "118", "display_name": {"@lang": "en", "#text": "Astro Warna"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/118_1920x1080_HTV.png"}}, {"id": "123", "display_name": {"@lang": "en", "#text": "Hub Sensasi HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/123_1920x1080_HTV.png"}}, {"id": "124", "display_name": {"@lang": "en", "#text": "ONE (Malay)"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/124_1920x1080_HTV.png"}}, {"id": "125", "display_name": {"@lang": "en", "#text": "Zee TV"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/125_1920x1080_HTV.png"}}, {"id": "127", "display_name": {"@lang": "en", "#text": "Sony Entertainment Television"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/127_1920x1080_HTV.png"}}, {"id": "128", "display_name": {"@lang": "en", "#text": "COLORS"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/128_1920x1080_HTV.png"}}, {"id": "130", "display_name": {"@lang": "en", "#text": "Zee Cinema"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/130_1920x1080_HTV.png"}}, {"id": "131", "display_name": {"@lang": "en", "#text": "SONY MAX"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/131_1920x1080_HTV.png"}}, {"id": "132", "display_name": {"@lang": "en", "#text": "COLORS Tamil HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/132_1920x1080_HTV.png"}}, {"id": "133", "display_name": {"@lang": "en", "#text": "Sun TV"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/133_1920x1080_HTV.png"}}, {"id": "134", "display_name": {"@lang": "en", "#text": "Sun Music"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/134_1920x1080_HTV.png"}}, {"id": "135", "display_name": {"@lang": "en", "#text": "Vijay TV"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/135_1920x1080_HTV.png"}}, {"id": "136", "display_name": {"@lang": "en", "#text": "Vannathirai"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/136_1920x1080_HTV.png"}}, {"id": "137", "display_name": {"@lang": "en", "#text": "Zee Thirai"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/137_1920x1080_HTV.png"}}, {"id": "138", "display_name": {"@lang": "en", "#text": "Zee Tamil HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/138_1920x1080_HTV.png"}}, {"id": "139", "display_name": {"@lang": "en", "#text": "Asianet"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/139_1920x1080_HTV.png"}}, {"id": "140", "display_name": {"@lang": "en", "#text": "Asianet Movies"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/140_1920x1080_HTV.png"}}, {"id": "141", "display_name": {"@lang": "en", "#text": "Kalaignar TV"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/141_1920x1080_HTV.png"}}, {"id": "143", "display_name": {"@lang": "en", "#text": "ANC"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/143_1920x1080_HTV.png"}}, {"id": "144", "display_name": {"@lang": "en", "#text": "The Filipino Channel"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/144_1920x1080_HTV.png"}}, {"id": "145", "display_name": {"@lang": "en", "#text": "Cinema One Global"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/145_1920x1080_HTV.png"}}, {"id": "152", "display_name": {"@lang": "en", "#text": "TV5MONDE HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/152_1920x1080_HTV.png"}}, {"id": "153", "display_name": {"@lang": "en", "#text": "DW (Deutsch)"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/153_1920x1080_HTV.png"}}, {"id": "158", "display_name": {"@lang": "en", "#text": "ADITHYA TV"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/158_1920x1080_HTV.png"}}, {"id": "159", "display_name": {"@lang": "en", "#text": "KTV HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/159_1920x1080_HTV.png"}}, {"id": "201", "display_name": {"@lang": "en", "#text": "Hub Sports 1 HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/201_1920x1080_HTV.png"}}, {"id": "202", "display_name": {"@lang": "en", "#text": "Hub Sports 2 HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/202_1920x1080_HTV.png"}}, {"id": "203", "display_name": {"@lang": "en", "#text": "Hub Sports 3 HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/203_1920x1080_HTV.png"}}, {"id": "204", "display_name": {"@lang": "en", "#text": "Hub Sports 4 HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/204_1920x1080_HTV.png"}}, {"id": "205", "display_name": {"@lang": "en", "#text": "Hub Sports 5 HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/205_1920x1080_HTV.png"}}, {"id": "207", "display_name": {"@lang": "en", "#text": "Premier Sports TV"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/207_1920x1080_HTV.png"}}, {"id": "209", "display_name": {"@lang": "en", "#text": "SPOTV"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/209_1920x1080_HTV.png"}}, {"id": "210", "display_name": {"@lang": "en", "#text": "SPOTV2"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/210_1920x1080_HTV.png"}}, {"id": "211", "display_name": {"@lang": "en", "#text": "beIN SPORTS 2 HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/211_1920x1080_HTV.png"}}, {"id": "212", "display_name": {"@lang": "en", "#text": "beIN SPORTS RUGBY"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/212_1920x1080_HTV.png"}}, {"id": "213", "display_name": {"@lang": "en", "#text": "beIN SPORTS HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/213_1920x1080_HTV.png"}}, {"id": "214", "display_name": {"@lang": "en", "#text": "beIN Sports 3"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/214_1920x1080_HTV.png"}}, {"id": "215", "display_name": {"@lang": "en", "#text": "beIN Sports 4 HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/215_1920x1080_HTV.png"}}, {"id": "216", "display_name": {"@lang": "en", "#text": "beIN Sports 5 HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/216_1920x1080_HTV.png"}}, {"id": "221", "display_name": {"@lang": "en", "#text": "HubPremier 1"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/221_1920x1080_HTV.png"}}, {"id": "222", "display_name": {"@lang": "en", "#text": "Hub Premier 2 (HD)"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/222_1920x1080_HTV.png"}}, {"id": "223", "display_name": {"@lang": "en", "#text": "Hub Premier 3"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/223_1920x1080_HTV.png"}}, {"id": "224", "display_name": {"@lang": "en", "#text": "Hub Premier 4"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/224_1920x1080_HTV.png"}}, {"id": "225", "display_name": {"@lang": "en", "#text": "Hub Premier 5"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/225_1920x1080_HTV.png"}}, {"id": "226", "display_name": {"@lang": "en", "#text": "Hub Premier 6"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/226_1920x1080_HTV.png"}}, {"id": "227", "display_name": {"@lang": "en", "#text": "Hub Premier 7"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/227_1920x1080_HTV.png"}}, {"id": "228", "display_name": {"@lang": "en", "#text": "Hub Premier 8"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/228_1920x1080_HTV.png"}}, {"id": "229", "display_name": {"@lang": "en", "#text": "Hub Premier 9"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/229_1920x1080_HTV.png"}}, {"id": "230", "display_name": {"@lang": "en", "#text": "Hub Premier 10"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/230_1920x1080_HTV.png"}}, {"id": "231", "display_name": {"@lang": "en", "#text": "Hub Premier 11"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/231_1920x1080_HTV.png"}}, {"id": "235", "display_name": {"@lang": "en", "#text": "MOLA Sports"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/235_1920x1080_HTV.png"}}, {"id": "236", "display_name": {"@lang": "en", "#text": "MOLA Golf"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_Channels2/236_1920x1080_HTV.png"}}, {"id": "241", "display_name": {"@lang": "en", "#text": "FIGHT SPORTS HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/241_1920x1080_HTV.png"}}, {"id": "303", "display_name": {"@lang": "en", "#text": "Cbeebies HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/303_1920x1080_HTV.png"}}, {"id": "304", "display_name": {"@lang": "en", "#text": "Nick Jr HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/304_1920x1080_HTV.png"}}, {"id": "307", "display_name": {"@lang": "en", "#text": "DreamWorks Channel HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/606_1920x1080_HTV.png"}}, {"id": "314", "display_name": {"@lang": "en", "#text": "Nickelodeon HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/314_1920x1080_HTV.png"}}, {"id": "316", "display_name": {"@lang": "en", "#text": "Cartoon Network"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/316_1920x1080_HTV.png"}}, {"id": "317", "display_name": {"@lang": "en", "#text": "Boomerang HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/317_1920x1080_HTV.png"}}, {"id": "401", "display_name": {"@lang": "en", "#text": "HISTORY HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/401_1920x1080_HTV.png"}}, {"id": "403", "display_name": {"@lang": "en", "#text": "Crime + Investigation HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/403_1920x1080_HTV.png"}}, {"id": "407", "display_name": {"@lang": "en", "#text": "BBC Earth HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/407_1920x1080_HTV.png"}}, {"id": "422", "display_name": {"@lang": "en", "#text": "Discovery Channel HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/422_1920x1080_HTV.png"}}, {"id": "427", "display_name": {"@lang": "en", "#text": "Travelxp HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/427_1920x1080_HTV.png"}}, {"id": "432", "display_name": {"@lang": "en", "#text": "BBC Lifestyle HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/432_1920x1080_HTV.png"}}, {"id": "437", "display_name": {"@lang": "en", "#text": "HGTV"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/437_1920x1080_HTV.png"}}, {"id": "443", "display_name": {"@lang": "en", "#text": "FashionTV HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/443_1920x1080_HTV.png"}}, {"id": "447", "display_name": {"@lang": "en", "#text": "ABC Australia"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/447_1920x1080_HTV.png"}}, {"id": "509", "display_name": {"@lang": "en", "#text": "Blue Ant Entertainment HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/509_1920x1080_HTV.png"}}, {"id": "511", "display_name": {"@lang": "en", "#text": "AXN HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/511_1920x1080_HTV.png"}}, {"id": "512", "display_name": {"@lang": "en", "#text": "HITS MOVIES HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/512_1920x1080_HTV.png"}}, {"id": "514", "display_name": {"@lang": "en", "#text": "Lifetime HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/514_1920x1080_HTV.png"}}, {"id": "519", "display_name": {"@lang": "en", "#text": "Hits HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/519_1920x1080_HTV.png"}}, {"id": "532", "display_name": {"@lang": "en", "#text": "Animax HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/532_1920x1080_HTV.png"}}, {"id": "601", "display_name": {"@lang": "en", "#text": "HBO HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/601_1920x1080_HTV.png"}}, {"id": "603", "display_name": {"@lang": "en", "#text": "HBO Signature HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/603_1920x1080_HTV.png"}}, {"id": "604", "display_name": {"@lang": "en", "#text": "HBO Family HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/604_1920x1080_HTV.png"}}, {"id": "605", "display_name": {"@lang": "en", "#text": "HBO Hits HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/605_1920x1080_HTV.png"}}, {"id": "611", "display_name": {"@lang": "en", "#text": "Cinemax HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/611_1920x1080_HTV.png"}}, {"id": "620", "display_name": {"@lang": "en", "#text": "Paramount Network"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/620_1920x1080_HTV.png"}}, {"id": "701", "display_name": {"@lang": "en", "#text": "BBC World News HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/701_1920x1080_HTV.png"}}, {"id": "702", "display_name": {"@lang": "en", "#text": "Fox News Channel HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/702_1920x1080_HTV.png"}}, {"id": "703", "display_name": {"@lang": "en", "#text": "Sky News HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/703_1920x1080_HTV.png"}}, {"id": "704", "display_name": {"@lang": "en", "#text": "Euronews HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/704_1920x1080_HTV.png"}}, {"id": "707", "display_name": {"@lang": "en", "#text": "CNBC HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/707_1920x1080_HTV.png"}}, {"id": "708", "display_name": {"@lang": "en", "#text": "Bloomberg Television HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/708_1920x1080_HTV.png"}}, {"id": "709", "display_name": {"@lang": "en", "#text": "Bloomberg Quicktake"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/709_1920x1080_HTV.png"}}, {"id": "711", "display_name": {"@lang": "en", "#text": "CNN HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/711_1920x1080_HTV.png"}}, {"id": "720", "display_name": {"@lang": "en", "#text": "SEA Today"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/720_1920x1080_HTV.png"}}, {"id": "722", "display_name": {"@lang": "en", "#text": "CGTN"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/722_1920x1080_HTV.png"}}, {"id": "724", "display_name": {"@lang": "en", "#text": "France24"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/724_1920x1080_HTV.png"}}, {"id": "801", "display_name": {"@lang": "en", "#text": "CCTV-4"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/801_1920x1080_HTV.png"}}, {"id": "805", "display_name": {"@lang": "en", "#text": "Phoenix Chinese Channel HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/805_1920x1080_HTV.png"}}, {"id": "806", "display_name": {"@lang": "en", "#text": "Phoenix InfoNews Channel HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/806_1920x1080_HTV.png"}}, {"id": "808", "display_name": {"@lang": "en", "#text": "TVBS-NEWS"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/808_1920x1080_HTV.png"}}, {"id": "811", "display_name": {"@lang": "en", "#text": "NHK World Premium HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/811_1920x1080_HTV.png"}}, {"id": "812", "display_name": {"@lang": "en", "#text": "NHK WORLD - JAPAN"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/812_1920x1080_HTV.png"}}, {"id": "814", "display_name": {"@lang": "en", "#text": "GEM HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/814_1920x1080_HTV.png"}}, {"id": "815", "display_name": {"@lang": "en", "#text": "KBS World HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/815_1920x1080_HTV.png"}}, {"id": "817", "display_name": {"@lang": "en", "#text": "Arirang TV"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/817_1920x1080_HTV.png"}}, {"id": "820", "display_name": {"@lang": "en", "#text": "ETTV ASIA HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/820_1920x1080_HTV.png"}}, {"id": "823", "display_name": {"@lang": "en", "#text": "ONE HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/823_1920x1080_HTV.png"}}, {"id": "824", "display_name": {"@lang": "en", "#text": "tvN HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/824_1920x1080_HTV.png"}}, {"id": "825", "display_name": {"@lang": "en", "#text": "Hub E City HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/825_1920x1080_HTV.png"}}, {"id": "827", "display_name": {"@lang": "en", "#text": "CTI TV HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/827_1920x1080_HTV.png"}}, {"id": "828", "display_name": {"@lang": "en", "#text": "TVBS Asia"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/828_1920x1080_HTV.png"}}, {"id": "832", "display_name": {"@lang": "en", "#text": "Dragon TV"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/832_1920x1080_HTV.png"}}, {"id": "838", "display_name": {"@lang": "en", "#text": "TVB Jade HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png"}}, {"id": "855", "display_name": {"@lang": "en", "#text": "Hub VVDrama HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/855_1920x1080_HTV.png"}}, {"id": "859", "display_name": {"@lang": "en", "#text": "TVB Xing He HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/859_1920x1080_HTV.png"}}, {"id": "868", "display_name": {"@lang": "en", "#text": "Celestial Movies HD"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/868_1920x1080_HTV.png"}}, {"id": "869", "display_name": {"@lang": "en", "#text": "CCM"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/869_1920x1080_HTV.png"}}, {"id": "921", "display_name": {"@lang": "en", "#text": "TestChannel921"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/101_1920x1080_HTV.png"}}, {"id": "922", "display_name": {"@lang": "en", "#text": "TestChannel922"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/101_1920x1080_HTV.png"}}, {"id": "923", "display_name": {"@lang": "en", "#text": "TestChannel923"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/101_1920x1080_HTV.png"}}, {"id": "924", "display_name": {"@lang": "en", "#text": "TestChannel924"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/101_1920x1080_HTV.png"}}, {"id": "988", "display_name": {"@lang": "en", "#text": "Test channel 988"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/988_1920x1080_HTV.png"}}, {"id": "989", "display_name": {"@lang": "en", "#text": "Test channel 989"}, "icon": {"@src": "https://poster.starhubgo.com/Linear_channels2/989_1920x1080_HTV.png"}}, {"id": "993", "display_name": {"@lang": "en", "#text": "TestChannel 993"}, "icon": {"@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"}}, {"id": "994", "display_name": {"@lang": "en", "#text": "TestChannel1"}, "icon": {"@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"}}, {"id": "995", "display_name": {"@lang": "en", "#text": "TestChannel995"}, "icon": {"@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"}}, {"id": "996", "display_name": {"@lang": "en", "#text": "TestChannel996"}, "icon": {"@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"}}, {"id": "997", "display_name": {"@lang": "en", "#text": "TestChannel2"}, "icon": {"@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"}}, {"id": "998", "display_name": {"@lang": "en", "#text": "Channel_Test"}, "icon": {"@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"}}]}
+{
+    "channels": [
+        {
+            "id": "101",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Preview Channel"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/101_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "102",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Channel 5 HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/102_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "103",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Channel 8 HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/103_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "104",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Suria HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/104_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "105",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Vasantham HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/105_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "106",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Channel NewsAsia HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/106_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "107",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Channel U HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/107_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "111",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub E City HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/111_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "115",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Citra Entertainment"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/115_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "116",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Karisma"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/116_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "118",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Astro Warna"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/118_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "123",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Sensasi HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/123_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "124",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ONE (Malay)"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/124_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "125",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Zee TV"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/125_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "127",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Sony Entertainment Television"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/127_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "128",
+            "display_name": {
+                "@lang": "en",
+                "#text": "COLORS"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/128_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "130",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Zee Cinema"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/130_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "131",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SONY MAX"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/131_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "132",
+            "display_name": {
+                "@lang": "en",
+                "#text": "COLORS Tamil HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/132_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "133",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Sun TV"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/133_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "134",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Sun Music"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/134_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "135",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Vijay TV"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/135_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "136",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Vannathirai"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/136_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "137",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Zee Thirai"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/137_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "138",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Zee Tamil HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/138_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "139",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Asianet"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/139_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "140",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Asianet Movies"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/140_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "141",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Kalaignar TV"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/141_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "143",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ANC"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/143_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "144",
+            "display_name": {
+                "@lang": "en",
+                "#text": "The Filipino Channel"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/144_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "145",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Cinema One Global"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/145_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "152",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TV5MONDE HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/152_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "153",
+            "display_name": {
+                "@lang": "en",
+                "#text": "DW (Deutsch)"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/153_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "158",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ADITHYA TV"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/158_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "159",
+            "display_name": {
+                "@lang": "en",
+                "#text": "KTV HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/159_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "201",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Sports 1 HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/201_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "202",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Sports 2 HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/202_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "203",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Sports 3 HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/203_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "204",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Sports 4 HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/204_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "205",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Sports 5 HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/205_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "207",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Premier Sports TV"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/207_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "209",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SPOTV"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/209_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "210",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SPOTV2"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/210_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "211",
+            "display_name": {
+                "@lang": "en",
+                "#text": "beIN SPORTS 2 HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/211_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "212",
+            "display_name": {
+                "@lang": "en",
+                "#text": "beIN SPORTS RUGBY"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/212_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "213",
+            "display_name": {
+                "@lang": "en",
+                "#text": "beIN SPORTS HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/213_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "214",
+            "display_name": {
+                "@lang": "en",
+                "#text": "beIN Sports 3"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/214_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "215",
+            "display_name": {
+                "@lang": "en",
+                "#text": "beIN Sports 4 HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/215_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "216",
+            "display_name": {
+                "@lang": "en",
+                "#text": "beIN Sports 5 HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/216_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "221",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HubPremier 1"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/221_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "222",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Premier 2 (HD)"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/222_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "223",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Premier 3"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/223_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "224",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Premier 4"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/224_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "225",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Premier 5"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/225_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "226",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Premier 6"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/226_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "227",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Premier 7"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/227_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "228",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Premier 8"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/228_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "229",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Premier 9"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/229_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "230",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Premier 10"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/230_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "231",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub Premier 11"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/231_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "235",
+            "display_name": {
+                "@lang": "en",
+                "#text": "MOLA Sports"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/235_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "236",
+            "display_name": {
+                "@lang": "en",
+                "#text": "MOLA Golf"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_Channels2/236_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "241",
+            "display_name": {
+                "@lang": "en",
+                "#text": "FIGHT SPORTS HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/241_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "303",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Cbeebies HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/303_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "304",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Nick Jr HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/304_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "307",
+            "display_name": {
+                "@lang": "en",
+                "#text": "DreamWorks Channel HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/606_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "314",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Nickelodeon HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/314_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "316",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Cartoon Network"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/316_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "317",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Boomerang HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/317_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "401",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HISTORY HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/401_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "403",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Crime + Investigation HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/403_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "407",
+            "display_name": {
+                "@lang": "en",
+                "#text": "BBC Earth HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/407_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "422",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Discovery Channel HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/422_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "427",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Travelxp HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/427_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "432",
+            "display_name": {
+                "@lang": "en",
+                "#text": "BBC Lifestyle HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/432_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "437",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HGTV"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/437_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "443",
+            "display_name": {
+                "@lang": "en",
+                "#text": "FashionTV HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/443_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "447",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ABC Australia"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/447_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "509",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Blue Ant Entertainment HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/509_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "511",
+            "display_name": {
+                "@lang": "en",
+                "#text": "AXN HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/511_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "512",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HITS MOVIES HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/512_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "514",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Lifetime HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/514_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "519",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hits HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/519_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "532",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Animax HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/532_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "601",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HBO HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/601_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "603",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HBO Signature HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/603_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "604",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HBO Family HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/604_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "605",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HBO Hits HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/605_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "611",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Cinemax HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/611_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "620",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Paramount Network"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/620_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "701",
+            "display_name": {
+                "@lang": "en",
+                "#text": "BBC World News HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/701_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "702",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Fox News Channel HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/702_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "703",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Sky News HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/703_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "704",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Euronews HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/704_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "707",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CNBC HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/707_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "708",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Bloomberg Television HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/708_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "709",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Bloomberg Quicktake"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/709_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "711",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CNN HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/711_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "720",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SEA Today"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/720_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "722",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CGTN"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/722_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "724",
+            "display_name": {
+                "@lang": "en",
+                "#text": "France24"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/724_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "801",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CCTV-4"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/801_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "805",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Phoenix Chinese Channel HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/805_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "806",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Phoenix InfoNews Channel HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/806_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "808",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVBS-NEWS"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/808_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "811",
+            "display_name": {
+                "@lang": "en",
+                "#text": "NHK World Premium HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/811_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "812",
+            "display_name": {
+                "@lang": "en",
+                "#text": "NHK WORLD - JAPAN"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/812_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "814",
+            "display_name": {
+                "@lang": "en",
+                "#text": "GEM HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/814_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "815",
+            "display_name": {
+                "@lang": "en",
+                "#text": "KBS World HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/815_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "817",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Arirang TV"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/817_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "820",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ETTV ASIA HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/820_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "823",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ONE HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/823_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "824",
+            "display_name": {
+                "@lang": "en",
+                "#text": "tvN HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/824_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "825",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub E City HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/825_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "827",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CTI TV HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/827_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "828",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVBS Asia"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/828_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "832",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Dragon TV"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/832_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "838",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVB Jade HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "855",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Hub VVDrama HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/855_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "859",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVB Xing He HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/859_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "868",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Celestial Movies HD"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/868_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "869",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CCM"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/869_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "921",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TestChannel921"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/101_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "922",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TestChannel922"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/101_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "923",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TestChannel923"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/101_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "924",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TestChannel924"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/101_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "988",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Test channel 988"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/988_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "989",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Test channel 989"
+            },
+            "icon": {
+                "@src": "https://poster.starhubgo.com/Linear_channels2/989_1920x1080_HTV.png"
+            }
+        },
+        {
+            "id": "993",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TestChannel 993"
+            },
+            "icon": {
+                "@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"
+            }
+        },
+        {
+            "id": "994",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TestChannel1"
+            },
+            "icon": {
+                "@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"
+            }
+        },
+        {
+            "id": "995",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TestChannel995"
+            },
+            "icon": {
+                "@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"
+            }
+        },
+        {
+            "id": "996",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TestChannel996"
+            },
+            "icon": {
+                "@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"
+            }
+        },
+        {
+            "id": "997",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TestChannel2"
+            },
+            "icon": {
+                "@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"
+            }
+        },
+        {
+            "id": "998",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Channel_Test"
+            },
+            "icon": {
+                "@src": "https://cdn.one.accedo.tv/files/5ee2ec2823eec6000dfcf891?sessionKey=0SSK4001B2E7FA34001B2E7F8E1890DC266E#asset"
+            }
+        }
+    ]
+}
