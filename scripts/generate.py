@@ -28,6 +28,6 @@ spec.loader.exec_module(site)
 # Save JSON channels metadata
 channel_metadata = site.generate().json()
 channel_metadata_json_data = json.loads(channel_metadata)
-
+# 
 with open(channels_metadata_dir/f"{args.site}.json", "w") as outfile:
-    json.dump(channel_metadata_json_data, outfile)
+    json.dump(channel_metadata_json_data, outfile, indent=4)
