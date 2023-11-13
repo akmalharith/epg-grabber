@@ -2,6 +2,7 @@ from epg_grabber.models import Programme, ChannelMetadata, Channel
 
 from datetime import date, datetime, timedelta
 from pytz import timezone
+from tzlocal import get_localzone_name
 import requests
 
 KALSIG = "1c9a9da646d991758f659424dccec62f"
@@ -128,7 +129,8 @@ def get_programs(channel_id: str, days: int = 1, channel_xml_id: str = None):
 
     programs = []
 
-    tz = timezone("Asia/Kuala_Lumpur")
+    # Get caller TzInfo
+    tz = timezone(get_localzone_name())
 
     for obj in output['result']['objects']:
         title = obj['metas']['TitleSortName']['value']
