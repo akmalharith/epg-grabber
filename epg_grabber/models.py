@@ -3,6 +3,7 @@ from pydantic import BaseModel, Field, validator
 from datetime import datetime
 from string import punctuation
 from typing import List, Optional, Union, Dict
+from pytz import timezone
 
 
 class Channel(BaseModel):
@@ -55,6 +56,11 @@ class Programme(BaseModel):
 
     @validator("start", "stop")
     def xmltv_datetime_string(cls, value):
+
+        if not value.tzinfo:
+            utc = timezone('utc')
+            value = utc.localize(value)
+        
         xmltv_string = value.strftime(EPG_XMLTV_TIMEFORMAT)
         return xmltv_string
 
