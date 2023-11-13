@@ -12,5 +12,5 @@ SITES_MODULE_IMPORT_PATH = "epg_grabber.sites"
 
 # EPG constants
 EPG_GENERATOR = "epg_grabber"
-EPG_XMLTV_TIMEFORMAT = "%Y%m%d%H%M%S"
+EPG_XMLTV_TIMEFORMAT = "%Y%m%d%H%M%S %z" 
 EPG_XMLTV_OFFSET = "+0000"
