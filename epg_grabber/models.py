@@ -1,4 +1,4 @@
-from epg_grabber.constants import EPG_GENERATOR, EPG_XMLTV_TIMEFORMAT, EPG_XMLTV_OFFSET
+from epg_grabber.constants import EPG_GENERATOR, EPG_XMLTV_TIMEFORMAT
 from pydantic import BaseModel, Field, validator
 from datetime import datetime
 from string import punctuation
@@ -55,8 +55,7 @@ class Programme(BaseModel):
 
     @validator("start", "stop")
     def xmltv_datetime_string(cls, value):
-        xmltv_string = value.strftime(
-            EPG_XMLTV_TIMEFORMAT) + " " + EPG_XMLTV_OFFSET
+        xmltv_string = value.strftime(EPG_XMLTV_TIMEFORMAT)
         return xmltv_string
 
     @validator("title", "desc")
