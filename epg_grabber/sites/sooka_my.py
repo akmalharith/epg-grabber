@@ -1,6 +1,7 @@
 from epg_grabber.models import Programme, ChannelMetadata, Channel
 
 from datetime import date, datetime, timedelta
+from pytz import timezone
 import requests
 
 KALSIG = "1c9a9da646d991758f659424dccec62f"
@@ -127,11 +128,13 @@ def get_programs(channel_id: str, days: int = 1, channel_xml_id: str = None):
 
     programs = []
 
+    tz = timezone("Asia/Kuala_Lumpur")
+
     for obj in output['result']['objects']:
         title = obj['metas']['TitleSortName']['value']
         description = obj['metas']['LongSynopsis']['value']
-        start_date = datetime.fromtimestamp(obj['startDate'])
-        end_date = datetime.fromtimestamp(obj['endDate'])
+        start_date = tz.localize(datetime.fromtimestamp(obj['startDate']))
+        end_date = tz.localize(datetime.fromtimestamp(obj['endDate']))
 
         program_obj = Programme(
             start=start_date,
