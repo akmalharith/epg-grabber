@@ -2,7 +2,7 @@ from epg_grabber.models import Programme, Channel, ChannelMetadata
 from datetime import date, datetime, timedelta
 from typing import List 
 from uuid import uuid4
-
+from tzlocal import get_localzone_name
 import requests
 
 IMAGE_PREFIX_URL = "https://d229kpbsb5jevy.cloudfront.net/mytv/content"
@@ -112,14 +112,17 @@ def get_programs(
     [data] = (output['response']['data'])
     programs = data['programs']
 
+    # Get caller TzInfo
+    tz = timezone(get_localzone_name())
+
     for program in programs:
         title = (program['display']['title'])
         description = (program['display']['subtitle2'])
         start_time_mili = int(program['display']['markers']['startTime']['value']) / 1000
         end_time_mili = int(program['display']['markers']['endTime']['value']) / 1000
 
-        start_time = datetime.fromtimestamp(start_time_mili)
-        end_time = datetime.fromtimestamp(end_time_mili)
+        start_time = tz.localize(datetime.fromtimestamp(start_time_mili))
+        end_time = tz.localize(datetime.fromtimestamp(end_time_mili))
 
         programme_obj = Programme(
             start=start_time,
