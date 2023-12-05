@@ -21,7 +21,8 @@ dependencies = [
     "loguru==0.6.0",
     "pydantic==1.10.2",
     "xmltodict==0.13.0",
-    "pytz==2022.7"
+    "pytz==2022.7",
+    "tzlocal==5.2"
 ]
 
 [project.scripts]
