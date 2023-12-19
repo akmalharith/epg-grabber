@@ -1,3 +1,4 @@
+from pytz import timezone
 from epg_grabber.models import Programme, Channel, ChannelMetadata
 from datetime import date, datetime, timedelta
 from typing import List 
