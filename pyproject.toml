@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "py-epg-grabber"
-version = "0.4.1"
+version = "0.4.4"
 authors = [
   { name="Akmal Harith" },
 ]
