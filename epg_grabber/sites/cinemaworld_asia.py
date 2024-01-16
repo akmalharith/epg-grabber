@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, date
 from typing import List
 import requests
 
-EPG_URL = 'https://cinemalaravel.ambercreative.sg/api/schedules'
+EPG_URL = 'https://nova.cinemaworld.asia/api/schedules'
 HRS_OFFSET = -8
 DATETIME_FORMAT = '%Y-%m-%d %I:%M %p'
 
