@@ -1,16 +1,6 @@
 {
     "channels": [
         {
-            "id": "463",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Too FUN!"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/463_144.png"
-            }
-        },
-        {
             "id": "395",
             "display_name": {
                 "@lang": "en",
@@ -91,16 +81,6 @@
             }
         },
         {
-            "id": "403",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Go Shop BAARU"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/403_144.png"
-            }
-        },
-        {
             "id": "401",
             "display_name": {
                 "@lang": "en",
@@ -141,26 +121,6 @@
             }
         },
         {
-            "id": "192",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Go Shop RUUMA"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/192_144.png"
-            }
-        },
-        {
-            "id": "294",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Go Shop GAAYA"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/294_144.png"
-            }
-        },
-        {
             "id": "429",
             "display_name": {
                 "@lang": "en",
@@ -181,13 +141,13 @@
             }
         },
         {
-            "id": "302",
+            "id": "501",
             "display_name": {
                 "@lang": "en",
-                "#text": "NJOI TV"
+                "#text": "TVB Magic"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/302_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/501_144.png"
             }
         },
         {
@@ -228,16 +188,6 @@
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/48_144.png"
-            }
-        },
-        {
-            "id": "470",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Go Shop 150"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/470_144.png"
             }
         },
         {
@@ -371,13 +321,13 @@
             }
         },
         {
-            "id": "178",
+            "id": "490",
             "display_name": {
                 "@lang": "en",
-                "#text": "BollyOne HD"
+                "#text": "Zee Cinema"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/178_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/490_144.png"
             }
         },
         {
@@ -388,26 +338,6 @@
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/355_144.png"
-            }
-        },
-        {
-            "id": "202",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Go Shop 303"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/202_144.png"
-            }
-        },
-        {
-            "id": "387",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Astro Xiao Tai Yang HD"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/387_144.png"
             }
         },
         {
@@ -431,20 +361,10 @@
             }
         },
         {
-            "id": "183",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Astro Shuang Xing HD"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/183_144.png"
-            }
-        },
-        {
             "id": "158",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Quan Jia HD"
+                "#text": "Astro QJ"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/158_144.png"
@@ -661,6 +581,16 @@
             }
         },
         {
+            "id": "508",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Astro Premier"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/508_144.png"
+            }
+        },
+        {
             "id": "143",
             "display_name": {
                 "@lang": "en",
@@ -684,7 +614,7 @@
             "id": "454",
             "display_name": {
                 "@lang": "en",
-                "#text": "SHOWCASE MOVIES"
+                "#text": "SHOWCASE"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/454_144.png"
@@ -764,7 +694,7 @@
             "id": "366",
             "display_name": {
                 "@lang": "en",
-                "#text": "BBC World News HD"
+                "#text": "BBC News HD"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/366_144.png"
@@ -841,23 +771,23 @@
             }
         },
         {
-            "id": "322",
+            "id": "483",
             "display_name": {
                 "@lang": "en",
-                "#text": "Nat Geo Wild HD"
+                "#text": "Love Nature"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/322_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/483_144.png"
             }
         },
         {
-            "id": "140",
+            "id": "482",
             "display_name": {
                 "@lang": "en",
-                "#text": "National Geographic HD"
+                "#text": "Global Trekker"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/140_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/482_144.png"
             }
         },
         {
@@ -911,40 +841,10 @@
             }
         },
         {
-            "id": "483",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Love Nature"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/483_144.png"
-            }
-        },
-        {
-            "id": "482",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Global Trekker"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/482_144.png"
-            }
-        },
-        {
-            "id": "412",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Astro Tutor TV SK HD"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/412_144.png"
-            }
-        },
-        {
             "id": "411",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Tutor TV SMK HD"
+                "#text": "Astro Tutor TV"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/411_144.png"
@@ -961,13 +861,13 @@
             }
         },
         {
-            "id": "432",
+            "id": "485",
             "display_name": {
                 "@lang": "en",
-                "#text": "TA-DAA!"
+                "#text": "DreamWorks"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/432_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/485_144.png"
             }
         },
         {
@@ -1004,20 +904,10 @@
             "id": "465",
             "display_name": {
                 "@lang": "en",
-                "#text": "Moonbug Kids"
+                "#text": "Moonbug"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/465_144.png"
-            }
-        },
-        {
-            "id": "430",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Boomerang"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/430_144.png"
             }
         },
         {
@@ -1031,16 +921,6 @@
             }
         },
         {
-            "id": "485",
-            "display_name": {
-                "@lang": "en",
-                "#text": "DreamWorks"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/485_144.png"
-            }
-        },
-        {
             "id": "131",
             "display_name": {
                 "@lang": "en",
@@ -1051,6 +931,16 @@
             }
         },
         {
+            "id": "524",
+            "display_name": {
+                "@lang": "en",
+                "#text": "HITS NOW"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/524_144.png"
+            }
+        },
+        {
             "id": "447",
             "display_name": {
                 "@lang": "en",
@@ -1058,16 +948,6 @@
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/447_144.png"
-            }
-        },
-        {
-            "id": "453",
-            "display_name": {
-                "@lang": "en",
-                "#text": "PRIMEtime"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/453_144.png"
             }
         },
         {
@@ -1181,16 +1061,6 @@
             }
         },
         {
-            "id": "206",
-            "display_name": {
-                "@lang": "en",
-                "#text": "eGG Network HD"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/206_144.png"
-            }
-        },
-        {
             "id": "235",
             "display_name": {
                 "@lang": "en",
@@ -1208,6 +1078,26 @@
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/457_144.png"
+            }
+        },
+        {
+            "id": "486",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Arena Bola"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/486_144.png"
+            }
+        },
+        {
+            "id": "487",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Arena Bola 2"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/487_144.png"
             }
         },
         {
@@ -1271,13 +1161,13 @@
             }
         },
         {
-            "id": "455",
+            "id": "503",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Supersport 5 HD"
+                "#text": "W-Sport"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/455_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/503_144.png"
             }
         },
         {
@@ -1648,6 +1538,46 @@
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/289_144.png"
+            }
+        },
+        {
+            "id": "129",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Astro Wah Lai Toi HD"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/129_144.png"
+            }
+        },
+        {
+            "id": "459",
+            "display_name": {
+                "@lang": "en",
+                "#text": "BBC Brit HD"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/459_144.png"
+            }
+        },
+        {
+            "id": "458",
+            "display_name": {
+                "@lang": "en",
+                "#text": "BBC First HD"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/458_144.png"
+            }
+        },
+        {
+            "id": "394",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Smithsonian Channel"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/394_144.png"
             }
         }
     ]
