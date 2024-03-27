@@ -225,5 +225,6 @@ poetry.toml
 ### Development files 
 input.json
 tv.xml
+debug.py
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,python

@@ -27,9 +27,11 @@ def get_programs(
 
     date_today = date.today()
 
+    limit_days = 6 if days > 6 else days
+
     schedules = []
 
-    for i in range(days):
+    for i in range(limit_days):
         date_input = date_today + timedelta(days=i)
 
         try:
