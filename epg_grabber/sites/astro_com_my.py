@@ -99,7 +99,7 @@ def get_programs(
             stop=end_time,
             channel=channel_name,
             title=schedule["title"],
-            # desc=get_program_details(schedule["siTrafficKey"]),
+            desc=get_program_details(schedule["siTrafficKey"]),
         )
 
         programmes.append(programme_obj)
