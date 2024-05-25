@@ -93,9 +93,9 @@ def get_programs(
         for item in playbill_lites:
 
             program = Programme(
-                start=datetime.fromtimestamp(int(item["startTime"]) / 1000),
-                stop=datetime.fromtimestamp(int(item["endTime"]) / 1000),
-                channel=f"{item["channelID"]}.unifi_com_my",
+                start=datetime.fromtimestamp(int(item['startTime']) / 1000),
+                stop=datetime.fromtimestamp(int(item['endTime']) / 1000),
+                channel=f"{item['channelID']}.unifi_com_my",
                 title=item["name"],
                 rating=item["rating"]["name"]
             )    
