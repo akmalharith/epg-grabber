@@ -12,7 +12,7 @@ session.headers.update(
         "Content-Type":  "application/json",
         "Origin": "https://playtv.unifi.com.my",
         "Referer": "https://playtv.unifi.com.my/",
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
     }
 )
 
@@ -104,9 +104,30 @@ def get_programs(
                 stop=datetime.fromtimestamp(int(item['endTime']) / 1000),
                 channel=f"{item['channelID']}.unifi_com_my",
                 title=item["name"],
-                rating=item["rating"]["name"]
+                rating=item["rating"]["name"],
+                desc=get_program_detail(playbill_id=item["ID"])
             )    
 
             programmes.append(program)
 
     return programmes
+
+def get_program_detail(playbill_id: str) -> str:
+    url = "https://playtv.unifi.com.my:7053/VSP/V3/GetPlaybillDetail?from=throughMSAAcces"
+
+    response = session.post(url, json={
+        "playbillID":playbill_id
+    })
+    response.raise_for_status()
+
+    result = response.json()['result']
+
+    if result["retCode"] != "000000000":
+        raise Exception(result['retMsg'])
+    
+    data = response.json()
+
+    try:
+        return data["playbillDetail"]["introduce"]
+    except KeyError:
+        return ""
