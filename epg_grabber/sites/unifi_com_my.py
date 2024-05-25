@@ -123,7 +123,7 @@ def get_program_detail(playbill_id: str) -> str:
     result = response.json()['result']
 
     if result["retCode"] != "000000000":
-        raise Exception(result['retMsg'])
+        return ""
     
     data = response.json()
 
