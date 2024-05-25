@@ -105,7 +105,7 @@ def get_programs(
                 channel=f"{item['channelID']}.unifi_com_my",
                 title=item["name"],
                 rating=item["rating"]["name"],
-                desc=get_program_detail(playbill_id=item["ID"])
+                # desc=get_program_detail(playbill_id=item["ID"])
             )    
 
             programmes.append(program)
