@@ -1,10 +1,8 @@
 from typing import List
 from epg_grabber.models import Programme
 from datetime import date, datetime, timedelta
-from epg_grabber.sites.unifi_com_my_test import channel_ids
 
 from requests import Session 
-
 from random import randint
 
 session = Session()
@@ -66,7 +64,7 @@ def get_programs(
 
         url = 'https://playtv.unifi.com.my:7053/VSP/V3/QueryPlaybillList?from=throughMSAAccess'
         payload = {
-            "queryChannel": {"channelIDs": channel_ids},
+            "queryChannel": {"channelIDs": [channel_id]},
             "queryPlaybill": {
                 "type": 0,
                 "count": 100,

@@ -9,6 +9,10 @@ sites = get_sites()
 site_test_config = {
     "configs": [
         {
+            "site": "unifi_com_my",
+            "channels": ["20000009"],
+        },
+        {
             "site": "astro_com_my",
             "channels": ["395"],
         },
@@ -44,10 +48,10 @@ site_test_config = {
             "site": "mana2_my",
             "channels": ["1"]
         },
-        {
-            "site": "starhubtvplus_com",
-            "channels": ["519"]
-        }
+        # {
+        #    "site": "starhubtvplus_com",
+        #     "channels": ["519"]
+        # }
     ]
 }
 
