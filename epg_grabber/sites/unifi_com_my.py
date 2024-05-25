@@ -6,6 +6,15 @@ from requests import Session
 from random import randint
 
 session = Session()
+session.headers.update(
+    {
+        "Accept": "application/json",
+        "Content-Type":  "application/json",
+        "Origin": "https://playtv.unifi.com.my",
+        "Referer": "https://playtv.unifi.com.my/",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    }
+)
 
 device_id = randint(199000000, 799999000)
 
