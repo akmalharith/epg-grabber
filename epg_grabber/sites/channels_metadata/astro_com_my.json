@@ -1,6 +1,16 @@
 {
     "channels": [
         {
+            "id": "525",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Heroes"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/525_144.png"
+            }
+        },
+        {
             "id": "395",
             "display_name": {
                 "@lang": "en",
