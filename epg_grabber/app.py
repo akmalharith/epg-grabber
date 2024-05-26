@@ -11,6 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 from itertools import repeat
 from xmltodict import unparse
 from importlib import import_module
+from sys import modules
 from typing import Tuple, List
 from loguru import logger
 
@@ -21,7 +22,12 @@ def _run_by_config_item(config: InputConfigItem, days: int) -> Tuple[List[Progra
     channels: List[Channel] = []
 
     try:
-        site = import_module(f"{SITES_MODULE_IMPORT_PATH}.{config.site}")
+        site_module_name = f"{SITES_MODULE_IMPORT_PATH}.{config.site}"
+
+        if site_module_name not in modules:
+            logger.info(f"Site {config.site} hasn't been imported. First time import.")
+            site = import_module(site_module_name)
+            
     except ModuleNotFoundError as e:
         logger.error(f"Site {config.site} doesn't exist. Skipping.")
         return
