@@ -1,10 +1,7 @@
-name: Pipeline
+name: Test
 
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - 'v*'
 
 env:
   CONFIG_NAME: "develop"
