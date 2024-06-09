@@ -1,23 +1,43 @@
 {
     "channels": [
         {
+            "id": "2949",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CBeebies"
+            },
+            "icon": {
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/acd4288de0794803b601014215707818/version/0"
+            }
+        },
+        {
+            "id": "2950",
+            "display_name": {
+                "@lang": "en",
+                "#text": "BBC Earth"
+            },
+            "icon": {
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/a7e73368ef7e4137ac4c1a2671a72b4d/version/0"
+            }
+        },
+        {
+            "id": "2951",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Dreamworks"
+            },
+            "icon": {
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/80d1a28fa2574606b2e53e1f31c90c7f/version/0"
+            }
+        },
+        {
             "id": "1746",
             "display_name": {
                 "@lang": "en",
                 "#text": "tvN Movies"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/9d640f105b884b19b13e127bbaace787/version/0"
-            }
-        },
-        {
-            "id": "913",
-            "display_name": {
-                "@lang": "en",
-                "#text": "tvN"
-            },
-            "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/26c0f59092af446087c610c7b6cc2e6b/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/9d640f105b884b19b13e127bbaace787/version/1"
             }
         },
         {
@@ -27,47 +47,7 @@
                 "#text": "ONE HD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/7cce1cbbb8b44b68b1cb584f189a0ccf/version/0"
-            }
-        },
-        {
-            "id": "2427",
-            "display_name": {
-                "@lang": "en",
-                "#text": "K-POPCORN"
-            },
-            "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/574e45f95d5d4a288aad6e711ace25b6/version/0"
-            }
-        },
-        {
-            "id": "2553",
-            "display_name": {
-                "@lang": "en",
-                "#text": "AEC HD"
-            },
-            "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/948bafbe79e1483ca678e88b9e11dff9/version/0"
-            }
-        },
-        {
-            "id": "2552",
-            "display_name": {
-                "@lang": "en",
-                "#text": "QJ HD"
-            },
-            "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/f0a992fdc7ee4d3fafc5bf828ba611f9/version/0"
-            }
-        },
-        {
-            "id": "2345",
-            "display_name": {
-                "@lang": "en",
-                "#text": "KPLUS"
-            },
-            "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/323833b620844da3a8de4283290c1c09/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/7cce1cbbb8b44b68b1cb584f189a0ccf/version/1"
             }
         },
         {
@@ -77,137 +57,157 @@
                 "#text": "KBS WORLD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/024e62a0fd294951a73c181d21c3f860/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/024e62a0fd294951a73c181d21c3f860/version/1"
             }
         },
         {
-            "id": "2443",
+            "id": "2345",
             "display_name": {
                 "@lang": "en",
-                "#text": "TAYO+"
+                "#text": "KPLUS"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/9ccc772601b741d4a20c94c132a03282/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/323833b620844da3a8de4283290c1c09/version/1"
             }
         },
         {
-            "id": "2611",
+            "id": "913",
             "display_name": {
                 "@lang": "en",
-                "#text": "Travel&Taste"
+                "#text": "tvN"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/af0713d19b08477fb34c4bca7806f15b/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/26c0f59092af446087c610c7b6cc2e6b/version/1"
             }
         },
         {
-            "id": "2610",
+            "id": "2553",
             "display_name": {
                 "@lang": "en",
-                "#text": "Drama Hotpot"
+                "#text": "AEC HD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/0840a1e4e5474ab2bd8ed2e78b62a3cc/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/948bafbe79e1483ca678e88b9e11dff9/version/1"
             }
         },
         {
-            "id": "2608",
+            "id": "2900",
             "display_name": {
                 "@lang": "en",
-                "#text": "Filem Mantap"
+                "#text": "ASTRO AOD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/630b643fb6cf4ceca08c9d9a97c2af89/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/6bade6b5a2dd47dd9f4b27083f6d3fd8/version/1"
             }
         },
         {
-            "id": "2609",
+            "id": "2897",
             "display_name": {
                 "@lang": "en",
-                "#text": "Lawak Sentral"
+                "#text": "TVB Jade"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/bf0217c390d64933a8322599c7fc8cdb/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/9cb48df387ad45188bd9528590a94fdd/version/1"
             }
         },
         {
-            "id": "2600",
+            "id": "2899",
             "display_name": {
                 "@lang": "en",
-                "#text": "Drama Hebat"
+                "#text": "TVB Xing He HD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/0b7ee488e85f40389398c3a9f60a2327/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/0b03d99a191c4103a7cbc7d60e279b3f/version/1"
             }
         },
         {
-            "id": "2446",
+            "id": "2896",
             "display_name": {
                 "@lang": "en",
-                "#text": "Gusto TV"
+                "#text": "TVB CLASSIC HD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/bbeffd348eab475f8e6758b84534e6e3/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/65fb8b81fc2e4160b85a14af9428aea6/version/1"
             }
         },
         {
-            "id": "2708",
+            "id": "2898",
             "display_name": {
                 "@lang": "en",
-                "#text": "MTRSPT1"
+                "#text": "TVB Entertainment News HD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/66847680a99c4be9af34f94102e6e416/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/c90d15a497d544afaced10b492d428bf/version/1"
             }
         },
         {
-            "id": "2430",
+            "id": "2552",
             "display_name": {
                 "@lang": "en",
-                "#text": "ESTV"
+                "#text": "QJ HD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/57a888c001024bbe8bcbe4f794b36cdf/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/f0a992fdc7ee4d3fafc5bf828ba611f9/version/1"
             }
         },
         {
-            "id": "2444",
+            "id": "2909",
             "display_name": {
                 "@lang": "en",
-                "#text": "EDGEsport"
+                "#text": "iQIYI HD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/e171e4404e5344c8864a8f1079301ec3/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/c44c81ae5384421e9fba751cfaadb248/version/1"
             }
         },
         {
-            "id": "2445",
+            "id": "2913",
             "display_name": {
                 "@lang": "en",
-                "#text": "Infamous TV"
+                "#text": "CTI Asia HD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/718984734b9a40688ab3fde72f27e7ee/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/79f5fa9e9ce44c6086a1a1d121c3c9b9/version/1"
             }
         },
         {
-            "id": "2449",
+            "id": "2912",
             "display_name": {
                 "@lang": "en",
-                "#text": "Tastemade"
+                "#text": "CCTV4 HD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/ccdd07c58dcf4ae6be79b41e8a35c111/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/2c39544e676543fbbbab235b2408e52d/version/1"
             }
         },
         {
-            "id": "2447",
+            "id": "2917",
             "display_name": {
                 "@lang": "en",
-                "#text": "Bollywood Prime"
+                "#text": "CGTN HD"
             },
             "icon": {
-                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/6645e2e786014bc482c4835a8f97e1bd/version/0"
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/6e08c75ee744472fbe866f018ce1cff5/version/1"
+            }
+        },
+        {
+            "id": "2915",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Phoenix Chinese Channel HD"
+            },
+            "icon": {
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/8a2ea31ae494442fbde50bb45ba5e54d/version/1"
+            }
+        },
+        {
+            "id": "2923",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Phoenix Info News HD"
+            },
+            "icon": {
+                "@src": "https://images.sgp2.ott.kaltura.com/Service.svc/GetImage/p/3209/entry_id/e0896b50c5c147979de5509a0ba4680c/version/1"
             }
         }
     ]
