@@ -50,12 +50,12 @@ def generate() -> ChannelMetadata:
            "filter": {
                 "objectType": "KalturaChannelFilter",
                 "idEqual": "339523",
-                "kSql": "(and (or (and asset_type = 'epg' ) (and Catalogue = 'sottott') ) (and name ~'' (or )) )"
+                "kSql": "(or (and asset_type = 'epg' ) (and Catalogue = 'sottott') )"
            },
             "pager": {
                 "objectType": "KalturaFilterPager",
                 "pageIndex": 1,
-                "pageSize": 21
+                "pageSize": 80
             },
             "format": 1,
             "clientTag": "AstroQA",
