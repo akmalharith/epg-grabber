@@ -1,42 +1,30 @@
 name: Test
 
 on:
-  workflow_dispatch:
-
-env:
-  CONFIG_NAME: "develop"
-  TEST_MODE: True
-  PLAYTV_UNIFI_USER_ID: ${{ secrets.PLAYTV_UNIFI_USER_ID }}
-  PLAYTV_UNIFI_PASSWORD: ${{ secrets.PLAYTV_UNIFI_PASSWORD }}
-  PLAYTV_UNIFI_DEVICE_ID: ${{ secrets.PLAYTV_UNIFI_DEVICE_ID }}
-  STARHUBTVPLUS_APP_KEY: ${{ secrets.STARHUBTVPLUS_APP_KEY }}
-  STARHUBTVPLUS_CLIENT_UUID: ${{ secrets.STARHUBTVPLUS_CLIENT_UUID }}
-  X_PLEX_TOKEN: ${{ secrets.X_PLEX_TOKEN }}
+  pull_request:
+    types:
+      - opened
+      - synchronize
+  schedule:
+    # cron every week on monday
+    - cron: "0 0 * * 1"
   
 jobs:
-  tests:
+  test:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
-        python-version: [3.8]
+        python-version: [3.12]
 
     steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }}
+    - uses: actions/checkout@v4
+    
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: 'pip'
 
-      - uses: actions/setup-python@v2
-        with:
-          python-version: ${{ matrix.python-version }}
+    - run: pip install -r requirements-tests.txt
 
-      - name: Run flake8
-        if: false
-        uses: py-actions/flake8@v2
-        with:
-          ignore: "E501,E741,W605,E265,E226,W504,W291,E261,W293,E303,E231,E203,E302,E251,E127,E124,E211,E305,E128,E275,W503"
- 
-      - name: Run tests
-        run: |
-          pip install -r tests/requirements.txt
-          pip install -r requirements.txt
-          python -m unittest
+    - run: pytest --log-cli-level=DEBUG

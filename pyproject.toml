@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "py-epg-grabber"
-version = "0.4.4"
+dynamic = ["version"]
 authors = [
   { name="Akmal Harith" },
 ]
@@ -40,3 +40,6 @@ namespaces = false
 
 [tool.setuptools.package-data]
 epg_grabber = ["*.json","sites/channels_metadata/*.json"]
+
+[tool.setuptools.dynamic]
+version = {file = "VERSION"}
