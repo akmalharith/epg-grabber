@@ -4,6 +4,10 @@ from epg_grabber.models import Programme, InputConfig
 from importlib import import_module
 import pytest
 
+import logging
+
+LOGGER = logging.getLogger(__name__)
+
 sites = get_sites()
 
 site_test_config = {
@@ -20,10 +24,6 @@ site_test_config = {
             "site": "cinemaworld_asia",
             "channels": ["cinemaworld"]
         },
-        # {
-        #     "site": "epgsky_com",
-        #     "channels": ["2002"]
-        # },
         {
             "site": "mewatch_sg",
             "channels": ["97098"]
@@ -48,10 +48,6 @@ site_test_config = {
             "site": "mana2_my",
             "channels": ["1"]
         },
-        # {
-        #    "site": "starhubtvplus_com",
-        #     "channels": ["519"]
-        # }
     ]
 }
 
@@ -61,6 +57,7 @@ input_config_items = input_config.configs
 
 @pytest.mark.parametrize("config", input_config_items)
 def test_get_program(config):
+    LOGGER.info(f"Testing {config.site}.")
     site_module_path = f"{SITES_MODULE_IMPORT_PATH}.{config.site}"
     site_module = import_module(site_module_path)
 
