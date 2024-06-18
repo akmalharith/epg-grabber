@@ -1,16 +1,6 @@
 {
     "channels": [
         {
-            "id": "525",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Heroes"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/525_144.png"
-            }
-        },
-        {
             "id": "395",
             "display_name": {
                 "@lang": "en",
@@ -134,7 +124,7 @@
             "id": "429",
             "display_name": {
                 "@lang": "en",
-                "#text": "TVS"
+                "#text": "TV Sarawak"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/429_144.png"
@@ -148,16 +138,6 @@
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/433_144.png"
-            }
-        },
-        {
-            "id": "501",
-            "display_name": {
-                "@lang": "en",
-                "#text": "TVB Magic"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/501_144.png"
             }
         },
         {
@@ -501,26 +481,6 @@
             }
         },
         {
-            "id": "87",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Astro AOD 352"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/87_144.png"
-            }
-        },
-        {
-            "id": "65",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Astro AOD 354"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/65_144.png"
-            }
-        },
-        {
             "id": "161",
             "display_name": {
                 "@lang": "en",
@@ -574,7 +534,7 @@
             "id": "391",
             "display_name": {
                 "@lang": "en",
-                "#text": "HITS Movies HD"
+                "#text": "HITS MOVIES HD"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/391_144.png"
@@ -1011,16 +971,6 @@
             }
         },
         {
-            "id": "448",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Paramount Network"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/448_144.png"
-            }
-        },
-        {
             "id": "369",
             "display_name": {
                 "@lang": "en",
@@ -1118,6 +1068,16 @@
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/308_144.png"
+            }
+        },
+        {
+            "id": "533",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SPOTV Stadia"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/533_144.png"
             }
         },
         {
@@ -1578,16 +1538,6 @@
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/458_144.png"
-            }
-        },
-        {
-            "id": "394",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Smithsonian Channel"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/394_144.png"
             }
         }
     ]
