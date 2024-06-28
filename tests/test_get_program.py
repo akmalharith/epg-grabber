@@ -48,6 +48,10 @@ site_test_config = {
             "site": "mana2_my",
             "channels": ["1"]
         },
+        {
+            "site": "nostv_pt",
+            "channels": ["139"]
+        }
     ]
 }
 

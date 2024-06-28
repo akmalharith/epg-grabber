@@ -1,0 +1,1584 @@
+{
+    "channels": [
+        {
+            "id": "14",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Canal Hollywood HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FHOLLYHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "23",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TLC"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTLC.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "24",
+            "display_name": {
+                "@lang": "en",
+                "#text": "1+1"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2F1MAIS1.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "25",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Euronews"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FEURON.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "26",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CNN"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FCNN.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "27",
+            "display_name": {
+                "@lang": "en",
+                "#text": "RTP \u00c1frica"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRTPA.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "28",
+            "display_name": {
+                "@lang": "en",
+                "#text": "BVN"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FBVN.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "30",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Record News"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRECORDNEWS.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "33",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TeleSUR"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTELESUR.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "34",
+            "display_name": {
+                "@lang": "en",
+                "#text": "MCM Top"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FMCM.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "35",
+            "display_name": {
+                "@lang": "en",
+                "#text": "MTV 00s"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FMTV00s.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "37",
+            "display_name": {
+                "@lang": "en",
+                "#text": "M6"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FM6.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "39",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Sky News"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSKYN.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "40",
+            "display_name": {
+                "@lang": "en",
+                "#text": "RTL"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRTL.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "41",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ARTE"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FARTE.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "42",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Stingray iConcerts HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2Ficoncertshd.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "44",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Bloomberg"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FBLOOM.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "46",
+            "display_name": {
+                "@lang": "en",
+                "#text": "NHK World TV"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FNHK.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "47",
+            "display_name": {
+                "@lang": "en",
+                "#text": "FTV HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FFASHIONTVHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "48",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVEi"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVEINT.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "49",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ARTV"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FPARLA.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "50",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Mezzo"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FMEZZO.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "52",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CNBC"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FCNBC.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "53",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TV5 Monde"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTV5.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "54",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TV Galicia"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVGALIZA.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "55",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Rai Italia"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRAIITALIA.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "58",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Canal 180"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FC180.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "62",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Food Network HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FFOODNETWORKHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "65",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Trace Urban HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTRACEURBANHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "70",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Travel Channel HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTRAVELHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "72",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Fuel TV HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FFUELHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "74",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVCine EDITION HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVCineEdition.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "75",
+            "display_name": {
+                "@lang": "en",
+                "#text": "AXN White HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSONYTVHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "80",
+            "display_name": {
+                "@lang": "en",
+                "#text": "RTP Mem\u00f3ria"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRTPM.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "83",
+            "display_name": {
+                "@lang": "en",
+                "#text": "National Geographic WILD HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FNGCWILDHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "94",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Nickelodeon"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FNicke.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "106",
+            "display_name": {
+                "@lang": "en",
+                "#text": "RTP A\u00e7ores"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRTPACO.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "107",
+            "display_name": {
+                "@lang": "en",
+                "#text": "RTP Madeira"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRTPMAD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "108",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Al Jazeera"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FJAZEERA.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "109",
+            "display_name": {
+                "@lang": "en",
+                "#text": "France 24 (I)"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FFRANCE24.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "111",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Globo News"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FGLOBONEWS.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "112",
+            "display_name": {
+                "@lang": "en",
+                "#text": "PFC"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FPFC.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "113",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Star Comedy HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FFXHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "115",
+            "display_name": {
+                "@lang": "en",
+                "#text": "DW"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FDTSWELLE.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "117",
+            "display_name": {
+                "@lang": "en",
+                "#text": "RTR Planeta"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRTRPLNET.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "121",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Cubavisi\u00f3n Internacional"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FCUBAVINT.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "123",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVR Internacional"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVRI.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "124",
+            "display_name": {
+                "@lang": "en",
+                "#text": "BNT World"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVBLGARIA.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "129",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Ca\u00e7a e Pesca"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FCACAPESCA.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "132",
+            "display_name": {
+                "@lang": "en",
+                "#text": "France 24 (F)"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FFRANCE24FR.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "134",
+            "display_name": {
+                "@lang": "en",
+                "#text": "National Geographic HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FNGCHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "137",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SPORT TV1 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSPTV_1HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "138",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TPA Not\u00edcias"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTPA.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "139",
+            "display_name": {
+                "@lang": "en",
+                "#text": "RTP 1 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRTPHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "141",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVCine TOP HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVCineTop.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "142",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Can\u00e7\u00e3o Nova"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FCANCAONOVA.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "143",
+            "display_name": {
+                "@lang": "en",
+                "#text": "MAX"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FMAX.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "144",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SET Asia"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSETA.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "145",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Eurosport 1 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FEurosportHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "161",
+            "display_name": {
+                "@lang": "en",
+                "#text": "AXN HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FAXNHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "165",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Russia Today"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRUSSIAT.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "167",
+            "display_name": {
+                "@lang": "en",
+                "#text": "MyZen TV"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FZENNATUR.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "172",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVE 24h"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVE24.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "174",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Star Channel HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FFOXHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "175",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Star Life HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FFOXLIFEHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "176",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Biggs"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FPANDABIGGS.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "180",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SPORT TV5 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSPTV_5HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "187",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SPORT TV2 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSPTV_2HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "188",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SPORT TV3 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSPTV_3HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "194",
+            "display_name": {
+                "@lang": "en",
+                "#text": "AXN Movies HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FAXNMoviesHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "200",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Super RTL"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSUPERRTL.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "201",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Syfy HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSYFYHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "202",
+            "display_name": {
+                "@lang": "en",
+                "#text": "E! Entertainment HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FEENTERHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "223",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVCine EMOTION HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVCineEmotion.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "224",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVCine ACTION HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVCineAction.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "229",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Localvis\u00e3o TV HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FLOCALVISAOTVHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "234",
+            "display_name": {
+                "@lang": "en",
+                "#text": "KBS World HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FKBSWORLDHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "235",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Canal Q"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FCanalQB.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "236",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Fight Network HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FFIGHTHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "237",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TCV Internacional"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTCVINT.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "242",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Star Movies HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FFOXMOVIESHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "243",
+            "display_name": {
+                "@lang": "en",
+                "#text": "24Kitchen HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2F24KITCHENHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "244",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Star Crime HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FFOXCRIMEHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "245",
+            "display_name": {
+                "@lang": "en",
+                "#text": "BTV1 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FBENFICATV1HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "247",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SPORT TV4 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSPTV_4HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "252",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Cartoon Network HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FCART.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "272",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Afro Music Channel"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FAFROMUSIC.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "312",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CGTN"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2Fcgtn.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "316",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CCTV 4"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FCCTV4.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "343",
+            "display_name": {
+                "@lang": "en",
+                "#text": "STV Not\u00edcias"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSTVNOTICIAS.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "350",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Record TV HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVRHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "352",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Sporting TV HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSPORTINGTVHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "354",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Motorvision HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FMOTORVISIONHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "356",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Mezzo Live HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FMEZZOLIVEHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "368",
+            "display_name": {
+                "@lang": "en",
+                "#text": "MCM Pop"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FMCMPOP.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "371",
+            "display_name": {
+                "@lang": "en",
+                "#text": "DOGTV"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FDOGTV.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "377",
+            "display_name": {
+                "@lang": "en",
+                "#text": "MTV Portugal HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FMTV.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "408",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Canal NOS HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FCANALNOSHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "415",
+            "display_name": {
+                "@lang": "en",
+                "#text": "AMC HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FAMCHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "417",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SPORT TV+ HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSPTVMAISHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "418",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SIC HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSICHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "419",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SIC Not\u00edcias HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSICNHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "420",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SIC Mulher HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSICMHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "421",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SIC Caras HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSICCHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "422",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SIC Radical HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSICRHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "423",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Porto Canal HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FPORTOHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "425",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CMTV HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FCMTVHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "426",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Kuriakos TV"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FKURIAKOSTV.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "441",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ODISSEIA HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FODISSEIAHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "444",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Nick Jr."
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FNICKJR.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "447",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Globo HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FGLOBOHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "448",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Baby TV"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FBABYTV.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "449",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Sport TV NBA"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FNBATVHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "509",
+            "display_name": {
+                "@lang": "en",
+                "#text": "AMC Break HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FAMCBreak.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "510",
+            "display_name": {
+                "@lang": "en",
+                "#text": "S+ HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSAUDEMAIS.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "513",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ELEVEN SPORTS 3"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FDESP3HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "514",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ELEVEN SPORTS 4"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FDESP4HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "515",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ELEVEN SPORTS 5"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FDESP5HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "516",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ELEVEN SPORTS 6"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FDESP6HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "518",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ELEVEN SPORTS 1"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2Fcanalnos1.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "519",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ELEVEN SPORTS 2"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2Fcanalnos2.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "530",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ID Investigation Discovery"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FInvestigationDiscovery.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "538",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ZAP Viva HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FZAPVIVAHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "543",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Trace Toca"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTrace_Toca.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "544",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Canal Hist\u00f3ria HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FHistoriaHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "545",
+            "display_name": {
+                "@lang": "en",
+                "#text": "AMC Crime HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FAMCCrime.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "547",
+            "display_name": {
+                "@lang": "en",
+                "#text": "NOS Studios HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FNOSSTUDIOSHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "553",
+            "display_name": {
+                "@lang": "en",
+                "#text": "SIC K HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSICKHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "554",
+            "display_name": {
+                "@lang": "en",
+                "#text": "RTP 2 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRTP2HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "555",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVI HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVIHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "556",
+            "display_name": {
+                "@lang": "en",
+                "#text": "RTP 3 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FRTP3HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "557",
+            "display_name": {
+                "@lang": "en",
+                "#text": "CNN Portugal HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2Fcnnportugalhd.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "560",
+            "display_name": {
+                "@lang": "en",
+                "#text": "MTV Live"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FMTVLIVE.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "561",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Discovery HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FDISCOVERYHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "563",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Eurosport 2 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FEUROS2HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "565",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Canal 11 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FCANAL11HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "567",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVI Reality HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVIREALHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "572",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Casa e Cozinha HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2Fcasacozhd.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "574",
+            "display_name": {
+                "@lang": "en",
+                "#text": "TVI Fic\u00e7\u00e3o HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2Ftvificcao.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "588",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Canal Galeria"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2Fgaleria.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "593",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Canal Panda HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2Fpandahd.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "594",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Disney Channel HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FDISNYHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "597",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Panda KIDS"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FPANDAKHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "610",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Sport TV 6 HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FSPTV_6HD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "673",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Disney Junior HD"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FDISNEYJRHD.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "679",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Nautical Channel"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FNAUTICAL.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "680",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Horse TV"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FHORSE.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "684",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ELEVEN EXTRA 1"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FElevenExtra1.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "685",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ELEVEN EXTRA 2"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FElevenExtra2.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "686",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ELEVEN EXTRA 3"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FElevenExtra3.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "687",
+            "display_name": {
+                "@lang": "en",
+                "#text": "ELEVEN EXTRA 4"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FElevenExtra4.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "689",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Unif\u00e9 TV"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FUNIFE.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "694",
+            "display_name": {
+                "@lang": "en",
+                "#text": "OneToro TV"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FOneToroTV.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "697",
+            "display_name": {
+                "@lang": "en",
+                "#text": "New Brasil"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FNEWBRASIL.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "701",
+            "display_name": {
+                "@lang": "en",
+                "#text": "W-Sport"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FWSPORT.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "702",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Dizi"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FDIZI.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "704",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Trace Brasil"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTRACEBRAS.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        },
+        {
+            "id": "705",
+            "display_name": {
+                "@lang": "en",
+                "#text": "NewsNOW"
+            },
+            "icon": {
+                "@src": "https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FNEWSNOW.png&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png"
+            }
+        }
+    ]
+}
