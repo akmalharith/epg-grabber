@@ -17,12 +17,12 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-  "requests~=2.31.0",
-  "loguru~=0.6.0",
-  "pydantic~=1.10.0",
-  "xmltodict~=0.13.0",
-  "pytz~=2022.0",
-  "tzlocal~=5.2"
+    "requests~=2.31.0",
+    "loguru~=0.6.0",
+    "pydantic~=1.10.0",
+    "xmltodict~=0.13.0",
+    "pytz~=2022.0",
+    "tzlocal~=5.2"
 ]
 
 [project.scripts]
