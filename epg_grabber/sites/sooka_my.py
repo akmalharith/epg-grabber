@@ -134,7 +134,11 @@ def get_programs(channel_id: str, days: int = 1, channel_xml_id: str = None):
 
     for obj in output['result']['objects']:
         title = obj['metas']['TitleSortName']['value']
-        description = obj['metas']['LongSynopsis']['value']
+
+        try:
+            description = obj['metas']['LongSynopsis']['value']
+        except KeyError:
+            description = ""
         start_date = tz.localize(datetime.fromtimestamp(obj['startDate']))
         end_date = tz.localize(datetime.fromtimestamp(obj['endDate']))
 
