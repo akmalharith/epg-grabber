@@ -1,745 +1,824 @@
 {
-    "channels": [
-      {
-        "id": "20000009",
-        "display_name": {
-          "@lang": "en",
-          "#text": "TV1"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190708/20190708071026467w2e.png"
-        }
-      },
-      {
-        "id": "20000036",
-        "display_name": {
-          "@lang": "en",
-          "#text": "TV2"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190708/20190708070724242ygr.png"
-        }
-      },
-      {
-        "id": "20000011",
-        "display_name": {
-          "@lang": "en",
-          "#text": "TV3"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202007/20200701/202007010436159112u3.png"
-        }
-      },
-      {
-        "id": "20000031",
-        "display_name": {
-          "@lang": "en",
-          "#text": "DidikTV KPM "
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202102/20210223/20210223181442797931.png"
-        }
-      },
-      {
-        "id": "20000017",
-        "display_name": {
-          "@lang": "en",
-          "#text": "8TV"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190708/20190708074041526yld.png"
-        }
-      },
-      {
-        "id": "20000020",
-        "display_name": {
-          "@lang": "en",
-          "#text": "TV9"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202202/20220217/20220217003547137q8t.png"
-        }
-      },
-      {
-        "id": "20000070",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Salam HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716062504007e6f.png"
-        }
-      },
-      {
-        "id": "20000014",
-        "display_name": {
-          "@lang": "en",
-          "#text": "TV AlHijrah HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716072749378meg.png"
-        }
-      },
-      {
-        "id": "20000089",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Sensasi"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202209/20220901/20220901155400159gcw.png"
-        }
-      },
-      {
-        "id": "20000003",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Inspirasi"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202209/20220901/20220901155542159l9k.png"
-        }
-      },
-      {
-        "id": "55631601",
-        "display_name": {
-          "@lang": "en",
-          "#text": "DEGUP"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202204/20220422/2022042207284940668e.png"
-        }
-      },
-      {
-        "id": "56919296",
-        "display_name": {
-          "@lang": "en",
-          "#text": "SIAR"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220816/20220816023117758jev.png"
-        }
-      },
-      {
-        "id": "64822719",
-        "display_name": {
-          "@lang": "en",
-          "#text": "TVS"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202401/20240108/2024010804385071891k.png"
-        }
-      },
-      {
-        "id": "20000046",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Dunia Sinema HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716074123890vav.png"
-        }
-      },
-      {
-        "id": "20000063",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Pesona HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/201907160659062937ij.png"
-        }
-      },
-      {
-        "id": "20000021",
-        "display_name": {
-          "@lang": "en",
-          "#text": "tvN Movies"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202206/20220630/20220630160122105iu5.png"
-        }
-      },
-      {
-        "id": "20000062",
-        "display_name": {
-          "@lang": "en",
-          "#text": "tvN HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716065439314yz3.png"
-        }
-      },
-      {
-        "id": "20000055",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Now Jelli"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/201907160641140646da.png"
-        }
-      },
-      {
-        "id": "55697154",
-        "display_name": {
-          "@lang": "en",
-          "#text": "CCTV-4"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202204/20220428/2022042801453679957n.png"
-        }
-      },
-      {
-        "id": "20000082",
-        "display_name": {
-          "@lang": "en",
-          "#text": "SETI"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190708/20190708073838956juy.png"
-        }
-      },
-      {
-        "id": "51882317",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Celestial Movies"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210926/20210926030715748ltd.png"
-        }
-      },
-      {
-        "id": "52014451",
-        "display_name": {
-          "@lang": "en",
-          "#text": "CCM"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202110/20211002/20211002075446164wlh.png"
-        }
-      },
-      {
-        "id": "56750159",
-        "display_name": {
-          "@lang": "en",
-          "#text": "ZEE Thirai"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202206/20220623/20220623190144437nxu.png"
-        }
-      },
-      {
-        "id": "56657229",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Sony YAY!"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202304/20230420/202304200133366766tq.png"
-        }
-      },
-      {
-        "id": "20000113",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Colors Tamil HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/201907160723588691kg.png"
-        }
-      },
-      {
-        "id": "20000038",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Colors Cineplex"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/2019071607255101998u.png"
-        }
-      },
-      {
-        "id": "64139408",
-        "display_name": {
-          "@lang": "en",
-          "#text": "HBO"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202308/20230809/20230809082222536837.png"
-        }
-      },
-      {
-        "id": "64139527",
-        "display_name": {
-          "@lang": "en",
-          "#text": "HBO Hits"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202308/20230809/20230809085829841ctl.png"
-        }
-      },
-      {
-        "id": "64139462",
-        "display_name": {
-          "@lang": "en",
-          "#text": "HBO Family"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202308/20230809/20230809090429875fc9.png"
-        }
-      },
-      {
-        "id": "64139437",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Cinemax"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202308/20230809/20230809084408736zam.png"
-        }
-      },
-      {
-        "id": "52014611",
-        "display_name": {
-          "@lang": "en",
-          "#text": "HITS MOVIES"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202110/20211002/202110020531032952nt.png"
-        }
-      },
-      {
-        "id": "20000012",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Warner TV"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716071834181bzk.png"
-        }
-      },
-      {
-        "id": "66442819",
-        "display_name": {
-          "@lang": "en",
-          "#text": "HITS NOW"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202312/20231215/20231215075850694132.png"
-        }
-      },
-      {
-        "id": "51882833",
-        "display_name": {
-          "@lang": "en",
-          "#text": "AXN"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210927/2021092701574706798y.png"
-        }
-      },
-      {
-        "id": "51872269",
-        "display_name": {
-          "@lang": "en",
-          "#text": "HITS"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210930/20210930184050677l5v.png"
-        }
-      },
-      {
-        "id": "59953839",
-        "display_name": {
-          "@lang": "en",
-          "#text": "ONE"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202212/20221221/20221221082931509b79.png"
-        }
-      },
-      {
-        "id": "51880949",
-        "display_name": {
-          "@lang": "en",
-          "#text": "K-Plus"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210926/202109260228210903i7.png"
-        }
-      },
-      {
-        "id": "51882374",
-        "display_name": {
-          "@lang": "en",
-          "#text": "GEM"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210926/20210926024214242p95.png"
-        }
-      },
-      {
-        "id": "57622558",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Animax HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220811/20220811020901814w9o.png"
-        }
-      },
-      {
-        "id": "20000029",
-        "display_name": {
-          "@lang": "en",
-          "#text": "ROCK Entertainment"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210902/20210902163927011u1k.png"
-        }
-      },
-      {
-        "id": "20000081",
-        "display_name": {
-          "@lang": "en",
-          "#text": "ROCK Action"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202309/20230913/20230913232606376llq.png"
-        }
-      },
-      {
-        "id": "20000092",
-        "display_name": {
-          "@lang": "en",
-          "#text": "BBC Earth HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202310/20231004/202310041609361172yq.png"
-        }
-      },
-      {
-        "id": "40413728",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Love Nature HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202304/20230413/20230413163356887wtt.png"
-        }
-      },
-      {
-        "id": "63676784",
-        "display_name": {
-          "@lang": "en",
-          "#text": "HGTV"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202307/20230714/202307140831594793jb.png"
-        }
-      },
-      {
-        "id": "20000040",
-        "display_name": {
-          "@lang": "en",
-          "#text": "BBC Lifestyle HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716064944437peu.png"
-        }
-      },
-      {
-        "id": "20000088",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Travel Channel HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202108/20210831/20210831161520835mdk.png"
-        }
-      },
-      {
-        "id": "20000086",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Luxe.TV HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202210/20221006/20221006163125046s4c.png"
-        }
-      },
-      {
-        "id": "20000061",
-        "display_name": {
-          "@lang": "en",
-          "#text": "MTV Live"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220831/20220831175807527zfn.png"
-        }
-      },
-      {
-        "id": "20000103",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Dreamworks HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202011/20201125/202011250800095510sa.png"
-        }
-      },
-      {
-        "id": "59924306",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Moonbug"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202305/20230501/20230501030506432ny5.png"
-        }
-      },
-      {
-        "id": "20000004",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Nick Jr."
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202402/20240215/202402150918186623m3.png"
-        }
-      },
-      {
-        "id": "20000006",
-        "display_name": {
-          "@lang": "en",
-          "#text": "CBeebies HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716071141326xhe.png"
-        }
-      },
-      {
-        "id": "56750178",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Nickelodeon"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202307/20230731/20230731161309802h25.png"
-        }
-      },
-      {
-        "id": "20000030",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Cartoonito"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202307/20230727/20230727155824262s56.png"
-        }
-      },
-      {
-        "id": "63676870",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Cartoon Network"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202307/20230714/2023071408091010586q.png"
-        }
-      },
-      {
-        "id": "20000074",
-        "display_name": {
-          "@lang": "en",
-          "#text": "BBC News HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202304/20230413/20230413163257115fw9.png"
-        }
-      },
-      {
-        "id": "20000067",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Al Jazeera HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201910/20191016/20191016083900196xiv.png"
-        }
-      },
-      {
-        "id": "55697173",
-        "display_name": {
-          "@lang": "en",
-          "#text": "CGTN"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202210/20221006/20221006162842151p7y.png"
-        }
-      },
-      {
-        "id": "20000016",
-        "display_name": {
-          "@lang": "en",
-          "#text": "CNA"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202209/20220913/202209131536473499qq.png"
-        }
-      },
-      {
-        "id": "20000083",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Euronews"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202310/20231013/20231013072522178009.png"
-        }
-      },
-      {
-        "id": "56750195",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Wion"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202206/20220628/2022062803242680610s.png"
-        }
-      },
-      {
-        "id": "20000091",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Bernama TV"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202206/20220630/20220630161651611obe.png"
-        }
-      },
-      {
-        "id": "57623657",
-        "display_name": {
-          "@lang": "en",
-          "#text": "Parlimen Malaysia"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220810/20220810211708829sbp.png"
-        }
-      },
-      {
-        "id": "20000064",
-        "display_name": {
-          "@lang": "en",
-          "#text": "ABC Australia"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202205/20220526/202205262327198615cc.png"
-        }
-      },
-      {
-        "id": "20000087",
-        "display_name": {
-          "@lang": "en",
-          "#text": "DW"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202203/20220316/20220316175409814ggi.png"
-        }
-      },
-      {
-        "id": "20000066",
-        "display_name": {
-          "@lang": "en",
-          "#text": "NHK WORLD-JAPAN"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/201907160704507932rh.png"
-        }
-      },
-      {
-        "id": "57622577",
-        "display_name": {
-          "@lang": "en",
-          "#text": "France 24"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220810/2022081020302200206h.png"
-        }
-      },
-      {
-        "id": "54185493",
-        "display_name": {
-          "@lang": "en",
-          "#text": "unifi Sports 1"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202304/20230418/202304180833546499vy.png"
-        }
-      },
-      {
-        "id": "20000076",
-        "display_name": {
-          "@lang": "en",
-          "#text": "SPOTV"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210930/20210930184212950ddn.png"
-        }
-      },
-      {
-        "id": "20000109",
-        "display_name": {
-          "@lang": "en",
-          "#text": "SPOTV2"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210930/20210930184626019h4r.png"
-        }
-      },
-      {
-        "id": "55456338",
-        "display_name": {
-          "@lang": "en",
-          "#text": "beIN SPORTS 1 HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202204/20220422/20220422081431538sc5.png"
-        }
-      },
-      {
-        "id": "59922231",
-        "display_name": {
-          "@lang": "en",
-          "#text": "beIN SPORTS 2 HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202212/20221221/20221221082841690jit.png"
-        }
-      },
-      {
-        "id": "55456355",
-        "display_name": {
-          "@lang": "en",
-          "#text": "beIN SPORTS 3 HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202204/20220422/202204220814593293cl.png"
-        }
-      },
-      {
-        "id": "57682031",
-        "display_name": {
-          "@lang": "en",
-          "#text": "beIN SPORTS 4 HD"
-        },
-        "icon": {
-          "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220812/20220812083713068j19.png"
-        }
+  "channels": [
+    {
+      "id": "20000009",
+      "display_name": {
+        "@lang": "en",
+        "#text": "TV1"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190708/20190708071026467w2e.png"
       }
-    ]
-  }
-  
+    },
+    {
+      "id": "20000036",
+      "display_name": {
+        "@lang": "en",
+        "#text": "TV2"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190708/20190708070724242ygr.png"
+      }
+    },
+    {
+      "id": "20000011",
+      "display_name": {
+        "@lang": "en",
+        "#text": "TV3"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202007/20200701/202007010436159112u3.png"
+      }
+    },
+    {
+      "id": "20000031",
+      "display_name": {
+        "@lang": "en",
+        "#text": "DidikTV KPM "
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202102/20210223/20210223181442797931.png"
+      }
+    },
+    {
+      "id": "20000017",
+      "display_name": {
+        "@lang": "en",
+        "#text": "8TV"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190708/20190708074041526yld.png"
+      }
+    },
+    {
+      "id": "20000020",
+      "display_name": {
+        "@lang": "en",
+        "#text": "TV9"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202202/20220217/20220217003547137q8t.png"
+      }
+    },
+    {
+      "id": "20000070",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Salam HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716062504007e6f.png"
+      }
+    },
+    {
+      "id": "20000014",
+      "display_name": {
+        "@lang": "en",
+        "#text": "TV AlHijrah HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716072749378meg.png"
+      }
+    },
+    {
+      "id": "20000089",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Sensasi"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202209/20220901/20220901155400159gcw.png"
+      }
+    },
+    {
+      "id": "20000003",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Inspirasi"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202209/20220901/20220901155542159l9k.png"
+      }
+    },
+    {
+      "id": "55631601",
+      "display_name": {
+        "@lang": "en",
+        "#text": "DEGUP"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202204/20220422/2022042207284940668e.png"
+      }
+    },
+    {
+      "id": "56919296",
+      "display_name": {
+        "@lang": "en",
+        "#text": "SIAR"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220816/20220816023117758jev.png"
+      }
+    },
+    {
+      "id": "64822719",
+      "display_name": {
+        "@lang": "en",
+        "#text": "TVS"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202401/20240108/2024010804385071891k.png"
+      }
+    },
+    {
+      "id": "20000046",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Dunia Sinema HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716074123890vav.png"
+      }
+    },
+    {
+      "id": "20000063",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Pesona HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/201907160659062937ij.png"
+      }
+    },
+    {
+      "id": "20000021",
+      "display_name": {
+        "@lang": "en",
+        "#text": "tvN Movies"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202206/20220630/20220630160122105iu5.png"
+      }
+    },
+    {
+      "id": "20000062",
+      "display_name": {
+        "@lang": "en",
+        "#text": "tvN HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716065439314yz3.png"
+      }
+    },
+    {
+      "id": "20000055",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Now Jelli"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/201907160641140646da.png"
+      }
+    },
+    {
+      "id": "55697154",
+      "display_name": {
+        "@lang": "en",
+        "#text": "CCTV-4"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202204/20220428/2022042801453679957n.png"
+      }
+    },
+    {
+      "id": "20000082",
+      "display_name": {
+        "@lang": "en",
+        "#text": "SETI"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190708/20190708073838956juy.png"
+      }
+    },
+    {
+      "id": "51882317",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Celestial Movies"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210926/20210926030715748ltd.png"
+      }
+    },
+    {
+      "id": "52014451",
+      "display_name": {
+        "@lang": "en",
+        "#text": "CCM"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202110/20211002/20211002075446164wlh.png"
+      }
+    },
+    {
+      "id": "56750159",
+      "display_name": {
+        "@lang": "en",
+        "#text": "ZEE Thirai"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202206/20220623/20220623190144437nxu.png"
+      }
+    },
+    {
+      "id": "56657229",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Sony YAY!"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202304/20230420/202304200133366766tq.png"
+      }
+    },
+    {
+      "id": "20000113",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Colors Tamil HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/201907160723588691kg.png"
+      }
+    },
+    {
+      "id": "20000038",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Colors Cineplex"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/2019071607255101998u.png"
+      }
+    },
+    {
+      "id": "64139408",
+      "display_name": {
+        "@lang": "en",
+        "#text": "HBO"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202308/20230809/20230809082222536837.png"
+      }
+    },
+    {
+      "id": "64139527",
+      "display_name": {
+        "@lang": "en",
+        "#text": "HBO Hits"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202308/20230809/20230809085829841ctl.png"
+      }
+    },
+    {
+      "id": "64139462",
+      "display_name": {
+        "@lang": "en",
+        "#text": "HBO Family"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202308/20230809/20230809090429875fc9.png"
+      }
+    },
+    {
+      "id": "64139437",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Cinemax"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202308/20230809/20230809084408736zam.png"
+      }
+    },
+    {
+      "id": "52014611",
+      "display_name": {
+        "@lang": "en",
+        "#text": "HITS MOVIES"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202110/20211002/202110020531032952nt.png"
+      }
+    },
+    {
+      "id": "20000012",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Warner TV"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716071834181bzk.png"
+      }
+    },
+    {
+      "id": "66442819",
+      "display_name": {
+        "@lang": "en",
+        "#text": "HITS NOW"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202312/20231215/20231215075850694132.png"
+      }
+    },
+    {
+      "id": "51882833",
+      "display_name": {
+        "@lang": "en",
+        "#text": "AXN"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210927/2021092701574706798y.png"
+      }
+    },
+    {
+      "id": "51872269",
+      "display_name": {
+        "@lang": "en",
+        "#text": "HITS"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202406/20240606/20240606024112666rfx.png"
+      }
+    },
+    {
+      "id": "59953839",
+      "display_name": {
+        "@lang": "en",
+        "#text": "ONE"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202212/20221221/20221221082931509b79.png"
+      }
+    },
+    {
+      "id": "51880949",
+      "display_name": {
+        "@lang": "en",
+        "#text": "K-Plus"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210926/202109260228210903i7.png"
+      }
+    },
+    {
+      "id": "51882374",
+      "display_name": {
+        "@lang": "en",
+        "#text": "GEM"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210926/20210926024214242p95.png"
+      }
+    },
+    {
+      "id": "57622558",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Animax HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220811/20220811020901814w9o.png"
+      }
+    },
+    {
+      "id": "20000029",
+      "display_name": {
+        "@lang": "en",
+        "#text": "ROCK Entertainment"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210902/20210902163927011u1k.png"
+      }
+    },
+    {
+      "id": "20000081",
+      "display_name": {
+        "@lang": "en",
+        "#text": "ROCK Action"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202309/20230913/20230913232606376llq.png"
+      }
+    },
+    {
+      "id": "20000092",
+      "display_name": {
+        "@lang": "en",
+        "#text": "BBC Earth HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202310/20231004/202310041609361172yq.png"
+      }
+    },
+    {
+      "id": "40413728",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Love Nature HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202304/20230413/20230413163356887wtt.png"
+      }
+    },
+    {
+      "id": "63676784",
+      "display_name": {
+        "@lang": "en",
+        "#text": "HGTV"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202307/20230714/202307140831594793jb.png"
+      }
+    },
+    {
+      "id": "20000040",
+      "display_name": {
+        "@lang": "en",
+        "#text": "BBC Lifestyle HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716064944437peu.png"
+      }
+    },
+    {
+      "id": "20000088",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Travel Channel HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202108/20210831/20210831161520835mdk.png"
+      }
+    },
+    {
+      "id": "20000086",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Luxe.TV HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202210/20221006/20221006163125046s4c.png"
+      }
+    },
+    {
+      "id": "20000061",
+      "display_name": {
+        "@lang": "en",
+        "#text": "MTV Live"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220831/20220831175807527zfn.png"
+      }
+    },
+    {
+      "id": "20000103",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Dreamworks HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202011/20201125/202011250800095510sa.png"
+      }
+    },
+    {
+      "id": "59924306",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Moonbug"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202305/20230501/20230501030506432ny5.png"
+      }
+    },
+    {
+      "id": "20000004",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Nick Jr."
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202402/20240215/202402150918186623m3.png"
+      }
+    },
+    {
+      "id": "20000006",
+      "display_name": {
+        "@lang": "en",
+        "#text": "CBeebies HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/20190716071141326xhe.png"
+      }
+    },
+    {
+      "id": "56750178",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Nickelodeon"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202307/20230731/20230731161309802h25.png"
+      }
+    },
+    {
+      "id": "20000030",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Cartoonito"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202307/20230727/20230727155824262s56.png"
+      }
+    },
+    {
+      "id": "63676870",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Cartoon Network"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202307/20230714/2023071408091010586q.png"
+      }
+    },
+    {
+      "id": "20000074",
+      "display_name": {
+        "@lang": "en",
+        "#text": "BBC News HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202304/20230413/20230413163257115fw9.png"
+      }
+    },
+    {
+      "id": "20000067",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Al Jazeera HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201910/20191016/20191016083900196xiv.png"
+      }
+    },
+    {
+      "id": "55697173",
+      "display_name": {
+        "@lang": "en",
+        "#text": "CGTN"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202210/20221006/20221006162842151p7y.png"
+      }
+    },
+    {
+      "id": "20000016",
+      "display_name": {
+        "@lang": "en",
+        "#text": "CNA"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202209/20220913/202209131536473499qq.png"
+      }
+    },
+    {
+      "id": "20000083",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Euronews"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202310/20231013/20231013072522178009.png"
+      }
+    },
+    {
+      "id": "56750195",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Wion"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202206/20220628/2022062803242680610s.png"
+      }
+    },
+    {
+      "id": "20000091",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Bernama TV"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202206/20220630/20220630161651611obe.png"
+      }
+    },
+    {
+      "id": "57623657",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Parlimen Malaysia"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220810/20220810211708829sbp.png"
+      }
+    },
+    {
+      "id": "20000064",
+      "display_name": {
+        "@lang": "en",
+        "#text": "ABC Australia"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202205/20220526/202205262327198615cc.png"
+      }
+    },
+    {
+      "id": "20000087",
+      "display_name": {
+        "@lang": "en",
+        "#text": "DW"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202203/20220316/20220316175409814ggi.png"
+      }
+    },
+    {
+      "id": "20000066",
+      "display_name": {
+        "@lang": "en",
+        "#text": "NHK WORLD-JAPAN"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/201907/20190716/201907160704507932rh.png"
+      }
+    },
+    {
+      "id": "57622577",
+      "display_name": {
+        "@lang": "en",
+        "#text": "France 24"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220810/2022081020302200206h.png"
+      }
+    },
+    {
+      "id": "54185493",
+      "display_name": {
+        "@lang": "en",
+        "#text": "unifi Sports 1"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202304/20230418/202304180833546499vy.png"
+      }
+    },
+    {
+      "id": "20000076",
+      "display_name": {
+        "@lang": "en",
+        "#text": "SPOTV"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210930/20210930184212950ddn.png"
+      }
+    },
+    {
+      "id": "20000109",
+      "display_name": {
+        "@lang": "en",
+        "#text": "SPOTV2"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202109/20210930/20210930184626019h4r.png"
+      }
+    },
+    {
+      "id": "55456338",
+      "display_name": {
+        "@lang": "en",
+        "#text": "beIN SPORTS 1 HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202204/20220422/20220422081431538sc5.png"
+      }
+    },
+    {
+      "id": "59922231",
+      "display_name": {
+        "@lang": "en",
+        "#text": "beIN SPORTS 2 HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202212/20221221/20221221082841690jit.png"
+      }
+    },
+    {
+      "id": "55456355",
+      "display_name": {
+        "@lang": "en",
+        "#text": "beIN SPORTS 3 HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202204/20220422/202204220814593293cl.png"
+      }
+    },
+    {
+      "id": "57682031",
+      "display_name": {
+        "@lang": "en",
+        "#text": "beIN SPORTS 4 HD"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202208/20220812/20220812083713068j19.png"
+      }
+    },
+    {
+      "id": "70372042",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Unifi Sports 2"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202407/20240703/2024070303483717060j.png"
+      }
+    },
+    {
+      "id": "70372848",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Unifi Sports 3"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202407/20240703/20240703034857745cea.png"
+      }
+    },
+    {
+      "id": "70372931",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Unifi Sports 4"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202407/20240703/20240703034937140qy0.png"
+      }
+    },
+    {
+      "id": "70373008",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Unifi Sports 5"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202407/20240703/20240703035002956vdc.png"
+      }
+    },
+    {
+      "id": "70373950",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Unifi Sports 6"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202407/20240703/20240703035027117eig.png"
+      }
+    },
+    {
+      "id": "70402736",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Unifi Sports 7"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202407/20240704/20240704085731157tah.png"
+      }
+    },
+    {
+      "id": "70408149",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Unifi Sports 8"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202407/20240704/202407041002247312m5.png"
+      }
+    },
+    {
+      "id": "70473704",
+      "display_name": {
+        "@lang": "en",
+        "#text": "Unifi Sports 18"
+      },
+      "icon": {
+        "@src": "http://playtv.unifi.com.my/CPS/images/universal/film/logo/202407/20240710/20240710060824925818.png"
+      }
+    }
+  ]
+}

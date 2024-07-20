@@ -1,7 +1,7 @@
 import requests
 
 response = requests.get(
-    "https://raw.githubusercontent.com/mediahomes/assets-private/main/playlist/unifi.m3u?token=GHSAT0AAAAAACORICT2RLT4SZYWJNLM2OTCZSR7ULQ"
+    "https://raw.githubusercontent.com/mediahomes/assets-private/main/playlist/unifi.m3u?token=GHSAT0AAAAAACORICT2MPVQSV5AP7XWX6MWZU3NYPQ"
 )
 
 playlist = response.text.splitlines()
