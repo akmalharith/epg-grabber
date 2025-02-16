@@ -25,7 +25,7 @@ response = session.post('https://playtv.unifi.com.my/VSP/V3/Login?from=throughMS
 
 response.raise_for_status()
 
-response = session.post('https://playtv.unifi.com.my:7053/VSP/V3/Authenticate?from=throughMSAAccess', json={
+response = session.post('https://playtv.unifi.com.my:7219/VSP/V3/Authenticate?from=throughMSAAccess', json={
     "authenticateBasic": {
         "userID": "",
         "userType": "3",
@@ -71,7 +71,7 @@ def get_programs(
         end_date = datetime.combine(end_dt, datetime.max.time())
         end_timestamp_in_milliseconds = int(end_date.timestamp() * 1000)
 
-        url = 'https://playtv.unifi.com.my:7053/VSP/V3/QueryPlaybillList?from=throughMSAAccess'
+        url = 'https://playtv.unifi.com.my:7219/VSP/V3/QueryPlaybillList?from=throughMSAAccess'
         payload = {
             "queryChannel": {"channelIDs": [channel_id]},
             "queryPlaybill": {
@@ -113,7 +113,7 @@ def get_programs(
     return programmes
 
 def get_program_detail(playbill_id: str) -> str:
-    url = "https://playtv.unifi.com.my:7053/VSP/V3/GetPlaybillDetail?from=throughMSAAcces"
+    url = "https://playtv.unifi.com.my:7219/VSP/V3/GetPlaybillDetail?from=throughMSAAcces"
 
     response = session.post(url, json={
         "playbillID":playbill_id
