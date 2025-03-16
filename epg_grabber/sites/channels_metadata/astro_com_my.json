@@ -34,7 +34,7 @@
             "id": "193",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Ria HD"
+                "#text": "Astro Ria"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/193_144.png"
@@ -44,7 +44,7 @@
             "id": "316",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Prima HD"
+                "#text": "Astro Prima"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/316_144.png"
@@ -54,27 +54,17 @@
             "id": "315",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Oasis HD"
+                "#text": "Astro Oasis"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/315_144.png"
             }
         },
         {
-            "id": "272",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Astro Warna HD"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/272_144.png"
-            }
-        },
-        {
             "id": "301",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Citra HD"
+                "#text": "Astro Citra"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/301_144.png"
@@ -84,7 +74,7 @@
             "id": "401",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Rania HD"
+                "#text": "Astro Rania"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/401_144.png"
@@ -94,7 +84,7 @@
             "id": "400",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Aura HD"
+                "#text": "Astro Aura"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/400_144.png"
@@ -128,16 +118,6 @@
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/429_144.png"
-            }
-        },
-        {
-            "id": "433",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Awesome TV"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/433_144.png"
             }
         },
         {
@@ -184,7 +164,7 @@
             "id": "397",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Vaanavil HD"
+                "#text": "Astro Vaanavil"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/397_144.png"
@@ -194,7 +174,7 @@
             "id": "167",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Vinmeen HD"
+                "#text": "Astro Vinmeen"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/167_144.png"
@@ -304,7 +284,7 @@
             "id": "177",
             "display_name": {
                 "@lang": "en",
-                "#text": "ABO Movies Thangathirai HD"
+                "#text": "Astro Thangathirai"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/177_144.png"
@@ -344,7 +324,7 @@
             "id": "182",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro AEC HD"
+                "#text": "Astro AEC"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/182_144.png"
@@ -384,7 +364,7 @@
             "id": "172",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro AOD 311"
+                "#text": "Astro AOD"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/172_144.png"
@@ -464,7 +444,7 @@
             "id": "162",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Hua Hee Dai HD"
+                "#text": "Astro Hua Hee Dai"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/162_144.png"
@@ -544,20 +524,10 @@
             "id": "251",
             "display_name": {
                 "@lang": "en",
-                "#text": "BOO HD"
+                "#text": "Astro Boo"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/251_144.png"
-            }
-        },
-        {
-            "id": "508",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Astro Premier"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/508_144.png"
             }
         },
         {
@@ -584,7 +554,7 @@
             "id": "454",
             "display_name": {
                 "@lang": "en",
-                "#text": "SHOWCASE"
+                "#text": "Astro Showcase"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/454_144.png"
@@ -824,20 +794,10 @@
             "id": "386",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Ceria HD"
+                "#text": "Astro Ceria"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/386_144.png"
-            }
-        },
-        {
-            "id": "485",
-            "display_name": {
-                "@lang": "en",
-                "#text": "DreamWorks"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/485_144.png"
             }
         },
         {
@@ -878,6 +838,16 @@
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/465_144.png"
+            }
+        },
+        {
+            "id": "566",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Blippi & Friends"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/566_144.png"
             }
         },
         {
@@ -1024,7 +994,7 @@
             "id": "235",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Arena HD"
+                "#text": "Astro Arena"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/235_144.png"
@@ -1034,7 +1004,7 @@
             "id": "457",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Arena 2 HD"
+                "#text": "Astro Arena 2"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/457_144.png"
@@ -1064,80 +1034,140 @@
             "id": "308",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro SuperSport UHD 1"
+                "#text": "Astro Sports UHD"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/308_144.png"
             }
         },
         {
-            "id": "533",
+            "id": "534",
             "display_name": {
                 "@lang": "en",
-                "#text": "SPOTV Stadia"
+                "#text": "Arena Bola 3"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/533_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/534_144.png"
             }
         },
         {
-            "id": "474",
+            "id": "535",
             "display_name": {
                 "@lang": "en",
-                "#text": "SPOTV2"
+                "#text": "Arena Bola 4"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/474_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/535_144.png"
             }
         },
         {
-            "id": "154",
+            "id": "543",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro SuperSport HD"
+                "#text": "Astro Grandstand"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/154_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/543_144.png"
             }
         },
         {
-            "id": "138",
+            "id": "536",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro SuperSport 2 HD"
+                "#text": "Astro Premier League"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/138_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/536_144.png"
             }
         },
         {
-            "id": "164",
+            "id": "537",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro SuperSport 3 HD"
+                "#text": "Astro Premier League 2"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/164_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/537_144.png"
             }
         },
         {
-            "id": "241",
+            "id": "538",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro SuperSport 4 HD"
+                "#text": "Astro Premier League 3"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/241_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/538_144.png"
             }
         },
         {
-            "id": "503",
+            "id": "539",
             "display_name": {
                 "@lang": "en",
-                "#text": "W-Sport"
+                "#text": "Astro Football"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/503_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/539_144.png"
+            }
+        },
+        {
+            "id": "540",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Astro Badminton"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/540_144.png"
+            }
+        },
+        {
+            "id": "542",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Astro Sports Plus"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/542_144.png"
+            }
+        },
+        {
+            "id": "568",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Astro Premier League 4"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/568_144.png"
+            }
+        },
+        {
+            "id": "236",
+            "display_name": {
+                "@lang": "en",
+                "#text": "beIN SPORTS 1"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/236_144.png"
+            }
+        },
+        {
+            "id": "466",
+            "display_name": {
+                "@lang": "en",
+                "#text": "beIN SPORTS 2"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/466_144.png"
+            }
+        },
+        {
+            "id": "313",
+            "display_name": {
+                "@lang": "en",
+                "#text": "beIN SPORTS 3"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/313_144.png"
             }
         },
         {
@@ -1151,83 +1181,63 @@
             }
         },
         {
-            "id": "466",
+            "id": "474",
             "display_name": {
                 "@lang": "en",
-                "#text": "beIN Sports 2"
+                "#text": "SPOTV2"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/466_144.png"
-            }
-        },
-        {
-            "id": "236",
-            "display_name": {
-                "@lang": "en",
-                "#text": "beIN Sports HD"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/236_144.png"
-            }
-        },
-        {
-            "id": "313",
-            "display_name": {
-                "@lang": "en",
-                "#text": "beIN Sports 3"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/313_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/474_144.png"
             }
         },
         {
             "id": "339",
             "display_name": {
                 "@lang": "en",
-                "#text": "Eurosport HD"
+                "#text": "EUROSPORT"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/339_144.png"
             }
         },
         {
-            "id": "194",
+            "id": "503",
             "display_name": {
                 "@lang": "en",
-                "#text": "WWE Network HD"
+                "#text": "W-Sport"
             },
             "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/194_144.png"
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/503_144.png"
             }
         },
         {
             "id": "189",
             "display_name": {
                 "@lang": "en",
-                "#text": "Golf Channel HD"
+                "#text": "Golf Channel"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/189_144.png"
             }
         },
         {
-            "id": "393",
-            "display_name": {
-                "@lang": "en",
-                "#text": "Premier Sports"
-            },
-            "icon": {
-                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/393_144.png"
-            }
-        },
-        {
             "id": "197",
             "display_name": {
                 "@lang": "en",
-                "#text": "Astro Cricket HD"
+                "#text": "Astro Cricket"
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/197_144.png"
+            }
+        },
+        {
+            "id": "393",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Premier Sports Rugby"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/393_144.png"
             }
         },
         {
@@ -1538,6 +1548,16 @@
             },
             "icon": {
                 "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/458_144.png"
+            }
+        },
+        {
+            "id": "394",
+            "display_name": {
+                "@lang": "en",
+                "#text": "Smithsonian Channel"
+            },
+            "icon": {
+                "@src": "https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/394_144.png"
             }
         }
     ]
